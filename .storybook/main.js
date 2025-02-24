@@ -15,5 +15,12 @@ const config = {
     options: {},
   },
   staticDirs: ["..\\public"],
+  webpackFinal: async (config) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      "@styles": require("path").resolve(__dirname, "../src/styles"),
+    };
+    return config;
+  }
 };
 export default config;

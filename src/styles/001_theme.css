@@ -22,11 +22,192 @@
 */
 
 @theme default {
+    /* ===================== */
+    /* COLOR THEME           */
+    /* ===================== */
 
+    /* 1. classicBlue */
+    --color-classicBlue-000 : #fafdff;
+    --color-classicBlue-050 : #e1effa;
+    --color-classicBlue-100 : #b8d9f3;
+    --color-classicBlue-200 : #8dc2eb;
+    --color-classicBlue-300 : #62aae2;
+    --color-classicBlue-400 : #4199dd;
+    --color-classicBlue-500 : #2288d8;
+    --color-classicBlue-600 : #1c7bcb;
+    --color-classicBlue-700 : #146ab9;
+    --color-classicBlue-800 : #0c5aa7;
+    --color-classicBlue-900 : #003d88;
+
+    --color-classicBlue-alpha-002 : #003d8805;
+    --color-classicBlue-alpha-004 : #003d880a;
+    --color-classicBlue-alpha-008 : #003d8814;
+    --color-classicBlue-alpha-016 : #003d8829;
+    --color-classicBlue-alpha-024 : #003d883d;
+    --color-classicBlue-alpha-032 : #003d8852;
+    --color-classicBlue-alpha-048 : #003d887a;
+
+    /* 2. classicBlueGray */
+    --color-classicBlueGray-000 : #fafbfc;
+    --color-classicBlueGray-050 : #ebedf1;
+    --color-classicBlueGray-100 : #cdd4db;
+    --color-classicBlueGray-200 : #aeb8c3;
+    --color-classicBlueGray-300 : #8e9baa;
+    --color-classicBlueGray-400 : #778698;
+    --color-classicBlueGray-500 : #5f7286;
+    --color-classicBlueGray-600 : #536476;
+    --color-classicBlueGray-700 : #43505f;
+    --color-classicBlueGray-800 : #343e4a;
+    --color-classicBlueGray-900 : #222a33;
+
+    --color-classicBlueGray-alpha-002 : #222a3305;
+    --color-classicBlueGray-alpha-004 : #222a330a;
+    --color-classicBlueGray-alpha-008 : #222a3314;
+    --color-classicBlueGray-alpha-016 : #222a3329;
+    --color-classicBlueGray-alpha-024 : #222a333d;
+    --color-classicBlueGray-alpha-032 : #222a3352;
+    --color-classicBlueGray-alpha-048 : #222a337a;
+
+    /* 3. black */
+    --color-black-main : #000000;
+
+    --color-black-alpha-002 : #00000005;
+    --color-black-alpha-004 : #0000000a;
+    --color-black-alpha-008 : #00000014;
+    --color-black-alpha-016 : #00000029;
+    --color-black-alpha-024 : #0000003d;
+    --color-black-alpha-032 : #00000052;
+    --color-black-alpha-048 : #0000007a;
+
+    /* 4. white */
+    --color-white-main : #ffffff;
+
+    --color-white-alpha-002 : #ffffff05;
+    --color-white-alpha-004 : #ffffff0a;
+    --color-white-alpha-008 : #ffffff14;
+    --color-white-alpha-016 : #ffffff29;
+    --color-white-alpha-024 : #ffffff3d;
+    --color-white-alpha-032 : #ffffff52;
+    --color-white-alpha-048 : #ffffff7a;
+
+    /* 5. red */
+    --color-red-000 : #fffbfa;
+    --color-red-050 : #fdefec;
+    --color-red-100 : #fcdfd9;
+    --color-red-200 : #f7afa1;
+    --color-red-300 : #f48771;
+    --color-red-400 : #f05f42;
+    --color-red-500 : #de3412;
+    --color-red-600 : #bd2c0f;
+    --color-red-700 : #8a240f;
+    --color-red-800 : #5c180a;
+    --color-red-900 : #390d05;
+    --color-red-950 : #260903;
+
+    /* 6. blue */
+    --color-blue-000 : #f4fafe;
+    --color-blue-050 : #e7f4fe;
+    --color-blue-100 : #d3ebfd;
+    --color-blue-200 : #9ed2fa;
+    --color-blue-300 : #5fb5f7;
+    --color-blue-400 : #2098f3;
+    --color-blue-500 : #0b78cb;
+    --color-blue-600 : #096ab3;
+    --color-blue-700 : #085691;
+    --color-blue-800 : #053961;
+    --color-blue-900 : #03253f;
+    --color-blue-950 : #021a2c;
+
+    /* 7. green */
+    --color-green-000 : #fafffb;
+    --color-green-050 : #eaf6ec;
+    --color-green-100 : #d8eedd;
+    --color-green-200 : #a9dab4;
+    --color-green-300 : #7ec88e;
+    --color-green-400 : #3fa654;
+    --color-green-500 : #228738;
+    --color-green-600 : #267337;
+    --color-green-700 : #285d33;
+    --color-green-800 : #1f4727;
+    --color-green-900 : #122b18;
+    --color-green-950 : #0e2012;
+
+    /* 8. yellow */
+    --color-yellow-000 : #fffcf5;
+    --color-yellow-050 : #fff3db;
+    --color-yellow-100 : #ffe0a3;
+    --color-yellow-200 : #ffc95c;
+    --color-yellow-300 : #ffb114;
+    --color-yellow-400 : #c78500;
+    --color-yellow-500 : #9e6a00;
+    --color-yellow-600 : #8a5c00;
+    --color-yellow-700 : #614100;
+    --color-yellow-800 : #422c00;
+    --color-yellow-900 : #2e1f00;
+    --color-yellow-950 : #241800;
+
+    /* ===================== */
+    /* COLOR THEME END       */
+    /* ===================== */
+
+    /* ===================== */
+    /* SIZE THEME            */
+    /* ===================== */
+
+    /* 1. font size */
+    --text-10 : 0.625rem;
+    --text-12 : 0.75rem;
+    --text-13 : 0.8125rem;
+    --text-14 : 0.875rem;
+    --text-15 : 0.9375rem;
+    --text-16 : 1rem;
+    --text-18 : 1.125rem;
+    --text-20 : 1.25rem;
+    --text-24 : 1.5rem;
+    --text-32 : 2rem;
+    --text-40 : 2.5rem;
+    --text-48 : 3rem;
+    --text-56 : 3.5rem;
+    --text-90 : 5.625rem;
+
+    /* 2. line-height */
+    --leading-120 : 1.2;
+    --leading-130 : 1.3;
+    --leading-150 : 1.5;
+    --leading-175 : 1.75;
+    --leading-200 : 2;
+
+    /* 3. spacing */
+    --spacing: 0.25rem;
+
+    /* 4. border-radius */
+    --radius-none : 0;
+    --radius-004 : 0.25;
+    --radius-008 : 0.5;
+    --radius-016 : 1;
+    --radius-fill : 9999;
+
+    /* ===================== */
+    /* SIZE THEME END        */
+    /* ===================== */
+
+    /* ===================== */
+    /* EFFECT THEME          */
+    /* ===================== */
+
+    /* elevation */
+    --shadow-008 : 0px 8px 8px #00000014, 0px 4px 4px #00000012, 0px 2px 2px #0000000d, 0px 1px 1px #00000008;
+    --shadow-016 : 0px 16px 16px #00000014, 0px 8px 8px #00000012, 0px 4px 4px #0000000d, 0px 2px 2px #00000008;
+    --shadow-024 : 0px 24px 24px #00000014, 0px 12px 12px #00000012, 0px 8px 8px #0000000d, 0px 4px 4px #00000008;
+    --shadow-064 : 0px 64px 64px #00000014, 0px 32px 32px #00000012, 0px 16px 16px #0000000d, 0px 8px 8px #00000008;
+
+    /* ===================== */
+    /* EFFECT THEME END      */
+    /* ===================== */
 }
 
 
-
+/* 
 @utility test {
 
-}
+} */

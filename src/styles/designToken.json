@@ -450,7 +450,7 @@
   "palette": {
     "bg(background)": {
       "brand": {
-        "solid": {
+        "dark": {
           "main": {
             "$type": "color",
             "$value": "{material.classicBlue.900}"
@@ -460,7 +460,7 @@
             "$value": "{material.classicBlue.800}"
           }
         },
-        "weak": {
+        "light": {
           "default": {
             "$type": "color",
             "$value": "{material.classicBlue.050}"
@@ -763,7 +763,7 @@
           "$value": "{material.static.black.alpha.024}"
         }
       },
-      "palceholder": {
+      "placeholder": {
         "main": {
           "$type": "color",
           "$value": "{material.classicblueGray.500}"

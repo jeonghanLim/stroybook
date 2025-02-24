@@ -2,7 +2,9 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
-import '@styles/button.css';
+import '@styles/001_theme.css';
+import '@styles/002_components_theme.css';
+import '@styles/003_components_styles.css';
 
 /** Primary UI component for user interaction */
 export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
