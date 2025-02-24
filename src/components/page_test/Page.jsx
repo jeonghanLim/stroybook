@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Header } from '@components/layout/Header';
+import { Header } from '@/components/navigation/Header';
 import '@styles/page.css';
 
 export const Page = () => {

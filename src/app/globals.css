@@ -1,2 +1,3 @@
-@import "../styles/theme.css";
-@import "../styles/components.css";
+@import "../styles/001_theme.css";
+@import "../styles/002_components_theme.css";
+@import "../styles/003_components_styles.css"

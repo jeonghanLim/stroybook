@@ -1,6 +1,6 @@
 import { fn } from '@storybook/test';
 
-import { Header } from '@components/layout/Header';
+import { Header } from '@/components/navigation/Header';
 
 export default {
   title: 'Example/Header',
