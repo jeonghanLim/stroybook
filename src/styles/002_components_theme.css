@@ -3,10 +3,10 @@
 @layer components {
 
     /* 1. typography */
-    .heading-001 {
+    /* .heading-001 {
         @apply 
     }
-
+ */
 
 
 
@@ -14,16 +14,25 @@
 
 
     /* 2. button */
-    .btn-color-main { 
+    /* 기본 버튼 : btn-brand-contained */
+    .btn {
         @apply 
-            bg-bg-brand-dark-default
-            text-fg-brand-main
+        flex items-center justify-center
+        w-fit px-1.5 py-1
+        text-16 text-white-main font-bold leading-150 font-pretendard 
+        rounded-004 whitespace-nowrap
+        bg-bg-brand-dark-default
     }
-    .btn-color-neutral {
-        @apply 
-            bg-bg-neutral-dark-default
-            text-fg
-    
+
+    .btn-base {
+        @apply
+        flex gap-1 items-center justify-center
+        w-fit h-2.5
+        
     }
+
+    /* .btn-brand-contained {
+
+    } */
     
 }

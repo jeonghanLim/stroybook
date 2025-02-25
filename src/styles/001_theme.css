@@ -21,7 +21,7 @@
 --animate-*	애니메이션 유틸리티와 같은animate-spin
 */
 
-@theme default {
+@theme {
     /* ===================== */
     /* COLOR THEME           */
     /* ===================== */
@@ -312,14 +312,13 @@
     --leading-200 : 200%;
 
     /* 3. spacing */
-    --spacing: 0.25rem;
+    --spacing: 0.5rem;
 
     /* 4. border-radius */
-    --radius-none : 0;
-    --radius-004 : 0.25;
-    --radius-008 : 0.5;
-    --radius-016 : 1;
-    --radius-fill : 9999;
+    --radius-004 : 0.25rem;
+    --radius-008 : 0.5rem;
+    --radius-016 : 1rem;
+    --radius-fill : 9999rem;
 
     /* ===================== */
     /* SIZE THEME END        */
@@ -347,10 +346,11 @@
     /* ===================== */
 
     /* elevation */
-    --shadow-008 : 0px 8px 8px #00000014, 0px 4px 4px #00000012, 0px 2px 2px #0000000d, 0px 1px 1px #00000008;
-    --shadow-016 : 0px 16px 16px #00000014, 0px 8px 8px #00000012, 0px 4px 4px #0000000d, 0px 2px 2px #00000008;
-    --shadow-024 : 0px 24px 24px #00000014, 0px 12px 12px #00000012, 0px 8px 8px #0000000d, 0px 4px 4px #00000008;
-    --shadow-064 : 0px 64px 64px #00000014, 0px 32px 32px #00000012, 0px 16px 16px #0000000d, 0px 8px 8px #00000008;
+    --shadow-008 : 0rem 0.5rem 0.5rem #00000014, 0rem 0.25rem 0.25rem #00000012, 0rem 0.125rem 0.125rem #0000000d, 0rem 0.0625rem 0.0625rem #00000008;
+    --shadow-016 : 0rem 1rem 1rem #00000014, 0rem 0.5rem 0.5rem #00000012, 0rem 0.25rem 0.25rem #0000000d, 0rem 0.125rem 0.125rem #00000008;
+    --shadow-024 : 0rem 1.5rem 1.5rem #00000014, 0rem 0.75rem 0.75rem #00000012, 0rem 0.5rem 0.5rem #0000000d, 0rem 0.25rem 0.25rem #00000008;
+    --shadow-064 : 0rem 4rem 4rem #00000014, 0rem 2rem 2rem #00000012, 0rem 1rem 1rem #0000000d, 0rem 0.5rem 0.5rem #00000008;
+
 
     /* ===================== */
     /* EFFECT THEME END      */

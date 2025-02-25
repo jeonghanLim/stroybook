@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import '@styles/001_theme.css';
 
 /** Primary UI component for user interaction */
-export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
+export const Button = ({ primary, backgroundColor, size, label, startIcon, endIcon, ...props }) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
     <button
@@ -13,7 +13,11 @@ export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
       className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
       {...props}
     >
-      {label}
+      <div className="btn-base">
+        <span className="start-icon">{startIcon}</span>
+        <span className="label">{label}</span>
+        <span className="end-icon">{endIcon}</span>
+      </div>
       <style jsx>{`
         button {
           background-color: ${backgroundColor};
