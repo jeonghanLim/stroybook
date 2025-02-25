@@ -1,2 +1,29 @@
-@import "tailwindcss";
+@import "./001_theme.css";
 
+@layer components {
+
+    /* 1. typography */
+    .heading-001 {
+        @apply 
+    }
+
+
+
+
+
+
+
+    /* 2. button */
+    .btn-color-main { 
+        @apply 
+            bg-bg-brand-dark-default
+            text-fg-brand-main
+    }
+    .btn-color-neutral {
+        @apply 
+            bg-bg-neutral-dark-default
+            text-fg
+    
+    }
+    
+}
