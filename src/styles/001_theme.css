@@ -192,8 +192,8 @@
     --color-bg-layer-floating: var(--color-classicBlue-000);
 
     /* overlay */
-    --color-bg-overlay-gray-dark: var(--color-classicBlueGray-alpha-032);
-    --color-bg-overlay-gray-light: var(--color-classicBlueGray-alpha-008);
+    --color-bg-overlay-neutral-dark: var(--color-classicBlueGray-alpha-032);
+    --color-bg-overlay-neutral-light: var(--color-classicBlueGray-alpha-008);
     --color-bg-overlay-white-dark: var(--color-white-alpha-032);
     --color-bg-overlay-white-light: var(--color-white-alpha-008);
     --color-bg-overlay-brand-dark: var(--color-classicBlue-alpha-032);
@@ -329,7 +329,7 @@
     /* ===================== */
 
     /* 1. font-family */
-    --font-pretendard : "Pretendard", sans-serif;
+    --font-pretendard : "Pretendard";
 
     /* 2. font-weight */
     --font-weight-regular : 400;
