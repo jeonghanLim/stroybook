@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "./004_font.css";
 
 /* 
 --color-*	bg-red-500, text-sky-300, 등과 같은 색상 유틸리티
