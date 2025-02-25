@@ -351,14 +351,86 @@
     --shadow-024 : 0rem 1.5rem 1.5rem #00000014, 0rem 0.75rem 0.75rem #00000012, 0rem 0.5rem 0.5rem #0000000d, 0rem 0.25rem 0.25rem #00000008;
     --shadow-064 : 0rem 4rem 4rem #00000014, 0rem 2rem 2rem #00000012, 0rem 1rem 1rem #0000000d, 0rem 0.5rem 0.5rem #00000008;
 
-
     /* ===================== */
     /* EFFECT THEME END      */
     /* ===================== */
+    
+
+    /* ===================== */
+    /* BTN COMPONENT STYLE   */
+    /* ===================== */
+    
+    /* button */
+    /* 1. padding */
+    --btn-padding-sm : calc(var(--spacing) * 0.5) calc(var(--spacing) * 1.5);
+    --btn-padding-md : calc(var(--spacing) * 1) calc(var(--spacing) * 1.5);
+    --btn-padding-lg : calc(var(--spacing) * 1.5) calc(var(--spacing) * 2);
+    
+    /* 2. font-size */
+    --font-size-sm : var(--text-13);
+    --font-size-md : var(--text-16);
+    --font-size-lg : var(--text-18);
+
+    /* 3. font-weight */
+    --font-weight-sm : var(--font-weight-semiBold);
+    --font-weight-md : var(--font-weight-bold);
+    --font-weight-lg : var(--font-weight-bold);
+
+    /* 4. variant & color */
+    /* 4-1) contained */
+    /* brand */
+    --btn-contained-bg-brand : var(--color-bg-brand-dark-default);
+    --btn-contained-fg-brand : var(--color-fg-brand-contrast);
+    --btn-contained-hover-bg-brand : var(--color-bg-brand-dark-pressed);
+    --btn-contained-focus-bg-brand : var(--color-bg-brand-dark-pressed);
+    --btn-contained-active-bg-brand : var(--color-bg-brand-dark-default);
+    /* neutral */
+    --btn-contained-bg-neutral : var(--color-bg-neutral-dark-default);
+    --btn-contained-fg-neutral : var(--color-fg-neutral-contrast);
+    --btn-contained-hover-bg-neutral : var(--color-bg-neutral-dark-pressed);
+    --btn-contained-focus-bg-neutral : var(--color-bg-neutral-dark-pressed);
+    --btn-contained-active-bg-neutral : var(--color-bg-neutral-dark-pressed);
+
+    /* 4-2) outlined */
+    /* brand */
+    --btn-outlined-bg-brand : var(--color-bg-overlay-white-light);
+    --btn-outlined-fg-brand : var(--color-fg-brand-main);
+    --btn-outlined-stroke-brand : var(--color-stroke-brand-main);
+    --btn-outlined-hover-bg-brand : var(--color-bg-overlay-brand-light);
+    --btn-outlined-focus-bg-brand : var(--color-bg-overlay-brand-light);
+    --btn-outlined-active-bg-brand : var(--color-bgr-overlay-white-light);
+    /* neutral */
+    --btn-outlined-bg-neutral : var(--color-bg-overlay-white-light);
+    --btn-outlined-fg-neutral : var(--color-fg-neutral-main);
+    --btn-outlined-stroke-neutral : var(--color-stroke-neutral-main);
+    --btn-outlined-hover-bg-neutral : var(--color-bg-overlay-neutral-light);
+    --btn-outlined-focus-bg-neutral : var(--color-bg-overlay-neutral-light);
+    --btn-outlined-active-bg-neutral : var(--color-bg-overlay-neutral-light);
+
+    /* 4-3) text */
+    /* brand */
+    --btn-text-fg-brand : var(--color-fg-brand-main);
+    --btn-text-hover-bg-brand : var(--color-bg-overlay-brand-light);
+    --btn-text-focus-bg-brand : var(--color-bg-overlay-brand-light);
+    --btn-text-active-bg-brand : var(--color-bgr-overlay-white-light);
+    /* neutral */
+    --btn-text-bg-neutral : var(--color-bg-overlay-white-light);
+    --btn-text-fg-neutral : var(--color-fg-neutral-main);
+    --btn-text-hover-bg-neutral : var(--color-bg-overlay-neutral-light);
+    --btn-text-focus-bg-neutral : var(--color-bg-overlay-neutral-light);
+    --btn-text-active-bg-neutral : var(--color-bg-overlay-neutral-light);
+
+    /* button-base */
+    /* 1. height */
+    --btn-base-height-sm : calc(var(--spacing) * 2.5);
+    --btn-base-height-md : calc(var(--spacing) * 2.5);
+    --btn-base-height-lg : calc(var(--spacing) * 3);
+    /* 2. gap */
+    --btn-base-gap-sm : calc(var(--spacing) * 0.5);
+    --btn-base-gap-md : calc(var(--spacing) * 1);
+    --btn-base-gap-lg : calc(var(--spacing) * 1);
+    /* 3. mask-box */
+    --btn-mask-box-w-sm : calc(var(--spacing) * 1);
+    --btn-mask-box-w-md : calc(var(--spacing) * 1.5);
+    --btn-mask-box-w-lg : calc(var(--spacing) * 2);
 }
-
-
-/* 
-@utility test {
-
-} */

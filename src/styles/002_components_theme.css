@@ -4,7 +4,7 @@
 
     /* 1. typography */
 
-    /* 1-1. heading */
+    /* 1-1) heading */
     .heading-001 {
         @apply
             font-pretendard
@@ -33,7 +33,7 @@
             text-40
             leading-120
     }
-    /* 1-2. title */
+    /* 1-2) title */
     .title-001 {
         @apply
             font-pretendard
@@ -55,7 +55,7 @@
             text-20
             leading-150
     }
-    /* 1-3. subTitle */
+    /* 1-3) subTitle */
     .subTitle-001Semibold {
         @apply
             font-pretendard
@@ -84,7 +84,7 @@
             text-16
             leading-175
     }
-    /* 1-4. body */
+    /* 1-4) body */
     .body-001 {
         @apply
             font-pretendard
@@ -113,7 +113,7 @@
             text-13
             leading-175
     }
-    /* 1-5. caption */
+    /* 1-5) caption */
     .caption-001 {
         @apply
             font-pretendard
@@ -128,7 +128,7 @@
             text-10
             leading-150
     }
-    /* 1-6. overline */
+    /* 1-6) overline */
     .overline-001 {
         @apply
             font-pretendard
@@ -136,7 +136,7 @@
             text-12
             leading-200
     }
-    /* 1-7. label */
+    /* 1-7) label */
     .label-001Bold {
         @apply
             font-pretendard
@@ -186,7 +186,7 @@
             text-13
             leading-150
     }
-    /* 1-8. value */
+    /* 1-8) value */
     .value-001 {
         @apply
             font-pretendard
@@ -208,7 +208,7 @@
             text-14
             leading-175
     }
-    /* 1-9. helper */
+    /* 1-9) helper */
     .helper-001 {
         @apply
             font-pretendard
@@ -217,27 +217,95 @@
             leading-175
     }
 
-
     /* 2. button */
-    /* 기본 버튼 : btn-brand-contained */
-    .btn {
+    .btn { 
         @apply 
-        flex items-center justify-center
-        w-fit px-1.5 py-1
-        text-16 text-white-main font-bold leading-150 font-pretendard 
-        rounded-004 whitespace-nowrap
-        bg-bg-brand-dark-default
+        font-pretendard
+        leading-150
+        rounded-004
+        cursor-pointer
+        whitespace-nowrap
     }
-
-    .btn-base {
+    .btn, .btn-base {
         @apply
-        flex gap-1 items-center justify-center
-        w-fit h-2.5
-        
+        flex items-center justify-center
+        w-fit
     }
+    .btn-mask-box {
+        @apply
+        flex items-center justify-center
+    }
+    .btn.disabled { @apply cursor-default }
+}
 
-    /* .btn-brand-contained {
+@utility btn-size-* { 
+    padding : --value(--btn-padding-*);
+    font-size : --value(--font-size-*);
+    font-weight : --value(--font-weight-*);
+    & .btn-base{
+        height: --value(--btn-base-height-*);
+        gap: --value(--btn-base-gap-*);
+        & .btn-mask-box{
+            width: --value(--btn-mask-box-w-*);
+        }
+    }
+}
 
-    } */
-    
+@utility btn-contained-color-* { 
+    background-color : --value(--btn-contained-bg-*);
+    color : --value(--btn-contained-fg-*);
+    &:hover {
+        background-color : --value(--btn-contained-hover-bg-*);
+        color : --value(--btn-contained-hover-fg-*);
+    }
+    &:focus {
+        background-color : --value(--btn-contained-focus-bg-*);
+        color : --value(--btn-contained-focus-fg-*);
+    }
+    &:active {
+        background-color : --value(--btn-contained-active-bg-*);
+        color : --value(--btn-contained-active-fg-*);
+    }
+    &.disabled { 
+        color : var(--color-fg-disabled-main);
+        background-color : var(--color-bg-disabled-main); 
+    }
+}
+
+@utility btn-outlined-color-* { 
+    background-color : --value(--btn-outlined-bg-*);
+    color : --value(--btn-outlined-fg-*);
+    border : 1px solid;
+    border-color : --value(--btn-outlined-stroke-*);
+    &:hover {
+        background-color : --value(--btn-outlined-hover-bg-*);
+    }
+    &:focus {
+        background-color : --value(--btn-outlined-focus-bg-*);
+    }
+    &:active {
+        background-color : --value(--btn-outlined-active-bg-*);
+    }
+    &.disabled { 
+        color : var(--color-fg-disabled-main);
+        border-color : var(--color-stroke-disabled-main);
+        background-color : transparent !important;
+    }
+}
+
+@utility btn-text-color-* { 
+    color : --value(--btn-text-fg-*);
+    &:hover {
+        background-color : --value(--btn-text-hover-bg-*);
+    }
+    &:focus {
+        background-color : --value(--btn-text-focus-bg-*);
+    }
+    &:active {
+        background-color : --value(--btn-text-active-bg-*);
+    }
+    &.disabled { 
+        color : var(--color-fg-disabled-main);
+        background-color : transparent !important;
+    }
 }
