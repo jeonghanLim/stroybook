@@ -7,7 +7,7 @@ import { typography } from 'storybook/internal/theming';
 
 // 사용자가 선택할 속성들 (사이즈, 타입)
 /** Primary UI component for user interaction */
-export const Button = ({ primary, variant, size, color, label, startIcon, endIcon, disabled, ...props }) => {  
+export const Button = ({ variant, size, color, label, startIcon, endIcon, disabled, ...props }) => {  
 
   let sizeClass = "";
   let colorClass = "";
@@ -54,7 +54,7 @@ Button.propTypes = {
   /** How large should the button be? */
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
   /** How large should the button be? */
-  variant : PropTypes.oneOf(['contained', 'outlined']),
+  variant : PropTypes.oneOf(['contained', 'outlined', 'text']),
   /** How large should the button be? */
   color : PropTypes.oneOf(['brand', 'neutral']),
   /** Button contents */
