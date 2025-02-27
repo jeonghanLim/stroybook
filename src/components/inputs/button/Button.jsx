@@ -2,9 +2,6 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
-import '@styles/001_theme.css';
-import { typography } from 'storybook/internal/theming';
-
 // 사용자가 선택할 속성들 (사이즈, 타입)
 /** Primary UI component for user interaction */
 export const Button = ({ variant, size, color, label, startIcon, endIcon, disabled, ...props }) => {  
@@ -37,7 +34,9 @@ export const Button = ({ variant, size, color, label, startIcon, endIcon, disabl
         {startIcon &&
           <span className="btn-mask-box">{startIcon}</span>
         }
-        <span className="label">{label}</span>
+        <span className="label">
+            {label}
+        </span>
         {endIcon &&
           <span className="btn-mask-box">{endIcon}</span>
         }

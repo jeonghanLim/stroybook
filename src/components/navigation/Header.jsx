@@ -3,9 +3,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Button } from '@/components/inputs/button/Button';
-import '@styles/001_theme.css';
-import '@styles/002_components_theme.css';
-import '@styles/003_components_styles.css';
 
 export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
   <header>

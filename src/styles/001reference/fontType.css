@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* =============================
-      Pretendard
+    Pretendard
 ============================= */
 
 @font-face {
@@ -66,3 +66,7 @@
 	font-display: swap;
 	src: local('Pretendard Thin'), url('../../public/fonts/Pretendard-Thin.woff2') format('woff2'), url('../../public/fonts/Pretendard-Thin.woff') format('woff');
 }
+
+/* =============================
+      Pretendard END
+============================= */

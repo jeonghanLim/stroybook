@@ -1,4 +1,7 @@
-@import "./001_theme.css";
+@import "tailwindcss";
+@import "../001reference/color.css";
+@import "../001reference/effect.css";
+@import "../001reference/size.css";
 
 @layer components {
 
@@ -220,8 +223,6 @@
     /* 2. button */
     .btn { 
         @apply 
-        font-pretendard
-        leading-150
         rounded-004
         cursor-pointer
         whitespace-nowrap
@@ -236,76 +237,4 @@
         flex items-center justify-center
     }
     .btn.disabled { @apply cursor-default }
-}
-
-@utility btn-size-* { 
-    padding : --value(--btn-padding-*);
-    font-size : --value(--font-size-*);
-    font-weight : --value(--font-weight-*);
-    & .btn-base{
-        height: --value(--btn-base-height-*);
-        gap: --value(--btn-base-gap-*);
-        & .btn-mask-box{
-            width: --value(--btn-mask-box-w-*);
-        }
-    }
-}
-
-@utility btn-contained-color-* { 
-    background-color : --value(--btn-contained-bg-*);
-    color : --value(--btn-contained-fg-*);
-    &:hover {
-        background-color : --value(--btn-contained-hover-bg-*);
-        color : --value(--btn-contained-hover-fg-*);
-    }
-    &:focus {
-        background-color : --value(--btn-contained-focus-bg-*);
-        color : --value(--btn-contained-focus-fg-*);
-    }
-    &:active {
-        background-color : --value(--btn-contained-active-bg-*);
-        color : --value(--btn-contained-active-fg-*);
-    }
-    &.disabled { 
-        color : var(--color-fg-disabled-main);
-        background-color : var(--color-bg-disabled-main); 
-    }
-}
-
-@utility btn-outlined-color-* { 
-    background-color : --value(--btn-outlined-bg-*);
-    color : --value(--btn-outlined-fg-*);
-    border : 1px solid;
-    border-color : --value(--btn-outlined-stroke-*);
-    &:hover {
-        background-color : --value(--btn-outlined-hover-bg-*);
-    }
-    &:focus {
-        background-color : --value(--btn-outlined-focus-bg-*);
-    }
-    &:active {
-        background-color : --value(--btn-outlined-active-bg-*);
-    }
-    &.disabled { 
-        color : var(--color-fg-disabled-main);
-        border-color : var(--color-stroke-disabled-main);
-        background-color : transparent !important;
-    }
-}
-
-@utility btn-text-color-* { 
-    color : --value(--btn-text-fg-*);
-    &:hover {
-        background-color : --value(--btn-text-hover-bg-*);
-    }
-    &:focus {
-        background-color : --value(--btn-text-focus-bg-*);
-    }
-    &:active {
-        background-color : --value(--btn-text-active-bg-*);
-    }
-    &.disabled { 
-        color : var(--color-fg-disabled-main);
-        background-color : transparent !important;
-    }
 }

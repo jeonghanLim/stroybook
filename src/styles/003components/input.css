@@ -1,0 +1,123 @@
+@import "tailwindcss";
+@import "../001reference/color.css";
+@import "../001reference/effect.css";
+@import "../001reference/size.css";
+@import "../002system/input.css";
+
+
+/* ===================== */
+/* BTN                   */
+/* ===================== */
+
+@utility btn-size-* { 
+    padding : --value(--btn-padding-*);
+    font-size : --value(--font-size-*);
+    font-weight : --value(--font-weight-*);
+    & .btn-base{
+        height: --value(--btn-base-height-*);
+        gap: --value(--btn-base-gap-*);
+        & .btn-mask-box{
+            width: --value(--btn-mask-box-w-*);
+        }
+    }
+}
+
+@utility btn-contained-color-* { 
+    background-color : --value(--btn-contained-bg-*);
+    color : --value(--btn-contained-fg-*);
+    &:hover {
+        background-color : --value(--btn-contained-bg-*-hover);
+        color : --value(--btn-contained-fg-*-hover);
+    }
+    &:focus {
+        background-color : --value(--btn-contained-bg-*-focus);
+        color : --value(--btn-contained-fg-*-focus);
+    }
+    &:active {
+        background-color : --value(--btn-contained-bg-*-active);
+        color : --value(--btn-contained-fg-*-active);
+    }
+    &.disabled { 
+        background-color : --value(--btn-contained-bg-*-disabled);
+        color : --value(--btn-contained-fg-*-disabled);
+    }
+}
+
+@utility btn-outlined-color-* { 
+    background-color : --value(--btn-outlined-bg-*);
+    color : --value(--btn-outlined-fg-*);
+    border : 1px solid;
+    border-color : --value(--btn-outlined-stroke-*);
+    &:hover {
+        background-color : --value(--btn-outlined-bg-*-hover);
+    }
+    &:focus {
+        background-color : --value(--btn-outlined-bg-*-focus);
+    }
+    &:active {
+        background-color : --value(--btn-outlined-bg-*-active);
+    }
+    &.disabled { 
+        color : --value(--btn-outlined-fg-*-disabled);
+        border-color : --value(--btn-outlined-stroke-*-disabled);
+        background-color : transparent !important;
+    }
+}
+
+@utility btn-text-color-* { 
+    color : --value(--btn-text-fg-*);
+    &:hover {
+        background-color : --value(--btn-text-bg-*-hover);
+    }
+    &:focus {
+        background-color : --value(--btn-text-bg-*-focus);
+    }
+    &:active {
+        background-color : --value(--btn-text-bg-*-active);
+    }
+    &.disabled { 
+        color : --value(--btn-text-fg-*-disabled);
+        background-color : transparent !important;
+    }
+}
+
+/* ===================== */
+/* BTN END              */
+/* ===================== */
+
+
+/* ===================== */
+/* CHECK BOX             */
+/* ===================== */
+
+/* ===================== */
+/* CHECK BOX END         */
+/* ===================== */
+
+
+/* ===================== */
+/* RADIO GROUP           */
+/* ===================== */
+
+/* ===================== */
+/* RADIO GROUP END       */
+/* ===================== */
+
+
+/* ===================== */
+/* TEXT FIELD            */
+/* ===================== */
+
+/* ===================== */
+/* TEXT FIELD END        */
+/* ===================== */
+
+
+/* ===================== */
+/* SELECT                */
+/* ===================== */
+    
+/* ===================== */
+/* SELECT END            */
+/* ===================== */
+
