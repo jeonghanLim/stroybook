@@ -46,26 +46,23 @@ export const Button = ({ variant, size, color, label, startIcon, endIcon, disabl
 };
 
 Button.propTypes = {
-  /** Is this the principal call to action on the page? */
-  primary: PropTypes.bool,
-  /** What background color to use */
-  backgroundColor: PropTypes.string,
+  /** How large should the button be? */
+  color : PropTypes.oneOf(['brand', 'neutral']),
   /** How large should the button be? */
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
   /** How large should the button be? */
   variant : PropTypes.oneOf(['contained', 'outlined', 'text']),
-  /** How large should the button be? */
-  color : PropTypes.oneOf(['brand', 'neutral']),
   /** Button contents */
   label: PropTypes.string.isRequired,
   /** Optional click handler */
   onClick: PropTypes.func,
+
   disabled : PropTypes.bool,
 };
 
 Button.defaultProps = {
-  backgroundColor: null,
-  primary: false,
-  size: 'medium',
+  color: 'brand',
+  size: 'md',
+  variant: 'contained',
   onClick: undefined,
 };

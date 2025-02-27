@@ -1,8 +1,11 @@
 @import "tailwindcss";
+@import "../001reference/color.css";
+@import "../001reference/font.css";
+@import "../001reference/size.css";
+@import "../001reference/fontType.css";
 
 @theme {
     
-
     /* ===================== */
     /* BTN                   */
     /* ===================== */
@@ -40,57 +43,57 @@
     /* 5. variant & color */
     /* 5-1) contained */
     /* brand */
-    --btn-contained-bg-brand : var(--color-bg-brand-dark-default);
-    --btn-contained-fg-brand : var(--color-fg-brand-contrast);
-    --btn-contained-bg-brand-hover : var(--color-bg-brand-dark-pressed);
-    --btn-contained-bg-brand-focus : var(--color-bg-brand-dark-pressed);
-    --btn-contained-bg-brand-active : var(--color-bg-brand-dark-pressed);
-    --btn-contained-bg-brand-disabled : var(--color-bg-disabled-main);
-    --btn-contained-fg-brand-disabled : var(--color-fg-disabled-main);   
+    --btn-contained-bg-brand : var(--color-palette-bg-brand-dark-default);
+    --btn-contained-fg-brand : var(--color-palette-fg-brand-contrast);
+    --btn-contained-bg-brand-hover : var(--color-palette-bg-brand-dark-pressed);
+    --btn-contained-bg-brand-focus : var(--color-palette-bg-brand-dark-pressed);
+    --btn-contained-bg-brand-active : var(--color-palette-bg-brand-dark-pressed);
+    --btn-contained-bg-brand-disabled : var(--color-palette-bg-disabled-main);
+    --btn-contained-fg-brand-disabled : var(--color-palette-fg-disabled-main);   
     /* neutral */
-    --btn-contained-bg-neutral : var(--color-bg-neutral-dark-default);
-    --btn-contained-fg-neutral : var(--color-fg-neutral-contrast);
-    --btn-contained-bg-neutral-hover : var(--color-bg-neutral-dark-pressed);
-    --btn-contained-bg-neutral-focus : var(--color-bg-neutral-dark-pressed);
-    --btn-contained-bg-neutral-active : var(--color-bg-neutral-dark-pressed);
-    --btn-contained-bg-neutral-disabled : var(--color-bg-disabled-main);
-    --btn-contained-fg-neutral-disabled : var(--color-fg-disabled-main);
+    --btn-contained-bg-neutral : var(--color-palette-bg-neutral-dark-default);
+    --btn-contained-fg-neutral : var(--color-palette-fg-neutral-contrast);
+    --btn-contained-bg-neutral-hover : var(--color-palette-bg-neutral-dark-pressed);
+    --btn-contained-bg-neutral-focus : var(--color-palette-bg-neutral-dark-pressed);
+    --btn-contained-bg-neutral-active : var(--color-palette-bg-neutral-dark-pressed);
+    --btn-contained-bg-neutral-disabled : var(--color-palette-bg-disabled-main);
+    --btn-contained-fg-neutral-disabled : var(--color-palette-fg-disabled-main);
 
     /* 5-2) outlined */
     /* brand */
-    --btn-outlined-bg-brand : var(--color-bg-overlay-white-light);
-    --btn-outlined-fg-brand : var(--color-fg-brand-main);
-    --btn-outlined-stroke-brand : var(--color-stroke-brand-main);
-    --btn-outlined-bg-brand-hover : var(--color-bg-overlay-brand-light);
-    --btn-outlined-bg-brand-focus : var(--color-bg-overlay-brand-light);
-    --btn-outlined-bg-brand-active : var(--color-bg-overlay-brand-light);
-    --btn-outlined-fg-brand-disabled : var(--color-fg-disabled-main);
-    --btn-outlined-stroke-brand-disabled : var(--color-stroke-disabled-main);
+    --btn-outlined-bg-brand : var(--color-palette-bg-overlay-white-light);
+    --btn-outlined-fg-brand : var(--color-palette-fg-brand-main);
+    --btn-outlined-stroke-brand : var(--color-palette-stroke-brand-main);
+    --btn-outlined-bg-brand-hover : var(--color-palette-bg-overlay-brand-light);
+    --btn-outlined-bg-brand-focus : var(--color-palette-bg-overlay-brand-light);
+    --btn-outlined-bg-brand-active : var(--color-palette-bg-overlay-brand-light);
+    --btn-outlined-fg-brand-disabled : var(--color-palette-fg-disabled-main);
+    --btn-outlined-stroke-brand-disabled : var(--color-palette-stroke-disabled-main);
     /* neutral */
-    --btn-outlined-bg-neutral : var(--color-bg-overlay-white-light);
-    --btn-outlined-fg-neutral : var(--color-fg-neutral-main);
-    --btn-outlined-stroke-neutral : var(--color-stroke-neutral-main);
-    --btn-outlined-bg-neutral-hover : var(--color-bg-overlay-neutral-light);
-    --btn-outlined-bg-neutral-focus : var(--color-bg-overlay-neutral-light);
-    --btn-outlined-bg-neutral-active : var(--color-bg-overlay-neutral-light);
-    --btn-outlined-fg-neutral-disabled : var(--color-fg-disabled-main);
-    --btn-outlined-stroke-neutral-disabled : var(--color-stroke-disabled-main);
+    --btn-outlined-bg-neutral : var(--color-palette-bg-overlay-white-light);
+    --btn-outlined-fg-neutral : var(--color-palette-fg-neutral-main);
+    --btn-outlined-stroke-neutral : var(--color-palette-stroke-neutral-main);
+    --btn-outlined-bg-neutral-hover : var(--color-palette-bg-overlay-neutral-light);
+    --btn-outlined-bg-neutral-focus : var(--color-palette-bg-overlay-neutral-light);
+    --btn-outlined-bg-neutral-active : var(--color-palette-bg-overlay-neutral-light);
+    --btn-outlined-fg-neutral-disabled : var(--color-palette-fg-disabled-main);
+    --btn-outlined-stroke-neutral-disabled : var(--color-palette-stroke-disabled-main);
 
     /* 5-3) text */
     /* brand */
-    --btn-text-fg-brand : var(--color-fg-brand-main);
+    --btn-text-fg-brand : var(--color-palette-fg-brand-main);
     --btn-text-bg-brand : ''; /* 감지용 */
-    --btn-text-bg-brand-hover : var(--color-bg-overlay-brand-light);
-    --btn-text-bg-brand-focus : var(--color-bg-overlay-brand-light);
-    --btn-text-bg-brand-active : var(--color-bg-overlay-brand-light);
-    --btn-text-fg-brand-disabled : var(--color-fg-disabled-main);
+    --btn-text-bg-brand-hover : var(--color-palette-bg-overlay-brand-light);
+    --btn-text-bg-brand-focus : var(--color-palette-bg-overlay-brand-light);
+    --btn-text-bg-brand-active : var(--color-palette-bg-overlay-brand-light);
+    --btn-text-fg-brand-disabled : var(--color-palette-fg-disabled-main);
     /* neutral */
-    --btn-text-fg-neutral : var(--color-fg-neutral-main);
+    --btn-text-fg-neutral : var(--color-palette-fg-neutral-main);
     --btn-text-bg-neutral : ''; /* 감지용 */
-    --btn-text-bg-neutral-hover : var(--color-bg-overlay-neutral-light);
-    --btn-text-bg-neutral-focus : var(--color-bg-overlay-neutral-light);
-    --btn-text-bg-neutral-active : var(--color-bg-overlay-neutral-light);
-    --btn-text-fg-neutral-disabled : var(--color-fg-disabled-main);
+    --btn-text-bg-neutral-hover : var(--color-palette-bg-overlay-neutral-light);
+    --btn-text-bg-neutral-focus : var(--color-palette-bg-overlay-neutral-light);
+    --btn-text-bg-neutral-active : var(--color-palette-bg-overlay-neutral-light);
+    --btn-text-fg-neutral-disabled : var(--color-palette-fg-disabled-main);
 
     /* ===================== */
     /* BTN END         */

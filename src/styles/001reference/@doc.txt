@@ -1,0 +1,22 @@
+
+
+/* 
+--color-*	bg-red-500, text-sky-300, 등과 같은 색상 유틸리티
+--font-*	글꼴 패밀리 유틸리티와 같은font-sans
+--text-*	글꼴 크기 유틸리티와 같은text-xl
+--font-weight-*	글꼴 두께 유틸리티와 같은font-bold
+--tracking-*	문자 간격 유틸리티와 같은tracking-wide
+--leading-*	줄 높이 유틸리티와 같은leading-tight
+--breakpoint-*	다음과 같은 반응형 중단점 변형sm:*
+--container-*	컨테이너 쿼리 변형 @sm:*및 크기 유틸리티와 같은max-w-md
+--spacing-*	px-4, max-h-16등과 같은 간격 및 크기 조정 유틸리티
+--radius-*	다음과 같은 경계 반경 유틸리티rounded-sm
+--shadow-*	상자 그림자 유틸리티와 같은shadow-md
+--inset-shadow-*	인셋 박스 그림자 유틸리티와 같은inset-shadow-xs
+--drop-shadow-*	드롭 섀도 필터 유틸리티는 다음과 같습니다.drop-shadow-md
+--blur-*	블러 필터 유틸리티와 같은blur-md
+--perspective-*	다음과 같은 관점 유틸리티perspective-near
+--aspect-*	종횡비 유틸리티와 같은aspect-video
+--ease-*	전환 타이밍 기능 유틸리티와 같은ease-out
+--animate-*	애니메이션 유틸리티와 같은animate-spin
+*/
