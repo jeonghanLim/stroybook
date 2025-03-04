@@ -25,11 +25,11 @@
     --btn-base-height-sm: calc(var(--spacing) * 2.5);
     --btn-base-height-md: calc(var(--spacing) * 2.5);
     --btn-base-height-lg: calc(var(--spacing) * 3);
-    --btn-base-gap-sm: calc(var(--spacing) * 0.5);
+    --btn-base-gap-sm: calc(var(--spacing) * 1);
     --btn-base-gap-md: calc(var(--spacing) * 1);
     --btn-base-gap-lg: calc(var(--spacing) * 1);
-    --btn-mask-box-w-sm: calc(var(--spacing) * 1);
-    --btn-mask-box-w-md: calc(var(--spacing) * 1.5);
+    --btn-mask-box-w-sm: calc(var(--spacing) * 0.5);
+    --btn-mask-box-w-md: calc(var(--spacing) * ㅇ1.5);
     --btn-mask-box-w-lg: calc(var(--spacing) * 2);
     /* variant_&_color */
     --btn-contained-bg-brand: var(--color-palette-bg-brand-dark-default);

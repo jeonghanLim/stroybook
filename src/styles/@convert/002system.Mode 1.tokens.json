@@ -70,7 +70,7 @@
         },
         "--btn-base-gap-sm": {
           "$type": "dimension",
-          "$value": "{size.spacing.0,5}"
+          "$value": "{size.spacing.1}"
         },
         "--btn-base-gap-md": {
           "$type": "dimension",
@@ -82,7 +82,7 @@
         },
         "--btn-mask-box-w-sm": {
           "$type": "dimension",
-          "$value": "{size.spacing.1}"
+          "$value": "{size.spacing.0,5}"
         },
         "--btn-mask-box-w-md": {
           "$type": "dimension",
