@@ -453,6 +453,10 @@
             "$value": "#f4fafe",
             "$description": "surface"
           }
+        },
+        "non": {
+          "$type": "color",
+          "$value": "#00000000"
         }
       },
       "palette": {
@@ -771,7 +775,7 @@
               "$value": "{color.color.material.black.alpha.024}"
             }
           },
-          "palceholder": {
+          "placeholder": {
             "main": {
               "$type": "color",
               "$value": "{color.color.material.classicblueGray.500}"
@@ -868,6 +872,12 @@
               "$type": "color",
               "$value": "{color.color.material.black.alpha.008}"
             }
+          }
+        },
+        "non": {
+          "non": {
+            "$type": "color",
+            "$value": "{color.color.material.non}"
           }
         }
       }
