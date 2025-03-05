@@ -5,239 +5,63 @@
 @import "../001reference/font.css";
 @import "../001reference/fontType.css";
 
-
 @layer components {
 
-    /* 1. typography */
+    /* 컴포넌트를 사용하지 않는 본문 텍스트에 사용 */
 
-    /* 1-1) heading */
-    .heading-001 {
-        @apply
-            font-pretendard
-            font-semiBold
-            text-90
-            leading-120
-    }
-    .heading-002 {
-        @apply
-            font-pretendard
-            font-semiBold
-            text-56
-            leading-120
-    }
-    .heading-003 {
-        @apply
-            font-pretendard
-            font-semiBold
-            text-48
-            leading-120
-    }
-    .heading-004 {
-        @apply
-            font-pretendard
-            font-semiBold
-            text-40
-            leading-120
-    }
-    /* 1-2) title */
-    .title-001 {
-        @apply
-            font-pretendard
-            font-semiBold
-            text-32
-            leading-130
-    }
-    .title-002 {
-        @apply
-            font-pretendard
-            font-bold
-            text-24
-            leading-150
-    }
-    .title-003 {
-        @apply
-            font-pretendard
-            font-bold
-            text-20
-            leading-150
-    }
-    /* 1-3) subTitle */
-    .subTitle-001Semibold {
-        @apply
-            font-pretendard
-            font-semiBold
-            text-18
-            leading-150
-    }
-    .subTitle-001Medium {
-        @apply
-            font-pretendard
-            font-medium
-            text-18
-            leading-150
-    }
-    .subTitle-002SemiBold {
-        @apply
-            font-pretendard
-            font-semiBold
-            text-16
-            leading-150
-    }
-    .subTitle-002Medium {
-        @apply
-            font-pretendard
-            font-medium
-            text-16
-            leading-175
-    }
-    /* 1-4) body */
-    .body-001 {
-        @apply
-            font-pretendard
-            font-regular
-            text-16
-            leading-175
-    }
-    .body-002 {
-        @apply
-            font-pretendard
-            font-regular
-            text-15
-            leading-175
-    }
-    .body-003 {
-        @apply
-            font-pretendard
-            font-regular
-            text-14
-            leading-175
-    }
-    .body-004 {
-        @apply
-            font-pretendard
-            font-regular
-            text-13
-            leading-175
-    }
-    /* 1-5) caption */
-    .caption-001 {
-        @apply
-            font-pretendard
-            font-medium
-            text-12
-            leading-150
-    }
-    .caption-002 {
-        @apply
-            font-pretendard
-            font-medium
-            text-10
-            leading-150
-    }
-    /* 1-6) overline */
-    .overline-001 {
-        @apply
-            font-pretendard
-            font-medium
-            text-12
-            leading-200
-    }
-    /* 1-7) label */
-    .label-001Bold {
-        @apply
-            font-pretendard
-            font-bold
-            text-18
-            leading-150
-    }
-    .label-001Medium {
-        @apply
-            font-pretendard
-            font-medium
-            text-18
-            leading-150
-    }
-    .label-002Bold {
-        @apply
-            font-pretendard
-            font-bold
-            text-16
-            leading-150
-    }
-    .label-002Medium {
-        @apply
-            font-pretendard
-            font-medium
-            text-16
-            leading-150
-    }
-    .label-003 {
-        @apply
-            font-pretendard
-            font-semiBold
-            text-15
-            leading-150
-    }
-    .label-004 {
-        @apply
-            font-pretendard
-            font-semiBold
-            text-14
-            leading-150
-    }   
-    .label-005 {
-        @apply
-            font-pretendard
-            font-semiBold
-            text-13
-            leading-150
-    }
-    /* 1-8) value */
-    .value-001 {
-        @apply
-            font-pretendard
-            font-medium
-            text-16
-            leading-175
-    }
-    .value-002 {
-        @apply
-            font-pretendard
-            font-medium
-            text-15
-            leading-175
-    }
-    .value-003 {
-        @apply
-            font-pretendard
-            font-medium
-            text-14
-            leading-175
-    }
-    /* 1-9) helper */
-    .helper-001 {
-        @apply
-            font-pretendard
-            font-regular
-            text-16
-            leading-175
-    }
+    /* 1. Typography */
 
-    /* 2. button */
-    .btn { 
-        @apply 
-        rounded-004
-        cursor-pointer
-        whitespace-nowrap
-    }
-    .btn, .btn-base {
-        @apply
-        flex items-center justify-center
-        w-fit
-    }
-    .btn-mask-box {
-        @apply
-        flex items-center justify-center
-    }
+    /* 1-1) Heading */
+    .heading-001 { @apply font-pretendard font-semiBold text-90 leading-120 }
+    .heading-002 { @apply font-pretendard font-semibold text-56 leading-120 }
+    .heading-003 { @apply font-pretendard font-semiBold text-48 leading-120 }
+    .heading-004 { @apply font-pretendard font-semiBold text-40 leading-120 }
+
+    /* 1-2) Title */
+    .title-001 { @apply font-pretendard font-semiBold text-32 leading-130 }
+    .title-002 { @apply font-pretendard font-bold text-24 leading-150 }
+    .title-003 { @apply font-pretendard font-bold text-20 leading-150 }
+
+    /* 1-3) Subtitle */
+    .subTitle-001Semibold { @apply font-pretendard font-semiBold text-18 leading-150 }
+    .subTitle-001Medium { @apply font-pretendard font-medium text-18 leading-150 }
+    .subTitle-002SemiBold { @apply font-pretendard font-semiBold text-16 leading-150 }
+    .subTitle-002Medium { @apply font-pretendard font-medium text-16 leading-175 }
+
+    /* 1-4) Body */
+    .body-001 { @apply font-pretendard font-regular text-16 leading-175 }
+    .body-002 { @apply font-pretendard font-regular text-15 leading-175 }
+    .body-003 { @apply font-pretendard font-regular text-14 leading-175 }
+    .body-004 { @apply font-pretendard font-regular text-13 leading-175 }
+
+    /* 1-5) Caption */
+    .caption-001 { @apply font-pretendard font-medium text-12 leading-150 }
+    .caption-002 { @apply font-pretendard font-medium text-10 leading-150 }
+
+    /* 1-6) Overline */
+    .overline-001 { @apply font-pretendard font-medium text-12 leading-200 }
+
+    /* 1-7) Label */
+    .label-001Bold { @apply font-pretendard font-bold text-18 leading-150 }
+    .label-001Medium { @apply font-pretendard font-medium text-18 leading-150 }
+    .label-002Bold { @apply font-pretendard font-bold text-16 leading-150 }
+    .label-002Medium { @apply font-pretendard font-medium text-16 leading-150 }
+    .label-003 { @apply font-pretendard font-semiBold text-15 leading-150 }
+    .label-004 { @apply font-pretendard font-semiBold text-14 leading-150 }
+    .label-005 { @apply font-pretendard font-semiBold text-13 leading-150 }
+
+    /* 1-8) Value */
+    .value-001 { @apply font-pretendard font-medium text-16 leading-175 }
+    .value-002 { @apply font-pretendard font-medium text-15 leading-175 }
+    .value-003 { @apply font-pretendard font-medium text-14 leading-175 }
+
+    /* 1-9) Helper */
+    .helper-001 { @apply font-pretendard font-regular text-16 leading-175 }
+
+    /* 2. Button */
+    .btn { @apply rounded-004 cursor-pointer whitespace-nowrap }
+    .btn, .btn-base { @apply flex items-center justify-center w-fit }
+    .btn-mask-box { @apply flex items-center justify-center }
     .btn.disabled { @apply cursor-default }
+
 }
