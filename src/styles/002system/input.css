@@ -21,7 +21,7 @@
     --font-weight-sm: var(--font-weight-semiBold);
     --font-weight-md: var(--font-weight-bold);
     --font-weight-lg: var(--font-weight-bold);
-    /* base */
+    /* base-size */
     --btn-base-height-sm: calc(var(--spacing) * 2.5);
     --btn-base-height-md: calc(var(--spacing) * 2.5);
     --btn-base-height-lg: calc(var(--spacing) * 3);
@@ -29,9 +29,9 @@
     --btn-base-gap-md: calc(var(--spacing) * 1);
     --btn-base-gap-lg: calc(var(--spacing) * 1);
     --btn-mask-box-w-sm: calc(var(--spacing) * 0.5);
-    --btn-mask-box-w-md: calc(var(--spacing) * ㅇ1.5);
+    --btn-mask-box-w-md: calc(var(--spacing) * 1.5);
     --btn-mask-box-w-lg: calc(var(--spacing) * 2);
-    /* variant_&_color */
+    /* contained-colors */
     --btn-contained-bg-brand: var(--color-palette-bg-brand-dark-default);
     --btn-contained-fg-brand: var(--color-palette-fg-brand-contrast);
     --btn-contained-bg-brand-hover: var(--color-palette-bg-brand-dark-pressed);
@@ -47,6 +47,7 @@
     --btn-contained-bg-neutral-focus_2: var(--color-palette-bg-neutral-dark-pressed);
     --btn-contained-fg-neutral-disabled: var(--color-palette-fg-disabled-main);
     --btn-contained-bg-neutral-disabled: var(--color-palette-bg-disabled-main);
+    /* outlined-colors */
     --btn-outlined-bg-brand: var(--color-palette-bg-overlay-white-light);
     --btn-outlined-fg-brand: var(--color-palette-fg-brand-main);
     --btn-outlined-stroke-brand: var(--color-palette-stroke-brand-main);
@@ -63,6 +64,7 @@
     --btn-outlined-bg-neutral-active: var(--color-palette-bg-overlay-neutral-light);
     --btn-outlined-fg-neutral-disabled: var(--color-palette-fg-disabled-main);
     --btn-outlined-storke-neutral-disabled: var(--color-palette-stroke-disabled-main);
+    /* text-colors */
     --btn-text-fg-brand: var(--color-palette-fg-brand-main);
     --btn-text-bg-brand: var(--color-palette-non-non); /* 감지용 */
     --btn-text-bg-brand-hover: var(--color-palette-bg-overlay-brand-light);
@@ -75,4 +77,25 @@
     --btn-text-bg-neutral-focus: var(--color-palette-bg-overlay-neutral-light);
     --btn-text-bg-neutral-active: var(--color-palette-bg-overlay-neutral-light);
     --btn-text-fg-neutral-disabled: var(--color-palette-fg-disabled-main);
+
+    /* 9. CHECKBOX */
+    /* ==================== */
+
+    /* size */
+    --checkBox-size-md-radius: var(--radius-004);
+    --checkBox-size-lg-radius: var(--radius-004);
+    --checkBox-size-md: calc(var(--spacing) * 2.5) calc(var(--spacing) * 2.5);
+    --checkBox-size-lg: calc(var(--spacing) * 3) calc(var(--spacing) * 3);
+    /* colors */
+    --checkBox-bg-brand: var(--color-palette-bg-brand-dark-default);
+    --checkBox-overlay-brand: var(--color-palette-bg-overlay-white-light);
+    --checkBox-stroke-brand: var(--color-palette-stroke-neutral-light);
+    --checkBox-fg-brand-contrast: var(--color-palette-fg-brand-contrast);
+    --checkBox-bg-neutral: var(--color-palette-bg-neutral-dark-default);
+    --checkBox-overlay-neutral: var(--color-palette-bg-overlay-white-light);
+    --checkBox-stroke-neutral: var(--color-palette-stroke-neutral-light);
+    --checkBox-fg-neutral-contrast: var(--color-palette-fg-neutral-contrast);
+    --checkBox-bg-disable: var(--color-palette-bg-disabled-main);
+    --checkBox-stroke-disable: var(--color-palette-stroke-disabled-main);
+    --checkBox-fg-disable: var(--color-palette-fg-disabled-main);
 }
