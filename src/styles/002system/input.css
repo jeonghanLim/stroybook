@@ -81,21 +81,41 @@
     /* 9. CHECKBOX */
     /* ==================== */
 
-    /* size */
-    --checkBox-size-md-radius: var(--radius-004);
-    --checkBox-size-lg-radius: var(--radius-004);
-    --checkBox-size-md: calc(var(--spacing) * 2.5) calc(var(--spacing) * 2.5);
-    --checkBox-size-lg: calc(var(--spacing) * 3) calc(var(--spacing) * 3);
-    /* colors */
+    /* font */
+    --checkLabel-font-size-label-lg: var(--text-20);
+    --checkLabel-font-size-label-md: var(--text-18);
+    --checkLabel-font-weight-label: var(--font-weight-medium);
+    --checkGroup-font-color-label: var(--color-palette-fg-neutral-black);
+    --checkGroup-font-size-title-lg: var(--text-24);
+    --checkGroup-font-size-title-md: var(--text-20);
+    --checkGroup-font-weight-title: var(--font-weight-semiBold);
+    --checkGroup-font-color-title: var(--color-palette-fg-neutral-black);
+    --checkGroup-font-size-helper: var(--text-13);
+    --checkGroup-font-weight-helper: var(--font-weight-medium);
+    --checkGroup-font-color-helper: var(--color-palette-fg-neutral-light);
+    --checkGroup-font-color-error: var(--color-palette-fg-error-main);
+    /* checkBox-colors */
+    --checkBox-overlay-bg-wait: var(--color-palette-bg-overlay-white-light);
+    --checkBox-stroke-wait: var(--color-palette-stroke-neutral-light);
     --checkBox-bg-brand: var(--color-palette-bg-brand-dark-default);
-    --checkBox-overlay-brand: var(--color-palette-bg-overlay-white-light);
-    --checkBox-stroke-brand: var(--color-palette-stroke-neutral-light);
     --checkBox-fg-brand-contrast: var(--color-palette-fg-brand-contrast);
     --checkBox-bg-neutral: var(--color-palette-bg-neutral-dark-default);
-    --checkBox-overlay-neutral: var(--color-palette-bg-overlay-white-light);
-    --checkBox-stroke-neutral: var(--color-palette-stroke-neutral-light);
     --checkBox-fg-neutral-contrast: var(--color-palette-fg-neutral-contrast);
     --checkBox-bg-disable: var(--color-palette-bg-disabled-main);
     --checkBox-stroke-disable: var(--color-palette-stroke-disabled-main);
     --checkBox-fg-disable: var(--color-palette-fg-disabled-main);
+    /* size */
+    --checkBox-size-md-radius: var(--radius-004);
+    --checkBox-size-lg-radius: var(--radius-004);
+    --checkLabel-size-gap-md: calc(var(--spacing) * 1.5);
+    --checkLabel-size-gap-lg: calc(var(--spacing) * 2);
+    --checkGroup-size-gap-md: calc(var(--spacing) * 2.5);
+    --checkGroup-size-gap-lg: calc(var(--spacing) * 3);
+    --checkBox-size-md: calc(var(--spacing) * 2.5) calc(var(--spacing) * 2.5);
+    --checkBox-size-lg: calc(var(--spacing) * 3) calc(var(--spacing) * 3);
+    /* check-colors */
+    --check-fg-wait: var(--color-palette-fg-neutral-mute);
+    --check-fg-brand: var(--color-palette-fg-brand-main);
+    --check-fg-neutral: var(--color-palette-fg-neutral-main);
+    --check-fg-disable: var(--color-palette-fg-disabled-main);
 }

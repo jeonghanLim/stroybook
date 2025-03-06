@@ -692,6 +692,10 @@
               "$type": "color",
               "$value": "{color.color.material.classicblueGray.900}"
             },
+            "mute": {
+              "$type": "color",
+              "$value": "{color.color.material.classicblueGray.100}"
+            },
             "contrast": {
               "$type": "color",
               "$value": "{color.color.material.white.main}"

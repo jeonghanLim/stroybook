@@ -273,6 +273,94 @@
       }
     },
     "checkBox": {
+      "font": {
+        "--checkLabel-font-size-label-lg": {
+          "$type": "dimension",
+          "$value": "{font.text.20}"
+        },
+        "--checkLabel-font-size-label-md": {
+          "$type": "dimension",
+          "$value": "{font.text.18}"
+        },
+        "--checkLabel-font-weight-label": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.medium}"
+        },
+        "--checkGroup-font-color-label": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.black}"
+        },
+        "--checkGroup-font-size-title-lg": {
+          "$type": "dimension",
+          "$value": "{font.text.24}"
+        },
+        "--checkGroup-font-size-title-md": {
+          "$type": "dimension",
+          "$value": "{font.text.20}"
+        },
+        "--checkGroup-font-weight-title": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.semiBold}"
+        },
+        "--checkGroup-font-color-title": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.black}"
+        },
+        "--checkGroup-font-size-helper": {
+          "$type": "dimension",
+          "$value": "{font.text.13}"
+        },
+        "--checkGroup-font-weight-helper": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.medium}"
+        },
+        "--checkGroup-font-color-helper": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.light}"
+        },
+        "--checkGroup-font-color-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.error.main}"
+        }
+      },
+      "checkBox-colors": {
+        "--checkBox-overlay-bg-wait": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.white.light}"
+        },
+        "--checkBox-stroke-wait": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.neutral.light}"
+        },
+        "--checkBox-bg-brand": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.brand.dark.default}"
+        },
+        "--checkBox-fg-brand-contrast": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.brand.contrast}"
+        },
+        "--checkBox-bg-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.neutral.dark.default}"
+        },
+        "--checkBox-fg-neutral-contrast": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.contrast}"
+        },
+        "--checkBox-bg-disable": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.disabled.main}"
+        },
+        "--checkBox-stroke-disable": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.disabled.main}"
+        },
+        "--checkBox-fg-disable": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.disabled.main}"
+        }
+      },
       "size": {
         "--checkBox-size-md-y": {
           "$type": "dimension",
@@ -297,50 +385,38 @@
         "--checkBox-size-lg-radius": {
           "$type": "dimension",
           "$value": "{size.radius.004}"
+        },
+        "--checkLabel-size-gap-md": {
+          "$type": "dimension",
+          "$value": "{size.spacing.1,5}"
+        },
+        "--checkLabel-size-gap-lg": {
+          "$type": "dimension",
+          "$value": "{size.spacing.2}"
+        },
+        "--checkGroup-size-gap-md": {
+          "$type": "dimension",
+          "$value": "{size.spacing.2,5}"
+        },
+        "--checkGroup-size-gap-lg": {
+          "$type": "dimension",
+          "$value": "{size.spacing.3}"
         }
       },
-      "colors": {
-        "--checkBox-bg-brand": {
+      "check-colors": {
+        "--check-fg-wait": {
           "$type": "color",
-          "$value": "{color.color.palette.bg.brand.dark.default}"
+          "$value": "{color.color.palette.fg.neutral.mute}"
         },
-        "--checkBox-overlay-brand": {
+        "--check-fg-brand": {
           "$type": "color",
-          "$value": "{color.color.palette.bg.overlay.white.light}"
+          "$value": "{color.color.palette.fg.brand.main}"
         },
-        "--checkBox-stroke-brand": {
+        "--check-fg-neutral": {
           "$type": "color",
-          "$value": "{color.color.palette.stroke.neutral.light}"
+          "$value": "{color.color.palette.fg.neutral.main}"
         },
-        "--checkBox-fg-brand-contrast": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.brand.contrast}"
-        },
-        "--checkBox-bg-neutral": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.neutral.dark.default}"
-        },
-        "--checkBox-overlay-neutral": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.overlay.white.light}"
-        },
-        "--checkBox-stroke-neutral": {
-          "$type": "color",
-          "$value": "{color.color.palette.stroke.neutral.light}"
-        },
-        "--checkBox-fg-neutral-contrast": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.contrast}"
-        },
-        "--checkBox-bg-disable": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.disabled.main}"
-        },
-        "--checkBox-stroke-disable": {
-          "$type": "color",
-          "$value": "{color.color.palette.stroke.disabled.main}"
-        },
-        "--checkBox-fg-disable": {
+        "--check-fg-disable": {
           "$type": "color",
           "$value": "{color.color.palette.fg.disabled.main}"
         }
