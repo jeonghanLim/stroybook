@@ -323,6 +323,56 @@
           "$value": "{color.color.palette.fg.error.main}"
         }
       },
+      "size": {
+        "--checkBox-touch-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.5,5}"
+        },
+        "--checkBox-touch-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.5,5}"
+        },
+        "--checkBox-size-md-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.2,5}"
+        },
+        "--checkBox-size-md-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.2,5}"
+        },
+        "--checkBox-size-md-radius": {
+          "$type": "dimension",
+          "$value": "{size.radius.004}"
+        },
+        "--checkBox-size-lg-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.3}"
+        },
+        "--checkBox-size-lg-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.3}"
+        },
+        "--checkBox-size-lg-radius": {
+          "$type": "dimension",
+          "$value": "{size.radius.004}"
+        },
+        "--checkLabel-size-gap-lg": {
+          "$type": "dimension",
+          "$value": "{size.spacing.1}"
+        },
+        "--checkLabel-size-gap-md": {
+          "$type": "dimension",
+          "$value": "{size.spacing.0,5}"
+        },
+        "--checkGroup-size-gap-lg": {
+          "$type": "dimension",
+          "$value": "{size.spacing.2,5}"
+        },
+        "--checkGroup-size-gap-md": {
+          "$type": "dimension",
+          "$value": "{size.spacing.1,5}"
+        }
+      },
       "checkBox-colors": {
         "--checkBox-overlay-bg-wait": {
           "$type": "color",
@@ -359,48 +409,6 @@
         "--checkBox-fg-disable": {
           "$type": "color",
           "$value": "{color.color.palette.fg.disabled.main}"
-        }
-      },
-      "size": {
-        "--checkBox-size-md-y": {
-          "$type": "dimension",
-          "$value": "{size.spacing.2,5}"
-        },
-        "--checkBox-size-md-x": {
-          "$type": "dimension",
-          "$value": "{size.spacing.2,5}"
-        },
-        "--checkBox-size-md-radius": {
-          "$type": "dimension",
-          "$value": "{size.radius.004}"
-        },
-        "--checkBox-size-lg-y": {
-          "$type": "dimension",
-          "$value": "{size.spacing.3}"
-        },
-        "--checkBox-size-lg-x": {
-          "$type": "dimension",
-          "$value": "{size.spacing.3}"
-        },
-        "--checkBox-size-lg-radius": {
-          "$type": "dimension",
-          "$value": "{size.radius.004}"
-        },
-        "--checkLabel-size-gap-md": {
-          "$type": "dimension",
-          "$value": "{size.spacing.1,5}"
-        },
-        "--checkLabel-size-gap-lg": {
-          "$type": "dimension",
-          "$value": "{size.spacing.2}"
-        },
-        "--checkGroup-size-gap-md": {
-          "$type": "dimension",
-          "$value": "{size.spacing.2,5}"
-        },
-        "--checkGroup-size-gap-lg": {
-          "$type": "dimension",
-          "$value": "{size.spacing.3}"
         }
       },
       "check-colors": {

@@ -1104,6 +1104,10 @@
       "2,5": {
         "$type": "dimension",
         "$value": "20px"
+      },
+      "5,5": {
+        "$type": "dimension",
+        "$value": "44px"
       }
     }
   }
