@@ -7,6 +7,14 @@
     /* SIZE THEME */
     /* ===================== */
 
+    --border-001 : 0.0625rem;
+    --border-002 : 0.125rem;
+    --border-003 : 0.1875rem;
+    --border-004 : 0.25rem;
+    --border-005 : 0.3125rem;
+    --border-006 : 0.375rem;
+    --border-007 : 0.4375rem;
+    --border-008 : 0.5rem;
     --radius-none : 0rem;
     --radius-004 : 0.25rem;
     --radius-008 : 0.5rem;

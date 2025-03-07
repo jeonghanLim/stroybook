@@ -101,6 +101,16 @@
     --checkLabel-size-gap-md: calc(var(--spacing) * 0.5);
     --checkGroup-size-gap-lg: calc(var(--spacing) * 2.5);
     --checkGroup-size-gap-md: calc(var(--spacing) * 1.5);
+    --checkBox-touch-x_2: calc(var(--spacing) * 5.5);
+    --checkBox-touch-y_2: calc(var(--spacing) * 5.5);
+    --checkBox-touch-x_3: calc(var(--spacing) * 5.5);
+    --checkBox-touch-y_3: calc(var(--spacing) * 5.5);
+    --checkBox-touch-x_4: calc(var(--spacing) * 5.5);
+    --checkBox-touch-y_4: calc(var(--spacing) * 5.5);
+    --checkBox-touch-x_5: calc(var(--spacing) * 5.5);
+    --checkBox-touch-y_5: calc(var(--spacing) * 5.5);
+    --checkBox-touch-x_6: calc(var(--spacing) * 5.5);
+    --checkBox-touch-y_6: calc(var(--spacing) * 5.5);
     --checkBox-touch: calc(var(--spacing) * 5.5) calc(var(--spacing) * 5.5);
     --checkBox-size-md: calc(var(--spacing) * 2.5) calc(var(--spacing) * 2.5);
     --checkBox-size-lg: calc(var(--spacing) * 3) calc(var(--spacing) * 3);
@@ -119,4 +129,44 @@
     --check-fg-brand: var(--color-palette-fg-brand-main);
     --check-fg-neutral: var(--color-palette-fg-neutral-main);
     --check-fg-disable: var(--color-palette-fg-disabled-main);
+
+    /* 14. RADIOGROUP */
+    /* ==================== */
+
+    /* font */
+    --radioLabel-size-lg: var(--text-20);
+    --radioLabel-weight-lg: var(--font-weight-medium);
+    --radioLabel-size-md: var(--text-18);
+    --radioLabel-weight-md: var(--font-weight-medium);
+    --radioLabel-color: var(--color-palette-fg-neutral-black);
+    --radioGroup-size-title-lg: var(--text-24);
+    --radioGroup-weight-title-lg: var(--font-weight-semiBold);
+    --radioGroup-size-title-md: var(--text-20);
+    --radioGroup-weight-title-md: var(--font-weight-semiBold);
+    --radioGroup-color-title: var(--color-palette-fg-neutral-black);
+    --radioGroup-size-helper: var(--text-13);
+    --radioGroup-weight-helper: var(--font-weight-medium);
+    --radioGroup-color-helper: var(--color-palette-fg-neutral-light);
+    --radioGroup-color-error: var(--color-palette-fg-error-main);
+    /* size */
+    --radio-base-radius: var(--radius-fill);
+    --radio-base-border-lg: var(--border-001);
+    --radio-base-border-true-lg: var(--border-007);
+    --radio-base-border-md: var(--border-001);
+    --radio-base-border-true-md: var(--border-006);
+    --radioLabel-gap-lg: calc(var(--spacing) * 1);
+    --radioLabel-gap-md: calc(var(--spacing) * 0.5);
+    --radioGroup-gap-lg: calc(var(--spacing) * 2.5);
+    --radioGroup-gap-md: calc(var(--spacing) * 1.5);
+    --radio-touch: calc(var(--spacing) * 5.5) calc(var(--spacing) * 5.5);
+    --radio-base-lg: calc(var(--spacing) * 3) calc(var(--spacing) * 3);
+    --radio-base-md: calc(var(--spacing) * 2.5) calc(var(--spacing) * 2.5);
+    /* radio-colors */
+    --radio-base-stroke: var(--color-palette-stroke-neutral-light);
+    --radio-base-bg: var(--color-palette-bg-overlay-white-light);
+    --radio-base-fg-brand: var(--color-palette-fg-brand-main);
+    --radio-base-fg-neutral: var(--color-palette-fg-neutral-main);
+    --radio-fg-disable: var(--color-palette-fg-disabled-main);
+    --radio-bg-disable: var(--color-palette-bg-disabled-main);
+    --radio-stroke-disable: var(--color-palette-stroke-disabled-main);
 }

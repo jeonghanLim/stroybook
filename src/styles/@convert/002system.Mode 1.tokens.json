@@ -371,6 +371,46 @@
         "--checkGroup-size-gap-md": {
           "$type": "dimension",
           "$value": "{size.spacing.1,5}"
+        },
+        "--checkBox-touch-x_2": {
+          "$type": "dimension",
+          "$value": "{size.spacing.5,5}"
+        },
+        "--checkBox-touch-y_2": {
+          "$type": "dimension",
+          "$value": "{size.spacing.5,5}"
+        },
+        "--checkBox-touch-x_3": {
+          "$type": "dimension",
+          "$value": "{size.spacing.5,5}"
+        },
+        "--checkBox-touch-y_3": {
+          "$type": "dimension",
+          "$value": "{size.spacing.5,5}"
+        },
+        "--checkBox-touch-x_4": {
+          "$type": "dimension",
+          "$value": "{size.spacing.5,5}"
+        },
+        "--checkBox-touch-y_4": {
+          "$type": "dimension",
+          "$value": "{size.spacing.5,5}"
+        },
+        "--checkBox-touch-x_5": {
+          "$type": "dimension",
+          "$value": "{size.spacing.5,5}"
+        },
+        "--checkBox-touch-y_5": {
+          "$type": "dimension",
+          "$value": "{size.spacing.5,5}"
+        },
+        "--checkBox-touch-x_6": {
+          "$type": "dimension",
+          "$value": "{size.spacing.5,5}"
+        },
+        "--checkBox-touch-y_6": {
+          "$type": "dimension",
+          "$value": "{size.spacing.5,5}"
         }
       },
       "checkBox-colors": {
@@ -427,6 +467,158 @@
         "--check-fg-disable": {
           "$type": "color",
           "$value": "{color.color.palette.fg.disabled.main}"
+        }
+      }
+    },
+    "radioGroup": {
+      "font": {
+        "--radioLabel-size-lg": {
+          "$type": "dimension",
+          "$value": "{font.text.20}"
+        },
+        "--radioLabel-weight-lg": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.medium}"
+        },
+        "--radioLabel-size-md": {
+          "$type": "dimension",
+          "$value": "{font.text.18}"
+        },
+        "--radioLabel-weight-md": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.medium}"
+        },
+        "--radioLabel-color": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.black}"
+        },
+        "--radioGroup-size-title-lg": {
+          "$type": "dimension",
+          "$value": "{font.text.24}"
+        },
+        "--radioGroup-weight-title-lg": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.semiBold}"
+        },
+        "--radioGroup-size-title-md": {
+          "$type": "dimension",
+          "$value": "{font.text.20}"
+        },
+        "--radioGroup-weight-title-md": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.semiBold}"
+        },
+        "--radioGroup-color-title": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.black}"
+        },
+        "--radioGroup-size-helper": {
+          "$type": "dimension",
+          "$value": "{font.text.13}"
+        },
+        "--radioGroup-weight-helper": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.medium}"
+        },
+        "--radioGroup-color-helper": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.light}"
+        },
+        "--radioGroup-color-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.error.main}"
+        }
+      },
+      "size": {
+        "--radio-touch-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.5,5}"
+        },
+        "--radio-touch-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.5,5}"
+        },
+        "--radio-base-radius": {
+          "$type": "dimension",
+          "$value": "{size.radius.fill}"
+        },
+        "--radio-base-lg-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.3}"
+        },
+        "--radio-base-lg-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.3}"
+        },
+        "--radio-base-border-lg": {
+          "$type": "dimension",
+          "$value": "{size.border.001}"
+        },
+        "--radio-base-border-true-lg": {
+          "$type": "dimension",
+          "$value": "{size.border.007}"
+        },
+        "--radio-base-md-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.2,5}"
+        },
+        "--radio-base-md-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.2,5}"
+        },
+        "--radio-base-border-md": {
+          "$type": "dimension",
+          "$value": "{size.border.001}"
+        },
+        "--radio-base-border-true-md": {
+          "$type": "dimension",
+          "$value": "{size.border.006}"
+        },
+        "--radioLabel-gap-lg": {
+          "$type": "dimension",
+          "$value": "{size.spacing.1}"
+        },
+        "--radioLabel-gap-md": {
+          "$type": "dimension",
+          "$value": "{size.spacing.0,5}"
+        },
+        "--radioGroup-gap-lg": {
+          "$type": "dimension",
+          "$value": "{size.spacing.2,5}"
+        },
+        "--radioGroup-gap-md": {
+          "$type": "dimension",
+          "$value": "{size.spacing.1,5}"
+        }
+      },
+      "radio-colors": {
+        "--radio-base-stroke": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.neutral.light}"
+        },
+        "--radio-base-bg": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.white.light}"
+        },
+        "--radio-base-fg-brand": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.brand.main}"
+        },
+        "--radio-base-fg-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.main}"
+        },
+        "--radio-fg-disable": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.disabled.main}"
+        },
+        "--radio-bg-disable": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.disabled.main}"
+        },
+        "--radio-stroke-disable": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.disabled.main}"
         }
       }
     }
