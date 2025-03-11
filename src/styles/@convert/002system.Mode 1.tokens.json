@@ -621,6 +621,116 @@
           "$value": "{color.color.palette.stroke.disabled.main}"
         }
       }
+    },
+    "textField": {
+      "colors": {
+        "--textField-input-bg": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.layer.default}"
+        },
+        "--textField-input-icon-fg": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.light}"
+        },
+        "--textField-input-stroke-state": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.neutral.main}"
+        },
+        "--textField-input-stroke-hovered": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.neutral.main}"
+        },
+        "--textField-input-stroke-focused": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.brand.dark}"
+        },
+        "--textField-input-stroke-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.error.dark}"
+        },
+        "--textField-input-bg-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.disabled.main}"
+        },
+        "--textField-input-stroke-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.disabled.main}"
+        }
+      },
+      "font": {
+        "--textField-size-label": {
+          "$type": "dimension",
+          "$value": "{font.text.13}"
+        },
+        "--textField-size-label-dense": {
+          "$type": "dimension",
+          "$value": "{font.text.11}"
+        },
+        "--textField-size-placeholder": {
+          "$type": "dimension",
+          "$value": "{font.text.16}"
+        },
+        "--textField-size-placeholder-dense": {
+          "$type": "dimension",
+          "$value": "{font.text.14}"
+        },
+        "--textField-size-hasValue": {
+          "$type": "dimension",
+          "$value": "{font.text.16}"
+        },
+        "--textField-size-hasValue-dense": {
+          "$type": "dimension",
+          "$value": "{font.text.14}"
+        },
+        "--textField-size-helperText": {
+          "$type": "dimension",
+          "$value": "{font.text.13}"
+        },
+        "--textField-size-helperText-dense": {
+          "$type": "dimension",
+          "$value": "{font.text.11}"
+        },
+        "--textField-weight-label": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.semiBold}"
+        },
+        "--textField-weight-placeholder": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.medium}"
+        },
+        "--textField-weight-hasValue": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.medium}"
+        },
+        "--textField-color-label": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.main}"
+        },
+        "--textField-color-label-required": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.error.main}"
+        },
+        "--textField-color-placeholder": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.mute}"
+        },
+        "--textField-color-hasValue": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.black}"
+        },
+        "--textField-color-helperText": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.light}"
+        },
+        "--textField-color-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.error.main}"
+        },
+        "--textField-color-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.disabled.main}"
+        }
+      }
     }
   }
 }

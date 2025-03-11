@@ -935,9 +935,9 @@
       }
     },
     "text": {
-      "10": {
+      "11": {
         "$type": "dimension",
-        "$value": "10px"
+        "$value": "11px"
       },
       "12": {
         "$type": "dimension",

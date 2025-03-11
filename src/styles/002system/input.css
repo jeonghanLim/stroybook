@@ -101,16 +101,6 @@
     --checkLabel-size-gap-md: calc(var(--spacing) * 0.5);
     --checkGroup-size-gap-lg: calc(var(--spacing) * 2.5);
     --checkGroup-size-gap-md: calc(var(--spacing) * 1.5);
-    --checkBox-touch-x_2: calc(var(--spacing) * 5.5);
-    --checkBox-touch-y_2: calc(var(--spacing) * 5.5);
-    --checkBox-touch-x_3: calc(var(--spacing) * 5.5);
-    --checkBox-touch-y_3: calc(var(--spacing) * 5.5);
-    --checkBox-touch-x_4: calc(var(--spacing) * 5.5);
-    --checkBox-touch-y_4: calc(var(--spacing) * 5.5);
-    --checkBox-touch-x_5: calc(var(--spacing) * 5.5);
-    --checkBox-touch-y_5: calc(var(--spacing) * 5.5);
-    --checkBox-touch-x_6: calc(var(--spacing) * 5.5);
-    --checkBox-touch-y_6: calc(var(--spacing) * 5.5);
     --checkBox-touch: calc(var(--spacing) * 5.5) calc(var(--spacing) * 5.5);
     --checkBox-size-md: calc(var(--spacing) * 2.5) calc(var(--spacing) * 2.5);
     --checkBox-size-lg: calc(var(--spacing) * 3) calc(var(--spacing) * 3);
@@ -169,4 +159,36 @@
     --radio-fg-disable: var(--color-palette-fg-disabled-main);
     --radio-bg-disable: var(--color-palette-bg-disabled-main);
     --radio-stroke-disable: var(--color-palette-stroke-disabled-main);
+
+    /* 18. TEXTFIELD */
+    /* ==================== */
+
+    /* colors */
+    --textField-input-bg: var(--color-palette-bg-layer-default);
+    --textField-input-icon-fg: var(--color-palette-fg-neutral-light);
+    --textField-input-stroke-state: var(--color-palette-stroke-neutral-main);
+    --textField-input-stroke-hovered: var(--color-palette-stroke-neutral-main);
+    --textField-input-stroke-focused: var(--color-palette-stroke-brand-dark);
+    --textField-input-stroke-error: var(--color-palette-stroke-error-dark);
+    --textField-input-bg-disabled: var(--color-palette-bg-disabled-main);
+    --textField-input-stroke-disabled: var(--color-palette-stroke-disabled-main);
+    /* font */
+    --textField-size-label: var(--text-13);
+    --textField-size-label-dense: var(--text-11);
+    --textField-size-placeholder: var(--text-16);
+    --textField-size-placeholder-dense: var(--text-14);
+    --textField-size-hasValue: var(--text-16);
+    --textField-size-hasValue-dense: var(--text-14);
+    --textField-size-helperText: var(--text-13);
+    --textField-size-helperText-dense: var(--text-11);
+    --textField-weight-label: var(--font-weight-semiBold);
+    --textField-weight-placeholder: var(--font-weight-medium);
+    --textField-weight-hasValue: var(--font-weight-medium);
+    --textField-color-label: var(--color-palette-fg-neutral-main);
+    --textField-color-label-required: var(--color-palette-fg-error-main);
+    --textField-color-placeholder: var(--color-palette-fg-neutral-mute);
+    --textField-color-hasValue: var(--color-palette-fg-neutral-black);
+    --textField-color-helperText: var(--color-palette-fg-neutral-light);
+    --textField-color-error: var(--color-palette-fg-error-main);
+    --textField-color-disabled: var(--color-palette-fg-disabled-main);
 }
