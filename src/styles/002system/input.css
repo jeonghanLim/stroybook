@@ -101,6 +101,16 @@
     --checkLabel-size-gap-md: calc(var(--spacing) * 0.5);
     --checkGroup-size-gap-lg: calc(var(--spacing) * 2.5);
     --checkGroup-size-gap-md: calc(var(--spacing) * 1.5);
+    --checkBox-touch-x_2: calc(var(--spacing) * 5.5);
+    --checkBox-touch-y_2: calc(var(--spacing) * 5.5);
+    --checkBox-touch-x_3: calc(var(--spacing) * 5.5);
+    --checkBox-touch-y_3: calc(var(--spacing) * 5.5);
+    --checkBox-touch-x_4: calc(var(--spacing) * 5.5);
+    --checkBox-touch-y_4: calc(var(--spacing) * 5.5);
+    --checkBox-touch-x_5: calc(var(--spacing) * 5.5);
+    --checkBox-touch-y_5: calc(var(--spacing) * 5.5);
+    --checkBox-touch-x_6: calc(var(--spacing) * 5.5);
+    --checkBox-touch-y_6: calc(var(--spacing) * 5.5);
     --checkBox-touch: calc(var(--spacing) * 5.5) calc(var(--spacing) * 5.5);
     --checkBox-size-md: calc(var(--spacing) * 2.5) calc(var(--spacing) * 2.5);
     --checkBox-size-lg: calc(var(--spacing) * 3) calc(var(--spacing) * 3);

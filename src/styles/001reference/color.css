@@ -153,6 +153,7 @@
     --color-palette-fg-neutral-dark : var(--color-material-classicblueGray-800);
     --color-palette-fg-neutral-light : var(--color-material-classicblueGray-600);
     --color-palette-fg-neutral-black : var(--color-material-classicblueGray-900);
+    --color-palette-fg-neutral-soft : var(--color-material-classicblueGray-300);
     --color-palette-fg-neutral-mute : var(--color-material-classicblueGray-100);
     --color-palette-fg-neutral-contrast : var(--color-material-white-main);
     --color-palette-fg-error-main : var(--color-material-red-500);

@@ -692,6 +692,10 @@
               "$type": "color",
               "$value": "{color.color.material.classicblueGray.900}"
             },
+            "soft": {
+              "$type": "color",
+              "$value": "{color.color.material.classicblueGray.300}"
+            },
             "mute": {
               "$type": "color",
               "$value": "{color.color.material.classicblueGray.100}"
@@ -935,6 +939,10 @@
       }
     },
     "text": {
+      "10": {
+        "$type": "dimension",
+        "$value": "10px"
+      },
       "11": {
         "$type": "dimension",
         "$value": "11px"
