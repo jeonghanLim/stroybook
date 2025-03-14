@@ -371,46 +371,6 @@
         "--checkGroup-size-gap-md": {
           "$type": "dimension",
           "$value": "{size.spacing.1,5}"
-        },
-        "--checkBox-touch-x_2": {
-          "$type": "dimension",
-          "$value": "{size.spacing.5,5}"
-        },
-        "--checkBox-touch-y_2": {
-          "$type": "dimension",
-          "$value": "{size.spacing.5,5}"
-        },
-        "--checkBox-touch-x_3": {
-          "$type": "dimension",
-          "$value": "{size.spacing.5,5}"
-        },
-        "--checkBox-touch-y_3": {
-          "$type": "dimension",
-          "$value": "{size.spacing.5,5}"
-        },
-        "--checkBox-touch-x_4": {
-          "$type": "dimension",
-          "$value": "{size.spacing.5,5}"
-        },
-        "--checkBox-touch-y_4": {
-          "$type": "dimension",
-          "$value": "{size.spacing.5,5}"
-        },
-        "--checkBox-touch-x_5": {
-          "$type": "dimension",
-          "$value": "{size.spacing.5,5}"
-        },
-        "--checkBox-touch-y_5": {
-          "$type": "dimension",
-          "$value": "{size.spacing.5,5}"
-        },
-        "--checkBox-touch-x_6": {
-          "$type": "dimension",
-          "$value": "{size.spacing.5,5}"
-        },
-        "--checkBox-touch-y_6": {
-          "$type": "dimension",
-          "$value": "{size.spacing.5,5}"
         }
       },
       "checkBox-colors": {
@@ -623,6 +583,48 @@
       }
     },
     "textField": {
+      "size": {
+        "--textField-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.1}"
+        },
+        "--textField-labelLeft-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.0,5}"
+        },
+        "--textField-labelLeft-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.0,25}"
+        },
+        "--textField-textField-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.1}"
+        },
+        "--textField-labelTop-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.0,5}"
+        },
+        "--textField-labelTop-yTop": {
+          "$type": "dimension",
+          "$value": "{size.spacing.0,5}"
+        },
+        "--textField-helperText-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.0,5}"
+        },
+        "--textField-helperText-yBottom": {
+          "$type": "dimension",
+          "$value": "{size.spacing.0,5}"
+        },
+        "--textField-input-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.1,5}"
+        },
+        "--textField-contents-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.1}"
+        }
+      },
       "colors": {
         "--textField-input-bg": {
           "$type": "color",

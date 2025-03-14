@@ -10,9 +10,9 @@
     /* ==================== */
 
     /* padding */
-    --btn-padding-sm: calc(var(--spacing) * 0.5) calc(var(--spacing) * 1.5);
-    --btn-padding-md: calc(var(--spacing) * 1) calc(var(--spacing) * 1.5);
-    --btn-padding-lg: calc(var(--spacing) * 1.5) calc(var(--spacing) * 2);
+    --btn-padding-sm: calc(var(--spacing) * 0.5) calc(var(--spacing) * 1.5) calc(var(--spacing) * 0.5) calc(var(--spacing) * 1.5);
+    --btn-padding-md: calc(var(--spacing) * 1) calc(var(--spacing) * 1.5) calc(var(--spacing) * 1) calc(var(--spacing) * 1.5);
+    --btn-padding-lg: calc(var(--spacing) * 1.5) calc(var(--spacing) * 2) calc(var(--spacing) * 1.5) calc(var(--spacing) * 2);
     /* font-size */
     --font-size-sm: var(--text-13);
     --font-size-md: var(--text-16);
@@ -101,19 +101,9 @@
     --checkLabel-size-gap-md: calc(var(--spacing) * 0.5);
     --checkGroup-size-gap-lg: calc(var(--spacing) * 2.5);
     --checkGroup-size-gap-md: calc(var(--spacing) * 1.5);
-    --checkBox-touch-x_2: calc(var(--spacing) * 5.5);
-    --checkBox-touch-y_2: calc(var(--spacing) * 5.5);
-    --checkBox-touch-x_3: calc(var(--spacing) * 5.5);
-    --checkBox-touch-y_3: calc(var(--spacing) * 5.5);
-    --checkBox-touch-x_4: calc(var(--spacing) * 5.5);
-    --checkBox-touch-y_4: calc(var(--spacing) * 5.5);
-    --checkBox-touch-x_5: calc(var(--spacing) * 5.5);
-    --checkBox-touch-y_5: calc(var(--spacing) * 5.5);
-    --checkBox-touch-x_6: calc(var(--spacing) * 5.5);
-    --checkBox-touch-y_6: calc(var(--spacing) * 5.5);
-    --checkBox-touch: calc(var(--spacing) * 5.5) calc(var(--spacing) * 5.5);
-    --checkBox-size-md: calc(var(--spacing) * 2.5) calc(var(--spacing) * 2.5);
-    --checkBox-size-lg: calc(var(--spacing) * 3) calc(var(--spacing) * 3);
+    --checkBox-touch: calc(var(--spacing) * 5.5) calc(var(--spacing) * 5.5) calc(var(--spacing) * 5.5) calc(var(--spacing) * 5.5);
+    --checkBox-size-md: calc(var(--spacing) * 2.5) calc(var(--spacing) * 2.5) calc(var(--spacing) * 2.5) calc(var(--spacing) * 2.5);
+    --checkBox-size-lg: calc(var(--spacing) * 3) calc(var(--spacing) * 3) calc(var(--spacing) * 3) calc(var(--spacing) * 3);
     /* checkBox-colors */
     --checkBox-overlay-bg-wait: var(--color-palette-bg-overlay-white-light);
     --checkBox-stroke-wait: var(--color-palette-stroke-neutral-light);
@@ -158,9 +148,9 @@
     --radioLabel-gap-md: calc(var(--spacing) * 0.5);
     --radioGroup-gap-lg: calc(var(--spacing) * 2.5);
     --radioGroup-gap-md: calc(var(--spacing) * 1.5);
-    --radio-touch: calc(var(--spacing) * 5.5) calc(var(--spacing) * 5.5);
-    --radio-base-lg: calc(var(--spacing) * 3) calc(var(--spacing) * 3);
-    --radio-base-md: calc(var(--spacing) * 2.5) calc(var(--spacing) * 2.5);
+    --radio-touch: calc(var(--spacing) * 5.5) calc(var(--spacing) * 5.5) calc(var(--spacing) * 5.5) calc(var(--spacing) * 5.5);
+    --radio-base-lg: calc(var(--spacing) * 3) calc(var(--spacing) * 3) calc(var(--spacing) * 3) calc(var(--spacing) * 3);
+    --radio-base-md: calc(var(--spacing) * 2.5) calc(var(--spacing) * 2.5) calc(var(--spacing) * 2.5) calc(var(--spacing) * 2.5);
     /* radio-colors */
     --radio-base-stroke: var(--color-palette-stroke-neutral-light);
     --radio-base-bg: var(--color-palette-bg-overlay-white-light);
@@ -173,6 +163,15 @@
     /* 18. TEXTFIELD */
     /* ==================== */
 
+    /* size */
+    --textField-gap: calc(var(--spacing) * 1);
+    --textField-labelLeft-gap: calc(var(--spacing) * 0.25);
+    --textField-textField-gap: calc(var(--spacing) * 1);
+    --textField-contents-gap: calc(var(--spacing) * 1);
+    --textField-labelLeft: calc(var(--spacing) * 0.5) calc(var(--spacing) * 0) calc(var(--spacing) * 0.5) calc(var(--spacing) * 0);
+    --textField-labelTop: calc(var(--spacing) * 0.5) calc(var(--spacing) * 0.5) calc(var(--spacing) * 0.5) calc(var(--spacing) * 0.5);
+    --textField-helperText: calc(var(--spacing) * 0) calc(var(--spacing) * 0.5) calc(var(--spacing) * 0.5) calc(var(--spacing) * 0.5);
+    --textField-input: calc(var(--spacing) * 0) calc(var(--spacing) * 1.5) calc(var(--spacing) * 0) calc(var(--spacing) * 1.5);
     /* colors */
     --textField-input-bg: var(--color-palette-bg-layer-default);
     --textField-input-icon-fg: var(--color-palette-fg-neutral-light);

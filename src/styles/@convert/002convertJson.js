@@ -12,6 +12,7 @@ let cssIdx = 0; // 주석 번호를 위한 인덱스
 function convertJsonToCss(json, depth = 1) {
     let cssContent = '';
     const paddingValues = {};
+    const directionalValues = {};
     
     for (const key in json) {
         if (typeof json[key] === 'object' && !json[key]['$value']) {
@@ -49,29 +50,39 @@ function convertJsonToCss(json, depth = 1) {
                 cssValue = `var(--${cssValue.replace(/\./g, '-')})`;
             }
             
-            // y와 x 값을 분리하여 처리
-            if (key.endsWith('-y')) {
-                let baseKey = key.replace('-y', '');
-                paddingValues[baseKey] = paddingValues[baseKey] || {};
-                paddingValues[baseKey].y = cssValue;
-                continue;
-            } else if (key.endsWith('-x')) {
-                let baseKey = key.replace('-x', '');
-                paddingValues[baseKey] = paddingValues[baseKey] || {};
-                paddingValues[baseKey].x = cssValue;
+            // -yTop, -xRight, -yBottom, -xLeft, -x, -y 값을 분리하여 저장
+            if (/(?:-yTop|-xRight|-yBottom|-xLeft|-x|-y)$/.test(key)) {
+                let baseKey = key.replace(/-(yTop|xRight|yBottom|xLeft|x|y)$/, '');
+                let direction = key.match(/(yTop|xRight|yBottom|xLeft|x|y)$/)[0];
+
+                directionalValues[baseKey] = directionalValues[baseKey] || {};
+                
+                // -y가 들어오면 yTop과 yBottom에 동일한 값 적용
+                if (direction === 'y') {
+                    directionalValues[baseKey]['yTop'] = cssValue;
+                    directionalValues[baseKey]['yBottom'] = cssValue;
+                } else if (direction === 'x') {
+                    directionalValues[baseKey]['xRight'] = cssValue;
+                    directionalValues[baseKey]['xLeft'] = cssValue;
+                } else {
+                    directionalValues[baseKey][direction] = cssValue;
+                }
                 continue;
             }
+            
             // 'non' 감지 시 주석 추가
             let comment = cssValue.includes('non') ? ' /* 감지용 */' : '';
             cssContent += `    ${cssVarName}: ${cssValue};${comment}\n`;
         }
     }
     
-    // y, x 값이 있는 padding을 하나로 합쳐서 출력
-    for (const key in paddingValues) {
-        if (paddingValues[key].y && paddingValues[key].x) {
-            cssContent += `    ${key}: ${paddingValues[key].y} ${paddingValues[key].x};\n`;
-        }
+    // -yTop, -xRight, -yBottom, -xLeft 값이 있는 경우 시계 방향으로 병합
+    for (const key in directionalValues) {
+        let { yTop = "calc(var(--spacing) * 0)", xRight = "calc(var(--spacing) * 0)", 
+              yBottom = yTop, xLeft = xRight } = directionalValues[key];
+        
+        // 최종 CSS 출력
+        cssContent += `    ${key}: ${yTop} ${xRight} ${yBottom} ${xLeft};\n`;
     }
     
     return cssContent;
