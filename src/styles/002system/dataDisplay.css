@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@import "../001reference/color.css";
+@import "../001reference/font.css";
+@import "../001reference/size.css";
+@import "../001reference/fontType.css";
+
+@theme {
+
+    /* 20. DIVIDER */
+    /* ==================== */
+
+    /* color */
+    --divider-color: var(--color-palette-bg-overlay-black-light);
+    /* size */
+    --divider-border: var(--border-001);
+}

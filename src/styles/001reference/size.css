@@ -7,6 +7,20 @@
     /* SIZE THEME */
     /* ===================== */
 
+    --icon-14 : 0.875rem;
+    --icon-16 : 1rem;
+    --icon-18 : 1.125rem;
+    --icon-20 : 1.25rem;
+    --icon-22 : 1.375rem;
+    --icon-24 : 1.5rem;
+    --icon-26 : 1.625rem;
+    --icon-28 : 1.75rem;
+    --icon-30 : 1.875rem;
+    --icon-32 : 2rem;
+    --icon-40 : 2.5rem;
+    --icon-48 : 3rem;
+    --icon-56 : 3.5rem;
+    --icon-64 : 4rem;
     --border-001 : 0.0625rem;
     --border-002 : 0.125rem;
     --border-003 : 0.1875rem;
