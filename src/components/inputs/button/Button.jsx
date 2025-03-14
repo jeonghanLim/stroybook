@@ -1,5 +1,4 @@
 import React from 'react';
-
 import PropTypes from 'prop-types';
 
 // 사용자가 선택할 속성들 (사이즈, 타입)
