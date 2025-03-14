@@ -3,7 +3,17 @@ import PropTypes from 'prop-types';
 
 // 사용자가 선택할 속성들 (사이즈, 타입)
 /** Primary UI component for user interaction */
-export const Button = ({ variant, size, color, label, startIcon, endIcon, disabled, ...props }) => {  
+export const Button = ({ 
+  variant, 
+  size, 
+  color, 
+  label, 
+  startIcon, 
+  endIcon, 
+  onClick,
+  disabled, 
+  ...props 
+}) => {  
 
   let sizeClass = "";
   let colorClass = "";
@@ -23,19 +33,26 @@ export const Button = ({ variant, size, color, label, startIcon, endIcon, disabl
                     'btn-text-color-brand'; break;
   }
 
+  const handleClick = (e) => {
+    onClick && onClick(e);
+  }
+
   return (
     <button
       type="button"
       className={['btn', sizeClass, colorClass, disabled ? "disabled" : ""].join(' ')}
+      onClick={handleClick}
       {...props}
     >
       <div className="btn-base">
         {startIcon &&
           <span className="btn-mask-box">{startIcon}</span>
         }
-        <span className="label">
+        {label && 
+          <span className="label">
             {label}
-        </span>
+          </span>
+        }
         {endIcon &&
           <span className="btn-mask-box">{endIcon}</span>
         }
@@ -45,23 +62,18 @@ export const Button = ({ variant, size, color, label, startIcon, endIcon, disabl
 };
 
 Button.propTypes = {
-  /** How large should the button be? */
-  color : PropTypes.oneOf(['brand', 'neutral']),
-  /** How large should the button be? */
-  size: PropTypes.oneOf(['sm', 'md', 'lg']),
-  /** How large should the button be? */
   variant : PropTypes.oneOf(['contained', 'outlined', 'text']),
-  /** Button contents */
-  label: PropTypes.string.isRequired,
-  /** Optional click handler */
+  size: PropTypes.oneOf(['sm', 'md', 'lg']),
+  color : PropTypes.oneOf(['brand', 'neutral']),
+  label: PropTypes.string,
+  startIcon : PropTypes.element, 
+  endIcon : PropTypes.element, 
   onClick: PropTypes.func,
-
   disabled : PropTypes.bool,
 };
 
 Button.defaultProps = {
-  color: 'brand',
-  size: 'md',
   variant: 'contained',
-  onClick: undefined,
+  size: 'md',
+  color: 'brand',
 };
