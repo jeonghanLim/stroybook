@@ -4,14 +4,16 @@ import PropTypes from 'prop-types';
 // 사용자가 선택할 속성들 (사이즈, 타입)
 /** Primary UI component for user interaction */
 export const Button = ({ 
-  variant, 
-  size, 
-  color, 
+  variant= 'contained',
+  size= 'md',
+  increasedWidth = false,
+  increasedHeight = false,
+  color= 'brand',
+  disabled = false,
   label, 
   startIcon, 
   endIcon, 
   onClick,
-  disabled, 
   ...props 
 }) => {  
 
@@ -34,6 +36,7 @@ export const Button = ({
   }
 
   const handleClick = (e) => {
+    if(disabled) return;
     onClick && onClick(e);
   }
 
@@ -42,6 +45,7 @@ export const Button = ({
       type="button"
       className={['btn', sizeClass, colorClass, disabled ? "disabled" : ""].join(' ')}
       onClick={handleClick}
+      style={{width: increasedWidth && '100%', height: increasedHeight && '100%'}}
       {...props}
     >
       <div className="btn-base">
@@ -64,6 +68,8 @@ export const Button = ({
 Button.propTypes = {
   variant : PropTypes.oneOf(['contained', 'outlined', 'text']),
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
+  increasedWidth  : PropTypes.bool,
+  increasedHeight  : PropTypes.bool,
   color : PropTypes.oneOf(['brand', 'neutral']),
   label: PropTypes.string,
   startIcon : PropTypes.element, 
@@ -75,5 +81,8 @@ Button.propTypes = {
 Button.defaultProps = {
   variant: 'contained',
   size: 'md',
+  increasedWidth : false,
+  increasedHeight : false,
   color: 'brand',
+  disabled : false,
 };
