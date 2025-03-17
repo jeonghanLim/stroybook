@@ -15,19 +15,19 @@
     --btn-icon-lg: var(--icon-20);
     --btn-radius: var(--radius-004);
     --btn-border: var(--border-001);
-    --btn-padding-sm: calc(var(--spacing) * 0.5) calc(var(--spacing) * 1.5) calc(var(--spacing) * 0.5) calc(var(--spacing) * 1.5);
-    --btn-padding-md: calc(var(--spacing) * 1) calc(var(--spacing) * 1.5) calc(var(--spacing) * 1) calc(var(--spacing) * 1.5);
-    --btn-padding-lg: calc(var(--spacing) * 1.5) calc(var(--spacing) * 2.5) calc(var(--spacing) * 1.5) calc(var(--spacing) * 2.5);
+    --btn-padding-sm: calc(var(--spacing) * 4) calc(var(--spacing) * 12) calc(var(--spacing) * 4) calc(var(--spacing) * 12);
+    --btn-padding-md: calc(var(--spacing) * 8) calc(var(--spacing) * 12) calc(var(--spacing) * 8) calc(var(--spacing) * 12);
+    --btn-padding-lg: calc(var(--spacing) * 12) calc(var(--spacing) * 20) calc(var(--spacing) * 12) calc(var(--spacing) * 20);
     /* base-size */
-    --btn-base-height-sm: calc(var(--spacing) * 2.5);
-    --btn-base-height-md: calc(var(--spacing) * 2.5);
-    --btn-base-height-lg: calc(var(--spacing) * 3);
-    --btn-base-gap-sm: calc(var(--spacing) * 1);
-    --btn-base-gap-md: calc(var(--spacing) * 1);
-    --btn-base-gap-lg: calc(var(--spacing) * 1);
-    --btn-mask-box-w-sm: calc(var(--spacing) * 0.5);
-    --btn-mask-box-w-md: calc(var(--spacing) * 1.5);
-    --btn-mask-box-w-lg: calc(var(--spacing) * 2);
+    --btn-base-height-sm: calc(var(--spacing) * 20);
+    --btn-base-height-md: calc(var(--spacing) * 20);
+    --btn-base-height-lg: calc(var(--spacing) * 24);
+    --btn-base-gap-sm: calc(var(--spacing) * 8);
+    --btn-base-gap-md: calc(var(--spacing) * 8);
+    --btn-base-gap-lg: calc(var(--spacing) * 8);
+    --btn-mask-box-w-sm: calc(var(--spacing) * 4);
+    --btn-mask-box-w-md: calc(var(--spacing) * 12);
+    --btn-mask-box-w-lg: calc(var(--spacing) * 16);
     /* font */
     --btn-text-fg-brand: var(--color-palette-fg-brand-main);
     --btn-text-bg-brand: var(--color-palette-non-non); /* 감지용 */
@@ -100,13 +100,13 @@
     /* size */
     --checkBox-base-border: var(--border-001);
     --checkBox-base-radius: var(--radius-004);
-    --checkLabel-gap-lg: calc(var(--spacing) * 1);
-    --checkLabel-gap-md: calc(var(--spacing) * 0.5);
-    --checkGroup-gap-lg: calc(var(--spacing) * 2.5);
-    --checkGroup-gap-md: calc(var(--spacing) * 1.5);
-    --checkBox-touch: calc(var(--spacing) * 5.5) calc(var(--spacing) * 5.5) calc(var(--spacing) * 5.5) calc(var(--spacing) * 5.5);
-    --checkBox-base-md: calc(var(--spacing) * 2.5) calc(var(--spacing) * 2.5) calc(var(--spacing) * 2.5) calc(var(--spacing) * 2.5);
-    --checkBox-base-lg: calc(var(--spacing) * 3) calc(var(--spacing) * 3) calc(var(--spacing) * 3) calc(var(--spacing) * 3);
+    --checkLabel-gap-lg: calc(var(--spacing) * 8);
+    --checkLabel-gap-md: calc(var(--spacing) * 4);
+    --checkGroup-gap-lg: calc(var(--spacing) * 20);
+    --checkGroup-gap-md: calc(var(--spacing) * 12);
+    --checkBox-touch: calc(var(--spacing) * 44) calc(var(--spacing) * 44) calc(var(--spacing) * 44) calc(var(--spacing) * 44);
+    --checkBox-base-md: calc(var(--spacing) * 20) calc(var(--spacing) * 20) calc(var(--spacing) * 20) calc(var(--spacing) * 20);
+    --checkBox-base-lg: calc(var(--spacing) * 24) calc(var(--spacing) * 24) calc(var(--spacing) * 24) calc(var(--spacing) * 24);
     /* checkBox-colors */
     --checkBox-overlay-bg-wait: var(--color-palette-bg-overlay-white-light);
     --checkBox-stroke-wait: var(--color-palette-stroke-neutral-light);
@@ -126,6 +126,19 @@
     /* 12. RADIOGROUP */
     /* ==================== */
 
+    /* size */
+    --radio-base-radius: var(--radius-fill);
+    --radio-base-border-lg: var(--border-001);
+    --radio-base-border-true-lg: var(--border-007);
+    --radio-base-border-md: var(--border-001);
+    --radio-base-border-true-md: var(--border-006);
+    --radioLabel-gap-lg: calc(var(--spacing) * 8);
+    --radioLabel-gap-md: calc(var(--spacing) * 4);
+    --radioGroup-gap-lg: calc(var(--spacing) * 20);
+    --radioGroup-gap-md: calc(var(--spacing) * 12);
+    --radio-touch: calc(var(--spacing) * 44) calc(var(--spacing) * 44) calc(var(--spacing) * 44) calc(var(--spacing) * 44);
+    --radio-base-lg: calc(var(--spacing) * 24) calc(var(--spacing) * 24) calc(var(--spacing) * 24) calc(var(--spacing) * 24);
+    --radio-base-md: calc(var(--spacing) * 20) calc(var(--spacing) * 20) calc(var(--spacing) * 20) calc(var(--spacing) * 20);
     /* font */
     --radioLabel-size-lg: var(--text-20);
     --radioLabel-weight-lg: var(--font-weight-medium);
@@ -141,19 +154,6 @@
     --radioGroup-weight-helper: var(--font-weight-medium);
     --radioGroup-color-helper: var(--color-palette-fg-neutral-light);
     --radioGroup-color-error: var(--color-palette-fg-error-main);
-    /* size */
-    --radio-base-radius: var(--radius-fill);
-    --radio-base-border-lg: var(--border-001);
-    --radio-base-border-true-lg: var(--border-007);
-    --radio-base-border-md: var(--border-001);
-    --radio-base-border-true-md: var(--border-006);
-    --radioLabel-gap-lg: calc(var(--spacing) * 1);
-    --radioLabel-gap-md: calc(var(--spacing) * 0.5);
-    --radioGroup-gap-lg: calc(var(--spacing) * 2.5);
-    --radioGroup-gap-md: calc(var(--spacing) * 1.5);
-    --radio-touch: calc(var(--spacing) * 5.5) calc(var(--spacing) * 5.5) calc(var(--spacing) * 5.5) calc(var(--spacing) * 5.5);
-    --radio-base-lg: calc(var(--spacing) * 3) calc(var(--spacing) * 3) calc(var(--spacing) * 3) calc(var(--spacing) * 3);
-    --radio-base-md: calc(var(--spacing) * 2.5) calc(var(--spacing) * 2.5) calc(var(--spacing) * 2.5) calc(var(--spacing) * 2.5);
     /* radio-colors */
     --radio-base-stroke: var(--color-palette-stroke-neutral-light);
     --radio-base-bg: var(--color-palette-bg-overlay-white-light);
@@ -167,19 +167,18 @@
     /* ==================== */
 
     /* size */
-    --textField-labelLeft-gap: calc(var(--spacing) * 0.25);
-    --textField-gap: calc(var(--spacing) * 1);
-    --textField-labelTop-gap: calc(var(--spacing) * 0.25);
+    --textField-labelLeft-gap: calc(var(--spacing) * 2);
+    --textField-labelTop-gap: calc(var(--spacing) * 2);
     --textField-input-radius: var(--radius-004);
     --textField-input-border1: var(--border-001);
     --textField-input-border3: var(--border-003);
-    --textField-contents-gap: calc(var(--spacing) * 1);
+    --textField-contents-gap: calc(var(--spacing) * 8);
     --textField-input-icon: var(--icon-20);
     --textField-input-icon-dense: var(--icon-18);
-    --textField-labelLeft: calc(var(--spacing) * 0.5) calc(var(--spacing) * 0) calc(var(--spacing) * 0.5) calc(var(--spacing) * 0);
-    --textField-labelTop: calc(var(--spacing) * 0.5) calc(var(--spacing) * 0.5) calc(var(--spacing) * 0.5) calc(var(--spacing) * 0.5);
-    --textField-helperText: calc(var(--spacing) * 0) calc(var(--spacing) * 0.5) calc(var(--spacing) * 0.5) calc(var(--spacing) * 0.5);
-    --textField-input: calc(var(--spacing) * 0) calc(var(--spacing) * 1.5) calc(var(--spacing) * 0) calc(var(--spacing) * 1.5);
+    --textField-labelLeft: calc(var(--spacing) * 4) calc(var(--spacing) * 8) calc(var(--spacing) * 4) calc(var(--spacing) * 8);
+    --textField-labelTop: calc(var(--spacing) * 0) calc(var(--spacing) * 4) calc(var(--spacing) * 4) calc(var(--spacing) * 4);
+    --textField-helperText: calc(var(--spacing) * 4) calc(var(--spacing) * 4) calc(var(--spacing) * 4) calc(var(--spacing) * 4);
+    --textField-input: calc(var(--spacing) * 0) calc(var(--spacing) * 12) calc(var(--spacing) * 0) calc(var(--spacing) * 12);
     /* colors */
     --textField-input-bg: var(--color-palette-bg-layer-default);
     --textField-input-icon-fg: var(--color-palette-fg-neutral-light);

@@ -4,27 +4,27 @@
       "size": {
         "--btn-padding-sm-y": {
           "$type": "dimension",
-          "$value": "{size.spacing.0,5}"
+          "$value": "{size.spacing.4}"
         },
         "--btn-padding-sm-x": {
           "$type": "dimension",
-          "$value": "{size.spacing.1,5}"
+          "$value": "{size.spacing.12}"
         },
         "--btn-padding-md-y": {
           "$type": "dimension",
-          "$value": "{size.spacing.1}"
+          "$value": "{size.spacing.8}"
         },
         "--btn-padding-md-x": {
           "$type": "dimension",
-          "$value": "{size.spacing.1,5}"
+          "$value": "{size.spacing.12}"
         },
         "--btn-padding-lg-y": {
           "$type": "dimension",
-          "$value": "{size.spacing.1,5}"
+          "$value": "{size.spacing.12}"
         },
         "--btn-padding-lg-x": {
           "$type": "dimension",
-          "$value": "{size.spacing.2,5}"
+          "$value": "{size.spacing.20}"
         },
         "--btn-icon-sm": {
           "$type": "dimension",
@@ -50,39 +50,39 @@
       "base-size": {
         "--btn-base-height-sm": {
           "$type": "dimension",
-          "$value": "{size.spacing.2,5}"
+          "$value": "{size.spacing.20}"
         },
         "--btn-base-height-md": {
           "$type": "dimension",
-          "$value": "{size.spacing.2,5}"
+          "$value": "{size.spacing.20}"
         },
         "--btn-base-height-lg": {
           "$type": "dimension",
-          "$value": "{size.spacing.3}"
+          "$value": "{size.spacing.24}"
         },
         "--btn-base-gap-sm": {
           "$type": "dimension",
-          "$value": "{size.spacing.1}"
+          "$value": "{size.spacing.8}"
         },
         "--btn-base-gap-md": {
           "$type": "dimension",
-          "$value": "{size.spacing.1}"
+          "$value": "{size.spacing.8}"
         },
         "--btn-base-gap-lg": {
           "$type": "dimension",
-          "$value": "{size.spacing.1}"
+          "$value": "{size.spacing.8}"
         },
         "--btn-mask-box-w-sm": {
           "$type": "dimension",
-          "$value": "{size.spacing.0,5}"
+          "$value": "{size.spacing.4}"
         },
         "--btn-mask-box-w-md": {
           "$type": "dimension",
-          "$value": "{size.spacing.1,5}"
+          "$value": "{size.spacing.12}"
         },
         "--btn-mask-box-w-lg": {
           "$type": "dimension",
-          "$value": "{size.spacing.2}"
+          "$value": "{size.spacing.16}"
         }
       },
       "font": {
@@ -342,11 +342,11 @@
       "size": {
         "--checkBox-touch-x": {
           "$type": "dimension",
-          "$value": "{size.spacing.5,5}"
+          "$value": "{size.spacing.44}"
         },
         "--checkBox-touch-y": {
           "$type": "dimension",
-          "$value": "{size.spacing.5,5}"
+          "$value": "{size.spacing.44}"
         },
         "--checkBox-base-border": {
           "$type": "dimension",
@@ -358,35 +358,35 @@
         },
         "--checkBox-base-md-x": {
           "$type": "dimension",
-          "$value": "{size.spacing.2,5}"
+          "$value": "{size.spacing.20}"
         },
         "--checkBox-base-md-y": {
           "$type": "dimension",
-          "$value": "{size.spacing.2,5}"
+          "$value": "{size.spacing.20}"
         },
         "--checkBox-base-lg-x": {
           "$type": "dimension",
-          "$value": "{size.spacing.3}"
+          "$value": "{size.spacing.24}"
         },
         "--checkBox-base-lg-y": {
           "$type": "dimension",
-          "$value": "{size.spacing.3}"
+          "$value": "{size.spacing.24}"
         },
         "--checkLabel-gap-lg": {
           "$type": "dimension",
-          "$value": "{size.spacing.1}"
+          "$value": "{size.spacing.8}"
         },
         "--checkLabel-gap-md": {
           "$type": "dimension",
-          "$value": "{size.spacing.0,5}"
+          "$value": "{size.spacing.4}"
         },
         "--checkGroup-gap-lg": {
           "$type": "dimension",
-          "$value": "{size.spacing.2,5}"
+          "$value": "{size.spacing.20}"
         },
         "--checkGroup-gap-md": {
           "$type": "dimension",
-          "$value": "{size.spacing.1,5}"
+          "$value": "{size.spacing.12}"
         }
       },
       "checkBox-colors": {
@@ -447,6 +447,68 @@
       }
     },
     "radioGroup": {
+      "size": {
+        "--radio-touch-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.44}"
+        },
+        "--radio-touch-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.44}"
+        },
+        "--radio-base-radius": {
+          "$type": "dimension",
+          "$value": "{size.radius.fill}"
+        },
+        "--radio-base-lg-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.24}"
+        },
+        "--radio-base-lg-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.24}"
+        },
+        "--radio-base-border-lg": {
+          "$type": "dimension",
+          "$value": "{size.border.001}"
+        },
+        "--radio-base-border-true-lg": {
+          "$type": "dimension",
+          "$value": "{size.border.007}"
+        },
+        "--radio-base-md-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.20}"
+        },
+        "--radio-base-md-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.20}"
+        },
+        "--radio-base-border-md": {
+          "$type": "dimension",
+          "$value": "{size.border.001}"
+        },
+        "--radio-base-border-true-md": {
+          "$type": "dimension",
+          "$value": "{size.border.006}"
+        },
+        "--radioLabel-gap-lg": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
+        },
+        "--radioLabel-gap-md": {
+          "$type": "dimension",
+          "$value": "{size.spacing.4}"
+        },
+        "--radioGroup-gap-lg": {
+          "$type": "dimension",
+          "$value": "{size.spacing.20}"
+        },
+        "--radioGroup-gap-md": {
+          "$type": "dimension",
+          "$value": "{size.spacing.12}"
+        }
+      },
       "font": {
         "--radioLabel-size-lg": {
           "$type": "dimension",
@@ -505,68 +567,6 @@
           "$value": "{color.color.palette.fg.error.main}"
         }
       },
-      "size": {
-        "--radio-touch-x": {
-          "$type": "dimension",
-          "$value": "{size.spacing.5,5}"
-        },
-        "--radio-touch-y": {
-          "$type": "dimension",
-          "$value": "{size.spacing.5,5}"
-        },
-        "--radio-base-radius": {
-          "$type": "dimension",
-          "$value": "{size.radius.fill}"
-        },
-        "--radio-base-lg-x": {
-          "$type": "dimension",
-          "$value": "{size.spacing.3}"
-        },
-        "--radio-base-lg-y": {
-          "$type": "dimension",
-          "$value": "{size.spacing.3}"
-        },
-        "--radio-base-border-lg": {
-          "$type": "dimension",
-          "$value": "{size.border.001}"
-        },
-        "--radio-base-border-true-lg": {
-          "$type": "dimension",
-          "$value": "{size.border.007}"
-        },
-        "--radio-base-md-x": {
-          "$type": "dimension",
-          "$value": "{size.spacing.2,5}"
-        },
-        "--radio-base-md-y": {
-          "$type": "dimension",
-          "$value": "{size.spacing.2,5}"
-        },
-        "--radio-base-border-md": {
-          "$type": "dimension",
-          "$value": "{size.border.001}"
-        },
-        "--radio-base-border-true-md": {
-          "$type": "dimension",
-          "$value": "{size.border.006}"
-        },
-        "--radioLabel-gap-lg": {
-          "$type": "dimension",
-          "$value": "{size.spacing.1}"
-        },
-        "--radioLabel-gap-md": {
-          "$type": "dimension",
-          "$value": "{size.spacing.0,5}"
-        },
-        "--radioGroup-gap-lg": {
-          "$type": "dimension",
-          "$value": "{size.spacing.2,5}"
-        },
-        "--radioGroup-gap-md": {
-          "$type": "dimension",
-          "$value": "{size.spacing.1,5}"
-        }
-      },
       "radio-colors": {
         "--radio-base-stroke": {
           "$type": "color",
@@ -602,39 +602,39 @@
       "size": {
         "--textField-labelLeft-y": {
           "$type": "dimension",
-          "$value": "{size.spacing.0,5}"
+          "$value": "{size.spacing.4}"
         },
         "--textField-labelLeft-gap": {
           "$type": "dimension",
-          "$value": "{size.spacing.0,25}"
+          "$value": "{size.spacing.2}"
         },
-        "--textField-gap": {
+        "--textField-labelLeft-xRight": {
           "$type": "dimension",
-          "$value": "{size.spacing.1}"
+          "$value": "{size.spacing.8}"
         },
         "--textField-labelTop-x": {
           "$type": "dimension",
-          "$value": "{size.spacing.0,5}"
+          "$value": "{size.spacing.4}"
         },
-        "--textField-labelTop-yTop": {
+        "--textField-labelTop-yBottom": {
           "$type": "dimension",
-          "$value": "{size.spacing.0,5}"
+          "$value": "{size.spacing.4}"
         },
         "--textField-labelTop-gap": {
           "$type": "dimension",
-          "$value": "{size.spacing.0,25}"
+          "$value": "{size.spacing.2}"
         },
         "--textField-helperText-x": {
           "$type": "dimension",
-          "$value": "{size.spacing.0,5}"
+          "$value": "{size.spacing.4}"
         },
-        "--textField-helperText-yBottom": {
+        "--textField-helperText-yTop": {
           "$type": "dimension",
-          "$value": "{size.spacing.0,5}"
+          "$value": "{size.spacing.4}"
         },
         "--textField-input-x": {
           "$type": "dimension",
-          "$value": "{size.spacing.1,5}"
+          "$value": "{size.spacing.12}"
         },
         "--textField-input-radius": {
           "$type": "dimension",
@@ -650,7 +650,7 @@
         },
         "--textField-contents-gap": {
           "$type": "dimension",
-          "$value": "{size.spacing.1}"
+          "$value": "{size.spacing.8}"
         },
         "--textField-input-icon": {
           "$type": "dimension",
