@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // JSON 파일 경로
-const jsonFilePath = './002system.Mode 1.tokens.json';
+const jsonFilePath = './002components.Mode 1.tokens.json';
 
 const jsonData = JSON.parse(fs.readFileSync(jsonFilePath, 'utf8'));
 
@@ -88,8 +88,8 @@ function convertJsonToCss(json, depth = 1) {
     return cssContent;
 }
 
-// 각 최상위 키마다 개별 CSS 파일을 style/002system 폴더에 저장
-const outputDir = path.join(__dirname, '../002system');
+// 각 최상위 키마다 개별 CSS 파일을 style/002components 폴더에 저장
+const outputDir = path.join(__dirname, '../002components');
 if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true });
 }
