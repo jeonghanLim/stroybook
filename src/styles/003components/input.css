@@ -100,6 +100,25 @@
 /* RADIO GROUP           */
 /* ===================== */
 
+@utility radio-size-* { 
+    padding : --value(--btn-padding-*);
+    font-size : --value(--font-size-*);
+    font-weight : --value(--font-weight-*);
+    & .radio-base{
+        appearance: none;
+        border: --value(--radio-base-border-*)
+        & .btn-mask-box{
+            width: --value(--btn-mask-box-w-*);
+        }
+    }
+    & :checked{
+        border: --value(--radio-base-border-true-*)
+    }
+    $ .radiolabel{
+        
+    }
+}
+
 /* ===================== */
 /* RADIO GROUP END       */
 /* ===================== */
