@@ -208,10 +208,6 @@
           "$type": "color",
           "$value": "{color.color.palette.bg.neutral.dark.pressed}"
         },
-        "--btn-contained-bg-neutral-focus_2": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.neutral.dark.pressed}"
-        },
         "--btn-contained-fg-neutral-disabled": {
           "$type": "color",
           "$value": "{color.color.palette.fg.disabled.main}"
@@ -289,6 +285,64 @@
       }
     },
     "checkBox": {
+      "size": {
+        "--checkBox-touch-width": {
+          "$type": "dimension",
+          "$value": "{size.spacing.44}"
+        },
+        "--checkBox-touch-height": {
+          "$type": "dimension",
+          "$value": "{size.spacing.44}"
+        },
+        "--checkBox-base-border": {
+          "$type": "dimension",
+          "$value": "{size.border.001}"
+        },
+        "--checkBox-base-radius": {
+          "$type": "dimension",
+          "$value": "{size.radius.004}"
+        },
+        "--checkBox-base-width-md": {
+          "$type": "dimension",
+          "$value": "{size.spacing.20}"
+        },
+        "--checkBox-base-height-md": {
+          "$type": "dimension",
+          "$value": "{size.spacing.20}"
+        },
+        "--checkBox-base-width-lg": {
+          "$type": "dimension",
+          "$value": "{size.spacing.24}"
+        },
+        "--checkBox-base-height-lg": {
+          "$type": "dimension",
+          "$value": "{size.spacing.24}"
+        },
+        "--checkLabel-gap-lg": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
+        },
+        "--checkLabel-gap-md": {
+          "$type": "dimension",
+          "$value": "{size.spacing.4}"
+        },
+        "--checkGroup-gap-lg": {
+          "$type": "dimension",
+          "$value": "{size.spacing.20}"
+        },
+        "--checkGroup-gap-md": {
+          "$type": "dimension",
+          "$value": "{size.spacing.12}"
+        },
+        "--checkBox-icon-lg": {
+          "$type": "dimension",
+          "$value": "{size.icon.24}"
+        },
+        "--checkBox-icon-md": {
+          "$type": "dimension",
+          "$value": "{size.icon.20}"
+        }
+      },
       "font": {
         "--checkLabel-font-size-label-lg": {
           "$type": "dimension",
@@ -337,56 +391,6 @@
         "--checkGroup-font-color-error": {
           "$type": "color",
           "$value": "{color.color.palette.fg.error.main}"
-        }
-      },
-      "size": {
-        "--checkBox-touch-w": {
-          "$type": "dimension",
-          "$value": "{size.spacing.44}"
-        },
-        "--checkBox-touch-h": {
-          "$type": "dimension",
-          "$value": "{size.spacing.44}"
-        },
-        "--checkBox-base-border": {
-          "$type": "dimension",
-          "$value": "{size.border.001}"
-        },
-        "--checkBox-base-radius": {
-          "$type": "dimension",
-          "$value": "{size.radius.004}"
-        },
-        "--checkBox-base-md-w": {
-          "$type": "dimension",
-          "$value": "{size.spacing.20}"
-        },
-        "--checkBox-base-md-h": {
-          "$type": "dimension",
-          "$value": "{size.spacing.20}"
-        },
-        "--checkBox-base-lg-w": {
-          "$type": "dimension",
-          "$value": "{size.spacing.24}"
-        },
-        "--checkBox-base-lg-h": {
-          "$type": "dimension",
-          "$value": "{size.spacing.24}"
-        },
-        "--checkLabel-gap-lg": {
-          "$type": "dimension",
-          "$value": "{size.spacing.8}"
-        },
-        "--checkLabel-gap-md": {
-          "$type": "dimension",
-          "$value": "{size.spacing.4}"
-        },
-        "--checkGroup-gap-lg": {
-          "$type": "dimension",
-          "$value": "{size.spacing.20}"
-        },
-        "--checkGroup-gap-md": {
-          "$type": "dimension",
-          "$value": "{size.spacing.12}"
         }
       },
       "checkBox-colors": {
@@ -448,11 +452,11 @@
     },
     "radioGroup": {
       "size": {
-        "--radio-touch-w": {
+        "--radio-touch-width": {
           "$type": "dimension",
           "$value": "{size.spacing.44}"
         },
-        "--radio-touch-h": {
+        "--radio-touch-height": {
           "$type": "dimension",
           "$value": "{size.spacing.44}"
         },
@@ -460,11 +464,11 @@
           "$type": "dimension",
           "$value": "{size.radius.fill}"
         },
-        "--radio-base-lg-w": {
+        "--radio-base-width-lg": {
           "$type": "dimension",
           "$value": "{size.spacing.24}"
         },
-        "--radio-base-lg-h": {
+        "--radio-base-height-lg": {
           "$type": "dimension",
           "$value": "{size.spacing.24}"
         },
@@ -476,11 +480,11 @@
           "$type": "dimension",
           "$value": "{size.border.007}"
         },
-        "--radio-base-md-w": {
+        "--radio-base-width-md": {
           "$type": "dimension",
           "$value": "{size.spacing.20}"
         },
-        "--radio-base-md-h": {
+        "--radio-base-height-md": {
           "$type": "dimension",
           "$value": "{size.spacing.20}"
         },
@@ -600,7 +604,7 @@
     },
     "textField": {
       "size": {
-        "--textField-labelLeft-w": {
+        "--textField-labelLeft-width": {
           "$type": "dimension",
           "$value": "{size.spacing.168}"
         },
@@ -636,11 +640,11 @@
           "$type": "dimension",
           "$value": "{size.spacing.4}"
         },
-        "--textField-input-h": {
+        "--textField-input-height": {
           "$type": "dimension",
           "$value": "{size.spacing.48}"
         },
-        "--textField-input-dense-h": {
+        "--textField-input-height-dense": {
           "$type": "dimension",
           "$value": "{size.spacing.40}"
         },
@@ -814,7 +818,7 @@
           "$type": "dimension",
           "$value": "{size.spacing.8}"
         },
-        "--listItem-base-dense-gap": {
+        "--listItem-base-gap-dense": {
           "$type": "dimension",
           "$value": "{size.spacing.8}"
         },

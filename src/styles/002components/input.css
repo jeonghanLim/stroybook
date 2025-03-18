@@ -60,7 +60,6 @@
     --btn-contained-bg-neutral-hover: var(--color-palette-bg-neutral-dark-pressed);
     --btn-contained-bg-neutral-focus: var(--color-palette-bg-neutral-dark-pressed);
     --btn-contained-bg-neutral-active: var(--color-palette-bg-neutral-dark-pressed);
-    --btn-contained-bg-neutral-focus_2: var(--color-palette-bg-neutral-dark-pressed);
     --btn-contained-fg-neutral-disabled: var(--color-palette-fg-disabled-main);
     --btn-contained-bg-neutral-disabled: var(--color-palette-bg-disabled-main);
     /* outlined-colors */
@@ -85,14 +84,14 @@
     /* ==================== */
 
     /* size */
-    --checkBox-touch-w: calc(var(--spacing) * 44);
-    --checkBox-touch-h: calc(var(--spacing) * 44);
+    --checkBox-touch-width: calc(var(--spacing) * 44);
+    --checkBox-touch-height: calc(var(--spacing) * 44);
     --checkBox-base-border: var(--border-001);
     --checkBox-base-radius: var(--radius-004);
-    --checkBox-base-md-w: calc(var(--spacing) * 20);
-    --checkBox-base-md-h: calc(var(--spacing) * 20);
-    --checkBox-base-lg-w: calc(var(--spacing) * 24);
-    --checkBox-base-lg-h: calc(var(--spacing) * 24);
+    --checkBox-base-width-md: calc(var(--spacing) * 20);
+    --checkBox-base-height-md: calc(var(--spacing) * 20);
+    --checkBox-base-width-lg: calc(var(--spacing) * 24);
+    --checkBox-base-height-lg: calc(var(--spacing) * 24);
     --checkLabel-gap-lg: calc(var(--spacing) * 8);
     --checkLabel-gap-md: calc(var(--spacing) * 4);
     --checkGroup-gap-lg: calc(var(--spacing) * 20);
@@ -132,15 +131,15 @@
     /* ==================== */
 
     /* size */
-    --radio-touch-w: calc(var(--spacing) * 44);
-    --radio-touch-h: calc(var(--spacing) * 44);
+    --radio-touch-width: calc(var(--spacing) * 44);
+    --radio-touch-height: calc(var(--spacing) * 44);
     --radio-base-radius: var(--radius-fill);
-    --radio-base-lg-w: calc(var(--spacing) * 24);
-    --radio-base-lg-h: calc(var(--spacing) * 24);
+    --radio-base-width-lg: calc(var(--spacing) * 24);
+    --radio-base-height-lg: calc(var(--spacing) * 24);
     --radio-base-border-lg: var(--border-001);
     --radio-base-border-true-lg: var(--border-007);
-    --radio-base-md-w: calc(var(--spacing) * 20);
-    --radio-base-md-h: calc(var(--spacing) * 20);
+    --radio-base-width-md: calc(var(--spacing) * 20);
+    --radio-base-height-md: calc(var(--spacing) * 20);
     --radio-base-border-md: var(--border-001);
     --radio-base-border-true-md: var(--border-006);
     --radioLabel-gap-lg: calc(var(--spacing) * 8);
@@ -175,11 +174,11 @@
     /* ==================== */
 
     /* size */
-    --textField-labelLeft-w: calc(var(--spacing) * 168);
+    --textField-labelLeft-width: calc(var(--spacing) * 168);
     --textField-labelLeft-gap: calc(var(--spacing) * 2);
     --textField-labelTop-gap: calc(var(--spacing) * 2);
-    --textField-input-h: calc(var(--spacing) * 48);
-    --textField-input-dense-h: calc(var(--spacing) * 40);
+    --textField-input-height: calc(var(--spacing) * 48);
+    --textField-input-height-dense: calc(var(--spacing) * 40);
     --textField-input-radius: var(--radius-004);
     --textField-input-border1: var(--border-001);
     --textField-input-border3: var(--border-003);
