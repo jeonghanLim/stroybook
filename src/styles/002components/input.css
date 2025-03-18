@@ -98,15 +98,18 @@
     --checkGroup-font-color-helper: var(--color-palette-fg-neutral-light);
     --checkGroup-font-color-error: var(--color-palette-fg-error-main);
     /* size */
+    --checkBox-touch-w: calc(var(--spacing) * 44);
+    --checkBox-touch-h: calc(var(--spacing) * 44);
     --checkBox-base-border: var(--border-001);
     --checkBox-base-radius: var(--radius-004);
+    --checkBox-base-md-w: calc(var(--spacing) * 20);
+    --checkBox-base-md-h: calc(var(--spacing) * 20);
+    --checkBox-base-lg-w: calc(var(--spacing) * 24);
+    --checkBox-base-lg-h: calc(var(--spacing) * 24);
     --checkLabel-gap-lg: calc(var(--spacing) * 8);
     --checkLabel-gap-md: calc(var(--spacing) * 4);
     --checkGroup-gap-lg: calc(var(--spacing) * 20);
     --checkGroup-gap-md: calc(var(--spacing) * 12);
-    --checkBox-touch: calc(var(--spacing) * 44) calc(var(--spacing) * 44) calc(var(--spacing) * 44) calc(var(--spacing) * 44);
-    --checkBox-base-md: calc(var(--spacing) * 20) calc(var(--spacing) * 20) calc(var(--spacing) * 20) calc(var(--spacing) * 20);
-    --checkBox-base-lg: calc(var(--spacing) * 24) calc(var(--spacing) * 24) calc(var(--spacing) * 24) calc(var(--spacing) * 24);
     /* checkBox-colors */
     --checkBox-overlay-bg-wait: var(--color-palette-bg-overlay-white-light);
     --checkBox-stroke-wait: var(--color-palette-stroke-neutral-light);
