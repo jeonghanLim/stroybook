@@ -11,23 +11,27 @@ export const Checkbox = ({ size, color, variant, checkText, disabled, onClick, .
   let sizeClass = "";
   let colorClass = "";
   switch(size) {
-    case "lg" : sizeClass = 'checkBox-base-lg'; break;
-    default : sizeClass = 'checkBox-base-md'; break;
+    case "lg" : sizeClass = 'checkBox-size-lg'; break;
+    default : sizeClass = 'checkBox-size-md'; break;
   }
-  switch(color){
+  switch(color){ 
     case "neutral" :
-      colorClass = boxLine
+      colorClass = variant  === 'checkbox' ? 'checkBox-checkbox-color-neutral' :
+                    variant === 'check' ? 'checkBox-check-color-neutral' : ''; break;
+    default :
+      colorClass = variant === 'checkbox' ? 'checkBox-checkbox-color-brand' :
+                    variant === 'check' ? 'checkBox-check-color-brand' : ''; break;
   }
 
   return (
-    <label className="checkbox"> 
-      <span className="checkbox"> 
-          <input type="checkbox" />
+    <label className="checkbox-wrapper">
+        <div className={['checkbox', sizeClass, colorClass, disabled ? "disabled" : ""].join(' ')}>
+          <input type="checkbox" className="checkBox-base"/>
           <span className="checkbox-icon"></span>
           {checkText &&
               <span className="checkbox-text">{checkText}</span>
           }
-      </span>
+        </div>
     </label>
   );
 };

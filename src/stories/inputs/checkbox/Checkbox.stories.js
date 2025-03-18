@@ -23,6 +23,7 @@ export const Default = {
   args: {
     checked: false,
     label: 'Check me!',
+
   },
 };
 
