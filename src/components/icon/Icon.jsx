@@ -2,18 +2,20 @@ import React from 'react'
 import PropTypes from 'prop-types';
 
 export const Icon = ({
-    size=24,
+    size,
     className,
     children,
 }) => {
     return (
-        <svg 
-            width={size && size} height={size && size}
-            viewBox="0 0 24 24"
-            className={className ? className : 'fill-current'}
-        >
-            {children}
-        </svg>
+        <div className='icon-box'>
+            <svg 
+                width={size && size} height={size && size}
+                viewBox="0 0 24 24"
+                className={className ? className : 'fill-current'}
+            >
+                {children}
+            </svg>
+        </div>
     )
 }
 

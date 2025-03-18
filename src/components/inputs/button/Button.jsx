@@ -16,25 +16,7 @@ export const Button = ({
   onClick,
   ...props 
 }) => {  
-
-  let sizeClass = "";
-  let colorClass = "";
-  switch(size) {
-    case "sm" : sizeClass = 'btn-size-sm'; break;
-    case "lg" : sizeClass = 'btn-size-lg'; break;
-    default : sizeClass = 'btn-size-md'; break;
-  }
-  switch(color) {
-    case "neutral" : 
-      colorClass = variant === 'contained' ? 'btn-contained-color-neutral' : 
-                    variant === 'outlined' ? 'btn-outlined-color-neutral' : 
-                    'btn-text-color-neutral'; break;
-    default : 
-      colorClass = variant === 'contained' ? 'btn-contained-color-brand' :
-                    variant === 'outlined' ? 'btn-outlined-color-brand' :
-                    'btn-text-color-brand'; break;
-  }
-
+  
   const handleClick = (e) => {
     if(disabled) return;
     onClick && onClick(e);
@@ -43,7 +25,7 @@ export const Button = ({
   return (
     <button
       type="button"
-      className={['btn', sizeClass, colorClass, disabled ? "disabled" : ""].join(' ')}
+      className={`btn btn-size-${size} btn-${variant}-color-${color} ${disabled && disabled}`}
       onClick={handleClick}
       style={{width: increasedWidth && '100%', height: increasedHeight && '100%'}}
       {...props}
