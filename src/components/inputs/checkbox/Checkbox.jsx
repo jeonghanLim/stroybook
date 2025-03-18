@@ -103,3 +103,4 @@ Checkbox.defaultProps = {
   variant: 'checkbox',
   onClick: undefined,
 };
+
