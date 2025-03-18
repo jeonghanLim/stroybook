@@ -130,18 +130,21 @@
     /* ==================== */
 
     /* size */
+    --radio-touch-w: calc(var(--spacing) * 44);
+    --radio-touch-h: calc(var(--spacing) * 44);
     --radio-base-radius: var(--radius-fill);
+    --radio-base-lg-w: calc(var(--spacing) * 24);
+    --radio-base-lg-h: calc(var(--spacing) * 24);
     --radio-base-border-lg: var(--border-001);
     --radio-base-border-true-lg: var(--border-007);
+    --radio-base-md-w: calc(var(--spacing) * 20);
+    --radio-base-md-h: calc(var(--spacing) * 20);
     --radio-base-border-md: var(--border-001);
     --radio-base-border-true-md: var(--border-006);
     --radioLabel-gap-lg: calc(var(--spacing) * 8);
     --radioLabel-gap-md: calc(var(--spacing) * 4);
     --radioGroup-gap-lg: calc(var(--spacing) * 20);
     --radioGroup-gap-md: calc(var(--spacing) * 12);
-    --radio-touch: calc(var(--spacing) * 44) calc(var(--spacing) * 44) calc(var(--spacing) * 44) calc(var(--spacing) * 44);
-    --radio-base-lg: calc(var(--spacing) * 24) calc(var(--spacing) * 24) calc(var(--spacing) * 24) calc(var(--spacing) * 24);
-    --radio-base-md: calc(var(--spacing) * 20) calc(var(--spacing) * 20) calc(var(--spacing) * 20) calc(var(--spacing) * 20);
     /* font */
     --radioLabel-size-lg: var(--text-20);
     --radioLabel-weight-lg: var(--font-weight-medium);
@@ -170,8 +173,11 @@
     /* ==================== */
 
     /* size */
+    --textField-labelLeft-w: calc(var(--spacing) * 168);
     --textField-labelLeft-gap: calc(var(--spacing) * 2);
     --textField-labelTop-gap: calc(var(--spacing) * 2);
+    --textField-input-h: calc(var(--spacing) * 48);
+    --textField-input-dense-h: calc(var(--spacing) * 40);
     --textField-input-radius: var(--radius-004);
     --textField-input-border1: var(--border-001);
     --textField-input-border3: var(--border-003);

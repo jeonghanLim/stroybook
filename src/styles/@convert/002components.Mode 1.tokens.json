@@ -448,11 +448,11 @@
     },
     "radioGroup": {
       "size": {
-        "--radio-touch-x": {
+        "--radio-touch-w": {
           "$type": "dimension",
           "$value": "{size.spacing.44}"
         },
-        "--radio-touch-y": {
+        "--radio-touch-h": {
           "$type": "dimension",
           "$value": "{size.spacing.44}"
         },
@@ -460,11 +460,11 @@
           "$type": "dimension",
           "$value": "{size.radius.fill}"
         },
-        "--radio-base-lg-x": {
+        "--radio-base-lg-w": {
           "$type": "dimension",
           "$value": "{size.spacing.24}"
         },
-        "--radio-base-lg-y": {
+        "--radio-base-lg-h": {
           "$type": "dimension",
           "$value": "{size.spacing.24}"
         },
@@ -476,11 +476,11 @@
           "$type": "dimension",
           "$value": "{size.border.007}"
         },
-        "--radio-base-md-x": {
+        "--radio-base-md-w": {
           "$type": "dimension",
           "$value": "{size.spacing.20}"
         },
-        "--radio-base-md-y": {
+        "--radio-base-md-h": {
           "$type": "dimension",
           "$value": "{size.spacing.20}"
         },
@@ -600,6 +600,10 @@
     },
     "textField": {
       "size": {
+        "--textField-labelLeft-w": {
+          "$type": "dimension",
+          "$value": "{size.spacing.168}"
+        },
         "--textField-labelLeft-y": {
           "$type": "dimension",
           "$value": "{size.spacing.4}"
@@ -631,6 +635,14 @@
         "--textField-helperText-yTop": {
           "$type": "dimension",
           "$value": "{size.spacing.4}"
+        },
+        "--textField-input-h": {
+          "$type": "dimension",
+          "$value": "{size.spacing.48}"
+        },
+        "--textField-input-dense-h": {
+          "$type": "dimension",
+          "$value": "{size.spacing.40}"
         },
         "--textField-input-x": {
           "$type": "dimension",
