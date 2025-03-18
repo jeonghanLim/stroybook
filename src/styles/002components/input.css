@@ -137,11 +137,11 @@
     --radio-base-width-lg: calc(var(--spacing) * 24);
     --radio-base-height-lg: calc(var(--spacing) * 24);
     --radio-base-border-lg: var(--border-001);
-    --radio-base-border-true-lg: var(--border-007);
     --radio-base-width-md: calc(var(--spacing) * 20);
     --radio-base-height-md: calc(var(--spacing) * 20);
     --radio-base-border-md: var(--border-001);
-    --radio-base-border-true-md: var(--border-006);
+    --radio-icon-lg: var(--icon-24);
+    --radio-icon-md: var(--icon-20);
     --radioLabel-gap-lg: calc(var(--spacing) * 8);
     --radioLabel-gap-md: calc(var(--spacing) * 4);
     --radioGroup-gap-lg: calc(var(--spacing) * 20);

@@ -476,10 +476,6 @@
           "$type": "dimension",
           "$value": "{size.border.001}"
         },
-        "--radio-base-border-true-lg": {
-          "$type": "dimension",
-          "$value": "{size.border.007}"
-        },
         "--radio-base-width-md": {
           "$type": "dimension",
           "$value": "{size.spacing.20}"
@@ -492,9 +488,13 @@
           "$type": "dimension",
           "$value": "{size.border.001}"
         },
-        "--radio-base-border-true-md": {
+        "--radio-icon-lg": {
           "$type": "dimension",
-          "$value": "{size.border.006}"
+          "$value": "{size.icon.24}"
+        },
+        "--radio-icon-md": {
+          "$type": "dimension",
+          "$value": "{size.icon.20}"
         },
         "--radioLabel-gap-lg": {
           "$type": "dimension",
