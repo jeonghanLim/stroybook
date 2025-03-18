@@ -6,7 +6,35 @@
 
 @theme {
 
-    /* 20. DIVIDER */
+    /* 20. LIST */
+    /* ==================== */
+
+    /* size */
+    --listItem-base-gap: calc(var(--spacing) * 12);
+    --listItem-base-dense-gap: calc(var(--spacing) * 8);
+    --listItem-icon: var(--icon-20);
+    --listItem-icon-dense: var(--icon-18);
+    --listItem-container: calc(var(--spacing) * 12) calc(var(--spacing) * 20) calc(var(--spacing) * 12) calc(var(--spacing) * 20);
+    --listItem-container-gutter: calc(var(--spacing) * 12) calc(var(--spacing) * 0) calc(var(--spacing) * 12) calc(var(--spacing) * 0);
+    --listItem-container-dense: calc(var(--spacing) * 8) calc(var(--spacing) * 16) calc(var(--spacing) * 8) calc(var(--spacing) * 16);
+    --listItem-container-gutter-dense: calc(var(--spacing) * 8) calc(var(--spacing) * 0) calc(var(--spacing) * 8) calc(var(--spacing) * 0);
+    /* font */
+    --listItem-color-label: var(--color-palette-fg-neutral-main);
+    --listItem-color-secondary: var(--color-palette-fg-neutral-soft);
+    --listItem-color-disabled: var(--color-palette-fg-disabled-main);
+    --listItem-size-label: var(--text-16);
+    --listItem-size-secondary: var(--text-13);
+    --listItem-size-label-dense: var(--text-14);
+    --listItem-size-secondary-dense: var(--text-12);
+    --listItem-weight-label: var(--font-weight-medium);
+    --listItem-weight-secondary: var(--font-weight-regular);
+    /* color */
+    --listItem-icon: var(--color-palette-fg-neutral-main);
+    --listItem-icon-disabled: var(--color-palette-fg-disabled-main);
+    --listItem-hovered: var(--color-palette-bg-overlay-neutral-light);
+    --listItem-selected: var(--color-palette-bg-overlay-brand-light);
+
+    /* 24. DIVIDER */
     /* ==================== */
 
     /* color */

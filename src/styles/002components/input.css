@@ -201,7 +201,7 @@
     /* colors */
     --textField-input-bg: var(--color-palette-bg-layer-default);
     --textField-input-icon-fg: var(--color-palette-fg-neutral-light);
-    --textField-input-stroke-state: var(--color-palette-stroke-neutral-main);
+    --textField-input-stroke-enabled: var(--color-palette-stroke-neutral-main);
     --textField-input-stroke-hovered: var(--color-palette-stroke-neutral-main);
     --textField-input-stroke-focused: var(--color-palette-stroke-brand-dark);
     --textField-input-stroke-error: var(--color-palette-stroke-error-dark);

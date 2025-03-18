@@ -744,7 +744,7 @@
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.light}"
         },
-        "--textField-input-stroke-state": {
+        "--textField-input-stroke-enabled": {
           "$type": "color",
           "$value": "{color.color.palette.stroke.neutral.main}"
         },
@@ -772,6 +772,106 @@
     }
   },
   "dataDisplay": {
+    "list": {
+      "size": {
+        "--listItem-container-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.20}"
+        },
+        "--listItem-container-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.12}"
+        },
+        "--listItem-container-gutter-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.12}"
+        },
+        "--listItem-base-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.12}"
+        },
+        "--listItem-container-dense-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.16}"
+        },
+        "--listItem-container-dense-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
+        },
+        "--listItem-container-gutter-dense-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
+        },
+        "--listItem-base-dense-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
+        },
+        "--listItem-icon": {
+          "$type": "dimension",
+          "$value": "{size.icon.20}"
+        },
+        "--listItem-icon-dense": {
+          "$type": "dimension",
+          "$value": "{size.icon.18}"
+        }
+      },
+      "font": {
+        "--listItem-color-label": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.main}"
+        },
+        "--listItem-color-secondary": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.soft}"
+        },
+        "--listItem-color-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.disabled.main}"
+        },
+        "--listItem-size-label": {
+          "$type": "dimension",
+          "$value": "{font.text.16}"
+        },
+        "--listItem-size-secondary": {
+          "$type": "dimension",
+          "$value": "{font.text.13}"
+        },
+        "--listItem-size-label-dense": {
+          "$type": "dimension",
+          "$value": "{font.text.14}"
+        },
+        "--listItem-size-secondary-dense": {
+          "$type": "dimension",
+          "$value": "{font.text.12}"
+        },
+        "--listItem-weight-label": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.medium}"
+        },
+        "--listItem-weight-secondary": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.regular}"
+        }
+      },
+      "color": {
+        "--listItem-icon": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.main}"
+        },
+        "--listItem-icon-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.disabled.main}"
+        },
+        "--listItem-hovered": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.neutral.light}"
+        },
+        "--listItem-selected": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.brand.light}"
+        }
+      }
+    },
     "divider": {
       "color": {
         "--divider-color": {
