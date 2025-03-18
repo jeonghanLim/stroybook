@@ -24,15 +24,26 @@ export const Checkbox = ({ size, color, variant, checkText, disabled, onClick, .
   }
 
   return (
-    <label className="checkbox-wrapper">
-        <div className={['checkbox', sizeClass, colorClass, disabled ? "disabled" : ""].join(' ')}>
-          <input type="checkbox" className="checkBox-base"/>
-          <span className="checkbox-icon"></span>
-          {checkText &&
-              <span className="checkbox-text">{checkText}</span>
-          }
+    //label 태그엔 css안먹음
+    <label>
+        <div className="checkbox-wrapper">
+          {/* <div className={['checkBox', sizeClass, colorClass, disabled ? "disabled" : ""].join(' ')}> */}
+            <input type="checkbox" className={['checkBox', sizeClass, colorClass, disabled ? "disabled" : ""].join(' ')}/>
+            <span className="checkbox-icon"></span>
+            {checkText &&
+                <span className="checkbox-text">{checkText}</span>
+            }
+          {/* </div> */}
         </div>
     </label>
+
+    // <label className="checkbox-wrapper">
+    //       <input type="checkbox" className={['checkBox', sizeClass, colorClass, disabled ? "disabled" : ""].join(' ')}/>
+    //       <span className="checkbox-icon"></span>
+    //       {checkText &&
+    //           <span className="checkbox-text">{checkText}</span>
+    //       }
+    // </label>
   );
 };
 
@@ -52,7 +63,7 @@ Checkbox.propTypes = {
 Checkbox.defaultProps = {
   color: 'brand',
   size: 'md',
-  variant: 'contained',
+  variant: 'checkbox',
   onClick: undefined,
 };
 

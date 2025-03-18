@@ -90,18 +90,19 @@
 /* ===================== */
 /* CHECK BOX             */
 /* ===================== */
-.checkBox-wrapper {
-    display: inline-block; /* 또는 flex */
+@layer components {
+    .checkbox-wrapper { 
+        width: var(--checkBox-touch-w); 
+        height: var(--checkBox-touch-h);
+    }
+    .checkBox {
+        border-radius: var(--checkBox-base-radius);
+    }
 }
 
 @utility checkBox-size-* {
-    width: --value(--checkBox-touch);
-    height: --value(--checkBox-touch);
-    & .checkBox-base{
-        height: --value(--checkBox-base-*);
-        width: --value(--checkBox-base-*);
-        border-radius: --value(--checkBox-base-radius);
-    }
+    height: --value(--checkBox-base-h-*);
+    width: --value(--checkBox-base-w-*);
 }
 /* ===================== */
 /* CHECK BOX END         */
