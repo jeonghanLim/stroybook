@@ -90,12 +90,18 @@
 /* ===================== */
 /* CHECK BOX             */
 /* ===================== */
-.checkbox {
-    border-radius: 100;
-    width: 24;
-    height: 24;
-    
+.checkBox-wrapper {
+    display: inline-block; /* 또는 flex */
+}
 
+@utility checkBox-size-* {
+    width: --value(--checkBox-touch);
+    height: --value(--checkBox-touch);
+    & .checkBox-base{
+        height: --value(--checkBox-base-*);
+        width: --value(--checkBox-base-*);
+        border-radius: --value(--checkBox-base-radius);
+    }
 }
 /* ===================== */
 /* CHECK BOX END         */
