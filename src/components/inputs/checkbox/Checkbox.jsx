@@ -1,19 +1,33 @@
 import React from 'react';
-
 import PropTypes from 'prop-types';
 
 // 사용자가 선택할 속성들 (사이즈, 타입)
-/** Primary UI component for user interaction */
-export const Checkbox = ({ size, color, checkText, ...props }) => {  
+// size : la, md / color : brand, neutral / checkText : 라벨 / disabled : 고정(true,false)
+// onClick : 동작은 나중에 / checked : true, false(true면 체크가 되는거) / 
+// opacity: 0 : 체크박스 사라지는거 => boxLine bool로 처리할까?
+//
+export const Checkbox = ({ size, color, variant, checkText, disabled, onClick, ...checkboxProps }) => {  
 
+  let sizeClass = "";
+  let colorClass = "";
+  switch(size) {
+    case "lg" : sizeClass = 'checkBox-base-lg'; break;
+    default : sizeClass = 'checkBox-base-md'; break;
+  }
+  switch(color){
+    case "neutral" :
+      colorClass = boxLine
+  }
 
   return (
-    <label className="checkbox">
-        <input type="checkbox" />
-        <span className="checkbox-icon"></span>
-        {checkText &&
-            <span className="checkbox-text">{checkText}</span>
-        }
+    <label className="checkbox"> 
+      <span className="checkbox"> 
+          <input type="checkbox" />
+          <span className="checkbox-icon"></span>
+          {checkText &&
+              <span className="checkbox-text">{checkText}</span>
+          }
+      </span>
     </label>
   );
 };
@@ -37,3 +51,4 @@ Checkbox.defaultProps = {
   variant: 'contained',
   onClick: undefined,
 };
+
