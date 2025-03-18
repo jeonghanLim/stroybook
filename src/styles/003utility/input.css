@@ -92,8 +92,8 @@
 /* ===================== */
 @layer components {
     .checkbox-wrapper { 
-        width: var(--checkBox-touch-w); 
-        height: var(--checkBox-touch-h);
+        width: var(--checkBox-touch-width); 
+        height: var(--checkBox-touch-height);
     }
     .checkBox {
         border-radius: var(--checkBox-base-radius);
@@ -101,8 +101,10 @@
 }
 
 @utility checkBox-size-* {
-    height: --value(--checkBox-base-h-*);
-    width: --value(--checkBox-base-w-*);
+    height: --value(--checkBox-base-height-*);
+    width: --value(--checkBox-base-width-*);
+    margin: --value(--checkBox-base-margin-*);
+    /* margin: --value(--checkBox-margin-*); */
 }
 /* ===================== */
 /* CHECK BOX END         */
