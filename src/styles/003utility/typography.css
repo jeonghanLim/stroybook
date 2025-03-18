@@ -64,4 +64,10 @@
     .btn-mask-box { @apply flex items-center justify-center }
     .btn.disabled { @apply cursor-default }
 
+    /* dataDisplay */
+    /* 1. divider */
+    .divider { @apply border-solid border-palette-bg-overlay-black-light }
+    .divider-horizontal { @apply w-220 }
+    .divider-vertical { @apply w-px h-220 border-l }
+
 }

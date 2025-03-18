@@ -1,4 +1,9 @@
-
+@import "tailwindcss";
+@import "../001reference/font.css";
+@import "../001reference/fontType.css";
+@import "../001reference/size.css";
+@import "../001reference/color.css";
+@import "../002components/dataDisplay.css";
 
 /* ===================== */
 /* BADGE                 */
@@ -21,6 +26,11 @@
 /* ===================== */
 /* DIVIDER               */
 /* ===================== */
+
+@utility divider-orientation-* { 
+    
+}
+
 
 /* ===================== */
 /* DIVIDER END           */
