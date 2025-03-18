@@ -340,11 +340,11 @@
         }
       },
       "size": {
-        "--checkBox-touch-x": {
+        "--checkBox-touch-w": {
           "$type": "dimension",
           "$value": "{size.spacing.44}"
         },
-        "--checkBox-touch-y": {
+        "--checkBox-touch-h": {
           "$type": "dimension",
           "$value": "{size.spacing.44}"
         },
@@ -356,19 +356,19 @@
           "$type": "dimension",
           "$value": "{size.radius.004}"
         },
-        "--checkBox-base-md-x": {
+        "--checkBox-base-md-w": {
           "$type": "dimension",
           "$value": "{size.spacing.20}"
         },
-        "--checkBox-base-md-y": {
+        "--checkBox-base-md-h": {
           "$type": "dimension",
           "$value": "{size.spacing.20}"
         },
-        "--checkBox-base-lg-x": {
+        "--checkBox-base-lg-w": {
           "$type": "dimension",
           "$value": "{size.spacing.24}"
         },
-        "--checkBox-base-lg-y": {
+        "--checkBox-base-lg-h": {
           "$type": "dimension",
           "$value": "{size.spacing.24}"
         },
