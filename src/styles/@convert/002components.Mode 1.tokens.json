@@ -382,15 +382,15 @@
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.main}"
         },
-        "--bg-disable": {
+        "--checkBox-bg-disable": {
           "$type": "color",
           "$value": "{color.color.palette.bg.disabled.main}"
         },
-        "--stroke-disable": {
+        "--checkBox-stroke-disable": {
           "$type": "color",
           "$value": "{color.color.palette.stroke.disabled.main}"
         },
-        "--fg-disable": {
+        "--checkBox-fg-disable": {
           "$type": "color",
           "$value": "{color.color.palette.fg.disabled.main}"
         },
@@ -790,29 +790,17 @@
         }
       },
       "font": {
-        "--listItem-color-label": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.main}"
-        },
-        "--listItem-color-secondary": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.soft}"
-        },
-        "--listItem-color-disabled": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.disabled.main}"
-        },
         "--listItem-size-label": {
           "$type": "dimension",
           "$value": "{font.text.16}"
         },
-        "--listItem-size-secondary": {
-          "$type": "dimension",
-          "$value": "{font.text.13}"
-        },
         "--listItem-size-label-dense": {
           "$type": "dimension",
           "$value": "{font.text.14}"
+        },
+        "--listItem-size-secondary": {
+          "$type": "dimension",
+          "$value": "{font.text.13}"
         },
         "--listItem-size-secondary-dense": {
           "$type": "dimension",
@@ -828,13 +816,17 @@
         }
       },
       "color": {
-        "--listItem-icon": {
+        "--listItem-font-label": {
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.main}"
         },
-        "--listItem-icon-disabled": {
+        "--listItem-font-secondary": {
           "$type": "color",
-          "$value": "{color.color.palette.fg.disabled.main}"
+          "$value": "{color.color.palette.fg.neutral.soft}"
+        },
+        "--listItem-icon": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.main}"
         },
         "--listItem-hovered": {
           "$type": "color",
@@ -843,16 +835,22 @@
         "--listItem-selected": {
           "$type": "color",
           "$value": "{color.color.palette.bg.overlay.brand.light}"
+        },
+        "--listItem-fg-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.disabled.main}"
+        },
+        "--listItem-bg-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.disabled.main}"
+        },
+        "--listItem-storke-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.disabled.main}"
         }
       }
     },
     "divider": {
-      "color": {
-        "--divider-color": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.overlay.black.light}"
-        }
-      },
       "size": {
         "--divider-border": {
           "$type": "dimension",
@@ -938,6 +936,12 @@
           "$type": "dimension",
           "$value": "{size.spacing.40}"
         }
+      },
+      "color": {
+        "--divider-bg": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.black.light}"
+        }
       }
     }
   },
@@ -952,10 +956,6 @@
           "$type": "dimension",
           "$value": "{size.spacing.8}"
         },
-        "--menuItem-container-gutter-y": {
-          "$type": "dimension",
-          "$value": "{size.spacing.8}"
-        },
         "--menuItem-container-dense-x": {
           "$type": "dimension",
           "$value": "{size.spacing.8}"
@@ -963,6 +963,10 @@
         "--menuItem-container-dense-y": {
           "$type": "dimension",
           "$value": "{size.spacing.4}"
+        },
+        "--menuItem-container-gutter-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
         },
         "--menuItem-container-gutter-dense-y": {
           "$type": "dimension",
@@ -1005,28 +1009,36 @@
         "--menuItem-weight": {
           "$type": "dimension",
           "$value": "{font.font.weight.medium}"
-        },
-        "--menuItem-color": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.main}"
-        },
-        "--menuItem-color-disabled": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.disabled.main}"
         }
       },
       "colors": {
-        "--menuItem-color-hovered": {
+        "--menuItem-fg": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.main}"
+        },
+        "--menu-color-bg": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.layer.default}"
+        },
+        "--menuItem-bg-hovered": {
           "$type": "color",
           "$value": "{color.color.palette.bg.overlay.neutral.light}"
         },
-        "--menuItem-color-selected": {
+        "--menuItem-bg-selected": {
           "$type": "color",
           "$value": "{color.color.palette.bg.overlay.brand.light}"
         },
-        "--menu-color-background": {
+        "--menuItem-fg-disabled": {
           "$type": "color",
-          "$value": "{color.color.palette.bg.layer.default}"
+          "$value": "{color.color.palette.fg.disabled.main}"
+        },
+        "--menuItem-bg-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.disabled.main}"
+        },
+        "--menuItem-stroke-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.disabled.main}"
         }
       }
     }

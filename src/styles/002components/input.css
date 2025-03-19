@@ -108,9 +108,9 @@
     --check-fg-wait: var(--color-palette-fg-neutral-mute);
     --check-fg-brand: var(--color-palette-fg-brand-main);
     --check-fg-neutral: var(--color-palette-fg-neutral-main);
-    --bg-disable: var(--color-palette-bg-disabled-main);
-    --stroke-disable: var(--color-palette-stroke-disabled-main);
-    --fg-disable: var(--color-palette-fg-disabled-main);
+    --checkBox-bg-disable: var(--color-palette-bg-disabled-main);
+    --checkBox-stroke-disable: var(--color-palette-stroke-disabled-main);
+    --checkBox-fg-disable: var(--color-palette-fg-disabled-main);
     --checkGroup-font-title: var(--color-palette-fg-neutral-black);
     --checkGroup-font-label: var(--color-palette-fg-neutral-black);
     --checkGroup-font-helper: var(--color-palette-fg-neutral-light);
