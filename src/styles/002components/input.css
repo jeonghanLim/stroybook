@@ -74,8 +74,7 @@
     /* 5. CHECKBOX */
     /* ==================== */
 
-    /* size */
-    --checkBox-base-margin-md:calc(var(--spacing) * 10) calc(var(--spacing) * 10) calc(var(--spacing) * 10) calc(var(--spacing) * 10);
+    /* size */    
     --checkBox-touch-width: calc(var(--spacing) * 44);
     --checkBox-touch-height: calc(var(--spacing) * 44);
     --checkBox-base-border: var(--border-001);
