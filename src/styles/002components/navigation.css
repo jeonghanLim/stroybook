@@ -6,7 +6,7 @@
 
 @theme {
 
-    /* 27. MENU */
+    /* 24. MENU */
     /* ==================== */
 
     /* size */
@@ -15,8 +15,8 @@
     --menuItem-icon-dense: var(--icon-18);
     --menu-radius: var(--radius-004);
     --menuItem-container: calc(var(--spacing) * 8) calc(var(--spacing) * 12) calc(var(--spacing) * 8) calc(var(--spacing) * 12);
-    --menuItem-container-gutter: calc(var(--spacing) * 8) calc(var(--spacing) * 0) calc(var(--spacing) * 8) calc(var(--spacing) * 0);
     --menuItem-container-dense: calc(var(--spacing) * 4) calc(var(--spacing) * 8) calc(var(--spacing) * 4) calc(var(--spacing) * 8);
+    --menuItem-container-gutter: calc(var(--spacing) * 8) calc(var(--spacing) * 0) calc(var(--spacing) * 8) calc(var(--spacing) * 0);
     --menuItem-container-gutter-dense: calc(var(--spacing) * 4) calc(var(--spacing) * 0) calc(var(--spacing) * 4) calc(var(--spacing) * 0);
     --menuList: calc(var(--spacing) * 12) calc(var(--spacing) * 0) calc(var(--spacing) * 12) calc(var(--spacing) * 0);
     --menuList-dense: calc(var(--spacing) * 8) calc(var(--spacing) * 0) calc(var(--spacing) * 8) calc(var(--spacing) * 0);
@@ -24,10 +24,12 @@
     --menuItem-size: var(--text-16);
     --menuItem-size-dense: var(--text-14);
     --menuItem-weight: var(--font-weight-medium);
-    --menuItem-color: var(--color-palette-fg-neutral-main);
-    --menuItem-color-disabled: var(--color-palette-fg-disabled-main);
     /* colors */
-    --menuItem-color-hovered: var(--color-palette-bg-overlay-neutral-light);
-    --menuItem-color-selected: var(--color-palette-bg-overlay-brand-light);
-    --menu-color-background: var(--color-palette-bg-layer-default);
+    --menuItem-fg: var(--color-palette-fg-neutral-main);
+    --menu-color-bg: var(--color-palette-bg-layer-default);
+    --menuItem-bg-hovered: var(--color-palette-bg-overlay-neutral-light);
+    --menuItem-bg-selected: var(--color-palette-bg-overlay-brand-light);
+    --menuItem-fg-disabled: var(--color-palette-fg-disabled-main);
+    --menuItem-bg-disabled: var(--color-palette-bg-disabled-main);
+    --menuItem-stroke-disabled: var(--color-palette-stroke-disabled-main);
 }
