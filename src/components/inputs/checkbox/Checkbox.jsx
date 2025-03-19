@@ -55,31 +55,11 @@ export const Checkbox = ({ size, color, variant, checkIcon, checkText, disabled,
               checked={isChecked}
               onChange={handleChange}  
             /> 
-            {/* {checked && icon1} */}
-            {/* {!checked && icon2} */}
             { checked && checkIcon && <span className="checkbox-icon">{checkIcon}</span>}
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M20.2607 8.26066L10.8 17.7213L4.93934 11.8607L7.06066 9.73934L10.8 13.4787L18.1393 6.13934L20.2607 8.26066Z" fill="#003D88"/>
-</svg>
-
             {checkText && <span className="checkbox-text">{checkText}</span>}
           </div>
         </div>
     </label>
-    // <label>
-    //     <div className="checkbox-wrapper">
-    //         <input 
-    //           type="checkbox" 
-    //           className={[ 'peer-hidden', variantClass, sizeClass, colorClass, disabled ? "disabled" : ""].join(' ')}
-    //           checked={isChecked}
-    //           onChange={handleChange}  
-    //         /> 
-    //       {/* <div className={[ variantClass, sizeClass, colorClass, disabled ? "disabled" : ""].join(' ')} > */}
-    //         <span className="checkbox-icon"></span>
-    //         {checkText && <span className="checkbox-text">{checkText}</span>}
-    //       {/* </div> */}
-    //     </div>
-    // </label>
   );
 };
 
