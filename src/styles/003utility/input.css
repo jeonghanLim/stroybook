@@ -9,6 +9,17 @@
 /* ===================== */
 /* BTN                   */
 /* ===================== */
+@layer components {
+    /* Icon */
+    .icon-box { @apply absolute}
+
+    /* 2. Button */
+    .btn { @apply rounded-004 cursor-pointer whitespace-nowrap }
+    .btn, .btn-base { @apply flex items-center justify-center w-fit }
+    .btn-mask-box { @apply flex items-center justify-center }
+    .btn.disabled { @apply cursor-default }
+
+}
 
 @utility btn-size-* { 
     padding : --value(--btn-padding-*);
@@ -19,6 +30,10 @@
         gap: --value(--btn-base-gap-*);
         & .btn-mask-box{
             width: --value(--btn-mask-box-w-*);
+            & .icon-box{
+                width: --value(--btn-icon-*);
+                height: --value(--btn-icon-*);
+            }
         }
     }
 }
