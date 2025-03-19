@@ -394,19 +394,19 @@
           "$type": "color",
           "$value": "{color.color.palette.fg.disabled.main}"
         },
-        "--checkGroup-font-title": {
+        "--checkGroup-fg-title": {
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.black}"
         },
-        "--checkGroup-font-label": {
+        "--checkGroup-fg-label": {
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.black}"
         },
-        "--checkGroup-font-helper": {
+        "--checkGroup-fg-helper": {
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.light}"
         },
-        "--checkGroup-font-error": {
+        "--checkGroup-fg-error": {
           "$type": "color",
           "$value": "{color.color.palette.fg.error.main}"
         }
@@ -514,21 +514,21 @@
         }
       },
       "colors": {
-        "--radioLabel-font": {
+        "--radioGroup-fg-title": {
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.black}"
         },
-        "--radioGroup-font-title": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.black}"
-        },
-        "--radioGroup-font-helper": {
+        "--radioGroup-fg-helper": {
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.light}"
         },
-        "--radioGroup-font-error": {
+        "--radioGroup-fg-error": {
           "$type": "color",
           "$value": "{color.color.palette.fg.error.main}"
+        },
+        "--radioLabel-fg": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.black}"
         },
         "--radio-base-stroke": {
           "$type": "color",
@@ -706,27 +706,27 @@
           "$type": "color",
           "$value": "{color.color.palette.stroke.error.dark}"
         },
-        "--textField-font-label": {
+        "--textField-fg-label": {
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.main}"
         },
-        "--textField-font-label-required": {
+        "--textField-fg-label-required": {
           "$type": "color",
           "$value": "{color.color.palette.fg.error.main}"
         },
-        "--textField-font-placeholder": {
+        "--textField-fg-placeholder": {
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.mute}"
         },
-        "--textField-font-hasValue": {
+        "--textField-fg-hasValue": {
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.black}"
         },
-        "--textField-font-helperText": {
+        "--textField-fg-helperText": {
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.light}"
         },
-        "--textField-font-error": {
+        "--textField-fg-error": {
           "$type": "color",
           "$value": "{color.color.palette.fg.error.main}"
         },
@@ -816,23 +816,23 @@
         }
       },
       "color": {
-        "--listItem-font-label": {
+        "--listItem-fg-label": {
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.main}"
         },
-        "--listItem-font-secondary": {
+        "--listItem-fg-secondary": {
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.soft}"
         },
-        "--listItem-icon": {
+        "--listItem-fg-icon": {
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.main}"
         },
-        "--listItem-hovered": {
+        "--listItem-bg-hovered": {
           "$type": "color",
           "$value": "{color.color.palette.bg.overlay.neutral.light}"
         },
-        "--listItem-selected": {
+        "--listItem-bg-selected": {
           "$type": "color",
           "$value": "{color.color.palette.bg.overlay.brand.light}"
         },
@@ -1046,15 +1046,15 @@
   "utils": {
     "cssBaseline": {
       "scrollbar": {
-        "--scrollbar-arrow-disabled": {
+        "--scrollbar-fg-arrow-disabled": {
           "$type": "color",
           "$value": "{color.color.palette.fg.disabled.main}"
         },
-        "--scrollbar-arrow": {
+        "--scrollbar-fg-arrow": {
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.soft}"
         },
-        "--scrollbar-square": {
+        "--scrollbar-fg-square": {
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.mute}"
         },

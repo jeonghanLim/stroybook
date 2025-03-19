@@ -10,8 +10,8 @@
     /* ==================== */
 
     /* scrollbar */
-    --scrollbar-arrow-disabled: var(--color-palette-fg-disabled-main);
-    --scrollbar-arrow: var(--color-palette-fg-neutral-soft);
-    --scrollbar-square: var(--color-palette-fg-neutral-mute);
+    --scrollbar-fg-arrow-disabled: var(--color-palette-fg-disabled-main);
+    --scrollbar-fg-arrow: var(--color-palette-fg-neutral-soft);
+    --scrollbar-fg-square: var(--color-palette-fg-neutral-mute);
     --scrollbar-bg: var(--color-palette-bg-layer-fill);
 }

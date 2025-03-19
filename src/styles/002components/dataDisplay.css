@@ -26,11 +26,11 @@
     --listItem-weight-label: var(--font-weight-medium);
     --listItem-weight-secondary: var(--font-weight-regular);
     /* color */
-    --listItem-font-label: var(--color-palette-fg-neutral-main);
-    --listItem-font-secondary: var(--color-palette-fg-neutral-soft);
-    --listItem-icon: var(--color-palette-fg-neutral-main);
-    --listItem-hovered: var(--color-palette-bg-overlay-neutral-light);
-    --listItem-selected: var(--color-palette-bg-overlay-brand-light);
+    --listItem-fg-label: var(--color-palette-fg-neutral-main);
+    --listItem-fg-secondary: var(--color-palette-fg-neutral-soft);
+    --listItem-fg-icon: var(--color-palette-fg-neutral-main);
+    --listItem-bg-hovered: var(--color-palette-bg-overlay-neutral-light);
+    --listItem-bg-selected: var(--color-palette-bg-overlay-brand-light);
     --listItem-fg-disabled: var(--color-palette-fg-disabled-main);
     --listItem-bg-disabled: var(--color-palette-bg-disabled-main);
     --listItem-storke-disabled: var(--color-palette-stroke-disabled-main);

@@ -111,10 +111,10 @@
     --checkBox-bg-disable: var(--color-palette-bg-disabled-main);
     --checkBox-stroke-disable: var(--color-palette-stroke-disabled-main);
     --checkBox-fg-disable: var(--color-palette-fg-disabled-main);
-    --checkGroup-font-title: var(--color-palette-fg-neutral-black);
-    --checkGroup-font-label: var(--color-palette-fg-neutral-black);
-    --checkGroup-font-helper: var(--color-palette-fg-neutral-light);
-    --checkGroup-font-error: var(--color-palette-fg-error-main);
+    --checkGroup-fg-title: var(--color-palette-fg-neutral-black);
+    --checkGroup-fg-label: var(--color-palette-fg-neutral-black);
+    --checkGroup-fg-helper: var(--color-palette-fg-neutral-light);
+    --checkGroup-fg-error: var(--color-palette-fg-error-main);
 
     /* 9. RADIOGROUP */
     /* ==================== */
@@ -146,10 +146,10 @@
     --radioGroup-size-helper: var(--text-13);
     --radioGroup-weight-helper: var(--font-weight-medium);
     /* colors */
-    --radioLabel-font: var(--color-palette-fg-neutral-black);
-    --radioGroup-font-title: var(--color-palette-fg-neutral-black);
-    --radioGroup-font-helper: var(--color-palette-fg-neutral-light);
-    --radioGroup-font-error: var(--color-palette-fg-error-main);
+    --radioGroup-fg-title: var(--color-palette-fg-neutral-black);
+    --radioGroup-fg-helper: var(--color-palette-fg-neutral-light);
+    --radioGroup-fg-error: var(--color-palette-fg-error-main);
+    --radioLabel-fg: var(--color-palette-fg-neutral-black);
     --radio-base-stroke: var(--color-palette-stroke-neutral-light);
     --radio-base-bg: var(--color-palette-bg-overlay-white-light);
     --radio-base-fg-brand: var(--color-palette-fg-brand-main);
@@ -196,12 +196,12 @@
     --textField-input-stroke-hovered: var(--color-palette-stroke-neutral-main);
     --textField-input-stroke-focused: var(--color-palette-stroke-brand-dark);
     --textField-input-stroke-error: var(--color-palette-stroke-error-dark);
-    --textField-font-label: var(--color-palette-fg-neutral-main);
-    --textField-font-label-required: var(--color-palette-fg-error-main);
-    --textField-font-placeholder: var(--color-palette-fg-neutral-mute);
-    --textField-font-hasValue: var(--color-palette-fg-neutral-black);
-    --textField-font-helperText: var(--color-palette-fg-neutral-light);
-    --textField-font-error: var(--color-palette-fg-error-main);
+    --textField-fg-label: var(--color-palette-fg-neutral-main);
+    --textField-fg-label-required: var(--color-palette-fg-error-main);
+    --textField-fg-placeholder: var(--color-palette-fg-neutral-mute);
+    --textField-fg-hasValue: var(--color-palette-fg-neutral-black);
+    --textField-fg-helperText: var(--color-palette-fg-neutral-light);
+    --textField-fg-error: var(--color-palette-fg-error-main);
     --textField-bg-disabled: var(--color-palette-bg-disabled-main);
     --textField-stroke-disabled: var(--color-palette-stroke-disabled-main);
     --textField-fg-disabled: var(--color-palette-fg-disabled-main);
