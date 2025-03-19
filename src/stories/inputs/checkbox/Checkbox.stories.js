@@ -21,7 +21,8 @@ export default {
 
 export const Default = {
   args: {
-    checked: false,
+    // checked: false,
+    size : 'lg', 
     label: 'Check me!',
 
   },
