@@ -10,8 +10,28 @@
     /* ==================== */
 
     /* scrollbar */
-    --scrollbar-arrow-disabled: var(--color-palette-fg-disabled-main);
-    --scrollbar-arrow: var(--color-palette-fg-neutral-soft);
-    --scrollbar-square: var(--color-palette-fg-neutral-mute);
+    --scrollbar-fg-arrow-disabled: var(--color-palette-fg-disabled-main);
+    --scrollbar-fg-arrow: var(--color-palette-fg-neutral-soft);
+    --scrollbar-fg-square: var(--color-palette-fg-neutral-mute);
     --scrollbar-bg: var(--color-palette-bg-layer-fill);
+
+    /* 30. INTERACTION */
+    /* ==================== */
+
+    --overlay-brand: var(--color-palette-bg-overlay-brand-light);
+    --overlay-brand-dark: var(--color-palette-bg-overlay-brand-dark);
+    --overlay-neutral: var(--color-palette-bg-overlay-neutral-light);
+    --overlay-neutral-dark: var(--color-palette-bg-overlay-neutral-dark);
+    --overlay-white: var(--color-palette-bg-overlay-white-light);
+    --overlay-white-dark: var(--color-palette-bg-overlay-white-dark);
+    --overlay-black: var(--color-palette-bg-overlay-black-light);
+    --overlay-black-dark: var(--color-palette-bg-overlay-black-dark);
+    --overlay-error: var(--color-palette-bg-overlay-error-light);
+    --overlay-error-dark: var(--color-palette-bg-overlay-error-dark);
+    --overlay-warning: var(--color-palette-bg-overlay-warning-light);
+    --overlay-warning-dark: var(--color-palette-bg-overlay-warning-dark);
+    --overlay-info: var(--color-palette-bg-overlay-info-light);
+    --overlay-info-dark: var(--color-palette-bg-overlay-info-dark);
+    --overlay-success: var(--color-palette-bg-overlay-success-light);
+    --overlay-success-dark: var(--color-palette-bg-overlay-success-dark);
 }

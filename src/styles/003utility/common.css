@@ -1,0 +1,59 @@
+@import "tailwindcss";
+@import "../001reference/font.css";
+@import "../001reference/fontType.css";
+@import "../001reference/size.css";
+@import "../001reference/color.css";
+@import "../002components/utils.css";
+
+@layer components {
+
+  .ripple-container {
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    inset: 0px;
+    border-radius: inherit;
+  }
+  
+  .ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    pointer-events: none;
+  }
+
+  .ripple:not(.focus) {
+    transition: transform 600ms ease-in, opacity 600ms linear;
+  }
+
+  .ripple.focus {
+    animation: 
+    initialGrow 0.2s ease-out forwards,
+    bounceLoop 0.9s infinite alternate ease-in-out 0.8s;
+}
+
+@keyframes initialGrow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0.8); /* 안정된 최종 상태 */
+  }
+}
+
+@keyframes bounceLoop {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(0.75);
+  }
+}
+
+  .ripple.ripple-animation-start{ transform: scale(5);}
+  .ripple.ripple-animation-end{ opacity: 0;}
+}
+
+@utility ripple-color-* { 
+  background : --value(--overlay-*);
+}
