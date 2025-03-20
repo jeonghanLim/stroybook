@@ -106,31 +106,34 @@
 /* CHECK BOX             */
 /* ===================== */
 @layer components {
+    .inputClass {
+        appearance: none;      
+        @apply absolute  
+    }
+
     .checkbox-wrapper { 
         width: var(--checkBox-touch-width); 
         height: var(--checkBox-touch-height);
+        border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        /* &:hover .brand{
-            border-radius: 50%;
-            background-color: #003D8814;
-        } */
+        & .checkbox {
+            border-radius: var(--checkBox-base-radius);
+            border : 1px solid;
+            border-color : var(--checkBox-stroke-wait);
+        }
+        & .check {
+            border : 0px solid;
+            & .icon-box{
+                color: var(red);
+            }
+        }
     }
-    .inputClass {
-        appearance: none;          
-    }
-    .checkBox {
-        border-radius: var(--checkBox-base-radius);
-        border : 1px solid;
-        border-color : var(--checkBox-stroke-wait);
-    }
-    /* .check {
-
-    } */
+    
 }
-/* checkbox-wrapper color에 따른 호버 */
-@utility brand {
+/* checkbox-wrapper color에 따른 호버 => 버려*/
+/* @utility brand {
     &:hover {
         border-radius: 50%;
         background-color: #003D8814;
@@ -148,41 +151,31 @@
         border-radius: 50%;
         background-color: #43505F14;
     }
-}
+} */
 
-@utility checkBox-size-* {
+/* 44*44 밑의 24*24 사이즈는 다 동일해서 상관 x*/
+@utility checkbox-size-* {
     height: --value(--checkBox-base-height-*);
     width: --value(--checkBox-base-width-*);
     
-    /* & .check{
-       
-    } */
+    & .icon-box{
+        width: --value(--checkBox-icon-*);
+        height: --value(--checkBox-icon-*);
+    }
 }
 
 @utility checkbox-color-* {
 
-    & .check{
-        fill: 
+    &:hover{
+        background-color : --value(--color-palette-bg-overlay-*-light);
     }
 
-    &:{
-        background-color : --value(--checkBox-bg-*);
-        & .check{
-            fill: 
-        }
-    }
-
-    &:focus{
-        background-color : --value(--checkBox-bg-*);
-        & .check{
-            fill: 
-        }
-    }
-    
-    &:has(input:checked){
-        background-color : --value(--checkBox-bg-*);
-        & .check{
-            fill: 
+    & .checkbox{
+        &:has(input:checked){
+            background-color : --value(--checkBox-bg-*);
+            & .icon-box{
+                color: --value(--checkBox-fg-*-contrast);
+            }
         }
     }
 }
