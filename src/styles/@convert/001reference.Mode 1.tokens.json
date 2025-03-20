@@ -287,6 +287,36 @@
             "$type": "color",
             "$value": "#fff5f5",
             "$description": "surface"
+          },
+          "alpha": {
+            "002": {
+              "$type": "color",
+              "$value": "#cd1e1e05"
+            },
+            "004": {
+              "$type": "color",
+              "$value": "#cd1e1e0a"
+            },
+            "008": {
+              "$type": "color",
+              "$value": "#cd1e1e14"
+            },
+            "016": {
+              "$type": "color",
+              "$value": "#cd1e1e29"
+            },
+            "024": {
+              "$type": "color",
+              "$value": "#cd1e1e3d"
+            },
+            "032": {
+              "$type": "color",
+              "$value": "#cd1e1e52"
+            },
+            "048": {
+              "$type": "color",
+              "$value": "#cd1e1e7a"
+            }
           }
         },
         "yellow": {
@@ -342,6 +372,36 @@
             "$type": "color",
             "$value": "#fff9f0",
             "$description": "surface"
+          },
+          "alpha": {
+            "002": {
+              "$type": "color",
+              "$value": "#ffa23305"
+            },
+            "004": {
+              "$type": "color",
+              "$value": "#ffa2330a"
+            },
+            "008": {
+              "$type": "color",
+              "$value": "#ffa23314"
+            },
+            "016": {
+              "$type": "color",
+              "$value": "#ffa23329"
+            },
+            "024": {
+              "$type": "color",
+              "$value": "#ffa2333d"
+            },
+            "032": {
+              "$type": "color",
+              "$value": "#ffa23352"
+            },
+            "048": {
+              "$type": "color",
+              "$value": "#ffa2337a"
+            }
           }
         },
         "green": {
@@ -397,6 +457,36 @@
             "$type": "color",
             "$value": "#f3fbf5",
             "$description": "surface"
+          },
+          "alpha": {
+            "002": {
+              "$type": "color",
+              "$value": "#27964205"
+            },
+            "004": {
+              "$type": "color",
+              "$value": "#2796420a"
+            },
+            "008": {
+              "$type": "color",
+              "$value": "#27964214"
+            },
+            "016": {
+              "$type": "color",
+              "$value": "#27964229"
+            },
+            "024": {
+              "$type": "color",
+              "$value": "#2796423d"
+            },
+            "032": {
+              "$type": "color",
+              "$value": "#27964252"
+            },
+            "048": {
+              "$type": "color",
+              "$value": "#2796427a"
+            }
           }
         },
         "blue": {
@@ -452,6 +542,36 @@
             "$type": "color",
             "$value": "#eef6ff",
             "$description": "surface"
+          },
+          "alpha": {
+            "002": {
+              "$type": "color",
+              "$value": "#007bff05"
+            },
+            "004": {
+              "$type": "color",
+              "$value": "#007bff0a"
+            },
+            "008": {
+              "$type": "color",
+              "$value": "#007bff14"
+            },
+            "016": {
+              "$type": "color",
+              "$value": "#007bff29"
+            },
+            "024": {
+              "$type": "color",
+              "$value": "#007bff3d"
+            },
+            "032": {
+              "$type": "color",
+              "$value": "#007bff52"
+            },
+            "048": {
+              "$type": "color",
+              "$value": "#007bff7a"
+            }
           }
         },
         "non": {
@@ -660,6 +780,46 @@
               "light": {
                 "$type": "color",
                 "$value": "{color.color.material.black.alpha.008}"
+              }
+            },
+            "error": {
+              "dark": {
+                "$type": "color",
+                "$value": "{color.color.material.red.alpha.032}"
+              },
+              "light": {
+                "$type": "color",
+                "$value": "{color.color.material.red.alpha.008}"
+              }
+            },
+            "warning": {
+              "dark": {
+                "$type": "color",
+                "$value": "{color.color.material.yellow.alpha.032}"
+              },
+              "light": {
+                "$type": "color",
+                "$value": "{color.color.material.yellow.alpha.008}"
+              }
+            },
+            "info": {
+              "dark": {
+                "$type": "color",
+                "$value": "{color.color.material.blue.alpha.032}"
+              },
+              "light": {
+                "$type": "color",
+                "$value": "{color.color.material.blue.alpha.008}"
+              }
+            },
+            "success": {
+              "dark": {
+                "$type": "color",
+                "$value": "{color.color.material.green.alpha.032}"
+              },
+              "light": {
+                "$type": "color",
+                "$value": "{color.color.material.green.alpha.008}"
               }
             }
           }

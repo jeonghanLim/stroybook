@@ -28,12 +28,12 @@
     --btn-padding-md: calc(var(--spacing) * 8) calc(var(--spacing) * 12) calc(var(--spacing) * 8) calc(var(--spacing) * 12);
     --btn-padding-lg: calc(var(--spacing) * 12) calc(var(--spacing) * 20) calc(var(--spacing) * 12) calc(var(--spacing) * 20);
     /* font */
-    --font-size-sm: var(--text-13);
-    --font-size-md: var(--text-16);
-    --font-size-lg: var(--text-18);
-    --font-weight-sm: var(--font-weight-semiBold);
-    --font-weight-md: var(--font-weight-bold);
-    --font-weight-lg: var(--font-weight-bold);
+    --btn-font-size-sm: var(--text-13);
+    --btn-font-size-md: var(--text-16);
+    --btn-font-size-lg: var(--text-18);
+    --btn-font-weight-sm: var(--font-weight-semiBold);
+    --btn-font-weight-md: var(--font-weight-bold);
+    --btn-font-weight-lg: var(--font-weight-bold);
     /* colors */
     --btn-contained-bg-brand: var(--color-palette-bg-brand-dark-default);
     --btn-contained-fg-brand: var(--color-palette-fg-brand-contrast);
@@ -108,7 +108,7 @@
     --check-fg-wait: var(--color-palette-fg-neutral-mute);
     --check-fg-brand: var(--color-palette-fg-brand-main);
     --check-fg-neutral: var(--color-palette-fg-neutral-main);
-    --checkBox-layer-brand: var(--color-palette-bg-overlay-brand-light);
+    --checkBox-overlay-brand: var(--color-palette-bg-overlay-brand-light);
     --checkBox-layer-neutral: var(--color-palette-bg-overlay-neutral-light);
     --checkBox-bg-disable: var(--color-palette-bg-disabled-main);
     --checkBox-stroke-disable: var(--color-palette-stroke-disabled-main);
@@ -148,17 +148,19 @@
     --radioGroup-size-helper: var(--text-13);
     --radioGroup-weight-helper: var(--font-weight-medium);
     /* colors */
-    --radioGroup-fg-title: var(--color-palette-fg-neutral-black);
-    --radioGroup-fg-helper: var(--color-palette-fg-neutral-light);
-    --radioGroup-fg-error: var(--color-palette-fg-error-main);
-    --radioLabel-fg: var(--color-palette-fg-neutral-black);
+    --radio-fg-disable: var(--color-palette-fg-disabled-main);
+    --radio-bg-disable: var(--color-palette-bg-disabled-main);
+    --radio-stroke-disable: var(--color-palette-stroke-disabled-main);
     --radio-base-stroke: var(--color-palette-stroke-neutral-light);
     --radio-base-bg: var(--color-palette-bg-overlay-white-light);
     --radio-base-fg-brand: var(--color-palette-fg-brand-main);
     --radio-base-fg-neutral: var(--color-palette-fg-neutral-main);
-    --radio-fg-disable: var(--color-palette-fg-disabled-main);
-    --radio-bg-disable: var(--color-palette-bg-disabled-main);
-    --radio-stroke-disable: var(--color-palette-stroke-disabled-main);
+    --radio-layer-brand: var(--color-palette-bg-overlay-brand-light);
+    --radio-layer-neutral: var(--color-palette-bg-overlay-neutral-light);
+    --radioLabel-fg: var(--color-palette-fg-neutral-black);
+    --radioGroup-fg-title: var(--color-palette-fg-neutral-black);
+    --radioGroup-fg-helper: var(--color-palette-fg-neutral-light);
+    --radioGroup-fg-error: var(--color-palette-fg-error-main);
 
     /* 13. TEXTFIELD */
     /* ==================== */
