@@ -3,6 +3,7 @@
 @import "../001reference/fontType.css";
 @import "../001reference/size.css";
 @import "../001reference/color.css";
+@import "../002components/utils.css";
 
 @layer components {
 
@@ -54,5 +55,5 @@
 }
 
 @utility ripple-color-* { 
-  background : --value(--color-palette-bg-overlay-*);
+  background : --value(--overlay-*);
 }
