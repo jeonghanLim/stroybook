@@ -22,9 +22,12 @@ export default {
 export const Default = {
   args: {
     size : 'lg', 
-    color : 'brand',
-    variant : 'checkbox'
-    // variant : 'check'
+    color : 'neutral',
+    // variant : 'checkbox',
+    // variant : 'check',
+    // disabled : true, 
+    checked : true,
+    // indeterminate : true
   },
 };
 

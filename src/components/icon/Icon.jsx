@@ -78,3 +78,11 @@ export const CheckIcon = ({ size, className }) => {
         </Icon>
     )
 };
+
+export const IndeterminateIcon = ({ size, className }) => {
+    return (
+        <Icon size={size} className={className}>
+            <path d="M18 13.5H6V10.5H18V13.5Z"/>
+        </Icon>
+    )
+};
