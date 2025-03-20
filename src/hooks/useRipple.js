@@ -54,6 +54,7 @@ function useRipple({ centered = false, color = 'white' } = {}) {
     x = rect.width / 2 - size / 2;
     y = rect.height / 2 - size / 2;
     const newRipple = { x, y, size };
+
     setFocus(newRipple);
   };
 
@@ -63,12 +64,9 @@ function useRipple({ centered = false, color = 'white' } = {}) {
 
   const rippleContainer = (
     <div className="ripple-container" 
-      onFocus={handleFocus} 
-      onBlur={handleBlur} 
       onMouseDown={handleMouseDown} 
       onMouseUp={handleMouseUp} 
       onMouseLeave={handleMouseUp}
-      tabIndex="0"
     >
       {focus && ripples.length == 0 &&
         <Ripple
@@ -93,7 +91,7 @@ function useRipple({ centered = false, color = 'white' } = {}) {
     </div>
   );
 
-  return { rippleContainer };
+  return {handleFocus, handleBlur, rippleContainer};
 }
 
 const Ripple = ({ x, y, size, released, color, className }) => {
@@ -112,7 +110,7 @@ const Ripple = ({ x, y, size, released, color, className }) => {
 
   return (
     <span
-    className={cn}
+      className={cn}
       style={{
         left: x,
         top: y,

@@ -7,6 +7,9 @@
 
 @layer components {
 
+  /* Icon */
+  .icon-box { @apply absolute}
+  
   .ripple-container {
     overflow: hidden;
     position: absolute;
