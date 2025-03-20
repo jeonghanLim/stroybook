@@ -108,6 +108,19 @@
 /* ===================== */
 /* TEXT FIELD            */
 /* ===================== */
+@layer components{
+
+    .textfield-base{
+        border: var(--textField-input-border1);
+        border-style: solid;
+        border-color: var(--textField-input-stroke-enabled);
+        
+        & input{
+            outline: none;
+        }
+    }
+
+}
 
 /* ===================== */
 /* TEXT FIELD END        */
