@@ -108,7 +108,7 @@
     --check-fg-wait: var(--color-palette-fg-neutral-mute);
     --check-fg-brand: var(--color-palette-fg-brand-main);
     --check-fg-neutral: var(--color-palette-fg-neutral-main);
-    --checkBox-layer-brand: var(--color-palette-bg-overlay-brand-light);
+    --checkBox-overlay-brand: var(--color-palette-bg-overlay-brand-light);
     --checkBox-layer-neutral: var(--color-palette-bg-overlay-neutral-light);
     --checkBox-bg-disable: var(--color-palette-bg-disabled-main);
     --checkBox-stroke-disable: var(--color-palette-stroke-disabled-main);
