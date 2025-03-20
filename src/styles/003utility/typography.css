@@ -83,7 +83,7 @@
     .listItem-base-text { @apply text-16/150 font-medium font-pretendard text-material-classicblueGray-700 }
     .listItem-secondary-text { @apply text-13/150 font-normal font-pretendard text-material-classicblueGray-300 }
 
-    .listItem-divider { @apply border-solid border-t border-palette-bg-overlay-black-light }
+    .listItem-divider { @apply border-solid border-t border-material-black-alpha-008 }
 
     .listItem-gutter { @apply w-200 }
     .listItem-gutter > .listItem-container { @apply px-0 }

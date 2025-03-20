@@ -59,15 +59,24 @@ export const List = ({
 };
 
 List.propTypes = {
-  dense : PropTypes.bool,
-  disableGutter : PropTypes.bool,
-  startIcon : PropTypes.element,
-  endIcon : PropTypes.element,
-  listItemText : PropTypes.string,
-  secondaryText : PropTypes.string,
-  listItemDivider : PropTypes.bool,
-  disabled : PropTypes.bool,
+  /** Should the list item have a dense (compact) layout? */
+  dense: PropTypes.bool,
+  /** Should the list item have no gutter spacing? */
+  disableGutter: PropTypes.bool,
+  /** The icon to display at the start of the list item */
+  startIcon: PropTypes.element,
+  /** The icon to display at the end of the list item */
+  endIcon: PropTypes.element,
+  /** The main text of the list item */
+  listItemText: PropTypes.string,
+  /** The secondary text of the list item */
+  secondaryText: PropTypes.string,
+  /** Should the list item include a divider below it? */
+  listItemDivider: PropTypes.bool,
+  /** Should the list item be disabled? */
+  disabled: PropTypes.bool,
 };
+
 
 List.defaultProps = {
   listItemText : "Menu Item",
