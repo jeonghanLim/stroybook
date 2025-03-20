@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@import "../001reference/color.css";
+@import "../001reference/font.css";
+@import "../001reference/size.css";
+@import "../001reference/fontType.css";
+
+@theme {
+
+    /* 28. CSSBASELINE */
+    /* ==================== */
+
+    /* scrollbar */
+    --scrollbar-arrow-disabled: var(--color-palette-fg-disabled-main);
+    --scrollbar-arrow: var(--color-palette-fg-neutral-soft);
+    --scrollbar-square: var(--color-palette-fg-neutral-mute);
+    --scrollbar-bg: var(--color-palette-bg-layer-fill);
+}

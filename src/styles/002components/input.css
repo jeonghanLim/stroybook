@@ -15,146 +15,141 @@
     --btn-icon-lg: var(--icon-20);
     --btn-radius: var(--radius-004);
     --btn-border: var(--border-001);
-    --btn-padding-sm: calc(var(--spacing) * 4) calc(var(--spacing) * 12) calc(var(--spacing) * 4) calc(var(--spacing) * 12);
-    --btn-padding-md: calc(var(--spacing) * 8) calc(var(--spacing) * 12) calc(var(--spacing) * 8) calc(var(--spacing) * 12);
-    --btn-padding-lg: calc(var(--spacing) * 12) calc(var(--spacing) * 20) calc(var(--spacing) * 12) calc(var(--spacing) * 20);
-    /* base-size */
     --btn-base-height-sm: calc(var(--spacing) * 20);
     --btn-base-height-md: calc(var(--spacing) * 20);
     --btn-base-height-lg: calc(var(--spacing) * 24);
     --btn-base-gap-sm: calc(var(--spacing) * 8);
     --btn-base-gap-md: calc(var(--spacing) * 8);
     --btn-base-gap-lg: calc(var(--spacing) * 8);
-    --btn-mask-box-w-sm: calc(var(--spacing) * 4);
-    --btn-mask-box-w-md: calc(var(--spacing) * 12);
-    --btn-mask-box-w-lg: calc(var(--spacing) * 16);
+    --btn-maskIcon-width-sm: calc(var(--spacing) * 4);
+    --btn-maskIcon-width-md: calc(var(--spacing) * 12);
+    --btn-maskIcon-width-lg: calc(var(--spacing) * 16);
+    --btn-padding-sm: calc(var(--spacing) * 4) calc(var(--spacing) * 12) calc(var(--spacing) * 4) calc(var(--spacing) * 12);
+    --btn-padding-md: calc(var(--spacing) * 8) calc(var(--spacing) * 12) calc(var(--spacing) * 8) calc(var(--spacing) * 12);
+    --btn-padding-lg: calc(var(--spacing) * 12) calc(var(--spacing) * 20) calc(var(--spacing) * 12) calc(var(--spacing) * 20);
     /* font */
-    --btn-text-fg-brand: var(--color-palette-fg-brand-main);
-    --btn-text-bg-brand: var(--color-palette-non-non); /* 감지용 */
-    --btn-text-bg-brand-hover: var(--color-palette-bg-overlay-brand-light);
-    --btn-text-bg-brand-focus: var(--color-palette-bg-overlay-brand-light);
-    --btn-text-bg-brand-active: var(--color-palette-bg-overlay-brand-light);
-    --btn-text-fg-brand-disabled: var(--color-palette-fg-disabled-main);
-    --btn-text-fg-neutral: var(--color-palette-fg-neutral-main);
-    --btn-text-bg-neutral: var(--color-palette-non-non); /* 감지용 */
-    --btn-text-bg-neutral-hover: var(--color-palette-bg-overlay-neutral-light);
-    --btn-text-bg-neutral-focus: var(--color-palette-bg-overlay-neutral-light);
-    --btn-text-bg-neutral-active: var(--color-palette-bg-overlay-neutral-light);
-    --btn-text-fg-neutral-disabled: var(--color-palette-fg-disabled-main);
     --font-size-sm: var(--text-13);
     --font-size-md: var(--text-16);
     --font-size-lg: var(--text-18);
     --font-weight-sm: var(--font-weight-semiBold);
     --font-weight-md: var(--font-weight-bold);
     --font-weight-lg: var(--font-weight-bold);
-    /* contained-colors */
+    /* colors */
     --btn-contained-bg-brand: var(--color-palette-bg-brand-dark-default);
     --btn-contained-fg-brand: var(--color-palette-fg-brand-contrast);
     --btn-contained-bg-brand-hover: var(--color-palette-bg-brand-dark-pressed);
     --btn-contained-bg-brand-focus: var(--color-palette-bg-brand-dark-pressed);
     --btn-contained-bg-brand-active: var(--color-palette-bg-brand-dark-pressed);
-    --btn-contained-fg-brand-disabled: var(--color-palette-fg-disabled-main);
-    --btn-contained-bg-brand-disabled: var(--color-palette-bg-disabled-main);
     --btn-contained-bg-neutral: var(--color-palette-bg-neutral-dark-default);
     --btn-contained-fg-neutral: var(--color-palette-fg-neutral-contrast);
     --btn-contained-bg-neutral-hover: var(--color-palette-bg-neutral-dark-pressed);
     --btn-contained-bg-neutral-focus: var(--color-palette-bg-neutral-dark-pressed);
     --btn-contained-bg-neutral-active: var(--color-palette-bg-neutral-dark-pressed);
-    --btn-contained-bg-neutral-focus_2: var(--color-palette-bg-neutral-dark-pressed);
-    --btn-contained-fg-neutral-disabled: var(--color-palette-fg-disabled-main);
-    --btn-contained-bg-neutral-disabled: var(--color-palette-bg-disabled-main);
-    /* outlined-colors */
     --btn-outlined-bg-brand: var(--color-palette-bg-overlay-white-light);
     --btn-outlined-fg-brand: var(--color-palette-fg-brand-main);
     --btn-outlined-stroke-brand: var(--color-palette-stroke-brand-main);
     --btn-outlined-bg-brand-hover: var(--color-palette-bg-overlay-brand-light);
     --btn-outlined-bg-brand-focus: var(--color-palette-bg-overlay-brand-light);
     --btn-outlined-bg-brand-active: var(--color-palette-bg-overlay-brand-light);
-    --btn-outlined-fg-brand-disabled: var(--color-palette-fg-disabled-main);
-    --btn-outlined-storke-brand-disabled: var(--color-palette-stroke-disabled-main);
     --btn-outlined-bg-neutral: var(--color-palette-bg-overlay-white-light);
     --btn-outlined-fg-neutral: var(--color-palette-fg-neutral-main);
     --btn-outlined-stroke-neutral: var(--color-palette-stroke-neutral-main);
     --btn-outlined-bg-neutral-hover: var(--color-palette-bg-overlay-neutral-light);
     --btn-outlined-bg-neutral-focus: var(--color-palette-bg-overlay-neutral-light);
     --btn-outlined-bg-neutral-active: var(--color-palette-bg-overlay-neutral-light);
-    --btn-outlined-fg-neutral-disabled: var(--color-palette-fg-disabled-main);
-    --btn-outlined-storke-neutral-disabled: var(--color-palette-stroke-disabled-main);
+    --btn-text-fg-brand: var(--color-palette-fg-brand-main);
+    --btn-text-bg-brand: var(--color-palette-non-non); /* 감지용 */
+    --btn-text-bg-brand-hover: var(--color-palette-bg-overlay-brand-light);
+    --btn-text-bg-brand-focus: var(--color-palette-bg-overlay-brand-light);
+    --btn-text-bg-brand-active: var(--color-palette-bg-overlay-brand-light);
+    --btn-text-fg-neutral: var(--color-palette-fg-neutral-main);
+    --btn-text-bg-neutral: var(--color-palette-non-non); /* 감지용 */
+    --btn-text-bg-neutral-hover: var(--color-palette-bg-overlay-neutral-light);
+    --btn-text-bg-neutral-focus: var(--color-palette-bg-overlay-neutral-light);
+    --btn-text-bg-neutral-active: var(--color-palette-bg-overlay-neutral-light);
+    --btn-fg-disabled: var(--color-palette-fg-disabled-main);
+    --btn-storke-disabled: var(--color-palette-stroke-disabled-main);
+    --btn-bg-disabled: var(--color-palette-bg-disabled-main);
 
-    /* 7. CHECKBOX */
+    /* 5. CHECKBOX */
     /* ==================== */
 
-    /* font */
-    --checkLabel-font-size-label-lg: var(--text-20);
-    --checkLabel-font-size-label-md: var(--text-18);
-    --checkLabel-font-weight-label: var(--font-weight-medium);
-    --checkGroup-font-color-label: var(--color-palette-fg-neutral-black);
-    --checkGroup-font-size-title-lg: var(--text-24);
-    --checkGroup-font-size-title-md: var(--text-20);
-    --checkGroup-font-weight-title: var(--font-weight-semiBold);
-    --checkGroup-font-color-title: var(--color-palette-fg-neutral-black);
-    --checkGroup-font-size-helper: var(--text-13);
-    --checkGroup-font-weight-helper: var(--font-weight-medium);
-    --checkGroup-font-color-helper: var(--color-palette-fg-neutral-light);
-    --checkGroup-font-color-error: var(--color-palette-fg-error-main);
     /* size */
+    --checkBox-touch-width: calc(var(--spacing) * 44);
+    --checkBox-touch-height: calc(var(--spacing) * 44);
     --checkBox-base-border: var(--border-001);
     --checkBox-base-radius: var(--radius-004);
+    --checkBox-base-width-md: calc(var(--spacing) * 20);
+    --checkBox-base-height-md: calc(var(--spacing) * 20);
+    --checkBox-base-width-lg: calc(var(--spacing) * 24);
+    --checkBox-base-height-lg: calc(var(--spacing) * 24);
     --checkLabel-gap-lg: calc(var(--spacing) * 8);
     --checkLabel-gap-md: calc(var(--spacing) * 4);
     --checkGroup-gap-lg: calc(var(--spacing) * 20);
     --checkGroup-gap-md: calc(var(--spacing) * 12);
-    --checkBox-touch: calc(var(--spacing) * 44) calc(var(--spacing) * 44) calc(var(--spacing) * 44) calc(var(--spacing) * 44);
-    --checkBox-base-md: calc(var(--spacing) * 20) calc(var(--spacing) * 20) calc(var(--spacing) * 20) calc(var(--spacing) * 20);
-    --checkBox-base-lg: calc(var(--spacing) * 24) calc(var(--spacing) * 24) calc(var(--spacing) * 24) calc(var(--spacing) * 24);
-    /* checkBox-colors */
-    --checkBox-overlay-bg-wait: var(--color-palette-bg-overlay-white-light);
+    --checkBox-icon-lg: var(--icon-24);
+    --checkBox-icon-md: var(--icon-20);
+    /* font */
+    --checkLabel-label-size-lg: var(--text-20);
+    --checkLabel-label-size-md: var(--text-18);
+    --checkLabel-label-weight: var(--font-weight-medium);
+    --checkGroup-title-size-lg: var(--text-24);
+    --checkGroup-title-size-md: var(--text-20);
+    --checkGroup-title-weight: var(--font-weight-semiBold);
+    --checkGroup-helper-size: var(--text-13);
+    --checkGroup-helper-weight: var(--font-weight-medium);
+    /* colors */
+    --checkBox-bg-wait: var(--color-palette-bg-overlay-white-light);
     --checkBox-stroke-wait: var(--color-palette-stroke-neutral-light);
     --checkBox-bg-brand: var(--color-palette-bg-brand-dark-default);
     --checkBox-fg-brand-contrast: var(--color-palette-fg-brand-contrast);
     --checkBox-bg-neutral: var(--color-palette-bg-neutral-dark-default);
     --checkBox-fg-neutral-contrast: var(--color-palette-fg-neutral-contrast);
-    --checkBox-bg-disable: var(--color-palette-bg-disabled-main);
-    --checkBox-stroke-disable: var(--color-palette-stroke-disabled-main);
-    --checkBox-fg-disable: var(--color-palette-fg-disabled-main);
-    /* check-colors */
     --check-fg-wait: var(--color-palette-fg-neutral-mute);
     --check-fg-brand: var(--color-palette-fg-brand-main);
     --check-fg-neutral: var(--color-palette-fg-neutral-main);
-    --check-fg-disable: var(--color-palette-fg-disabled-main);
+    --checkBox-bg-disable: var(--color-palette-bg-disabled-main);
+    --checkBox-stroke-disable: var(--color-palette-stroke-disabled-main);
+    --checkBox-fg-disable: var(--color-palette-fg-disabled-main);
+    --checkGroup-font-title: var(--color-palette-fg-neutral-black);
+    --checkGroup-font-label: var(--color-palette-fg-neutral-black);
+    --checkGroup-font-helper: var(--color-palette-fg-neutral-light);
+    --checkGroup-font-error: var(--color-palette-fg-error-main);
 
-    /* 12. RADIOGROUP */
+    /* 9. RADIOGROUP */
     /* ==================== */
 
     /* size */
+    --radio-touch-width: calc(var(--spacing) * 44);
+    --radio-touch-height: calc(var(--spacing) * 44);
     --radio-base-radius: var(--radius-fill);
-    --radio-base-border-lg: var(--border-001);
-    --radio-base-border-true-lg: var(--border-007);
-    --radio-base-border-md: var(--border-001);
-    --radio-base-border-true-md: var(--border-006);
+    --radio-base-width-lg: calc(var(--spacing) * 24);
+    --radio-base-height-lg: calc(var(--spacing) * 24);
+    --radio-base-width-md: calc(var(--spacing) * 20);
+    --radio-base-height-md: calc(var(--spacing) * 20);
+    --radio-base-border: var(--border-001);
+    --radio-icon-lg: var(--icon-24);
+    --radio-icon-md: var(--icon-20);
     --radioLabel-gap-lg: calc(var(--spacing) * 8);
     --radioLabel-gap-md: calc(var(--spacing) * 4);
     --radioGroup-gap-lg: calc(var(--spacing) * 20);
     --radioGroup-gap-md: calc(var(--spacing) * 12);
-    --radio-touch: calc(var(--spacing) * 44) calc(var(--spacing) * 44) calc(var(--spacing) * 44) calc(var(--spacing) * 44);
-    --radio-base-lg: calc(var(--spacing) * 24) calc(var(--spacing) * 24) calc(var(--spacing) * 24) calc(var(--spacing) * 24);
-    --radio-base-md: calc(var(--spacing) * 20) calc(var(--spacing) * 20) calc(var(--spacing) * 20) calc(var(--spacing) * 20);
     /* font */
     --radioLabel-size-lg: var(--text-20);
     --radioLabel-weight-lg: var(--font-weight-medium);
     --radioLabel-size-md: var(--text-18);
     --radioLabel-weight-md: var(--font-weight-medium);
-    --radioLabel-color: var(--color-palette-fg-neutral-black);
     --radioGroup-size-title-lg: var(--text-24);
     --radioGroup-weight-title-lg: var(--font-weight-semiBold);
     --radioGroup-size-title-md: var(--text-20);
     --radioGroup-weight-title-md: var(--font-weight-semiBold);
-    --radioGroup-color-title: var(--color-palette-fg-neutral-black);
     --radioGroup-size-helper: var(--text-13);
     --radioGroup-weight-helper: var(--font-weight-medium);
-    --radioGroup-color-helper: var(--color-palette-fg-neutral-light);
-    --radioGroup-color-error: var(--color-palette-fg-error-main);
-    /* radio-colors */
+    /* colors */
+    --radioLabel-font: var(--color-palette-fg-neutral-black);
+    --radioGroup-font-title: var(--color-palette-fg-neutral-black);
+    --radioGroup-font-helper: var(--color-palette-fg-neutral-light);
+    --radioGroup-font-error: var(--color-palette-fg-error-main);
     --radio-base-stroke: var(--color-palette-stroke-neutral-light);
     --radio-base-bg: var(--color-palette-bg-overlay-white-light);
     --radio-base-fg-brand: var(--color-palette-fg-brand-main);
@@ -163,12 +158,15 @@
     --radio-bg-disable: var(--color-palette-bg-disabled-main);
     --radio-stroke-disable: var(--color-palette-stroke-disabled-main);
 
-    /* 16. TEXTFIELD */
+    /* 13. TEXTFIELD */
     /* ==================== */
 
     /* size */
+    --textField-labelLeft-width: calc(var(--spacing) * 168);
     --textField-labelLeft-gap: calc(var(--spacing) * 2);
     --textField-labelTop-gap: calc(var(--spacing) * 2);
+    --textField-input-height: calc(var(--spacing) * 48);
+    --textField-input-height-dense: calc(var(--spacing) * 40);
     --textField-input-radius: var(--radius-004);
     --textField-input-border1: var(--border-001);
     --textField-input-border3: var(--border-003);
@@ -179,15 +177,6 @@
     --textField-labelTop: calc(var(--spacing) * 0) calc(var(--spacing) * 4) calc(var(--spacing) * 4) calc(var(--spacing) * 4);
     --textField-helperText: calc(var(--spacing) * 4) calc(var(--spacing) * 4) calc(var(--spacing) * 4) calc(var(--spacing) * 4);
     --textField-input: calc(var(--spacing) * 0) calc(var(--spacing) * 12) calc(var(--spacing) * 0) calc(var(--spacing) * 12);
-    /* colors */
-    --textField-input-bg: var(--color-palette-bg-layer-default);
-    --textField-input-icon-fg: var(--color-palette-fg-neutral-light);
-    --textField-input-stroke-state: var(--color-palette-stroke-neutral-main);
-    --textField-input-stroke-hovered: var(--color-palette-stroke-neutral-main);
-    --textField-input-stroke-focused: var(--color-palette-stroke-brand-dark);
-    --textField-input-stroke-error: var(--color-palette-stroke-error-dark);
-    --textField-input-bg-disabled: var(--color-palette-bg-disabled-main);
-    --textField-input-stroke-disabled: var(--color-palette-stroke-disabled-main);
     /* font */
     --textField-size-label: var(--text-13);
     --textField-size-label-dense: var(--text-11);
@@ -200,11 +189,20 @@
     --textField-weight-label: var(--font-weight-semiBold);
     --textField-weight-placeholder: var(--font-weight-medium);
     --textField-weight-hasValue: var(--font-weight-medium);
-    --textField-color-label: var(--color-palette-fg-neutral-main);
-    --textField-color-label-required: var(--color-palette-fg-error-main);
-    --textField-color-placeholder: var(--color-palette-fg-neutral-mute);
-    --textField-color-hasValue: var(--color-palette-fg-neutral-black);
-    --textField-color-helperText: var(--color-palette-fg-neutral-light);
-    --textField-color-error: var(--color-palette-fg-error-main);
-    --textField-color-disabled: var(--color-palette-fg-disabled-main);
+    /* colors */
+    --textField-input-bg: var(--color-palette-bg-layer-default);
+    --textField-input-icon-fg: var(--color-palette-fg-neutral-light);
+    --textField-input-stroke-enabled: var(--color-palette-stroke-neutral-main);
+    --textField-input-stroke-hovered: var(--color-palette-stroke-neutral-main);
+    --textField-input-stroke-focused: var(--color-palette-stroke-brand-dark);
+    --textField-input-stroke-error: var(--color-palette-stroke-error-dark);
+    --textField-font-label: var(--color-palette-fg-neutral-main);
+    --textField-font-label-required: var(--color-palette-fg-error-main);
+    --textField-font-placeholder: var(--color-palette-fg-neutral-mute);
+    --textField-font-hasValue: var(--color-palette-fg-neutral-black);
+    --textField-font-helperText: var(--color-palette-fg-neutral-light);
+    --textField-font-error: var(--color-palette-fg-error-main);
+    --textField-bg-disabled: var(--color-palette-bg-disabled-main);
+    --textField-stroke-disabled: var(--color-palette-stroke-disabled-main);
+    --textField-fg-disabled: var(--color-palette-fg-disabled-main);
 }

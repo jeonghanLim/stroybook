@@ -45,9 +45,7 @@
         "--btn-border": {
           "$type": "dimension",
           "$value": "{size.border.001}"
-        }
-      },
-      "base-size": {
+        },
         "--btn-base-height-sm": {
           "$type": "dimension",
           "$value": "{size.spacing.20}"
@@ -72,68 +70,20 @@
           "$type": "dimension",
           "$value": "{size.spacing.8}"
         },
-        "--btn-mask-box-w-sm": {
+        "--btn-maskIcon-width-sm": {
           "$type": "dimension",
           "$value": "{size.spacing.4}"
         },
-        "--btn-mask-box-w-md": {
+        "--btn-maskIcon-width-md": {
           "$type": "dimension",
           "$value": "{size.spacing.12}"
         },
-        "--btn-mask-box-w-lg": {
+        "--btn-maskIcon-width-lg": {
           "$type": "dimension",
           "$value": "{size.spacing.16}"
         }
       },
       "font": {
-        "--btn-text-fg-brand": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.brand.main}"
-        },
-        "--btn-text-bg-brand": {
-          "$type": "color",
-          "$value": "{color.color.palette.non.non}"
-        },
-        "--btn-text-bg-brand-hover": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.overlay.brand.light}"
-        },
-        "--btn-text-bg-brand-focus": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.overlay.brand.light}"
-        },
-        "--btn-text-bg-brand-active": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.overlay.brand.light}"
-        },
-        "--btn-text-fg-brand-disabled": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.disabled.main}"
-        },
-        "--btn-text-fg-neutral": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.main}"
-        },
-        "--btn-text-bg-neutral": {
-          "$type": "color",
-          "$value": "{color.color.palette.non.non}"
-        },
-        "--btn-text-bg-neutral-hover": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.overlay.neutral.light}"
-        },
-        "--btn-text-bg-neutral-focus": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.overlay.neutral.light}"
-        },
-        "--btn-text-bg-neutral-active": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.overlay.neutral.light}"
-        },
-        "--btn-text-fg-neutral-disabled": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.disabled.main}"
-        },
         "--font-size-sm": {
           "$type": "dimension",
           "$value": "{font.text.13}"
@@ -159,7 +109,7 @@
           "$value": "{font.font.weight.bold}"
         }
       },
-      "contained-colors": {
+      "colors": {
         "--btn-contained-bg-brand": {
           "$type": "color",
           "$value": "{color.color.palette.bg.brand.dark.default}"
@@ -179,14 +129,6 @@
         "--btn-contained-bg-brand-active": {
           "$type": "color",
           "$value": "{color.color.palette.bg.brand.dark.pressed}"
-        },
-        "--btn-contained-fg-brand-disabled": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.disabled.main}"
-        },
-        "--btn-contained-bg-brand-disabled": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.disabled.main}"
         },
         "--btn-contained-bg-neutral": {
           "$type": "color",
@@ -208,20 +150,6 @@
           "$type": "color",
           "$value": "{color.color.palette.bg.neutral.dark.pressed}"
         },
-        "--btn-contained-bg-neutral-focus_2": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.neutral.dark.pressed}"
-        },
-        "--btn-contained-fg-neutral-disabled": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.disabled.main}"
-        },
-        "--btn-contained-bg-neutral-disabled": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.disabled.main}"
-        }
-      },
-      "outlined-colors": {
         "--btn-outlined-bg-brand": {
           "$type": "color",
           "$value": "{color.color.palette.bg.overlay.white.light}"
@@ -245,14 +173,6 @@
         "--btn-outlined-bg-brand-active": {
           "$type": "color",
           "$value": "{color.color.palette.bg.overlay.brand.light}"
-        },
-        "--btn-outlined-fg-brand-disabled": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.disabled.main}"
-        },
-        "--btn-outlined-storke-brand-disabled": {
-          "$type": "color",
-          "$value": "{color.color.palette.stroke.disabled.main}"
         },
         "--btn-outlined-bg-neutral": {
           "$type": "color",
@@ -278,73 +198,67 @@
           "$type": "color",
           "$value": "{color.color.palette.bg.overlay.neutral.light}"
         },
-        "--btn-outlined-fg-neutral-disabled": {
+        "--btn-text-fg-brand": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.brand.main}"
+        },
+        "--btn-text-bg-brand": {
+          "$type": "color",
+          "$value": "{color.color.palette.non.non}"
+        },
+        "--btn-text-bg-brand-hover": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.brand.light}"
+        },
+        "--btn-text-bg-brand-focus": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.brand.light}"
+        },
+        "--btn-text-bg-brand-active": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.brand.light}"
+        },
+        "--btn-text-fg-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.main}"
+        },
+        "--btn-text-bg-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.non.non}"
+        },
+        "--btn-text-bg-neutral-hover": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.neutral.light}"
+        },
+        "--btn-text-bg-neutral-focus": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.neutral.light}"
+        },
+        "--btn-text-bg-neutral-active": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.neutral.light}"
+        },
+        "--btn-fg-disabled": {
           "$type": "color",
           "$value": "{color.color.palette.fg.disabled.main}"
         },
-        "--btn-outlined-storke-neutral-disabled": {
+        "--btn-storke-disabled": {
           "$type": "color",
           "$value": "{color.color.palette.stroke.disabled.main}"
+        },
+        "--btn-bg-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.disabled.main}"
         }
       }
     },
     "checkBox": {
-      "font": {
-        "--checkLabel-font-size-label-lg": {
-          "$type": "dimension",
-          "$value": "{font.text.20}"
-        },
-        "--checkLabel-font-size-label-md": {
-          "$type": "dimension",
-          "$value": "{font.text.18}"
-        },
-        "--checkLabel-font-weight-label": {
-          "$type": "dimension",
-          "$value": "{font.font.weight.medium}"
-        },
-        "--checkGroup-font-color-label": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.black}"
-        },
-        "--checkGroup-font-size-title-lg": {
-          "$type": "dimension",
-          "$value": "{font.text.24}"
-        },
-        "--checkGroup-font-size-title-md": {
-          "$type": "dimension",
-          "$value": "{font.text.20}"
-        },
-        "--checkGroup-font-weight-title": {
-          "$type": "dimension",
-          "$value": "{font.font.weight.semiBold}"
-        },
-        "--checkGroup-font-color-title": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.black}"
-        },
-        "--checkGroup-font-size-helper": {
-          "$type": "dimension",
-          "$value": "{font.text.13}"
-        },
-        "--checkGroup-font-weight-helper": {
-          "$type": "dimension",
-          "$value": "{font.font.weight.medium}"
-        },
-        "--checkGroup-font-color-helper": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.light}"
-        },
-        "--checkGroup-font-color-error": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.error.main}"
-        }
-      },
       "size": {
-        "--checkBox-touch-x": {
+        "--checkBox-touch-width": {
           "$type": "dimension",
           "$value": "{size.spacing.44}"
         },
-        "--checkBox-touch-y": {
+        "--checkBox-touch-height": {
           "$type": "dimension",
           "$value": "{size.spacing.44}"
         },
@@ -356,19 +270,19 @@
           "$type": "dimension",
           "$value": "{size.radius.004}"
         },
-        "--checkBox-base-md-x": {
+        "--checkBox-base-width-md": {
           "$type": "dimension",
           "$value": "{size.spacing.20}"
         },
-        "--checkBox-base-md-y": {
+        "--checkBox-base-height-md": {
           "$type": "dimension",
           "$value": "{size.spacing.20}"
         },
-        "--checkBox-base-lg-x": {
+        "--checkBox-base-width-lg": {
           "$type": "dimension",
           "$value": "{size.spacing.24}"
         },
-        "--checkBox-base-lg-y": {
+        "--checkBox-base-height-lg": {
           "$type": "dimension",
           "$value": "{size.spacing.24}"
         },
@@ -387,10 +301,52 @@
         "--checkGroup-gap-md": {
           "$type": "dimension",
           "$value": "{size.spacing.12}"
+        },
+        "--checkBox-icon-lg": {
+          "$type": "dimension",
+          "$value": "{size.icon.24}"
+        },
+        "--checkBox-icon-md": {
+          "$type": "dimension",
+          "$value": "{size.icon.20}"
         }
       },
-      "checkBox-colors": {
-        "--checkBox-overlay-bg-wait": {
+      "font": {
+        "--checkLabel-label-size-lg": {
+          "$type": "dimension",
+          "$value": "{font.text.20}"
+        },
+        "--checkLabel-label-size-md": {
+          "$type": "dimension",
+          "$value": "{font.text.18}"
+        },
+        "--checkLabel-label-weight": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.medium}"
+        },
+        "--checkGroup-title-size-lg": {
+          "$type": "dimension",
+          "$value": "{font.text.24}"
+        },
+        "--checkGroup-title-size-md": {
+          "$type": "dimension",
+          "$value": "{font.text.20}"
+        },
+        "--checkGroup-title-weight": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.semiBold}"
+        },
+        "--checkGroup-helper-size": {
+          "$type": "dimension",
+          "$value": "{font.text.13}"
+        },
+        "--checkGroup-helper-weight": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.medium}"
+        }
+      },
+      "colors": {
+        "--checkBox-bg-wait": {
           "$type": "color",
           "$value": "{color.color.palette.bg.overlay.white.light}"
         },
@@ -414,20 +370,6 @@
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.contrast}"
         },
-        "--checkBox-bg-disable": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.disabled.main}"
-        },
-        "--checkBox-stroke-disable": {
-          "$type": "color",
-          "$value": "{color.color.palette.stroke.disabled.main}"
-        },
-        "--checkBox-fg-disable": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.disabled.main}"
-        }
-      },
-      "check-colors": {
         "--check-fg-wait": {
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.mute}"
@@ -440,19 +382,43 @@
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.main}"
         },
-        "--check-fg-disable": {
+        "--checkBox-bg-disable": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.disabled.main}"
+        },
+        "--checkBox-stroke-disable": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.disabled.main}"
+        },
+        "--checkBox-fg-disable": {
           "$type": "color",
           "$value": "{color.color.palette.fg.disabled.main}"
+        },
+        "--checkGroup-font-title": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.black}"
+        },
+        "--checkGroup-font-label": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.black}"
+        },
+        "--checkGroup-font-helper": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.light}"
+        },
+        "--checkGroup-font-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.error.main}"
         }
       }
     },
     "radioGroup": {
       "size": {
-        "--radio-touch-x": {
+        "--radio-touch-width": {
           "$type": "dimension",
           "$value": "{size.spacing.44}"
         },
-        "--radio-touch-y": {
+        "--radio-touch-height": {
           "$type": "dimension",
           "$value": "{size.spacing.44}"
         },
@@ -460,37 +426,33 @@
           "$type": "dimension",
           "$value": "{size.radius.fill}"
         },
-        "--radio-base-lg-x": {
+        "--radio-base-width-lg": {
           "$type": "dimension",
           "$value": "{size.spacing.24}"
         },
-        "--radio-base-lg-y": {
+        "--radio-base-height-lg": {
           "$type": "dimension",
           "$value": "{size.spacing.24}"
         },
-        "--radio-base-border-lg": {
-          "$type": "dimension",
-          "$value": "{size.border.001}"
-        },
-        "--radio-base-border-true-lg": {
-          "$type": "dimension",
-          "$value": "{size.border.007}"
-        },
-        "--radio-base-md-x": {
+        "--radio-base-width-md": {
           "$type": "dimension",
           "$value": "{size.spacing.20}"
         },
-        "--radio-base-md-y": {
+        "--radio-base-height-md": {
           "$type": "dimension",
           "$value": "{size.spacing.20}"
         },
-        "--radio-base-border-md": {
+        "--radio-base-border": {
           "$type": "dimension",
           "$value": "{size.border.001}"
         },
-        "--radio-base-border-true-md": {
+        "--radio-icon-lg": {
           "$type": "dimension",
-          "$value": "{size.border.006}"
+          "$value": "{size.icon.24}"
+        },
+        "--radio-icon-md": {
+          "$type": "dimension",
+          "$value": "{size.icon.20}"
         },
         "--radioLabel-gap-lg": {
           "$type": "dimension",
@@ -526,10 +488,6 @@
           "$type": "dimension",
           "$value": "{font.font.weight.medium}"
         },
-        "--radioLabel-color": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.black}"
-        },
         "--radioGroup-size-title-lg": {
           "$type": "dimension",
           "$value": "{font.text.24}"
@@ -546,10 +504,6 @@
           "$type": "dimension",
           "$value": "{font.font.weight.semiBold}"
         },
-        "--radioGroup-color-title": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.black}"
-        },
         "--radioGroup-size-helper": {
           "$type": "dimension",
           "$value": "{font.text.13}"
@@ -557,17 +511,25 @@
         "--radioGroup-weight-helper": {
           "$type": "dimension",
           "$value": "{font.font.weight.medium}"
+        }
+      },
+      "colors": {
+        "--radioLabel-font": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.black}"
         },
-        "--radioGroup-color-helper": {
+        "--radioGroup-font-title": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.black}"
+        },
+        "--radioGroup-font-helper": {
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.light}"
         },
-        "--radioGroup-color-error": {
+        "--radioGroup-font-error": {
           "$type": "color",
           "$value": "{color.color.palette.fg.error.main}"
-        }
-      },
-      "radio-colors": {
+        },
         "--radio-base-stroke": {
           "$type": "color",
           "$value": "{color.color.palette.stroke.neutral.light}"
@@ -600,6 +562,10 @@
     },
     "textField": {
       "size": {
+        "--textField-labelLeft-width": {
+          "$type": "dimension",
+          "$value": "{size.spacing.168}"
+        },
         "--textField-labelLeft-y": {
           "$type": "dimension",
           "$value": "{size.spacing.4}"
@@ -632,6 +598,14 @@
           "$type": "dimension",
           "$value": "{size.spacing.4}"
         },
+        "--textField-input-height": {
+          "$type": "dimension",
+          "$value": "{size.spacing.48}"
+        },
+        "--textField-input-height-dense": {
+          "$type": "dimension",
+          "$value": "{size.spacing.40}"
+        },
         "--textField-input-x": {
           "$type": "dimension",
           "$value": "{size.spacing.12}"
@@ -659,40 +633,6 @@
         "--textField-input-icon-dense": {
           "$type": "dimension",
           "$value": "{size.icon.18}"
-        }
-      },
-      "colors": {
-        "--textField-input-bg": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.layer.default}"
-        },
-        "--textField-input-icon-fg": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.light}"
-        },
-        "--textField-input-stroke-state": {
-          "$type": "color",
-          "$value": "{color.color.palette.stroke.neutral.main}"
-        },
-        "--textField-input-stroke-hovered": {
-          "$type": "color",
-          "$value": "{color.color.palette.stroke.neutral.main}"
-        },
-        "--textField-input-stroke-focused": {
-          "$type": "color",
-          "$value": "{color.color.palette.stroke.brand.dark}"
-        },
-        "--textField-input-stroke-error": {
-          "$type": "color",
-          "$value": "{color.color.palette.stroke.error.dark}"
-        },
-        "--textField-input-bg-disabled": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.disabled.main}"
-        },
-        "--textField-input-stroke-disabled": {
-          "$type": "color",
-          "$value": "{color.color.palette.stroke.disabled.main}"
         }
       },
       "font": {
@@ -739,32 +679,66 @@
         "--textField-weight-hasValue": {
           "$type": "dimension",
           "$value": "{font.font.weight.medium}"
-        },
-        "--textField-color-label": {
+        }
+      },
+      "colors": {
+        "--textField-input-bg": {
           "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.main}"
+          "$value": "{color.color.palette.bg.layer.default}"
         },
-        "--textField-color-label-required": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.error.main}"
-        },
-        "--textField-color-placeholder": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.mute}"
-        },
-        "--textField-color-hasValue": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.black}"
-        },
-        "--textField-color-helperText": {
+        "--textField-input-icon-fg": {
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.light}"
         },
-        "--textField-color-error": {
+        "--textField-input-stroke-enabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.neutral.main}"
+        },
+        "--textField-input-stroke-hovered": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.neutral.main}"
+        },
+        "--textField-input-stroke-focused": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.brand.dark}"
+        },
+        "--textField-input-stroke-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.error.dark}"
+        },
+        "--textField-font-label": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.main}"
+        },
+        "--textField-font-label-required": {
           "$type": "color",
           "$value": "{color.color.palette.fg.error.main}"
         },
-        "--textField-color-disabled": {
+        "--textField-font-placeholder": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.mute}"
+        },
+        "--textField-font-hasValue": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.black}"
+        },
+        "--textField-font-helperText": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.light}"
+        },
+        "--textField-font-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.error.main}"
+        },
+        "--textField-bg-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.disabled.main}"
+        },
+        "--textField-stroke-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.disabled.main}"
+        },
+        "--textField-fg-disabled": {
           "$type": "color",
           "$value": "{color.color.palette.fg.disabled.main}"
         }
@@ -772,17 +746,321 @@
     }
   },
   "dataDisplay": {
-    "divider": {
-      "color": {
-        "--divider-color": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.overlay.black.light}"
+    "list": {
+      "size": {
+        "--listItem-container-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.20}"
+        },
+        "--listItem-container-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.12}"
+        },
+        "--listItem-container-gutter-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.12}"
+        },
+        "--listItem-base-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.12}"
+        },
+        "--listItem-container-dense-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.16}"
+        },
+        "--listItem-container-dense-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
+        },
+        "--listItem-container-gutter-dense-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
+        },
+        "--listItem-base-gap-dense": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
+        },
+        "--listItem-icon": {
+          "$type": "dimension",
+          "$value": "{size.icon.20}"
+        },
+        "--listItem-icon-dense": {
+          "$type": "dimension",
+          "$value": "{size.icon.18}"
         }
       },
+      "font": {
+        "--listItem-size-label": {
+          "$type": "dimension",
+          "$value": "{font.text.16}"
+        },
+        "--listItem-size-label-dense": {
+          "$type": "dimension",
+          "$value": "{font.text.14}"
+        },
+        "--listItem-size-secondary": {
+          "$type": "dimension",
+          "$value": "{font.text.13}"
+        },
+        "--listItem-size-secondary-dense": {
+          "$type": "dimension",
+          "$value": "{font.text.12}"
+        },
+        "--listItem-weight-label": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.medium}"
+        },
+        "--listItem-weight-secondary": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.regular}"
+        }
+      },
+      "color": {
+        "--listItem-font-label": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.main}"
+        },
+        "--listItem-font-secondary": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.soft}"
+        },
+        "--listItem-icon": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.main}"
+        },
+        "--listItem-hovered": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.neutral.light}"
+        },
+        "--listItem-selected": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.brand.light}"
+        },
+        "--listItem-fg-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.disabled.main}"
+        },
+        "--listItem-bg-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.disabled.main}"
+        },
+        "--listItem-storke-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.disabled.main}"
+        }
+      }
+    },
+    "divider": {
       "size": {
         "--divider-border": {
           "$type": "dimension",
           "$value": "{size.border.001}"
+        },
+        "--divider-horizontal-0-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.0}"
+        },
+        "--divider-horizontal-2-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.2}"
+        },
+        "--divider-horizontal-4-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.4}"
+        },
+        "--divider-horizontal-8-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
+        },
+        "--divider-horizontal-12-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.12}"
+        },
+        "--divider-horizontal-16-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.16}"
+        },
+        "--divider-horizontal-20-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.20}"
+        },
+        "--divider-horizontal-24-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.24}"
+        },
+        "--divider-horizontal-32-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.32}"
+        },
+        "--divider-horizontal-40-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.40}"
+        },
+        "--divider-vertical-0-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.0}"
+        },
+        "--divider-vertical-2-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.2}"
+        },
+        "--divider-vertical-4-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.4}"
+        },
+        "--divider-vertical-8-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
+        },
+        "--divider-vertical-12-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.12}"
+        },
+        "--divider-vertical-16-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.16}"
+        },
+        "--divider-vertical-20-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.20}"
+        },
+        "--divider-vertical-24-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.24}"
+        },
+        "--divider-vertical-32-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.32}"
+        },
+        "--divider-vertical-40-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.40}"
+        }
+      },
+      "color": {
+        "--divider-bg": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.black.light}"
+        }
+      }
+    }
+  },
+  "navigation": {
+    "menu": {
+      "size": {
+        "--menuItem-container-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.12}"
+        },
+        "--menuItem-container-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
+        },
+        "--menuItem-container-dense-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
+        },
+        "--menuItem-container-dense-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.4}"
+        },
+        "--menuItem-container-gutter-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
+        },
+        "--menuItem-container-gutter-dense-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.4}"
+        },
+        "--menuItem-base-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
+        },
+        "--menuItem-icon": {
+          "$type": "dimension",
+          "$value": "{size.icon.20}"
+        },
+        "--menuItem-icon-dense": {
+          "$type": "dimension",
+          "$value": "{size.icon.18}"
+        },
+        "--menuList-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.12}"
+        },
+        "--menuList-dense-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
+        },
+        "--menu-radius": {
+          "$type": "dimension",
+          "$value": "{size.radius.004}"
+        }
+      },
+      "font": {
+        "--menuItem-size": {
+          "$type": "dimension",
+          "$value": "{font.text.16}"
+        },
+        "--menuItem-size-dense": {
+          "$type": "dimension",
+          "$value": "{font.text.14}"
+        },
+        "--menuItem-weight": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.medium}"
+        }
+      },
+      "colors": {
+        "--menuItem-fg": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.main}"
+        },
+        "--menu-color-bg": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.layer.default}"
+        },
+        "--menuItem-bg-hovered": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.neutral.light}"
+        },
+        "--menuItem-bg-selected": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.brand.light}"
+        },
+        "--menuItem-fg-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.disabled.main}"
+        },
+        "--menuItem-bg-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.disabled.main}"
+        },
+        "--menuItem-stroke-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.disabled.main}"
+        }
+      }
+    }
+  },
+  "utils": {
+    "cssBaseline": {
+      "scrollbar": {
+        "--scrollbar-arrow-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.disabled.main}"
+        },
+        "--scrollbar-arrow": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.soft}"
+        },
+        "--scrollbar-square": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.mute}"
+        },
+        "--scrollbar-bg": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.layer.fill}"
         }
       }
     }

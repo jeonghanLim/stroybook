@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import "../001reference/color.css";
+@import "../001reference/font.css";
+@import "../001reference/size.css";
+@import "../001reference/fontType.css";
+
+@theme {
+
+    /* 24. MENU */
+    /* ==================== */
+
+    /* size */
+    --menuItem-base-gap: calc(var(--spacing) * 8);
+    --menuItem-icon: var(--icon-20);
+    --menuItem-icon-dense: var(--icon-18);
+    --menu-radius: var(--radius-004);
+    --menuItem-container: calc(var(--spacing) * 8) calc(var(--spacing) * 12) calc(var(--spacing) * 8) calc(var(--spacing) * 12);
+    --menuItem-container-dense: calc(var(--spacing) * 4) calc(var(--spacing) * 8) calc(var(--spacing) * 4) calc(var(--spacing) * 8);
+    --menuItem-container-gutter: calc(var(--spacing) * 8) calc(var(--spacing) * 0) calc(var(--spacing) * 8) calc(var(--spacing) * 0);
+    --menuItem-container-gutter-dense: calc(var(--spacing) * 4) calc(var(--spacing) * 0) calc(var(--spacing) * 4) calc(var(--spacing) * 0);
+    --menuList: calc(var(--spacing) * 12) calc(var(--spacing) * 0) calc(var(--spacing) * 12) calc(var(--spacing) * 0);
+    --menuList-dense: calc(var(--spacing) * 8) calc(var(--spacing) * 0) calc(var(--spacing) * 8) calc(var(--spacing) * 0);
+    /* font */
+    --menuItem-size: var(--text-16);
+    --menuItem-size-dense: var(--text-14);
+    --menuItem-weight: var(--font-weight-medium);
+    /* colors */
+    --menuItem-fg: var(--color-palette-fg-neutral-main);
+    --menu-color-bg: var(--color-palette-bg-layer-default);
+    --menuItem-bg-hovered: var(--color-palette-bg-overlay-neutral-light);
+    --menuItem-bg-selected: var(--color-palette-bg-overlay-brand-light);
+    --menuItem-fg-disabled: var(--color-palette-fg-disabled-main);
+    --menuItem-bg-disabled: var(--color-palette-bg-disabled-main);
+    --menuItem-stroke-disabled: var(--color-palette-stroke-disabled-main);
+}
