@@ -382,6 +382,14 @@
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.main}"
         },
+        "--checkBox-layer-brand": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.brand.light}"
+        },
+        "--checkBox-layer-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.neutral.light}"
+        },
         "--checkBox-bg-disable": {
           "$type": "color",
           "$value": "{color.color.palette.bg.disabled.main}"
