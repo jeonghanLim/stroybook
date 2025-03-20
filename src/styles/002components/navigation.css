@@ -27,6 +27,7 @@
     /* colors */
     --menuItem-fg: var(--color-palette-fg-neutral-main);
     --menu-color-bg: var(--color-palette-bg-layer-default);
+    --menuItem-bg: var(--color-palette-bg-overlay-white-light);
     --menuItem-bg-hovered: var(--color-palette-bg-overlay-neutral-light);
     --menuItem-bg-selected: var(--color-palette-bg-overlay-brand-light);
     --menuItem-fg-disabled: var(--color-palette-fg-disabled-main);
