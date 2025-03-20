@@ -113,38 +113,109 @@
 /* ===================== */
 /* RADIO GROUP           */
 /* ===================== */
-
-@utility radio-size-* {
-    $ .radio-title {
-        font-size: --value(radioGroup-size-title-*) font-weight: --value(radioGroup-weight-title-*)
-    }
-
-    & .radio-base {
+@layer components {
+    /* 기존 input 스타일 삭제 */
+    .inputClass {
         appearance: none;
-        border: --value(--radio-base-border-*);
-        border-radius: --value(--radio-base-radius);
-
-        & :checked {
-            border: --value(--radio-base-border-true-*);
+        border-radius: var(--radio-base-radius);
+        cursor: pointer;
+        @apply absolute
+    }
+    /* radio group gap 조정을 위함*/
+    .radio-group {
+        display: flex;
+        flex-direction: column;
+    }
+    /* radio section gap 조정을 위함*/
+    .radio-section {
+        display: flex;
+    }
+    /* radio label 가운데 정렬 */
+    .radio-label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* radio 스타일 지정 */
+    .radio-wrapper {
+        width: var(--radio-touch-width);
+        height: var(--radio-touch-height);
+        border-radius: var(--radio-base-radius);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: var(--radio-base-stroke); */
+        
+        /* &:has(input:active){
+            background-color: var(--radio-base-bg);
+        }
+        &:has(input:focus){
+            background-color: var(--radio-base-bg);
+        } */
+        & .radio-base {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--radio-base-radius);
+            border: 1px solid;
+            border-color: var(--radio-base-stroke);
+            background-color: var(--radio-base-bg);
+            &:has(input:checked) {
+                border: 8px solid;
+            }
+            
+            
         }
     }
+}
+/* @utility flex-* {
+    flex-direction: --value(*);
+} */
 
-    $ .radio-label {
+@utility radio-size-* {
+    gap: --value(--radioGroup-gap-*);
+    .inputClass{
+        width: --value(--radio-base-width-*);
+        height: --value(--radio-base-height-*);
+    }
+    .radio-section {
+        gap: --value(--radioLabel-gap-*);
+    }
+    .radio-title {
+        font-size: --value(--radioGroup-size-title-*);
+        font-weight: --value(--radioGroup-weight-title-*);
+        
+    }
+    .radio-base {
+        width: --value(--radio-base-width-*);
+        height: --value(--radio-base-height-*);
+        &:has(input:checked) {
+            /* border: --value(--radio-icon-*); */
+        }
+        :hover {
+            
+        }
+    }
+    .radio-label {
         font-size: --value(--radioLabel-size-*);
         font-weight: --value(--radioLabel-weight-*);
     }
 }
 
 @utility radio-color-* {
-    $ .radio-title {
-        color: --value(--radioGroup-color-title);
+    :hover{
+        background-color: --value(--color-palette-bg-overlay-*-light);
     }
-
-    $ .radio-base {
-        &:checked {
-            background-color: --value(--radio-base-bg);
-            border: --value(radio-base-fg-*)
+    .radio-title {
+        color: --value(--radioGroup-fg-title);
+    }
+    .radio-base {
+        &:has(input:checked) {
+            border-color: --value(--radio-base-fg-*);
         }
+    }
+    .radio-label {
+        color: --value(--radioLabel-fg);
     }
 
 
