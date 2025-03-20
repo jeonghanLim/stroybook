@@ -1,5 +1,5 @@
 import { fn } from '@storybook/test';
-import { Divider } from '@/components/dataDisplay/list/List';
+import { List } from '@/components/dataDisplay/list/List';
 
 export default {
   title: 'Example/List',
@@ -9,26 +9,19 @@ export default {
   },
   tags: ['autodocs'],
   argTypes: {
-    checked: { control: 'boolean' },
-    label: { control: 'text' },
   },
   args: {
-    checked: false,
-    label: 'Check me!',
-    onChange: fn(),
   },
 };
 
 export const Default = {
   args: {
-    checked: false,
-    label: 'Check me!',
   },
 };
 
-export const Checked = {
+export const Dense = {
   args: {
-    checked: true,
-    label: 'I am checked!',
+    dense : true,
   },
 };
+

@@ -68,6 +68,33 @@
     /* 1. divider */
     .divider { @apply border-solid border-palette-bg-overlay-black-light }
     .divider-horizontal { @apply w-220 }
-    .divider-vertical { @apply w-px h-220 border-l }
+    li.divider-horizontal { @apply list-none h-px bg-palette-bg-overlay-black-light }
+    .divider-vertical { @apply w-px h-220 border-l self-stretch }
 
+    /* 2. listItem */
+    .listItem { @apply w-fit h-auto bg-material-white-alpha-008 cursor-pointer }
+    .listItem:hover { @apply bg-material-classicblueGray-alpha-008 }
+
+    .listItem-container { @apply w-auto h-auto px-20 py-12 }
+
+    .listItem-base { @apply flex flex-row flex-nowrap }
+    .listItem-base:has(.listItem-icon) { @apply gap-12 }
+    .listItem-text { @apply flex flex-col }
+    .listItem-base-text { @apply text-16/150 font-medium font-pretendard text-material-classicblueGray-700 }
+    .listItem-secondary-text { @apply text-13/150 font-normal font-pretendard text-material-classicblueGray-300 }
+
+    .listItem-divider { @apply border-solid border-t border-palette-bg-overlay-black-light }
+
+    .listItem-gutter { @apply w-200 }
+    .listItem-gutter > .listItem-container { @apply px-0 }
+
+    .listItem-dense .listItem-container { @apply px-16 py-8 }
+    .listItem-dense .listItem-base:has(.listItem-icon) { @apply gap-8 }
+    .listItem-dense .listItem-base-text { @apply text-14 }
+    .listItem-dense .listItem-secondary-text { @apply text-12 }
+
+    .listItem-disabled { @apply cursor-default }
+    .listItem-disabled:hover { @apply bg-transparent }
+    .listItem-disabled .listItem-base-text,
+    .listItem-disabled .listItem-secondary-text { @apply text-material-black-alpha-024 }
 }

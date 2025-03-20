@@ -27,8 +27,12 @@
 /* DIVIDER               */
 /* ===================== */
 
-@utility divider-orientation-* { 
-    
+@utility divider-horizontal-* { 
+    margin : --value(--divider-horizontal-*);
+}
+
+@utility divider-vertical-* { 
+    margin : --value(--divider-vertical-*);
 }
 
 
