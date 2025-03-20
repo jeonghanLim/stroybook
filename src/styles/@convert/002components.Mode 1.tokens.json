@@ -84,27 +84,27 @@
         }
       },
       "font": {
-        "--font-size-sm": {
+        "--btn-font-size-sm": {
           "$type": "dimension",
           "$value": "{font.text.13}"
         },
-        "--font-size-md": {
+        "--btn-font-size-md": {
           "$type": "dimension",
           "$value": "{font.text.16}"
         },
-        "--font-size-lg": {
+        "--btn-font-size-lg": {
           "$type": "dimension",
           "$value": "{font.text.18}"
         },
-        "--font-weight-sm": {
+        "--btn-font-weight-sm": {
           "$type": "dimension",
           "$value": "{font.font.weight.semiBold}"
         },
-        "--font-weight-md": {
+        "--btn-font-weight-md": {
           "$type": "dimension",
           "$value": "{font.font.weight.bold}"
         },
-        "--font-weight-lg": {
+        "--btn-font-weight-lg": {
           "$type": "dimension",
           "$value": "{font.font.weight.bold}"
         }
@@ -382,6 +382,14 @@
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.main}"
         },
+        "--checkBox-overlay-brand": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.brand.light}"
+        },
+        "--checkBox-layer-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.neutral.light}"
+        },
         "--checkBox-bg-disable": {
           "$type": "color",
           "$value": "{color.color.palette.bg.disabled.main}"
@@ -514,21 +522,17 @@
         }
       },
       "colors": {
-        "--radioGroup-fg-title": {
+        "--radio-fg-disable": {
           "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.black}"
+          "$value": "{color.color.palette.fg.disabled.main}"
         },
-        "--radioGroup-fg-helper": {
+        "--radio-bg-disable": {
           "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.light}"
+          "$value": "{color.color.palette.bg.disabled.main}"
         },
-        "--radioGroup-fg-error": {
+        "--radio-stroke-disable": {
           "$type": "color",
-          "$value": "{color.color.palette.fg.error.main}"
-        },
-        "--radioLabel-fg": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.black}"
+          "$value": "{color.color.palette.stroke.disabled.main}"
         },
         "--radio-base-stroke": {
           "$type": "color",
@@ -546,17 +550,29 @@
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.main}"
         },
-        "--radio-fg-disable": {
+        "--radio-layer-brand": {
           "$type": "color",
-          "$value": "{color.color.palette.fg.disabled.main}"
+          "$value": "{color.color.palette.bg.overlay.brand.light}"
         },
-        "--radio-bg-disable": {
+        "--radio-layer-neutral": {
           "$type": "color",
-          "$value": "{color.color.palette.bg.disabled.main}"
+          "$value": "{color.color.palette.bg.overlay.neutral.light}"
         },
-        "--radio-stroke-disable": {
+        "--radioLabel-fg": {
           "$type": "color",
-          "$value": "{color.color.palette.stroke.disabled.main}"
+          "$value": "{color.color.palette.fg.neutral.black}"
+        },
+        "--radioGroup-fg-title": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.black}"
+        },
+        "--radioGroup-fg-helper": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.light}"
+        },
+        "--radioGroup-fg-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.error.main}"
         }
       }
     },
@@ -828,6 +844,10 @@
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.main}"
         },
+        "--listItem-bg": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.white.light}"
+        },
         "--listItem-bg-hovered": {
           "$type": "color",
           "$value": "{color.color.palette.bg.overlay.neutral.light}"
@@ -1020,6 +1040,10 @@
           "$type": "color",
           "$value": "{color.color.palette.bg.layer.default}"
         },
+        "--menuItem-bg": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.white.light}"
+        },
         "--menuItem-bg-hovered": {
           "$type": "color",
           "$value": "{color.color.palette.bg.overlay.neutral.light}"
@@ -1062,6 +1086,72 @@
           "$type": "color",
           "$value": "{color.color.palette.bg.layer.fill}"
         }
+      }
+    },
+    "interaction": {
+      "--overlay-brand": {
+        "$type": "color",
+        "$value": "{color.color.palette.bg.overlay.brand.light}"
+      },
+      "--overlay-brand-dark": {
+        "$type": "color",
+        "$value": "{color.color.palette.bg.overlay.brand.dark}"
+      },
+      "--overlay-neutral": {
+        "$type": "color",
+        "$value": "{color.color.palette.bg.overlay.neutral.light}"
+      },
+      "--overlay-neutral-dark": {
+        "$type": "color",
+        "$value": "{color.color.palette.bg.overlay.neutral.dark}"
+      },
+      "--overlay-white": {
+        "$type": "color",
+        "$value": "{color.color.palette.bg.overlay.white.light}"
+      },
+      "--overlay-white-dark": {
+        "$type": "color",
+        "$value": "{color.color.palette.bg.overlay.white.dark}"
+      },
+      "--overlay-black": {
+        "$type": "color",
+        "$value": "{color.color.palette.bg.overlay.black.light}"
+      },
+      "--overlay-black-dark": {
+        "$type": "color",
+        "$value": "{color.color.palette.bg.overlay.black.dark}"
+      },
+      "--overlay-error": {
+        "$type": "color",
+        "$value": "{color.color.palette.bg.overlay.error.light}"
+      },
+      "--overlay-error-dark": {
+        "$type": "color",
+        "$value": "{color.color.palette.bg.overlay.error.dark}"
+      },
+      "--overlay-warning": {
+        "$type": "color",
+        "$value": "{color.color.palette.bg.overlay.warning.light}"
+      },
+      "--overlay-warning-dark": {
+        "$type": "color",
+        "$value": "{color.color.palette.bg.overlay.warning.dark}"
+      },
+      "--overlay-info": {
+        "$type": "color",
+        "$value": "{color.color.palette.bg.overlay.info.light}"
+      },
+      "--overlay-info-dark": {
+        "$type": "color",
+        "$value": "{color.color.palette.bg.overlay.info.dark}"
+      },
+      "--overlay-success": {
+        "$type": "color",
+        "$value": "{color.color.palette.bg.overlay.success.light}"
+      },
+      "--overlay-success-dark": {
+        "$type": "color",
+        "$value": "{color.color.palette.bg.overlay.success.dark}"
       }
     }
   }
