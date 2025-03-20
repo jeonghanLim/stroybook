@@ -10,16 +10,23 @@
 /* BTN                   */
 /* ===================== */
 @layer components {
-    /* Icon */
-    .icon-box { @apply absolute}
-
     /* 2. Button */
     .btn { 
         border-radius: var(--btn-radius);
-        @apply cursor-pointer whitespace-nowrap 
+        @apply    
+        relative 
+        cursor-pointer 
+        whitespace-nowrap 
     }
-    .btn, .btn-base { @apply flex items-center justify-center w-fit }
-    .btn-mask-box { @apply flex items-center justify-center }
+    .btn, .btn-base, .btn-mask-box { 
+        @apply 
+        flex 
+        items-center 
+        justify-center 
+        
+    }
+    .btn:focus { @apply outline-0 }
+    .btn, .btn-base { @apply  w-fit }
     .btn.disabled { @apply cursor-default }
 
 }
