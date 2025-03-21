@@ -1,28 +1,21 @@
 import React from "react";
 import PropTypes from 'prop-types';
-export default function Radio({name, options, color, size, helper}) {
-  return <div className="radio-group radio-size-lg">
-    <h2 className="radio-title">색을 골라보세요</h2>
-    <div className="radio-section">
-      {/* 라디오 객체 시작 */}
-      <div className="radio-wrapper radio-color-neutral">
-        <div className="radio-base">
-          <input className="inputClass" type="radio" name="color" value="red" />
+export default function Radio({title, name, options, color, size, helper}) {
+  return <div className={`radio-group radio-size-${size}`}>
+    <h2 className="radio-title">{title}</h2>
+    {options.map((item, index) => (
+        <div className="radio-section" key={index}>
+        {/* 라디오 객체 시작 */}
+        <div className={`radio-wrapper radio-color-${color}`}>
+          <div className="radio-base">
+            <input className="inputClass" type="radio" name={name} value={item.value} />
+          </div>
         </div>
+        {/* 라디오 객체 끝 */}
+        <label className="radio-label">{item.label}</label>
       </div>
-      {/* 라디오 객체 끝 */}
-      <label className="radio-label">빨강</label>
-    </div>
-    <div className="radio-section">
-      {/* 라디오 객체 시작 */}
-      <div className="radio-wrapper radio-color-neutral">
-        <div className="radio-base">
-          <input className="inputClass" type="radio" name="color" value="blue" />
-        </div>
-      </div>
-      {/* 라디오 객체 끝 */}
-      <label className="radio-label">파랑</label>
-    </div>
+    ))}
+    
   </div>;
 }
 

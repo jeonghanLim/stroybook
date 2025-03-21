@@ -130,6 +130,8 @@
     --radio-base-width-md: calc(var(--spacing) * 20);
     --radio-base-height-md: calc(var(--spacing) * 20);
     --radio-base-border: var(--border-001);
+    --radio-base-border-true-lg: var(--border-007);
+    --radio-base-border-true-md: var(--border-006);
     --radio-icon-lg: var(--icon-24);
     --radio-icon-md: var(--icon-20);
     --radioLabel-gap-lg: calc(var(--spacing) * 8);
