@@ -1,12 +1,16 @@
 import React from "react";
 import PropTypes from 'prop-types';
 export default function Radio({title, name, options, color, size, helper}) {
-  return <div className={`radio-group radio-size-${size}`}>
+  const radioSizeClassName = size === "lg" ? "radio-size-lg" : "radio-size-md";
+
+  const radioColorClassName = color === 'brand' ? 'radio-color-brand' : 'radio-color-neutral';
+
+  return <div className={[`radio-group`, radioSizeClassName].join(' ')}>
     <h2 className="radio-title">{title}</h2>
     {options.map((item, index) => (
         <div className="radio-section" key={index}>
         {/* 라디오 객체 시작 */}
-        <div className={`radio-wrapper radio-color-${color}`}>
+        <div className={[`radio-wrapper`, radioColorClassName].join(' ')}>
           <div className="radio-base">
             <input className="inputClass" type="radio" name={name} value={item.value} />
           </div>
