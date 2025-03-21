@@ -16,16 +16,16 @@ export default {
     size: { control: 'text' },
   },
   args: {
-    title: "색을 골라보세요", 
-    name: "color",
+    title: "점메추", 
+    name: "lunch",
     options: [
                 {
-                    value: 'red',
-                    label: '빨강',
+                    value: 'pizza',
+                    label: '피자',
                 },
                 {
-                    value: 'blue',
-                    label: '파랑'
+                    value: 'zzigea',
+                    label: '김치찌개'
                 }
             ],
     color: 'neutral',
@@ -35,16 +35,16 @@ export default {
 
 export const Default = {
   args: {
-    title: "색을 골라보세요", 
-    name: "color",
+    title: "점메추", 
+    name: "lunch",
     options: [
                 {
-                    value: 'red',
-                    label: '빨강',
+                    value: 'pizza',
+                    label: '피자',
                 },
                 {
-                    value: 'blue',
-                    label: '파랑'
+                    value: 'zzigea',
+                    label: '김치찌개'
                 }
             ],
     color: 'neutral',
