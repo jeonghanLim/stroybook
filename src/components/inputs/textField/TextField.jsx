@@ -1,27 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 export const TextField = ({
   label,
   dense = false,
-  error = false,
   disabled = false,
+  error = false,
+  placeholder,
 }) => {
+  const [value, setValue] = useState('');
 
-  const classNames = [
-    'textfield-base', 
+  const handleChange = (e) => {
+    setValue(e.target.value);
+    console.log(e.target.value);
+  };
+
+  const classProp = [
     dense && 'dense', 
+    disabled && 'disabled',
     error && 'error', 
-    disabled && 'disabled'
+    value && 'hasValue' 
   ]
     .filter(Boolean) 
     .join(' '); 
 
-    return (
-      <div>
-        <div>{label}</div>
-        <div className={classNames}>
-            <input type='text' name='test' disabled={disabled}/>
+  return (
+    <div>
+      <div className={`label-base ${classProp}`}>{label}</div>
+      <div className={`textfield-base ${classProp}`}>
+      <input
+          type="text"
+          name="test"
+          disabled={disabled}
+          placeholder={placeholder}
+          value={value} 
+          onChange={handleChange} 
+        />
         </div>
       </div>
     )
@@ -32,11 +46,13 @@ TextField.propTypes = {
   dense: PropTypes.bool,
   disabled: PropTypes.bool,
   error: PropTypes.bool,
+  placeholder: PropTypes.string,
 };
 
 TextField.defaultProps = {
-  label: '',
+  label: 'label',
   dense: false,
   disabled: false,
   error: false,
+  placeholder: 'PlaceHoler'
 };

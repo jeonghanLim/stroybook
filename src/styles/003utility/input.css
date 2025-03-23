@@ -109,9 +109,9 @@
 /* TEXT FIELD            */
 /* ===================== */
 
-@layer components{
+@layer components {
     .textfield-base {
-        height: var(--textField-input-height); 
+        height: var(--textField-input-height);
         border-radius: var(--textField-input-radius);
         border: var(--textField-input-border1) solid;
         border-color: var(--textField-input-stroke-enabled);
@@ -122,7 +122,7 @@
             border-color: var(--textField-input-stroke-hovered);
         }
 
-        &:focus {
+        &:focus-within {
             border: var(--textField-input-border3) solid;
             border-color: var(--textField-input-stroke-focused);
         }
@@ -131,24 +131,63 @@
             background-color: var(--textField-bg-disabled);
             border-color: var(--textField-input-stroke-disabled);
             pointer-events: none;
+
+            & input {
+                color: var(--textField-fg-disabled);
+            }
         }
 
+        &.error {
+            border: var(--textField-input-border3) solid;
+            border-color: var(--textField-input-stroke-error);
+        }
+
+        &.dense {
+            height: var(--textField-input-height-dense);
+        }
+        
         & input {
             outline: none;
             padding: var(--textField-contents-gap);
+            color: var(--textField-fg-placeholder);
+            font-size: var(--textField-size-placeholder);
+        }
+
+        &.dense input {
+            font-size: var(--textField-size-placeholder-dense);
+        }
+
+        &.hasValue input {
+            color: var(--textField-fg-hasValue);
+            font-size: var(--textField-size-hasValue);
+        }
+
+        &.hasValue.dense input {
+            font-size: var(--textField-size-hasValue-dense);
         }
     }
 
-    .textfield-base.error {
-        border: var(--textField-input-border3) solid; 
-        border-color: var(--textField-input-stroke-error); 
-    }
+    .label-base {
+        font-size: var(--textField-size-label);
+        font-weight: var(--textField-weight-label);
+        padding: var(--textField-labelTop);
+        display: flex;
+        gap: var(--textField-labelTop-gap);
+        color: var(--textField-fg-label);
 
-    .textfield-base.dense {
-        height: var(--textField-input-height-dense);
+        &.disabled {
+            color: var(--textField-fg-disabled);
+        }
+
+        &.error {
+            color: var(--textField-fg-error);
+        }
+
+        &.dense {
+            font-size: var(--textField-size-label-dense);
+        }
     }
 }
-
 
 /* ===================== */
 /* TEXT FIELD END        */
