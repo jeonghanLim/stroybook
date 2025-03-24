@@ -200,6 +200,10 @@
                 & input {
                     color: var(--textField-fg-disabled);
                 }
+
+                & .input-icon{
+                    color: var(--textField-fg-disabled) ;
+                }
             }
 
             .label-base {

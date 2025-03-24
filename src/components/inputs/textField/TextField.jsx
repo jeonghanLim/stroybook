@@ -42,7 +42,7 @@ export const TextField = ({
         </div>
         <div className='textfield-base'>
           {startIcon &&
-            <span className="input-icon">{startIcon}</span>
+            <span className="input-icon">#</span>
           }
           <input
             type="text"
@@ -54,7 +54,7 @@ export const TextField = ({
             onChange={handleChange}
           />
             {endIcon &&
-              <span className="input-icon">{endIcon}</span>
+              <span className="input-icon">#</span>
             }
         </div>
         {helperText && <div className="helper-text">{helperText}</div>}
@@ -72,6 +72,8 @@ TextField.propTypes = {
   required: PropTypes.bool,
   placeholder: PropTypes.string,
   helperText: PropTypes.string,
+  startIcon: PropTypes.element,
+  endIcon: PropTypes.element,
 };
 
 TextField.defaultProps = {
