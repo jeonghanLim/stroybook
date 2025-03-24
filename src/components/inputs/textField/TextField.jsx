@@ -22,7 +22,6 @@ export const TextField = ({
 
   const classProp = [
     dense && 'dense',
-    // disabled && 'disabled',
     error && 'error',
     value && 'hasValue'
   ]

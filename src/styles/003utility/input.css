@@ -125,20 +125,21 @@
 
 @layer components {
     .textfield-base {
+        box-sizing: border-box;
         height: var(--textField-input-height);
         border-radius: var(--textField-input-radius);
-        border: var(--textField-input-border1) solid;
-        border-color: var(--textField-input-stroke-enabled);
+        outline: var(--textField-input-border1) solid;
+        outline-color: var(--textField-input-stroke-enabled);
         background-color: var(--textField-input-bg);
 
         &:hover {
-            border: var(--textField-input-border3) solid;
-            border-color: var(--textField-input-stroke-hovered);
+            outline: var(--textField-input-border3) solid;
+            outline-color: var(--textField-input-stroke-hovered);
         }
 
         &:focus-within {
-            border: var(--textField-input-border3) solid;
-            border-color: var(--textField-input-stroke-focused);
+            outline: var(--textField-input-border3) solid;
+            outline-color: var(--textField-input-stroke-focused);
         }
 
         & input {
@@ -194,7 +195,7 @@
         &:has(.textfield-base input:disabled) {
             .textfield-base {
                 background-color: var(--textField-bg-disabled);
-                border-color: var(--textField-input-stroke-disabled);
+                outline-color: var(--textField-input-stroke-disabled);
                 pointer-events: none;
 
                 & input {
@@ -221,8 +222,8 @@
 
         &.error {
             .textfield-base {
-                border: var(--textField-input-border3) solid;
-                border-color: var(--textField-input-stroke-error);
+                outline: var(--textField-input-border3) solid;
+                outline-color: var(--textField-input-stroke-error);
             }
 
             .label-base {
