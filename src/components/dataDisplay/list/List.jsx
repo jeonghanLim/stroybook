@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 // 사용자가 선택할 속성들
 /** Primary UI component for user interaction */
 export const List = ({ 
-  dense, // 컴포넌트 간격 조정 (true 적용 시, 패딩과 마진 축소)
+  dense, // 컴포넌트 간격 조정
   disableGutter, // 좌우 패딩 조정 (true 적용 시, 패딩 삭제)
   startIcon,
   endIcon, 
@@ -33,7 +33,7 @@ export const List = ({
       ].filter(Boolean).join(' ')}      
       onClick={handleSelectedClick}
       {...props}
-      >
+    >
       <div className='listItem-container'>
         <div className='listItem-base'>
           { startIcon &&
