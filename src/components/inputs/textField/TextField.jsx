@@ -3,10 +3,15 @@ import PropTypes from 'prop-types';
 
 export const TextField = ({
   label,
+  labelLeft,
   dense = false,
   disabled = false,
   error = false,
+  required = false,
   placeholder,
+  helperText,
+  startIcon, 
+  endIcon, 
 }) => {
   const [value, setValue] = useState('');
 
@@ -16,43 +21,66 @@ export const TextField = ({
   };
 
   const classProp = [
-    dense && 'dense', 
-    disabled && 'disabled',
-    error && 'error', 
-    value && 'hasValue' 
+    dense && 'dense',
+    // disabled && 'disabled',
+    error && 'error',
+    value && 'hasValue'
   ]
-    .filter(Boolean) 
-    .join(' '); 
+    .filter(Boolean)
+    .join(' ');
 
   return (
-    <div>
-      <div className={`label-base ${classProp}`}>{label}</div>
-      <div className={`textfield-base ${classProp}`}>
-      <input
-          type="text"
-          name="test"
-          disabled={disabled}
-          placeholder={placeholder}
-          value={value} 
-          onChange={handleChange} 
-        />
+    <div className={`textfield-wrapper ${classProp}`}>
+      {labelLeft && (
+        <div className='labelleft-base'>
+          {required && <span className="required-marker">*</span>}{labelLeft}
         </div>
+      )}
+      <div className='right-side'>
+        <div className='label-base'>
+          {label}{required && <span className="required-marker">*</span>}
+        </div>
+        <div className='textfield-base'>
+          {startIcon &&
+            <span className="input-icon">{startIcon}</span>
+          }
+          <input
+            type="text"
+            name="test"
+            disabled={disabled}
+            error={error}
+            placeholder={placeholder}
+            value={value}
+            onChange={handleChange}
+          />
+            {endIcon &&
+              <span className="input-icon">{endIcon}</span>
+            }
+        </div>
+        {helperText && <div className="helper-text">{helperText}</div>}
       </div>
-    )
+    </div>
+  )
 }
 
 TextField.propTypes = {
   label: PropTypes.string,
+  labelLeft: PropTypes.string,
   dense: PropTypes.bool,
   disabled: PropTypes.bool,
   error: PropTypes.bool,
+  required: PropTypes.bool,
   placeholder: PropTypes.string,
+  helperText: PropTypes.string,
 };
 
 TextField.defaultProps = {
   label: 'label',
+  labelLeft: 'labelLeft',
   dense: false,
   disabled: false,
   error: false,
-  placeholder: 'PlaceHoler'
+  required: false,
+  placeholder: 'PlaceHoler',
+  helperText: 'HelperText'
 };
