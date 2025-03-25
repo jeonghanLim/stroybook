@@ -40,7 +40,8 @@ export const Divider = ({
       className={[
         'divider', 
         orientationClass, 
-        (fullWidth && orientation === 'horizontal') ? 'w-auto' : 'h-full',
+        (fullWidth && orientation === 'horizontal') ? 'w-auto' : '',
+        (fullWidth && orientation === 'vertical') ? 'h-full' : '',
         margin ? `divider-${orientation === 'horizontal' ? 'horizontal' : 'vertical'}-${margin}` : ''
       ].filter(Boolean).join(' ')} 
       {...props} 
@@ -61,6 +62,6 @@ Divider.propTypes = {
 };
 
 Divider.defaultProps = {
-  fullWidth : true,
+  fullWidth : false,
   component: 'hr',
 };
