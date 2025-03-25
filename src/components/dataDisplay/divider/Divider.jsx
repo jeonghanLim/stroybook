@@ -40,7 +40,7 @@ export const Divider = ({
       className={[
         'divider', 
         orientationClass, 
-        (fullWidth && orientation === 'horizontal') ? 'w-auto' : '',
+        (fullWidth && orientation === 'horizontal') ? 'w-auto' : 'w-full',
         margin ? `divider-${orientation === 'horizontal' ? 'horizontal' : 'vertical'}-${margin}` : ''
       ].filter(Boolean).join(' ')} 
       {...props} 
