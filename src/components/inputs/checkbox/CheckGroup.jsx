@@ -4,16 +4,17 @@ import { Checkbox } from './Checkbox';
 
 export const CheckGroup = ({ 
   size = 'md',
+  color = 'brand', 
   title,
   label,
   helperText,
   checkboxOptions,
-  color = 'brand', 
+  error = false,
   onChange, 
   ...checkboxProps 
 }) => {  
 
-  //선택된 체크박스 value. 상태값
+  // 선택된 체크박스 value. 상태값
   const [ selectCheckbox, setSelectCheckbox ] = useState([]);
 
   // 개별 체크박스 선택 시
@@ -28,7 +29,7 @@ export const CheckGroup = ({
     onChange && onChange(selectCheckbox);
   }
 
-  //전체 체크 선택 시
+  // 전체 체크 선택 시
   const allCheckedhandle = (checked) => {
     console.log("-------- 그룹 전체 체크", checked)
     if(checked) {
@@ -68,23 +69,21 @@ export const CheckGroup = ({
 CheckGroup.propTypes = {
   size: PropTypes.oneOf(['md', 'lg']),
   color : PropTypes.oneOf(['brand', 'neutral']),
-  variant : PropTypes.oneOf(['check', 'checkbox']),
-  disabled : PropTypes.bool,
-  checked : PropTypes.bool,
-  indeterminate : PropTypes.bool,
-  checkIcon : PropTypes.element, 
-  checkText : PropTypes.string,
+  title : PropTypes.string,
+  label : PropTypes.string,
+  helperText : PropTypes.string,
+  checkboxOptions: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      value: PropTypes.string.isRequired,
+    })
+  ),
   onChange: PropTypes.func,
 };
 
 CheckGroup.defaultProps = {
   size: 'md',
   color: 'brand',
-  variant: 'checkbox',
-  disabled: false,
-  checked: false,
-  indeterminate: false,
-  onClick: undefined,
 };
 
 /*

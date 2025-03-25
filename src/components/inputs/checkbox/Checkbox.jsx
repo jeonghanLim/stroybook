@@ -14,6 +14,7 @@ export const Checkbox = ({
   label, 
   onChange, 
   value,
+  error = false,
   ...checkboxProps 
 }) => {  
 
@@ -21,21 +22,22 @@ export const Checkbox = ({
   const [isChecked, setIsChecked] = useState(checked);
 
   useEffect(()=>{
+    // console.log("useEFfect")
     setIsChecked(checked);
   },[checked])
 
   // 체크박스 선택 시 
   const handleChange = (e) => {
     console.log("-------- 개별 개별 체크", e.target.checked)
-    setIsChecked(e.target.checked) ;
+    setIsChecked(e.target.checked);
     onChange && onChange(e.target.checked, e.target.value);
   };
 
-  console.log("checked", checked)
-  console.log("isChecked", isChecked)
+  // console.log("checked", checked)
+  // console.log("isChecked", isChecked)
 
   return (
-    <label className={`checkbox-label checkbox-size-${size} ${variant}-color-${color}  ${disabled ? 'disabled' : ' '}`}>
+    <label className={`checkbox-label checkbox-size-${size} ${variant}-color-${error ? 'error' : color} ${disabled ? 'disabled' : ' '}`}>
         <div className={`checkbox-wrapper`}> 
           <div className={`checkbox-base ${variant}`} >
             <input 
@@ -62,6 +64,7 @@ Checkbox.propTypes = {
   disabled : PropTypes.bool,
   checked : PropTypes.bool,
   indeterminate : PropTypes.bool,
+  error : PropTypes.bool,
   checkIcon : PropTypes.element, 
   label : PropTypes.string,
   onChange: PropTypes.func,
@@ -83,6 +86,7 @@ checkbox-size-md
 checkbox-size-lg
 checkbox-color-brand
 checkbox-color-neutral
+checkbox-color-error
 check-color-brand
 check-color-neutral
 */ 

@@ -151,6 +151,19 @@
         appearance: none;      
         @apply absolute; 
     }
+    .checkbox-color-error {
+        & .checkbox {
+            border : 1px solid;
+            border-color : var(--checkBox-stroke-error);
+        }
+    }
+    .check-color-error {
+        & .check {
+            & .icon-box{
+                color: var(--checkBox-bg-wait-error);
+            }
+        }
+    }
 }
 
 @utility checkbox-size-* {
@@ -241,7 +254,7 @@
     .checkGroup-checked {
         display: flex;
         align-items: flex-start; 
-        flex-direction: column;   
+        flex-direction: column;    
     }
 
     .checkGroup-helptext {
@@ -266,7 +279,7 @@
 
     & .checkGroup-checked {
         gap : --value(--checkGroup-group-gap-*);
-        padding-left: --value(--checkGroup-group-*-xLeft);
+        padding: --value(--checkGroup-group-*);
     }
 
     /* & .checkGroup-item {
