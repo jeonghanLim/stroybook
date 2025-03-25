@@ -126,13 +126,14 @@
 @layer components {
     .textfield-base {
         display: flex;
-        position: relative;
+        align-items: center;
         box-sizing: border-box;
         height: var(--textField-input-height);
         border-radius: var(--textField-input-radius);
         outline: var(--textField-input-border1) solid;
         outline-color: var(--textField-input-stroke-enabled);
         background-color: var(--textField-input-bg);
+        padding: var(--textField-input);
 
         &:hover {
             outline: var(--textField-input-border3) solid;
@@ -146,17 +147,14 @@
 
         & input {
             outline: none;
-            flex: 1;
             padding: var(--textField-contents-gap);
             color: var(--textField-fg-placeholder);
             font-size: var(--textField-size-placeholder);
         }
 
         & .input-icon {
-            position: absolute;
             width: var(--textField-input-icon);
             color: var(--textField-fg-placeholder);
-            /* display: flex; */
         }
     }
 

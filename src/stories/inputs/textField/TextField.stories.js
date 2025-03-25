@@ -1,6 +1,6 @@
 import { fn } from '@storybook/test';
 import { TextField } from '@/components/inputs/textField/TextField';
-import { AngleLeftIcon, AngleRightIcon } from '@/components/icon/Icon';
+import { StarIcon } from '@/components/icon/Icon';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 export default {
@@ -20,8 +20,8 @@ export default {
 export const Enabled = {
   args:{
     label:'textField',
-        // startIcon: <AngleLeftIcon/>,
-        // endIcon: <AngleRightIcon/>
+        startIcon: <StarIcon/>,
+        endIcon: <StarIcon/>
   },
 };
 
