@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 /** Primary UI component for user interaction */
 export const Divider = ({ 
   orientation, // 방향
-  fullWidth = false, // 전체 넓이 100% 설정 여부
+  fullWidth, // 전체 넓이 100% 설정 여부
   component, // 기본 : hr, 추가 설정 가능 : li
   margin, // 좌우(horizontal), 상하(vertical) 마진 설정 가능(0, 2, 4, 8, 12, 16, 20, 24, 32, 40)
   ...props 
@@ -27,7 +27,7 @@ export const Divider = ({
         className={[
           'divider', 
           orientationClass, 
-          fullWidth ? 'w-full' : '',
+          fullWidth ? 'w-auto' : '',
           margin ? `divider-horizontal-${margin}` : ''
         ].filter(Boolean).join(' ')}
         {...props}
@@ -40,7 +40,7 @@ export const Divider = ({
       className={[
         'divider', 
         orientationClass, 
-        fullWidth ? 'w-full' : '',
+        fullWidth ? 'w-auto' : '',
         margin ? `divider-${orientation === 'horizontal' ? 'horizontal' : 'vertical'}-${margin}` : ''
       ].filter(Boolean).join(' ')} 
       {...props} 
@@ -57,10 +57,10 @@ Divider.propTypes = {
   /** HTML element to render? Default 'hr', can also be 'li'. */
   component : PropTypes.string,
   /** What margin class should be applied to customize the divider's margins? */
-  margin : PropTypes.oneOf(['0', '2', '4', '8', '12', '16', '20', '24', '32', '40']),
+  margin : PropTypes.oneOf([0, 2, 4, 8, 12, 16, 20, 24, 32, 40]),
 };
 
 Divider.defaultProps = {
-  fullWidth : false,
+  fullWidth : true,
   component: 'hr',
 };

@@ -4,6 +4,13 @@ import { Divider } from '@/components/dataDisplay/divider/Divider';
 export default {
   title: 'Example/Divider',
   component: Divider,
+  decorators: [
+    (Story) => (
+      <div style={{ width:'220px' }}>
+        <Story />
+      </div>
+    ),
+  ],
   parameters: {
     layout: 'centered',
   },
