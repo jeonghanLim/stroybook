@@ -152,7 +152,6 @@
     /* radio group gap 조정을 위함*/
     .radio-group {
         display: flex;
-        /* flex-direction: column; */
     }
     .radio-flex-column {
         flex-direction: column;
@@ -179,21 +178,21 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        & .radio-base {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: var(--radio-base-radius);
-            border-width: var(--radio-base-border);
-            border-style: solid;
-            border-color: var(--radio-base-stroke);
-            background-color: var(--radio-base-bg);
-        }
     }
     .radio-base {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: var(--radio-base-radius);
+        border-width: var(--radio-base-border);
+        border-style: solid;
+        border-color: var(--radio-base-stroke);
+        background-color: var(--radio-base-bg);
         &:has(input:disabled) {
-            border-color: var(--radio-fg-disable);
             background-color: var(--radio-bg-disable);
+        }
+        &:has(input:disabled:checked) {
+            border-color: var(--radio-fg-disable);
         }
     }
     .radio-helper {
@@ -245,10 +244,7 @@
         &:has(input:checked) {
             border-color: --value(--radio-base-fg-*);
         }
-        &:has(input:disabled) {
-            border-color: var(--radio-fg-disable);
-            background-color: var(--radio-bg-disable);
-        }
+
     }
     .radio-label {
         color: --value(--radioLabel-fg);

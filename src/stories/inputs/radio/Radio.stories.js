@@ -1,9 +1,9 @@
 import { fn } from '@storybook/test';
-import Radio from '@/components/inputs/radio/Radio';
+import RadioGroup from '@/components/inputs/radio/RadioGroup';
 
 export default {
   title: 'Example/Radio',
-  component: Radio,
+  component: RadioGroup,
   parameters: {
     layout: 'centered',
   },
