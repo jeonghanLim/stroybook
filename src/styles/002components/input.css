@@ -116,11 +116,14 @@
     --checkBox-fg-neutral: var(--color-palette-fg-neutral-main);
     --checkBox-fg-error-contrast: var(--color-palette-fg-error-contrast);
     --checkBox-fg-error: var(--color-palette-fg-error-main);
-    --check-fg-wait: var(--color-palette-fg-neutral-mute);
+    --check-bg-wait: var(--color-palette-bg-neutral-light-default);
+    --check-bg-wait-error: var(--color-palette-bg-error-light-default);
     --check-fg-brand: var(--color-palette-fg-brand-main);
     --check-fg-neutral: var(--color-palette-fg-neutral-main);
+    --check-fg-error: var(--color-palette-bg-error-dark-default);
     --checkBox-overlay-brand: var(--color-palette-bg-overlay-brand-light);
-    --checkBox-layer-neutral: var(--color-palette-bg-overlay-neutral-light);
+    --checkBox-overlay-neutral: var(--color-palette-bg-overlay-neutral-light);
+    --checkBox-overlay-error: var(--color-palette-bg-overlay-error-light);
     --checkBox-bg-disable: var(--color-palette-bg-disabled-main);
     --checkBox-stroke-disable: var(--color-palette-stroke-disabled-main);
     --checkBox-fg-disable: var(--color-palette-fg-disabled-main);

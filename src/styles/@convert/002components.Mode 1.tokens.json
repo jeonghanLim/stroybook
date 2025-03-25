@@ -414,9 +414,13 @@
           "$type": "color",
           "$value": "{color.color.palette.fg.error.main}"
         },
-        "--check-fg-wait": {
+        "--check-bg-wait": {
           "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.mute}"
+          "$value": "{color.color.palette.bg.neutral.light.default}"
+        },
+        "--check-bg-wait-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.error.light.default}"
         },
         "--check-fg-brand": {
           "$type": "color",
@@ -426,13 +430,21 @@
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.main}"
         },
+        "--check-fg-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.error.dark.default}"
+        },
         "--checkBox-overlay-brand": {
           "$type": "color",
           "$value": "{color.color.palette.bg.overlay.brand.light}"
         },
-        "--checkBox-layer-neutral": {
+        "--checkBox-overlay-neutral": {
           "$type": "color",
           "$value": "{color.color.palette.bg.overlay.neutral.light}"
+        },
+        "--checkBox-overlay-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.error.light}"
         },
         "--checkBox-bg-disable": {
           "$type": "color",
