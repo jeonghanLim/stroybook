@@ -35,7 +35,7 @@ export const TextField = ({
           {required && <span className="required-marker">*</span>}{labelLeft}
         </div>
       )}
-      <div className='right-side'>
+      <div>
         <div className='label-base'>
           {label}{required && <span className="required-marker">*</span>}
         </div>

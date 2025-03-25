@@ -17,9 +17,34 @@ export default {
   args: { onClick: fn() },
 };
 
-// More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Primary = {
+export const Enabled = {
   args:{
     label:'textField',
+  },
+};
+
+export const hovered = {
+  args:{
+    label:'textField',
+  },
+};
+
+export const focused = {
+  args:{
+    label:'textField',
+  },
+};
+
+export const disabled = {
+  args:{
+    label:'textField',
+    disabled: true,
+  },
+};
+
+export const error = {
+  args:{
+    label:'textField',
+    error: true,
   },
 };
