@@ -141,12 +141,24 @@
         appearance: none;
         border-radius: var(--radio-base-radius);
         cursor: pointer;
+        &:disabled{
+            cursor: default;
+        }
         @apply absolute
+    }
+    .radio-title {
+        color: var(--radioGroup-fg-title);
     }
     /* radio group gap 조정을 위함*/
     .radio-group {
         display: flex;
+        /* flex-direction: column; */
+    }
+    .radio-flex-column {
         flex-direction: column;
+    }
+    .radio-flex-row {
+        flex-direction: row;
     }
     /* radio section gap 조정을 위함*/
     .radio-section {
@@ -157,6 +169,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        color: var(--radioLabel-fg);
     }
     /* radio 스타일 지정 */
     .radio-wrapper {
@@ -177,10 +190,25 @@
             background-color: var(--radio-base-bg);
         }
     }
+    .radio-base {
+        &:has(input:disabled) {
+            border-color: var(--radio-fg-disable);
+            background-color: var(--radio-bg-disable);
+        }
+    }
+    .radio-helper {
+        font-size: var(--radioGroup-size-helper);
+        font-weight: var(--radioGroup-weight-helper);
+        color: var(--radioGroup-fg-helper);
+    }
 }
 
 @utility radio-size-* {
+    flex-direction: column;
     gap: --value(--radioGroup-gap-*);
+    .radio-group{
+        gap: --value(--radioGroup-gap-*);
+    }
     .inputClass{
         width: --value(--radio-base-width-*);
         height: --value(--radio-base-height-*);
@@ -203,18 +231,23 @@
         font-size: --value(--radioLabel-size-*);
         font-weight: --value(--radioLabel-weight-*);
     }
+    
 }
 
 @utility radio-color-* {
-    :hover{
-        background-color: --value(--color-palette-bg-overlay-*-light);
+    &:has(div.radio-base input:disabled) {
+        background-color: transparent;
     }
-    .radio-title {
-        color: --value(--radioGroup-fg-title);
+    &:has(div.radio-base:hover) {
+        background-color: --value(--radio-layer-*);
     }
     .radio-base {
         &:has(input:checked) {
             border-color: --value(--radio-base-fg-*);
+        }
+        &:has(input:disabled) {
+            border-color: var(--radio-fg-disable);
+            background-color: var(--radio-bg-disable);
         }
     }
     .radio-label {

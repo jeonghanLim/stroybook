@@ -11,13 +11,16 @@ export default {
   argTypes: {
     title: { control: 'text' },
     name: { control: 'text' },
+    flex: { control: 'text'},
     options: { control: 'array' },
     color: { control: 'text' },
     size: { control: 'text' },
+    helper: {control: 'text'}
   },
   args: {
     title: "점메추", 
     name: "lunch",
+    flex: "column",
     options: [
                 {
                     value: 'pizza',
@@ -30,6 +33,7 @@ export default {
             ],
     color: 'neutral',
     size: 'lg',
+    helper: "오늘의 점심메뉴를 추천해주세요!"
   },
 };
 
@@ -37,6 +41,7 @@ export const Default = {
   args: {
     title: "점메추", 
     name: "lunch",
+    flex: "column",
     options: [
                 {
                     value: 'pizza',
@@ -44,11 +49,17 @@ export const Default = {
                 },
                 {
                     value: 'zzigea',
-                    label: '김치찌개'
-                }
+                    label: '김치찌개',
+                },
+                {
+                  value: 'sushi',
+                  label: '초밥',
+                  disabled: true
+              },
             ],
     color: 'neutral',
     size: 'lg',
+    helper: "오늘의 점심메뉴를 추천해주세요!"
   },
 };
 
