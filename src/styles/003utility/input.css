@@ -125,6 +125,8 @@
 
 @layer components {
     .textfield-base {
+        display: flex;
+        position: relative;
         box-sizing: border-box;
         height: var(--textField-input-height);
         border-radius: var(--textField-input-radius);
@@ -144,14 +146,17 @@
 
         & input {
             outline: none;
+            flex: 1;
             padding: var(--textField-contents-gap);
             color: var(--textField-fg-placeholder);
             font-size: var(--textField-size-placeholder);
         }
 
         & .input-icon {
+            position: absolute;
             width: var(--textField-input-icon);
             color: var(--textField-fg-placeholder);
+            /* display: flex; */
         }
     }
 
@@ -190,7 +195,9 @@
     }
 
     .textfield-wrapper {
-        display: flex;
+        display: flex; 
+        width: fit-content;
+        height: fit-content;
 
         &:has(.textfield-base input:disabled) {
             .textfield-base {
