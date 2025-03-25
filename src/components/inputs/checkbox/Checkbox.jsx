@@ -1,11 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import PropTypes from 'prop-types';
 import { CheckIcon, IndeterminateIcon } from '@/components/icon/Icon';
 
-// size : la, md ok / color : brand, neutral  / checkText : 라벨 / disabled : 고정(true,false)
-// onChange : 동작은 나중에 / checked : true, false(true면 체크가 되는거) / 
-// opacity: 0 : 체크박스 사라지는거 => boxLine bool로 처리할까?
 export const Checkbox = ({ 
   size = 'md',
   color = 'brand', 
@@ -14,40 +11,49 @@ export const Checkbox = ({
   checked = false, 
   indeterminate = false,
   checkIcon, 
-  checkText = '동해물과 백두산이 마르고 닳도록', 
+  label, 
   onChange, 
+  value,
   ...checkboxProps 
 }) => {  
 
-  // 체크 여부 상태값
-  const [ isChecked, setIsChecked ] = useState(checked);
+  // 체크 시 상태값
+  const [isChecked, setIsChecked] = useState(checked);
 
-  const handleChange = (e) => {
-    checked = e.target.checked;
+  useEffect(()=>{
     setIsChecked(checked);
-    onChange && onChange(checked);
-  }
+  },[checked])
+
+  // 체크박스 선택 시 
+  const handleChange = (e) => {
+    console.log("-------- 개별 개별 체크", e.target.checked)
+    setIsChecked(e.target.checked) ;
+    onChange && onChange(e.target.checked, e.target.value);
+  };
+
+  console.log("checked", checked)
+  console.log("isChecked", isChecked)
 
   return (
-    <label className={`checkbox-label checkbox-size-${size} ${variant}-color-${color}`}>
-        <div className={`checkbox-wrapper ${disabled ? 'disabled' : ' '}`}> 
-          <div className={`checkbox-base ${variant} `} >
+    <label className={`checkbox-label checkbox-size-${size} ${variant}-color-${color}  ${disabled ? 'disabled' : ' '}`}>
+        <div className={`checkbox-wrapper`}> 
+          <div className={`checkbox-base ${variant}`} >
             <input 
               type="checkbox" 
               className="inputClass"
-              checked={isChecked}
+              checked={isChecked} 
               onChange={handleChange}  
               disabled = {disabled}
+              value={value}
             /> 
-            {(isChecked || `${variant}` === 'check') && !indeterminate && <CheckIcon></CheckIcon>}
-            {indeterminate && isChecked && <IndeterminateIcon></IndeterminateIcon>}
+            {(isChecked || checked || `${variant}` === 'check') && !indeterminate && <CheckIcon></CheckIcon>}
+            {indeterminate && <IndeterminateIcon></IndeterminateIcon>}
           </div>
         </div>
-          {checkText && <span className="checkbox-text">{checkText}</span>}
+          {label && <span className="checkbox-text">{label}</span>}
     </label>
   );
 };
-
 
 Checkbox.propTypes = {
   size: PropTypes.oneOf(['md', 'lg']),
@@ -57,8 +63,9 @@ Checkbox.propTypes = {
   checked : PropTypes.bool,
   indeterminate : PropTypes.bool,
   checkIcon : PropTypes.element, 
-  checkText : PropTypes.string,
+  label : PropTypes.string,
   onChange: PropTypes.func,
+  value : PropTypes.string
 };
 
 Checkbox.defaultProps = {

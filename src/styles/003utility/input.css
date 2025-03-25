@@ -115,6 +115,9 @@
         font-family: var(--font-pretendard);
         cursor : pointer;
     }
+    .disabled {
+        pointer-events: none;
+    }
     .checkbox-wrapper { 
         width: var(--checkBox-touch-width); 
         height: var(--checkBox-touch-height);
@@ -148,16 +151,12 @@
         appearance: none;      
         @apply absolute; 
     }
-    .disabled {
-        pointer-events: none;
-    }
 }
 
 @utility checkbox-size-* {
 
     gap: --value(--checkLabel-gap-*);
-    size:  --value(--checkLabel-label-size-*);
-    
+    font-size:  --value(--checkLabel-label-size-*);
 
     & .checkbox-base {
         height: --value(--checkBox-base-height-*);
@@ -173,7 +172,7 @@
 @utility checkbox-color-* {
 
     &:hover .checkbox-wrapper, & .checkbox-wrapper:hover {
-        background-color : --value(--checkBox-layer-*);
+        background-color : --value(--checkBox-overlay-*);
     }
 
     & .checkbox{
@@ -196,8 +195,8 @@
 
 @utility check-color-* {
 
-    &:hover{
-        background-color : --value(--checkBox-layer-*);
+    &:hover .checkbox-wrapper, & .checkbox-wrapper:hover {
+        background-color : --value(--checkBox-overlay-*);
     }
 
     & .check{
@@ -217,6 +216,66 @@
 /* CHECK BOX END         */
 /* ===================== */
 
+/* ===================== */
+/* CHECK GROUP           */
+/* ===================== */
+
+@layer components {
+    .checkGroup-wrapper {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column
+    }
+
+    .checkGroup-title {
+        display: flex;
+        font-weight: var(--checkGroup-title-weight);
+        font-family: var(--font-pretendard);
+        color: var(--checkGroup-fg-title);
+    }
+
+    .checkGroup-allChecked {
+        font-weight: var(--checkLabel-label-weigh);
+    }
+
+    .checkGroup-checked {
+        display: flex;
+        align-items: flex-start; 
+        flex-direction: column;   
+    }
+
+    .checkGroup-helptext {
+        font-weight: var(--checkGroup-helper-weight);
+        font-family: var(--font-pretendard);
+        color: var(--checkGroup-fg-helper);
+        font-size: var(--checkGroup-helper-size);
+    }
+}
+
+@utility checkGroup-size-* {
+    gap: --value(--checkGroup-gap-*);
+
+    & .checkGroup-allChecked {
+        gap : --value(--checkLabel-gap-*);
+        font-size:  --value(--checkLabel-label-size-*);
+    }
+
+    & .checkGroup-title {
+        font-size:  --value(--checkGroup-title-size-*);
+    }
+
+    & .checkGroup-checked {
+        gap : --value(--checkGroup-group-gap-*);
+        padding-left: --value(--checkGroup-group-*-xLeft);
+    }
+
+    /* & .checkGroup-item {
+        gap : --value(---checkLabel-gap-*);
+    } */
+}
+/* ===================== */
+/* CHECK GROUP END       */
+/* ===================== */
 
 /* ===================== */
 /* RADIO GROUP           */

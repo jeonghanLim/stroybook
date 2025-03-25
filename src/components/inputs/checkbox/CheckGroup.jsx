@@ -1,55 +1,71 @@
-import React, { useState } from 'react';
-
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { CheckIcon, IndeterminateIcon } from '@/components/icon/Icon';
+import { Checkbox } from './Checkbox';
 
-// size : la, md ok / color : brand, neutral  / checkText : 라벨 / disabled : 고정(true,false)
-// onChange : 동작은 나중에 / checked : true, false(true면 체크가 되는거) / 
-// opacity: 0 : 체크박스 사라지는거 => boxLine bool로 처리할까?
-export const Checkbox = ({ 
+export const CheckGroup = ({ 
   size = 'md',
+  title,
+  label,
+  helperText,
+  checkboxOptions,
   color = 'brand', 
-  variant = 'checkbox', 
-  disabled = false, 
-  checked = false, 
-  indeterminate = false,
-  checkIcon, 
-  checkText = '동해물과 백두산이 마르고 닳도록', 
   onChange, 
   ...checkboxProps 
 }) => {  
 
-  // 체크 여부 상태값
-  const [ isChecked, setIsChecked ] = useState(checked);
+  //선택된 체크박스 value. 상태값
+  const [ selectCheckbox, setSelectCheckbox ] = useState([]);
 
-  const handleChange = (e) => {
-    checked = e.target.checked;
-    setIsChecked(checked);
-    onChange && onChange(checked);
+  // 개별 체크박스 선택 시
+  const singleCheckedhandle = (checked, value) => {
+    console.log("-------- 그룹 개별 체크", checked )
+    if(checked){
+      setSelectCheckbox([...selectCheckbox, value]);
+    }
+    else {
+      setSelectCheckbox(selectCheckbox.filter(i => i !== value))
+    }
+    onChange && onChange(selectCheckbox);
   }
 
+  //전체 체크 선택 시
+  const allCheckedhandle = (checked) => {
+    console.log("-------- 그룹 전체 체크", checked)
+    if(checked) {
+      setSelectCheckbox(checkboxOptions.map((item) => item.value));
+    }
+    else {
+      setSelectCheckbox([]);
+    }
+  }
+
+  useEffect(() => {
+    onChange && onChange(selectCheckbox)
+  }, [selectCheckbox, onChange])
+
+  const isAllChecked = selectCheckbox.length === checkboxOptions.length && checkboxOptions.length > 0
+  const indeterChecked = selectCheckbox.length > 0 && selectCheckbox.length < 6;
+
   return (
-    <label className={`checkbox-label checkbox-size-${size} ${variant}-color-${color}`}>
-        <div className={`checkbox-wrapper ${disabled ? 'disabled' : ' '}`}> 
-          <div className={`checkbox-base ${variant} `} >
-            <input 
-              type="checkbox" 
-              className="inputClass"
-              checked={isChecked}
-              onChange={handleChange}  
-              disabled = {disabled}
-            /> 
-            {(isChecked || `${variant}` === 'check') && !indeterminate && <CheckIcon></CheckIcon>}
-            {indeterminate && isChecked && <IndeterminateIcon></IndeterminateIcon>}
+    <div className={`checkGroup-wrapper checkGroup-size-${size}`}>
+      <h2 className={'checkGroup-title'}>{title}</h2>
+      <div className={'checkGroup-allChecked'}>
+        <Checkbox checked={isAllChecked || indeterChecked} indeterminate={indeterChecked} label={label} size={size} color={color} onChange={(e) => allCheckedhandle(e)}></Checkbox>
+      </div>
+      <div className={'checkGroup-checked'}>
+        {checkboxOptions.map((item) => (
+          <div key={item.label} className={'checkGroup-item'}>
+            <Checkbox label={item.label} size={size} value={item.value} color={color} checked={selectCheckbox.includes(item.value) ? true : false} onChange={singleCheckedhandle}></Checkbox>
           </div>
-        </div>
-          {checkText && <span className="checkbox-text">{checkText}</span>}
-    </label>
+        ))}
+      </div>
+      <h5 className={'checkGroup-helptext'}>{helperText}</h5>
+    </div>
   );
 };
 
 
-Checkbox.propTypes = {
+CheckGroup.propTypes = {
   size: PropTypes.oneOf(['md', 'lg']),
   color : PropTypes.oneOf(['brand', 'neutral']),
   variant : PropTypes.oneOf(['check', 'checkbox']),
@@ -61,7 +77,7 @@ Checkbox.propTypes = {
   onChange: PropTypes.func,
 };
 
-Checkbox.defaultProps = {
+CheckGroup.defaultProps = {
   size: 'md',
   color: 'brand',
   variant: 'checkbox',
@@ -72,10 +88,6 @@ Checkbox.defaultProps = {
 };
 
 /*
-checkbox-size-md
-checkbox-size-lg
-checkbox-color-brand
-checkbox-color-neutral
-check-color-brand
-check-color-neutral
+checkGroup-size-md
+checkGroup-size-lg
 */ 
