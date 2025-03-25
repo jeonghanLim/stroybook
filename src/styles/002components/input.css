@@ -87,8 +87,12 @@
     --checkLabel-gap-md: calc(var(--spacing) * 4);
     --checkGroup-gap-lg: calc(var(--spacing) * 20);
     --checkGroup-gap-md: calc(var(--spacing) * 12);
+    --checkGroup-group-gap-lg: calc(var(--spacing) * 20);
+    --checkGroup-group-gap-md: calc(var(--spacing) * 12);
     --checkBox-icon-lg: var(--icon-24);
     --checkBox-icon-md: var(--icon-20);
+    --checkGroup-group-lg: calc(var(--spacing) * 0) calc(var(--spacing) * 0) calc(var(--spacing) * 0) calc(var(--spacing) * 24);
+    --checkGroup-group-md: calc(var(--spacing) * 0) calc(var(--spacing) * 0) calc(var(--spacing) * 0) calc(var(--spacing) * 20);
     /* font */
     --checkLabel-label-size-lg: var(--text-20);
     --checkLabel-label-size-md: var(--text-18);
@@ -101,10 +105,17 @@
     /* colors */
     --checkBox-bg-wait: var(--color-palette-bg-overlay-white-light);
     --checkBox-stroke-wait: var(--color-palette-stroke-neutral-light);
+    --checkBox-bg-wait-error: var(--color-palette-bg-error-light-default);
     --checkBox-bg-brand: var(--color-palette-bg-brand-dark-default);
-    --checkBox-fg-brand-contrast: var(--color-palette-fg-brand-contrast);
     --checkBox-bg-neutral: var(--color-palette-bg-neutral-dark-default);
+    --checkBox-bg-error: var(--color-palette-bg-error-dark-default);
+    --checkBox-stroke-error: var(--color-palette-stroke-error-main);
+    --checkBox-fg-brand-contrast: var(--color-palette-fg-brand-contrast);
+    --checkBox-fg-brand: var(--color-palette-fg-brand-main);
     --checkBox-fg-neutral-contrast: var(--color-palette-fg-neutral-contrast);
+    --checkBox-fg-neutral: var(--color-palette-fg-neutral-main);
+    --checkBox-fg-error-contrast: var(--color-palette-fg-error-contrast);
+    --checkBox-fg-error: var(--color-palette-fg-error-main);
     --check-fg-wait: var(--color-palette-fg-neutral-mute);
     --check-fg-brand: var(--color-palette-fg-brand-main);
     --check-fg-neutral: var(--color-palette-fg-neutral-main);
