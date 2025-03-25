@@ -132,12 +132,12 @@
         background-color: var(--textField-input-bg);
 
         &:hover {
-            border: var(--textField-input-border3) solid;
+            outline: var(--textField-input-border3) solid;
             border-color: var(--textField-input-stroke-hovered);
         }
 
         &:focus-within {
-            border: var(--textField-input-border3) solid;
+            outline: var(--textField-input-border3) solid;
             border-color: var(--textField-input-stroke-focused);
         }
 
