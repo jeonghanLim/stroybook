@@ -48,7 +48,6 @@ export const List = ({
           { endIcon &&
             <div className='listItem-icon'>{endIcon}</div>
           }
-          <div className='end-icon'></div>
         </div>
       </div>
       { listItemDivider &&
