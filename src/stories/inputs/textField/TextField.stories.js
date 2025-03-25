@@ -1,6 +1,6 @@
 import { fn } from '@storybook/test';
-
 import { TextField } from '@/components/inputs/textField/TextField';
+import { StarIcon } from '@/components/icon/Icon';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 export default {
@@ -17,9 +17,36 @@ export default {
   args: { onClick: fn() },
 };
 
-// More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Primary = {
+export const Enabled = {
   args:{
     label:'textField',
+        startIcon: <StarIcon/>,
+        endIcon: <StarIcon/>
+  },
+};
+
+export const hovered = {
+  args:{
+    label:'textField',
+  },
+};
+
+export const focused = {
+  args:{
+    label:'textField',
+  },
+};
+
+export const disabled = {
+  args:{
+    label:'textField',
+    disabled: true,
+  },
+};
+
+export const error = {
+  args:{
+    label:'textField',
+    error: true,
   },
 };

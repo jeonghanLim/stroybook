@@ -22,7 +22,6 @@ export const TextField = ({
 
   const classProp = [
     dense && 'dense',
-    // disabled && 'disabled',
     error && 'error',
     value && 'hasValue'
   ]
@@ -36,13 +35,13 @@ export const TextField = ({
           {required && <span className="required-marker">*</span>}{labelLeft}
         </div>
       )}
-      <div className='right-side'>
+      <div>
         <div className='label-base'>
           {label}{required && <span className="required-marker">*</span>}
         </div>
         <div className='textfield-base'>
           {startIcon &&
-            <span className="input-icon">#</span>
+            <span className="input-icon">{startIcon}</span>
           }
           <input
             type="text"
@@ -54,7 +53,7 @@ export const TextField = ({
             onChange={handleChange}
           />
             {endIcon &&
-              <span className="input-icon">#</span>
+              <span className="input-icon">{endIcon}</span>
             }
         </div>
         {helperText && <div className="helper-text">{helperText}</div>}
