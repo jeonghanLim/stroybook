@@ -35,10 +35,12 @@ const checkboxOptions = [
 export const Default = {
   args: {
     size : 'lg', 
-    title : '좋아하는 연예인을 선택해보세요!',
-    helperText : '하나 이상은 선택해야합니다',
-    label : '전체 선택',
     color : 'neutral',
+    title : '좋아하는 연예인을 선택해보세요!',
+    label : '전체 선택',
+    name : 'star',
+    helperText : '하나 이상은 선택해야합니다',
+    // errorText : '하나 이상은 선택해!!!!!',
     checkboxOptions,
   },
 };

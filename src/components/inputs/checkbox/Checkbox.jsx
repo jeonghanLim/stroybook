@@ -4,25 +4,25 @@ import PropTypes from 'prop-types';
 import { CheckIcon, IndeterminateIcon } from '@/components/icon/Icon';
 
 export const Checkbox = ({ 
-  size = 'md',
-  color = 'brand', 
-  variant = 'checkbox', 
-  disabled = false, 
-  checked = false, 
-  indeterminate = false,
-  checkIcon, 
-  label, 
-  onChange, 
-  value,
-  error = false,
-  ...checkboxProps 
+  size =  'md'
+  , color = 'brand' 
+  , variant = 'checkbox'
+  , disabled = false
+  , checked = false
+  , indeterminate = false
+  , error = false
+  , label
+  , value
+  , name
+  , checkIcon 
+  , onChange 
+  , ...checkboxProps 
 }) => {  
 
   // 체크 시 상태값
   const [isChecked, setIsChecked] = useState(checked);
 
   useEffect(()=>{
-    // console.log("useEFfect")
     setIsChecked(checked);
   },[checked])
 
@@ -32,9 +32,6 @@ export const Checkbox = ({
     setIsChecked(e.target.checked);
     onChange && onChange(e.target.checked, e.target.value);
   };
-
-  // console.log("checked", checked)
-  // console.log("isChecked", isChecked)
 
   return (
     <label className={`checkbox-label checkbox-size-${size} ${variant}-color-${error ? 'error' : color} ${disabled ? 'disabled' : ' '}`}>
@@ -47,9 +44,10 @@ export const Checkbox = ({
               onChange={handleChange}  
               disabled = {disabled}
               value={value}
+              name={name}
             /> 
             {(isChecked || checked || `${variant}` === 'check') && !indeterminate && <CheckIcon></CheckIcon>}
-            {indeterminate && <IndeterminateIcon></IndeterminateIcon>}
+            {isChecked && indeterminate && <IndeterminateIcon></IndeterminateIcon>}
           </div>
         </div>
           {label && <span className="checkbox-text">{label}</span>}
@@ -65,10 +63,10 @@ Checkbox.propTypes = {
   checked : PropTypes.bool,
   indeterminate : PropTypes.bool,
   error : PropTypes.bool,
-  checkIcon : PropTypes.element, 
   label : PropTypes.string,
+  value : PropTypes.string,
+  name : PropTypes.string,
   onChange: PropTypes.func,
-  value : PropTypes.string
 };
 
 Checkbox.defaultProps = {
@@ -78,7 +76,7 @@ Checkbox.defaultProps = {
   disabled: false,
   checked: false,
   indeterminate: false,
-  onClick: undefined,
+  error: false
 };
 
 /*
@@ -87,6 +85,7 @@ checkbox-size-lg
 checkbox-color-brand
 checkbox-color-neutral
 checkbox-color-error
+check-color-error
 check-color-brand
 check-color-neutral
 */ 

@@ -3,64 +3,84 @@ import PropTypes from 'prop-types';
 import { Checkbox } from './Checkbox';
 
 export const CheckGroup = ({ 
-  size = 'md',
-  color = 'brand', 
-  title,
-  label,
-  helperText,
-  checkboxOptions,
-  error = false,
-  onChange, 
-  ...checkboxProps 
+  size = 'md'
+  , color = 'brand' 
+  , title
+  , label
+  , name
+  , helperText
+  , errorText
+  , checkboxOptions
+  , onChange
+  , ...checkboxProps 
 }) => {  
 
   // 선택된 체크박스 value. 상태값
-  const [ selectCheckbox, setSelectCheckbox ] = useState([]);
+  const [ selectCheckboxList, setSelectCheckboxList ] = useState([]);
 
   // 개별 체크박스 선택 시
-  const singleCheckedhandle = (checked, value) => {
+  const handlesingleChecked = (checked, value) => {
     console.log("-------- 그룹 개별 체크", checked )
     if(checked){
-      setSelectCheckbox([...selectCheckbox, value]);
+      setSelectCheckboxList([...selectCheckboxList, value]);
     }
     else {
-      setSelectCheckbox(selectCheckbox.filter(i => i !== value))
+      setSelectCheckboxList(selectCheckboxList.filter(i => i !== value))
     }
-    onChange && onChange(selectCheckbox);
+
+    onChange && onChange(selectCheckboxList)
   }
 
   // 전체 체크 선택 시
-  const allCheckedhandle = (checked) => {
+  const handleallChecked = (checked) => {
     console.log("-------- 그룹 전체 체크", checked)
     if(checked) {
-      setSelectCheckbox(checkboxOptions.map((item) => item.value));
+      setSelectCheckboxList(checkboxOptions.map((item) => item.value));
     }
     else {
-      setSelectCheckbox([]);
+      setSelectCheckboxList([]);
     }
   }
 
   useEffect(() => {
-    onChange && onChange(selectCheckbox)
-  }, [selectCheckbox, onChange])
+    onChange && onChange(selectCheckboxList)
+  }, [selectCheckboxList, onChange])
 
-  const isAllChecked = selectCheckbox.length === checkboxOptions.length && checkboxOptions.length > 0
-  const indeterChecked = selectCheckbox.length > 0 && selectCheckbox.length < 6;
+  const isAllChecked = selectCheckboxList.length === checkboxOptions.length && checkboxOptions.length > 0
+  const indeterChecked = selectCheckboxList.length > 0 && selectCheckboxList.length < 6;
 
   return (
     <div className={`checkGroup-wrapper checkGroup-size-${size}`}>
-      <h2 className={'checkGroup-title'}>{title}</h2>
+      <p className={`checkGroup-title ${errorText ? 'error' : ''}`}>{title}</p>
       <div className={'checkGroup-allChecked'}>
-        <Checkbox checked={isAllChecked || indeterChecked} indeterminate={indeterChecked} label={label} size={size} color={color} onChange={(e) => allCheckedhandle(e)}></Checkbox>
+        <Checkbox 
+          checked={isAllChecked || indeterChecked} 
+          indeterminate={indeterChecked} 
+          label={label} 
+          size={size} 
+          color={color} 
+          name={name}
+          error={errorText ? true : false} 
+          onChange={(e) => handleallChecked(e)}
+        ></Checkbox>
       </div>
       <div className={'checkGroup-checked'}>
         {checkboxOptions.map((item) => (
           <div key={item.label} className={'checkGroup-item'}>
-            <Checkbox label={item.label} size={size} value={item.value} color={color} checked={selectCheckbox.includes(item.value) ? true : false} onChange={singleCheckedhandle}></Checkbox>
+            <Checkbox 
+              checked={selectCheckboxList.includes(item.value) ? true : false} 
+              label={item.label} 
+              size={size} 
+              value={item.value} 
+              color={color} 
+              name={name}
+              error={errorText ? true : false} 
+              onChange={handlesingleChecked}
+            ></Checkbox>
           </div>
         ))}
       </div>
-      <h5 className={'checkGroup-helptext'}>{helperText}</h5>
+      <p className={`checkGroup-helptext ${errorText ? 'error' : ''}`}>{errorText ? errorText : helperText}</p>
     </div>
   );
 };
@@ -72,6 +92,7 @@ CheckGroup.propTypes = {
   title : PropTypes.string,
   label : PropTypes.string,
   helperText : PropTypes.string,
+  errorText : PropTypes.string,
   checkboxOptions: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string.isRequired,
@@ -89,4 +110,5 @@ CheckGroup.defaultProps = {
 /*
 checkGroup-size-md
 checkGroup-size-lg
+text-color-error
 */ 
