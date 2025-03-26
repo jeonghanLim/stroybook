@@ -2,22 +2,27 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 export const TextField = ({
-  label,
-  labelLeft,
-  dense = false,
-  disabled = false,
-  error = false,
-  required = false,
-  placeholder,
-  helperText,
-  startIcon, 
-  endIcon, 
+  name
+  , label
+  , labelLeft
+  , dense
+  , disabled
+  , error
+  , required
+  , placeholder
+  , helperText
+  , onChange
+  , startIcon
+  , endIcon
+  , ...props
 }) => {
   const [value, setValue] = useState('');
 
   const handleChange = (e) => {
-    setValue(e.target.value);
-    console.log(e.target.value);
+    const newValue = e.target.value;
+    setValue(newValue);
+    onChange && onChange(newValue);
+    console.log(newValue);
   };
 
   const classProp = [
@@ -29,32 +34,36 @@ export const TextField = ({
     .join(' ');
 
   return (
+
     <div className={`textfield-wrapper ${classProp}`}>
       {labelLeft && (
         <div className='labelleft-base'>
-          {required && <span className="required-marker">*</span>}{labelLeft}
+          {required && <span className="required-marker">*</span>}{label}
         </div>
       )}
       <div>
-        <div className='label-base'>
-          {label}{required && <span className="required-marker">*</span>}
-        </div>
+        {!labelLeft && (
+          <div className='label-base'>
+            {label}{required && <span className="required-marker">*</span>}
+          </div>
+        )}
         <div className='textfield-base'>
           {startIcon &&
             <span className="input-icon">{startIcon}</span>
           }
           <input
             type="text"
-            name="test"
+            name={name}
             disabled={disabled}
             error={error}
             placeholder={placeholder}
             value={value}
             onChange={handleChange}
+            {...props}
           />
-            {endIcon &&
-              <span className="input-icon">{endIcon}</span>
-            }
+          {endIcon &&
+            <span className="input-icon">{endIcon}</span>
+          }
         </div>
         {helperText && <div className="helper-text">{helperText}</div>}
       </div>
@@ -63,25 +72,27 @@ export const TextField = ({
 }
 
 TextField.propTypes = {
+  name: PropTypes.string,
   label: PropTypes.string,
-  labelLeft: PropTypes.string,
+  labelLeft: PropTypes.bool,
   dense: PropTypes.bool,
   disabled: PropTypes.bool,
   error: PropTypes.bool,
   required: PropTypes.bool,
   placeholder: PropTypes.string,
   helperText: PropTypes.string,
+  onChange: PropTypes.func,
   startIcon: PropTypes.element,
   endIcon: PropTypes.element,
 };
 
 TextField.defaultProps = {
   label: 'label',
-  labelLeft: 'labelLeft',
+  labelLeft: false,
   dense: false,
   disabled: false,
   error: false,
   required: false,
-  placeholder: 'PlaceHoler',
+  placeholder: 'PlaceHolder',
   helperText: 'HelperText'
 };
