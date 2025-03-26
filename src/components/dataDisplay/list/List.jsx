@@ -21,15 +21,21 @@ export const List = ({
     setIsSelected(prev => !prev);
   };
 
+  const classProp = [
+    dense && 'listItem-dense',
+    disableGutter && 'listItem-gutter',
+    disabled && 'listItem-disabled'
+  ]
+    .filter(Boolean)
+    .join(' ');
+
   return (
     <div 
       aria-selected={isSelected ? 'true' : 'false'}      
       className={[
-      'listItem',
-      dense ? 'listItem-dense' : '',
-      disableGutter ? 'listItem-gutter' : '',
-      disabled ? 'listItem-disabled' : '',
-      !disabled && isSelected ? 'bg-material-classicBlue-alpha-008' : '',
+      'listItem'
+      , classProp
+      , !disabled && isSelected ? 'bg-material-classicBlue-alpha-008' : ''
       ].filter(Boolean).join(' ')}      
       onClick={handleSelectedClick}
       {...props}

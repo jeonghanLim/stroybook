@@ -22,9 +22,9 @@ export const Divider = ({
     return (
       <li 
         className={[
-          'divider', 
-          orientationClass, 
-          margin ? `divider-horizontal-${margin}` : ''
+          'divider' 
+          , orientationClass 
+          , margin ? `divider-horizontal-${margin}` : ''
         ].filter(Boolean).join(' ')}
         {...props}
       />
@@ -34,9 +34,9 @@ export const Divider = ({
   return (
     <hr 
       className={[
-        'divider', 
-        orientationClass, 
-        margin ? `divider-${orientation === 'horizontal' ? 'horizontal' : 'vertical'}-${margin}` : ''
+        'divider' 
+        , orientationClass 
+        , margin ? `divider-${orientation === 'horizontal' ? 'horizontal' : 'vertical'}-${margin}` : ''
       ].filter(Boolean).join(' ')} 
       {...props} 
     />
