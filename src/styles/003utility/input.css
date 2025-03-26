@@ -48,24 +48,28 @@
     }
 }
 
-@utility btn-contained-color-* { 
-    background-color : --value(--btn-contained-bg-*);
-    color : --value(--btn-contained-fg-*);
+@utility btn-contained-color-* {
+    background-color: --value(--btn-contained-bg-*);
+    color: --value(--btn-contained-fg-*);
+
     &:hover {
-        background-color : --value(--btn-contained-bg-*-hover);
-        color : --value(--btn-contained-fg-*-hover);
+        background-color: --value(--btn-contained-bg-*-hover);
+        color: --value(--btn-contained-fg-*-hover);
     }
+
     &:focus {
-        background-color : --value(--btn-contained-bg-*-focus);
-        color : --value(--btn-contained-fg-*-focus);
+        background-color: --value(--btn-contained-bg-*-focus);
+        color: --value(--btn-contained-fg-*-focus);
     }
+
     &:active {
-        background-color : --value(--btn-contained-bg-*-active);
-        color : --value(--btn-contained-fg-*-active);
+        background-color: --value(--btn-contained-bg-*-active);
+        color: --value(--btn-contained-fg-*-active);
     }
-    &.disabled { 
-        background-color : --value(--btn-contained-bg-*-disabled);
-        color : --value(--btn-contained-fg-*-disabled);
+
+    &.disabled {
+        background-color: --value(--btn-contained-bg-*-disabled);
+        color: --value(--btn-contained-fg-*-disabled);
     }
 }
 
@@ -75,35 +79,42 @@
     border : var(--btn-border);
     border-color : --value(--btn-outlined-stroke-*);
     &:hover {
-        background-color : --value(--btn-outlined-bg-*-hover);
+        background-color: --value(--btn-outlined-bg-*-hover);
     }
+
     &:focus {
-        background-color : --value(--btn-outlined-bg-*-focus);
+        background-color: --value(--btn-outlined-bg-*-focus);
     }
+
     &:active {
-        background-color : --value(--btn-outlined-bg-*-active);
+        background-color: --value(--btn-outlined-bg-*-active);
     }
-    &.disabled { 
-        color : --value(--btn-outlined-fg-*-disabled);
-        border-color : --value(--btn-outlined-stroke-*-disabled);
-        background-color : transparent !important;
+
+    &.disabled {
+        color: --value(--btn-outlined-fg-*-disabled);
+        border-color: --value(--btn-outlined-stroke-*-disabled);
+        background-color: transparent !important;
     }
 }
 
-@utility btn-text-color-* { 
-    color : --value(--btn-text-fg-*);
+@utility btn-text-color-* {
+    color: --value(--btn-text-fg-*);
+
     &:hover {
-        background-color : --value(--btn-text-bg-*-hover);
+        background-color: --value(--btn-text-bg-*-hover);
     }
+
     &:focus {
-        background-color : --value(--btn-text-bg-*-focus);
+        background-color: --value(--btn-text-bg-*-focus);
     }
+
     &:active {
-        background-color : --value(--btn-text-bg-*-active);
+        background-color: --value(--btn-text-bg-*-active);
     }
-    &.disabled { 
-        color : --value(--btn-text-fg-*-disabled);
-        background-color : transparent !important;
+
+    &.disabled {
+        color: --value(--btn-text-fg-*-disabled);
+        background-color: transparent !important;
     }
 }
 
@@ -134,6 +145,174 @@
 /* TEXT FIELD            */
 /* ===================== */
 
+@layer components {
+    .textfield-base {
+        height: var(--textField-input-height);
+        border-radius: var(--textField-input-radius);
+        border: var(--textField-input-border1) solid;
+        border-color: var(--textField-input-stroke-enabled);
+        background-color: var(--textField-input-bg);
+
+        &:hover {
+            border: var(--textField-input-border3) solid;
+            border-color: var(--textField-input-stroke-hovered);
+        }
+
+        &:focus-within {
+            border: var(--textField-input-border3) solid;
+            border-color: var(--textField-input-stroke-focused);
+        }
+
+        & input {
+            outline: none;
+            padding: var(--textField-contents-gap);
+            color: var(--textField-fg-placeholder);
+            font-size: var(--textField-size-placeholder);
+        }
+
+        & .input-icon {
+            width: var(--textField-input-icon);
+            color: var(--textField-fg-placeholder);
+        }
+    }
+
+    .label-base {
+        font-size: var(--textField-size-label);
+        font-weight: var(--textField-weight-label);
+        display: flex;
+        gap: var(--textField-labelTop-gap);
+        padding: var(--textField-labelTop);
+        color: var(--textField-fg-label);
+
+        .required-marker {
+            color: var(--textField-fg-label-required);
+        }
+    }
+
+    .labelleft-base {
+        font-size: var(--textField-size-label);
+        font-weight: var(--textField-weight-label);
+        width: var(--textField-labelLeft-width);
+        display: flex;
+        gap: var(--textField-labelLeft-gap);
+        padding: var(--textField-labelLeft);
+        color: var(--textField-fg-label);
+
+        .required-marker {
+            color: var(--textField-fg-label-required);
+        }
+    }
+
+    .helper-text {
+        font-size: var(--textField-size-helperText);
+        font-weight: var(--textField-weight-placeholder);
+        color: var(--textField-fg-helperText);
+        padding: var(--textField-helperText);
+    }
+
+    .textfield-wrapper {
+        display: flex;
+
+        &:has(.textfield-base input:disabled) {
+            .textfield-base {
+                background-color: var(--textField-bg-disabled);
+                border-color: var(--textField-input-stroke-disabled);
+                pointer-events: none;
+
+                & input {
+                    color: var(--textField-fg-disabled);
+                }
+
+                & .input-icon{
+                    color: var(--textField-fg-disabled) ;
+                }
+            }
+
+            .label-base {
+                color: var(--textField-fg-disabled);
+            }
+
+            .labelleft-base {
+                color: var(--textField-fg-disabled);
+            }
+
+            .helper-text {
+                color: var(--textField-fg-disabled);
+            }
+        }
+
+        &.error {
+            .textfield-base {
+                border: var(--textField-input-border3) solid;
+                border-color: var(--textField-input-stroke-error);
+            }
+
+            .label-base {
+                color: var(--textField-fg-error);
+            }
+
+            .labelleft-base {
+                color: var(--textField-fg-error);
+            }
+
+            .helper-text {
+                color: var(--textField-fg-error);
+            }
+        }
+
+        &.hasValue {
+            .textfield-base {
+                & input {
+                    color: var(--textField-fg-hasValue);
+                    font-size: var(--textField-size-hasValue);
+                }
+                & .input-icon {
+                    color: var(--textField-input-icon-fg);
+                }
+            }
+        }
+
+        &.dense {
+            .textfield-base {
+                height: var(--textField-input-height-dense);
+
+                & input {
+                    font-size: var(--textField-size-placeholder-dense);
+                }
+
+                & .input-icon {
+                    width: var(--textField-input-icon-dense);
+                }
+            }
+
+            &.hasValue {
+                .textfield-base input {
+                    font-size: var(--textField-size-hasValue-dense);
+                }
+            }
+
+            .label-base {
+                font-size: var(--textField-size-label-dense);
+            }
+
+            .labelleft-base {
+                font-size: var(--textField-size-label-dense);
+            }
+            
+            .required-marker {
+                font-size: var(--textField-size-label-dense);
+            }
+
+            .helper-text {
+                font-size: var(--textField-size-helperText-dense);
+            }
+
+        }
+    }
+}
+
+
+
 /* ===================== */
 /* TEXT FIELD END        */
 /* ===================== */
@@ -142,8 +321,7 @@
 /* ===================== */
 /* SELECT                */
 /* ===================== */
-    
+
 /* ===================== */
 /* SELECT END            */
 /* ===================== */
-
