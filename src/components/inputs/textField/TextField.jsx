@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 export const TextField = ({
   name
   , label
-  , labelLeft
-  , dense
-  , disabled
-  , error
-  , required
+  , labelLeft = false
+  , dense = false
+  , disabled  = false
+  , error = false
+  , required = false
   , placeholder
   , helperText
   , onChange
@@ -93,6 +93,6 @@ TextField.defaultProps = {
   disabled: false,
   error: false,
   required: false,
-  placeholder: 'PlaceHolder',
+  placeholder: 'Placeholder',
   helperText: 'HelperText'
 };
