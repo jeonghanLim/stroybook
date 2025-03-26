@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 export const TextField = ({
   name
+  , type
   , label
   , labelLeft = false
   , dense = false
@@ -52,7 +53,7 @@ export const TextField = ({
             <span className="input-icon">{startIcon}</span>
           }
           <input
-            type="text"
+            type={type}
             name={name}
             disabled={disabled}
             error={error}
@@ -73,6 +74,7 @@ export const TextField = ({
 
 TextField.propTypes = {
   name: PropTypes.string,
+  type: PropTypes.string,
   label: PropTypes.string,
   labelLeft: PropTypes.bool,
   dense: PropTypes.bool,
@@ -87,6 +89,7 @@ TextField.propTypes = {
 };
 
 TextField.defaultProps = {
+  type: 'text',
   label: 'label',
   labelLeft: false,
   dense: false,
