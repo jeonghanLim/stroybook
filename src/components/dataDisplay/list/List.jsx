@@ -9,7 +9,7 @@ export const List = ({
   , endIcon 
   , listItemText = "Menu Item" // 기본 텍스트
   , secondaryText // 추가 텍스트
-  , listItemDivider = "true" // 밑줄 여부
+  , listItemDivider = true // 밑줄 여부
   , disabled = false 
   , onClick
   , ...props 
