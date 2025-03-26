@@ -10,6 +10,7 @@
   /* Icon */
   .icon-box { @apply absolute}
   
+  /* ripple */
   .ripple-container {
     overflow: hidden;
     position: absolute;
@@ -33,25 +34,25 @@
     animation: 
     initialGrow 0.2s ease-out forwards,
     bounceLoop 0.9s infinite alternate ease-in-out 0.8s;
-}
+  }
 
-@keyframes initialGrow {
-  0% {
-    transform: scale(0);
+  @keyframes initialGrow {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(0.8); /* 안정된 최종 상태 */
+    }
   }
-  100% {
-    transform: scale(0.8); /* 안정된 최종 상태 */
-  }
-}
 
-@keyframes bounceLoop {
-  0% {
-    transform: scale(0.8);
+  @keyframes bounceLoop {
+    0% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(0.75);
+    }
   }
-  100% {
-    transform: scale(0.75);
-  }
-}
 
   .ripple.ripple-animation-start{ transform: scale(5);}
   .ripple.ripple-animation-end{ opacity: 0;}

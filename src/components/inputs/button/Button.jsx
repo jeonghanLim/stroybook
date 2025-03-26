@@ -2,32 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import useRipple from '@/hooks/useRipple';
 
-Button.propTypes = {
-  variant : PropTypes.oneOf(['contained', 'outlined', 'text']),
-  size: PropTypes.oneOf(['sm', 'md', 'lg']),
-  increasedWidth  : PropTypes.bool,
-  color : PropTypes.oneOf(['brand', 'neutral']),
-  label: PropTypes.string,
-  startIcon : PropTypes.element, 
-  endIcon : PropTypes.element, 
-  onClick: PropTypes.func,
-  disabled : PropTypes.bool,
-};
-
-Button.defaultProps = {
-  variant: 'contained',
-  size: 'md',
-  increasedWidth : false,
-  color: 'brand',
-  disabled : false,
-};
-
 export const Button = ({ 
-  variant
-  , size
-  , increasedWidth
-  , color
-  , disabled
+  variant = 'contained'
+  , size = 'md'
+  , fullWidth = false
+  , color = 'brand'
+  , disabled = false
   , label
   , startIcon
   , endIcon
@@ -59,11 +39,11 @@ export const Button = ({
   return (
     <button
       type="button"
-      className={`btn btn-size-${size} btn-${variant}-color-${color} ${disabled && disabled}`}
+      className={`btn btn-size-${size} btn-${variant}-color-${color} ${disabled && 'disabled'}`}
       onClick={handleClick}
-      onFocus={!disabled && handleFocus}
-      onBlur={!disabled && handleBlur}
-      style={{width: increasedWidth && '100%'}}
+      onFocus={handleFocus}
+      onBlur={handleBlur}
+      style={{width: fullWidth && '100%'}}
       {...props}
     >
       <div className="btn-base">
@@ -77,9 +57,29 @@ export const Button = ({
           <span className="btn-mask-box">{endIcon}</span>
         }
       </div>
-      {rippleContainer}
+      {!disabled && rippleContainer}
     </button>
   );
+};
+
+Button.propTypes = {
+  variant : PropTypes.oneOf(['contained', 'outlined', 'text']),
+  size: PropTypes.oneOf(['sm', 'md', 'lg']),
+  fullWidth : PropTypes.bool,
+  color : PropTypes.oneOf(['brand', 'neutral', 'error', 'warning', 'info', 'success']),
+  label: PropTypes.string,
+  startIcon : PropTypes.element, 
+  endIcon : PropTypes.element, 
+  onClick: PropTypes.func,
+  disabled : PropTypes.bool,
+};
+
+Button.defaultProps = {
+  variant: 'contained',
+  size: 'md',
+  fullWidth : false,
+  color: 'brand',
+  disabled : false,
 };
 
 /**
@@ -96,4 +96,20 @@ export const Button = ({
   btn-contained-color-neutral
   btn-outlined-color-neutral
   btn-text-color-neutral
+
+  btn-contained-color-error
+  btn-outlined-color-error
+  btn-text-color-error
+
+  btn-contained-color-warning
+  btn-outlined-color-warning
+  btn-text-color-warning
+
+  btn-contained-color-info
+  btn-outlined-color-info
+  btn-text-color-info
+
+  btn-contained-color-success
+  btn-outlined-color-success
+  btn-text-color-success
  */

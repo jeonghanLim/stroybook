@@ -27,7 +27,10 @@
     }
     .btn:focus { @apply outline-0 }
     .btn, .btn-base { @apply  w-fit }
-    .btn.disabled { @apply cursor-default }
+    .btn.disabled { 
+        color: var(--btn-fg-disabled);
+        @apply cursor-default 
+    }
 
 }
 
@@ -68,8 +71,7 @@
     }
 
     &.disabled {
-        background-color: --value(--btn-contained-bg-*-disabled);
-        color: --value(--btn-contained-fg-*-disabled);
+        background-color: var(--btn-fg-disabled);
     }
 }
 
@@ -78,6 +80,7 @@
     color : --value(--btn-outlined-fg-*);
     border : var(--btn-border);
     border-color : --value(--btn-outlined-stroke-*);
+
     &:hover {
         background-color: --value(--btn-outlined-bg-*-hover);
     }
@@ -91,8 +94,7 @@
     }
 
     &.disabled {
-        color: --value(--btn-outlined-fg-*-disabled);
-        border-color: --value(--btn-outlined-stroke-*-disabled);
+        border-color: var(--btn-storke-disabled);
         background-color: transparent !important;
     }
 }
@@ -113,7 +115,6 @@
     }
 
     &.disabled {
-        color: --value(--btn-text-fg-*-disabled);
         background-color: transparent !important;
     }
 }
