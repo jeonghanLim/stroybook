@@ -67,9 +67,9 @@
     /* dataDisplay */
     /* 1. divider */
     .divider { @apply border-solid border-palette-bg-overlay-black-light }
-    .divider-horizontal { @apply w-220 }
+    .divider-horizontal { @apply w-auto }
     li.divider-horizontal { @apply list-none h-px bg-palette-bg-overlay-black-light }
-    .divider-vertical { @apply w-px h-220 border-l self-stretch }
+    .divider-vertical { @apply w-px h-full border-l self-stretch }
 
     /* 2. listItem */
     .listItem { @apply w-fit h-auto bg-material-white-alpha-008 cursor-pointer }

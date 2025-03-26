@@ -1,14 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// 사용자가 선택할 속성들
-/** Primary UI component for user interaction */
 export const Divider = ({ 
-  orientation, // 방향
-  fullWidth, // 전체 넓이 100% 설정 여부(width: auto로 적용되며, 풀위드를 차지하게 됨)
-  component, // 기본 : hr, 추가 설정 가능 : li
-  margin, // 좌우(horizontal), 상하(vertical) 마진 설정 가능(0, 2, 4, 8, 12, 16, 20, 24, 32, 40)
-  ...props 
+  orientation // 방향
+  , component = "hr" // 기본 : hr, 추가 설정 가능 : li
+  , margin // 좌우(horizontal), 상하(vertical) 마진 설정 가능(0, 2, 4, 8, 12, 16, 20, 24, 32, 40)
+  , ...props 
 }) => {  
 
   let orientationClass = "";
@@ -27,7 +24,6 @@ export const Divider = ({
         className={[
           'divider', 
           orientationClass, 
-          fullWidth ? 'w-auto' : '',
           margin ? `divider-horizontal-${margin}` : ''
         ].filter(Boolean).join(' ')}
         {...props}
@@ -40,8 +36,6 @@ export const Divider = ({
       className={[
         'divider', 
         orientationClass, 
-        (fullWidth && orientation === 'horizontal') ? 'w-auto' : '',
-        (fullWidth && orientation === 'vertical') ? 'h-full' : '',
         margin ? `divider-${orientation === 'horizontal' ? 'horizontal' : 'vertical'}-${margin}` : ''
       ].filter(Boolean).join(' ')} 
       {...props} 
@@ -51,17 +45,14 @@ export const Divider = ({
 
 
 Divider.propTypes = {
-  /** Which direction should the divider be? */
+  /** Divider 방향 설정 : 가로 / 세로 */
   orientation : PropTypes.oneOf(['horizontal', 'vertical']),
-  /** Should the divider take the full width of its container? */
-  fullWidth : PropTypes.bool,
-  /** HTML element to render? Default 'hr', can also be 'li'. */
+  /** Divider 렌더링 요소 설정 : hr(기본) / li(추가 설정 가능) */
   component : PropTypes.string,
-  /** What margin class should be applied to customize the divider's margins? */
+  /** Divider 여백 설정 : 가로 - 좌우 여백 / 세로 - 상하 여백 */
   margin : PropTypes.oneOf(["0", "2", "4", "8", "12", "16", "20", "24", "32", "40"]),
 };
 
 Divider.defaultProps = {
-  fullWidth : false,
   component: 'hr',
 };

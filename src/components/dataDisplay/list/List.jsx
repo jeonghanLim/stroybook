@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { Divider } from '../divider/Divider';
 
-// 사용자가 선택할 속성들
-/** Primary UI component for user interaction */
 export const List = ({ 
-  dense, // 컴포넌트 간격 조정
-  disableGutter, // 좌우 패딩 조정 (true 적용 시, 패딩 삭제)
-  startIcon,
-  endIcon, 
-  listItemText, // 기본 텍스트
-  secondaryText, // 추가 텍스트
-  listItemDivider, // 밑줄 여부
-  disabled, 
-  ...props 
+  dense = false // 컴포넌트 간격 조정
+  , disableGutter = false // 좌우 패딩 조정 (true 적용 시, 패딩 삭제)
+  , startIcon
+  , endIcon 
+  , listItemText = "Menu Item" // 기본 텍스트
+  , secondaryText // 추가 텍스트
+  , listItemDivider = "true" // 밑줄 여부
+  , disabled = false 
+  , onClick
+  , ...props 
 }) => {  
 
   const [isSelected, setIsSelected] = useState(false);
@@ -40,9 +40,9 @@ export const List = ({
             <div className='listItem-icon'>{startIcon}</div>
           }
           <div className='listItem-text'>
-            <div className="listItem-base-text">{listItemText}</div>
+            <p className="listItem-base-text">{listItemText}</p>
             { secondaryText &&
-              <div className="listItem-secondary-text">{secondaryText}</div>
+              <p className="listItem-secondary-text">{secondaryText}</p>
             }
           </div>
           { endIcon &&
@@ -51,28 +51,28 @@ export const List = ({
         </div>
       </div>
       { listItemDivider &&
-        <div className='listItem-divider'></div>
+        <Divider />
       }
     </div>
   );
 };
 
 List.propTypes = {
-  /** Should the list item have a dense (compact) layout? */
+  /** List 간격 좁게(dense) 설정 여부 */
   dense: PropTypes.bool,
-  /** Should the list item have no gutter spacing? */
+  /** List 좌우 패딩 삭제 여부 */
   disableGutter: PropTypes.bool,
-  /** The icon to display at the start of the list item */
+  /** List 앞쪽 버튼 설정  */
   startIcon: PropTypes.element,
-  /** The icon to display at the end of the list item */
+  /** List 뒷쪽 버튼 설정 */
   endIcon: PropTypes.element,
-  /** The main text of the list item */
+  /** List 기본 텍스트 */
   listItemText: PropTypes.string,
-  /** The secondary text of the list item */
+  /** List 추가 텍스트*/
   secondaryText: PropTypes.string,
-  /** Should the list item include a divider below it? */
+  /** List 구분선 설정 여부 */
   listItemDivider: PropTypes.bool,
-  /** Should the list item be disabled? */
+  /** List 비활성화 설정 여부 */
   disabled: PropTypes.bool,
 };
 

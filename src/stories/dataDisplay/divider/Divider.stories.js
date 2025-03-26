@@ -6,7 +6,7 @@ export default {
   component: Divider,
   decorators: [
     (Story) => (
-      <div style={{ width:'220px' }}>
+      <div style={{ width: '220px', height: '220px' }}>
         <Story />
       </div>
     ),
