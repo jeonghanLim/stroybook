@@ -27,6 +27,32 @@
 /* DIVIDER               */
 /* ===================== */
 
+.divider {
+    border: var(--border-001) solid;
+    border-color: var(--divider-bg);
+}
+
+.divider-horizontal {
+    width: auto;
+}
+
+li.divider-horizontal {
+    height: 1px;
+    background-color: var(--divider-bg);
+    list-style: none;
+}
+
+.divider-vertical {
+    width: 1px;
+    height: 100%;
+    border-left: var(--border-001) solid;
+    align-self: stretch;
+}
+
+.divider-horizontal-0 {
+    margin: var(--divider-horizontal-0);
+}
+
 @utility divider-horizontal-* { 
     margin : --value(--divider-horizontal-*);
 }

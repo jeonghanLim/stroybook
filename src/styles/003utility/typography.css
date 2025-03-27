@@ -66,10 +66,6 @@
 
     /* dataDisplay */
     /* 1. divider */
-    .divider { @apply border-solid border-palette-bg-overlay-black-light }
-    .divider-horizontal { @apply w-auto }
-    li.divider-horizontal { @apply list-none h-px bg-palette-bg-overlay-black-light }
-    .divider-vertical { @apply w-px h-full border-l self-stretch }
 
     .divider-horizontal-0 { @apply mx-0; }
     .divider-horizontal-2 { @apply mx-2; }
