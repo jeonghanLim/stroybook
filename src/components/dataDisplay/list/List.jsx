@@ -43,7 +43,7 @@ export const List = ({
       <div className='listItem-container'>
         <div className='listItem-base'>
           { startIcon &&
-            <div className='listItem-icon'>{startIcon}</div>
+            <span className='listItem-icon'>{startIcon}</span>
           }
           <div className='listItem-text'>
             <p className="listItem-base-text">{listItemText}</p>
@@ -52,7 +52,7 @@ export const List = ({
             }
           </div>
           { endIcon &&
-            <div className='listItem-icon'>{endIcon}</div>
+            <span className='listItem-icon'>{endIcon}</span>
           }
         </div>
       </div>

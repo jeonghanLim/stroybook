@@ -1,5 +1,6 @@
 import { fn } from '@storybook/test';
 import { List } from '@/components/dataDisplay/list/List';
+import { StarIcon } from '@/components/icon/Icon';
 
 export default {
   title: 'Example/List',
@@ -15,7 +16,10 @@ export default {
 };
 
 export const Default = {
-  args: {
+  args:{
+    label:'textField',
+      startIcon: <StarIcon size={20}/>,
+      endIcon: <StarIcon size={20}/>
   },
 };
 
