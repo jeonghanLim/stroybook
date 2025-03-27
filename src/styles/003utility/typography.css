@@ -71,10 +71,32 @@
     li.divider-horizontal { @apply list-none h-px bg-palette-bg-overlay-black-light }
     .divider-vertical { @apply w-px h-full border-l self-stretch }
 
+    .divider-horizontal-0 { @apply mx-0; }
+    .divider-horizontal-2 { @apply mx-2; }
+    .divider-horizontal-4 { @apply mx-4; }
+    .divider-horizontal-8 { @apply mx-8; }
+    .divider-horizontal-12 { @apply mx-12; }
+    .divider-horizontal-16 { @apply mx-16; }
+    .divider-horizontal-20 { @apply mx-20; }
+    .divider-horizontal-24 { @apply mx-24; }
+    .divider-horizontal-32 { @apply mx-32; }
+    .divider-horizontal-40 { @apply mx-40; }
+
+    .divider-vertical-0 { @apply my-0; }
+    .divider-vertical-2 { @apply my-2; }
+    .divider-vertical-4 { @apply my-4; }
+    .divider-vertical-8 { @apply my-8; }
+    .divider-vertical-12 { @apply my-12; }
+    .divider-vertical-16 { @apply my-16; }
+    .divider-vertical-20 { @apply my-20; }
+    .divider-vertical-24 { @apply my-24; }
+    .divider-vertical-32 { @apply my-32; }
+    .divider-vertical-40 { @apply my-40; }
+
     /* 2. listItem */
     .listItem { @apply w-fit h-auto bg-material-white-alpha-008 cursor-pointer }
     .listItem:hover { @apply bg-material-classicblueGray-alpha-008 }
-
+    .listItem:not(.listItem-disabled)[aria-selected="true"] { @apply bg-material-classicBlue-alpha-008 }
     .listItem-container { @apply w-auto h-auto px-20 py-12 }
 
     .listItem-base { @apply flex flex-row flex-nowrap items-center justify-center }
@@ -87,11 +109,12 @@
 
     .listItem-divider { @apply border-solid border-t border-material-black-alpha-008 }
 
-    .listItem-gutter { @apply w-200 }
+    /* .listItem-gutter { @apply w-200 } */
     .listItem-gutter > .listItem-container { @apply px-0 }
 
     .listItem-dense .listItem-container { @apply px-16 py-8 }
     .listItem-dense .listItem-base:has(.listItem-icon) { @apply gap-8 }
+    .listItem-dense .listItem-icon { @apply w-18 h-18 }
     .listItem-dense .listItem-base-text { @apply text-14 }
     .listItem-dense .listItem-secondary-text { @apply text-12 }
 
@@ -99,4 +122,5 @@
     .listItem-disabled:hover { @apply bg-transparent }
     .listItem-disabled .listItem-base-text,
     .listItem-disabled .listItem-secondary-text { @apply text-material-black-alpha-024 }
+    .listItem-disabled .listItem-icon svg { @apply !fill-material-black-alpha-024 }
 }

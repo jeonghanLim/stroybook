@@ -56,3 +56,27 @@ Divider.propTypes = {
 Divider.defaultProps = {
   component: 'hr',
 };
+
+/*
+divider-horizontal-0
+divider-horizontal-2
+divider-horizontal-4
+divider-horizontal-8
+divider-horizontal-12
+divider-horizontal-16
+divider-horizontal-20
+divider-horizontal-24
+divider-horizontal-32
+divider-horizontal-40
+
+divider-vertical-0
+divider-vertical-2
+divider-vertical-4
+divider-vertical-8
+divider-vertical-12
+divider-vertical-16
+divider-vertical-20
+divider-vertical-24
+divider-vertical-32
+divider-vertical-40
+*/ 

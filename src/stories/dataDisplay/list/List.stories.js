@@ -17,10 +17,12 @@ export default {
 
 export const Default = {
   args:{
-    label:'textField',
-      startIcon: <StarIcon size={20}/>,
-      endIcon: <StarIcon size={20}/>
+    startIcon: <StarIcon />,
+    endIcon: <StarIcon />
   },
+};
+
+export const NoIcon = {
 };
 
 export const Dense = {

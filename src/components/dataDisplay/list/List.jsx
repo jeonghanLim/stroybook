@@ -35,7 +35,6 @@ export const List = ({
       className={[
       'listItem'
       , classProp
-      , !disabled && isSelected ? 'bg-material-classicBlue-alpha-008' : ''
       ].filter(Boolean).join(' ')}      
       onClick={handleSelectedClick}
       {...props}
@@ -87,3 +86,4 @@ List.defaultProps = {
   listItemText : "Menu Item",
   listItemDivider : true,
 };
+
