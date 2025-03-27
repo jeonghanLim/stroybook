@@ -1,5 +1,5 @@
 import { fn } from '@storybook/test';
-import RadioGroup from '@/components/inputs/radio/RadioGroup';
+import { RadioGroup }  from '@/components/inputs/radio/RadioGroup';
 
 export default {
   title: 'Example/Radio',
@@ -8,15 +8,6 @@ export default {
     layout: 'centered',
   },
   tags: ['autodocs'],
-  argTypes: {
-    title: { control: 'text' },
-    name: { control: 'text' },
-    flex: { control: 'text'},
-    options: { control: 'array' },
-    color: { control: 'text' },
-    size: { control: 'text' },
-    helper: {control: 'text'}
-  },
   args: {
     title: "점메추", 
     name: "lunch",
@@ -33,7 +24,11 @@ export default {
             ],
     color: 'neutral',
     size: 'lg',
-    helper: "오늘의 점심메뉴를 추천해주세요!"
+    onChange: ()=>{},
+    required: false,
+    disabled: false,
+    helperText: "오늘의 점심메뉴를 추천해주세요!",
+    errorText: "에러입니다!!!"
   },
 };
 
@@ -59,7 +54,11 @@ export const Default = {
             ],
     color: 'neutral',
     size: 'lg',
-    helper: "오늘의 점심메뉴를 추천해주세요!"
+    onChange: ()=>{},
+    required: false,
+    disabled: false,
+    helperText: "오늘의 점심메뉴를 추천해주세요!",
+    errorText: "에러입니다!!!",
   },
 };
 

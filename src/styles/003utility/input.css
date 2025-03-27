@@ -137,7 +137,7 @@
 /* ===================== */
 @layer components {
     /* 기존 input 스타일 삭제 */
-    .inputClass {
+    .input-class {
         appearance: none;
         border-radius: var(--radio-base-radius);
         cursor: pointer;
@@ -191,14 +191,18 @@
         &:has(input:disabled) {
             background-color: var(--radio-bg-disable);
         }
-        &:has(input:disabled:checked) {
-            border-color: var(--radio-fg-disable);
-        }
+        
     }
     .radio-helper {
         font-size: var(--radioGroup-size-helper);
         font-weight: var(--radioGroup-weight-helper);
         color: var(--radioGroup-fg-helper);
+    }
+
+    .radio-error {
+        font-size: var(--radioGroup-size-helper);
+        font-weight: var(--radioGroup-weight-helper);
+        color: var(--radioGroup-fg-error);
     }
 }
 
@@ -208,7 +212,7 @@
     .radio-group{
         gap: --value(--radioGroup-gap-*);
     }
-    .inputClass{
+    .input-class{
         width: --value(--radio-base-width-*);
         height: --value(--radio-base-height-*);
     }
@@ -241,6 +245,9 @@
         background-color: --value(--radio-layer-*);
     }
     .radio-base {
+        &:has(input:disabled:checked) {
+            border-color: var(--radio-fg-disable);
+        }
         &:has(input:checked) {
             border-color: --value(--radio-base-fg-*);
         }
