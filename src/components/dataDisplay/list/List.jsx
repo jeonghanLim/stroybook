@@ -55,9 +55,7 @@ export const List = ({
           }
         </div>
       </div>
-      { listItemDivider &&
-        <Divider />
-      }
+      { listItemDivider && <Divider /> }
     </div>
   );
 };
