@@ -55,9 +55,7 @@ export const List = ({
           }
         </div>
       </div>
-      { listItemDivider &&
-        <Divider />
-      }
+      { listItemDivider && <Divider /> }
     </div>
   );
 };
@@ -67,9 +65,9 @@ List.propTypes = {
   dense: PropTypes.bool,
   /** List 좌우 패딩 삭제 여부 */
   disableGutter: PropTypes.bool,
-  /** List 앞쪽 버튼 설정  */
+  /** List 앞쪽 아이콘 설정  */
   startIcon: PropTypes.element,
-  /** List 뒷쪽 버튼 설정 */
+  /** List 뒷쪽 아이콘 설정 */
   endIcon: PropTypes.element,
   /** List 기본 텍스트 */
   listItemText: PropTypes.string,
