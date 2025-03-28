@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 export const Menu = ({
@@ -8,28 +8,51 @@ export const Menu = ({
   , maxHeight // 최대 높이 적용(높이에 따라 스크롤바 적용됨)
   , startIcon
   , endIcon
-  , label = "Menu" // 메뉴아이템 라벨 텍스트
+  , label = 'Menu' // 메뉴아이템 라벨 텍스트
   , disabled = false // 비활성화
   , ...props
 }) => {  
 
-    return (
-      <div className='menu'>
-        <div className='menuItem'>
-          <div className="menuItem-container">
-            <div className="menuItem-base">
-              { startIcon &&
-                <span className='menuItem-icon'>{startIcon}</span>
-              }
-              <p className='menuItem-label'>{label}</p>
-              { endIcon &&
-                <span className='menuItem-icon'>{endIcon}</span>
-              }
-            </div>
+  const [isSelected, setIsSelected] = useState(false);
+
+  const handleSelectedClick = () => {
+    setIsSelected(prev => !prev);
+  };
+
+  const classProp = [
+    fullWidth && 'menu-fullWidth'
+    , dense && 'menu-dense'
+    , disableGutter && 'menu-gutter'
+    , disabled && 'menu-disabled'
+  ]
+    .filter(Boolean)
+    .join(' ');
+
+  return (
+    <div  
+      aria-selected={isSelected ? 'true' : 'false'} 
+      className={[
+        'menu'
+        , classProp
+      ].filter(Boolean).join(' ')}
+      onClick={handleSelectedClick}
+      {...props}
+    >
+      <div className='menuItem'>
+        <div className='menuItem-container'>
+          <div className="menuItem-base">
+            { startIcon &&
+              <span className='menuItem-icon'>{startIcon}</span>
+            }
+            <p className='menuItem-label'>{label}</p>
+            { endIcon &&
+              <span className='menuItem-icon'>{endIcon}</span>
+            }
           </div>
         </div>
       </div>
-    );
+    </div>
+  );
 };
 
 
@@ -51,5 +74,5 @@ Menu.propTypes = {
 };
 
 Menu.defaultProps = {
-  label: "Menu",
+  label: 'Menu',
 };

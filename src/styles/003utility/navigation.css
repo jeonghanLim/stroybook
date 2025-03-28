@@ -6,22 +6,30 @@
 @import "../002components/navigation.css";
 
 @layer components {
+
+    /* 17. MENU */
+    /* ==================== */
+
     .menu {
         border-radius: var(--menu-radius);
         background-color: var(--menu-color-background);
         box-shadow: var(--shadow-064);
+        overflow: hidden;
+
+        &.menu-fullWidth {
+            width: 100%;
+        }
+    }
+
+    .menu:not(.menu-disabled)[aria-selected="true"] {
+        background-color: var(--menuItem-color-selected);
     }
 
     .menuItem {
         background-color: var(--color-material-white-alpha-008);
         cursor: pointer;
-
         &:hover {
             background-color: var(--menuItem-color-hovered);
-        }
-
-        &.disabled {
-            
         }
     }
 
