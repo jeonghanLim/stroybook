@@ -136,6 +136,12 @@
         }
     }
 
+    .listItem-gutter.listItem-dense {
+        & .listItem-container {
+            padding: var(--listItem-container-gutter-dense);
+        }
+    }
+
     .listItem-dense {
         & .listItem-icon {
             width: var(--listItem-icon-dense);
