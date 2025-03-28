@@ -71,6 +71,8 @@ Menu.propTypes = {
   endIcon: PropTypes.element,
   /** MenuItem 라벨(텍스트) */
   label: PropTypes.string,
+  /** MenuItem 비활성화 */
+  disabled: PropTypes.bool,
 };
 
 Menu.defaultProps = {

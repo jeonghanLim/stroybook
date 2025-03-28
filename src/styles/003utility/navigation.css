@@ -11,17 +11,16 @@
     /* ==================== */
 
     .menu {
+        width: fit-content;
+        height: fit-content;
+        padding: var(--menuList);
         border-radius: var(--menu-radius);
         background-color: var(--menu-color-background);
         box-shadow: var(--shadow-064);
         overflow: hidden;
-
-        &.menu-fullWidth {
-            width: 100%;
-        }
     }
 
-    .menu:not(.menu-disabled)[aria-selected="true"] {
+    .menu:not(.menu-disabled)[aria-selected="true"] .menuItem {
         background-color: var(--menuItem-color-selected);
     }
 
@@ -34,17 +33,24 @@
     }
 
     .menuItem, .menuItem-base {
-        width: auto;
-        height: auto;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .menuItem-base {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--menuItem-base-gap);
     }
 
     .menuItem-container {
-        width: auto;
-        height: auto;
+        width: fit-content;
+        height: fit-content;
         padding: var(--menuItem-container);
     }
 
-    .menuItem-icon {
+    .menuItem-icon svg {
         width: var(--menuItem-icon);
         height: var(--menuItem-icon);
     }
@@ -54,6 +60,52 @@
         font-weight: var(--menuItem-weight);
         font-family: var(--font-pretendard);
         color: var(--menuItem-color);
+    }
+
+    .menu-fullWidth {
+        &.menu { width: 100%; }
+        & .menuItem { width: 100%; }
+    }
+
+    .menu-dense {
+        &.menu {
+            padding: var(--menuList-dense);
+        }
+        & .menuItem-container {
+            padding: var(--menuItem-container-dense);
+        }
+        & .menuItem-icon svg {
+            width: var(--menuItem-icon-dense);
+            height: var(--menuItem-icon-dense);
+        }
+        & .menuItem-label {
+            font-size: var(--menuItem-size-dense);
+        }
+    }
+
+    .menu-gutter {
+        & .menuItem-container {
+            padding: var(--menuItem-container-gutter);
+        }
+    }
+
+    .menu-gutter.menu-dense {
+        & .menuItem-container {
+            padding: var(--menuItem-container-gutter-dense);
+        }
+    }
+
+    .menu-disabled {
+        & .menuItem-label {
+            color: var(--menuItem-color-disabled);
+        }
+        & .menuItem {
+            cursor: default;
+            &:hover { background-color: transparent; }
+        }
+        & .menuItem-icon svg {
+            fill: var(--color-palette-bg-disabled-main) !important;
+        }
     }
 
 }
