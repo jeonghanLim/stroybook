@@ -90,5 +90,4 @@ Menu.propTypes = {
 };
 
 Menu.defaultProps = {
-  label: 'Menu',
 };
