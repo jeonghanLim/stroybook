@@ -12,10 +12,10 @@ export const Menu = ({
   , ...props
 }) => {  
 
-  const [isSelected, setIsSelected] = useState(0);
+  const [isSelected, setIsSelected] = useState(null);
 
   const handleSelectedClick = (index) => {
-    setIsSelected(prev => (prev === index ? 0 : index));
+    setIsSelected(prev => (prev === index ? null : index));
   };
 
   const classProp = [
