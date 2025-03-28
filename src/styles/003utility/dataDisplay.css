@@ -74,7 +74,6 @@
         width: fit-content;
         height: auto;
         background-color: var(--color-material-white-alpha-008);
-
         &:hover {
             background-color: var(--listItem-hovered);
         }
@@ -128,44 +127,39 @@
         height: var(--listItem-icon);
     }
 
-    .listItem-gutter > .listItem-container {
-        padding: var(--listItem-container-gutter);
-    }
-    
-    .listItem-dense .listItem-container { 
-        padding: var(--listItem-container-dense);    
-    }
-
-    .listItem-dense .listItem-base:has(.listItem-icon) { 
-        gap: var(--listItem-base-gap-dense);
+    .listItem-gutter {
+        & .listItem-container {
+            padding: var(--listItem-container-gutter);
+        }
+        & .listItem-base:has(.listItem-icon) {
+            gap: var(--listItem-base-gap-dense);
+        }
     }
 
-    .listItem-dense .listItem-icon { 
-        width: var(--listItem-icon-dense);
-        height: var(--listItem-icon-dense);
-    }
-
-    .listItem-dense .listItem-base-text { 
-        font-size: var(--listItem-size-label-dense);
-    }
-
-    .listItem-dense .listItem-secondary-text { 
-        font-size: var(--listItem-size-secondary-dense);
+    .listItem-dense {
+        & .listItem-icon {
+            width: var(--listItem-icon-dense);
+            height: var(--listItem-icon-dense);
+        }
+        & .listItem-base-text {
+            font-size: var(--listItem-size-label-dense);
+        }
+        & .listItem-secondary-text {
+            font-size: var(--listItem-size-secondary-dense);
+        }
     }
 
     .listItem-disabled { 
         cursor: default;
-    }
-
-    .listItem-disabled:hover { 
-        background-color: transparent;
-    }
-    .listItem-disabled .listItem-base-text,
-    .listItem-disabled .listItem-secondary-text { 
-        color: var(--listItem-fg-disabled);
-    }
-    .listItem-disabled .listItem-icon svg { 
-        fill: var(--listItem-bg-disabled) !important;
+        &:hover {
+            background-color: transparent;
+        }
+        & .listItem-secondary-text {
+            color: var(--listItem-fg-disabled);
+        }
+        & .listItem-icon svg {
+            fill: var(--listItem-bg-disabled) !important;
+        }
     }
 }
     
