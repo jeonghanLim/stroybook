@@ -20,8 +20,10 @@
         overflow: hidden;
     }
 
-    .menu:not(.menu-disabled)[aria-selected="true"] .menuItem {
-        background-color: var(--menuItem-color-selected);
+    .menu:not(.menu-disabled)[aria-selected="true"] {
+        & .menuItem {
+            background-color: var(--menuItem-color-selected);
+        }
     }
 
     .menuItem {
@@ -40,7 +42,6 @@
     .menuItem-base {
         display: flex;
         align-items: center;
-        justify-content: center;
         gap: var(--menuItem-base-gap);
     }
 
@@ -64,7 +65,7 @@
 
     .menu-fullWidth {
         &.menu { width: 100%; }
-        & .menuItem { width: 100%; }
+        & .menuItem, .menuItem-container, .menuItem-base { width: 100%; }
     }
 
     .menu-dense {
