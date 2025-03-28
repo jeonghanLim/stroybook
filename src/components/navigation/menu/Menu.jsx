@@ -6,17 +6,16 @@ export const Menu = ({
   , dense = false // compact한 레이아웃 설정 여부
   , disableGutter = false // 좌우 패딩 삭제 여부
   , maxHeight // 최대 높이 적용(높이에 따라 스크롤바 적용됨)
-  , startIcon
-  , endIcon
-  , label = 'Menu' // 메뉴아이템 라벨 텍스트
+  , items = [] // menuItem 데이터 작성(배열)
   , disabled = false // 비활성화
+  , onClick
   , ...props
 }) => {  
 
-  const [isSelected, setIsSelected] = useState(false);
+  const [isSelected, setIsSelected] = useState(0);
 
-  const handleSelectedClick = () => {
-    setIsSelected(prev => !prev);
+  const handleSelectedClick = (index) => {
+    setIsSelected(prev => (prev === index ? 0 : index));
   };
 
   const classProp = [
@@ -29,28 +28,40 @@ export const Menu = ({
     .join(' ');
 
   return (
-    <div  
-      aria-selected={isSelected ? 'true' : 'false'} 
+    <div   
       className={[
         'menu'
         , classProp
       ].filter(Boolean).join(' ')}
-      onClick={handleSelectedClick}
       {...props}
     >
-      <div className='menuItem'>
-        <div className='menuItem-container'>
-          <div className="menuItem-base">
-            { startIcon &&
-              <span className='menuItem-icon'>{startIcon}</span>
-            }
-            <p className='menuItem-label'>{label}</p>
-            { endIcon &&
-              <span className='menuItem-icon'>{endIcon}</span>
-            }
+      {items.map(({
+        label 
+        , value
+        , startIcon
+        , endIcon
+      }, index) => (
+        <div 
+          key = {value} 
+          className={[
+            'menuItem'
+            , isSelected === index ? 'menuItem-selected' : ''
+          ].filter(Boolean).join(' ')}
+          onClick={() => handleSelectedClick(index)}
+        >
+          <div className='menuItem-container'>
+            <div className="menuItem-base">
+              { startIcon &&
+                <span className='menuItem-icon'>{startIcon}</span>
+              }
+              <p className='menuItem-label'>{label}</p>
+              { endIcon &&
+                <span className='menuItem-icon'>{endIcon}</span>
+              }
+            </div>
           </div>
         </div>
-      </div>
+      ))}
     </div>
   );
 };
@@ -68,6 +79,9 @@ Menu.propTypes = {
   /** MenuItem 앞쪽 아이콘 설정 */
   startIcon: PropTypes.element,
   /** MenuItem 뒷쪽 아이콘 설정 */
+  endIcon: PropTypes.element,
+  /** MenuItem 배열 작성 */
+  items: PropTypes.array,
   endIcon: PropTypes.element,
   /** MenuItem 라벨(텍스트) */
   label: PropTypes.string,
