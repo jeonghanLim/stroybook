@@ -202,6 +202,7 @@
         } 
 
         &:has(.textfield-base input:disabled) {
+            cursor: not-allowed; 
             .textfield-base {
                 background-color: var(--textField-bg-disabled);
                 outline-color: var(--textField-stroke-disabled);
