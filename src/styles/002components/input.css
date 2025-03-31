@@ -142,20 +142,20 @@
     /* size */
     --checkBox-touch-width: calc(var(--spacing) * 44);
     --checkBox-touch-height: calc(var(--spacing) * 44);
-    --checkBox-base-border: var(--border-001);
+    --checkBox-base-border: var(--border-002);
     --checkBox-base-radius: var(--radius-004);
     --checkBox-base-width-md: calc(var(--spacing) * 20);
     --checkBox-base-height-md: calc(var(--spacing) * 20);
     --checkBox-base-width-lg: calc(var(--spacing) * 24);
     --checkBox-base-height-lg: calc(var(--spacing) * 24);
+    --checkBox-icon-lg: var(--icon-24);
+    --checkBox-icon-md: var(--icon-20);
     --checkLabel-gap-lg: calc(var(--spacing) * 8);
     --checkLabel-gap-md: calc(var(--spacing) * 4);
     --checkGroup-gap-lg: calc(var(--spacing) * 20);
     --checkGroup-gap-md: calc(var(--spacing) * 12);
     --checkGroup-group-gap-lg: calc(var(--spacing) * 20);
     --checkGroup-group-gap-md: calc(var(--spacing) * 12);
-    --checkBox-icon-lg: var(--icon-24);
-    --checkBox-icon-md: var(--icon-20);
     --checkGroup-group-lg: calc(var(--spacing) * 0) calc(var(--spacing) * 0) calc(var(--spacing) * 0) calc(var(--spacing) * 24);
     --checkGroup-group-md: calc(var(--spacing) * 0) calc(var(--spacing) * 0) calc(var(--spacing) * 0) calc(var(--spacing) * 20);
     /* font */
@@ -221,13 +221,13 @@
     --check-fg-neutral: var(--color-palette-fg-neutral-main);
     --check-bg-wait-neutral: var(--color-palette-bg-neutral-light-default);
     --check-fg-error: var(--color-palette-fg-error-main);
-    --check-bg-error-wait: var(--color-palette-bg-error-light-default);
+    --check-bg-wait-error: var(--color-palette-bg-error-light-default);
     --check-fg-warning: var(--color-palette-fg-warning-main);
-    --check-bg-warning-wait: var(--color-palette-bg-warning-light-default);
+    --check-bg-wait-warning: var(--color-palette-bg-warning-light-default);
     --check-fg-info: var(--color-palette-fg-info-main);
-    --check-bg-info-wait: var(--color-palette-bg-info-light-default);
+    --check-bg-wait-info: var(--color-palette-bg-info-light-default);
     --check-fg-success: var(--color-palette-fg-success-main);
-    --check-bg-success-wait: var(--color-palette-bg-success-light-default);
+    --check-bg-wait-success: var(--color-palette-bg-success-light-default);
     --checkBox-bg-disable: var(--color-palette-bg-disabled-main);
     --checkBox-stroke-disable: var(--color-palette-stroke-disabled-main);
     --checkBox-fg-disable: var(--color-palette-fg-disabled-main);

@@ -524,7 +524,7 @@
         },
         "--checkBox-base-border": {
           "$type": "dimension",
-          "$value": "{size.border.001}"
+          "$value": "{size.border.002}"
         },
         "--checkBox-base-radius": {
           "$type": "dimension",
@@ -545,6 +545,14 @@
         "--checkBox-base-height-lg": {
           "$type": "dimension",
           "$value": "{size.spacing.24}"
+        },
+        "--checkBox-icon-lg": {
+          "$type": "dimension",
+          "$value": "{size.icon.24}"
+        },
+        "--checkBox-icon-md": {
+          "$type": "dimension",
+          "$value": "{size.icon.20}"
         },
         "--checkLabel-gap-lg": {
           "$type": "dimension",
@@ -577,14 +585,6 @@
         "--checkGroup-group-md-xLeft": {
           "$type": "dimension",
           "$value": "{size.spacing.20}"
-        },
-        "--checkBox-icon-lg": {
-          "$type": "dimension",
-          "$value": "{size.icon.24}"
-        },
-        "--checkBox-icon-md": {
-          "$type": "dimension",
-          "$value": "{size.icon.20}"
         }
       },
       "font": {
@@ -834,7 +834,7 @@
           "$type": "color",
           "$value": "{color.color.palette.fg.error.main}"
         },
-        "--check-bg-error-wait": {
+        "--check-bg-wait-error": {
           "$type": "color",
           "$value": "{color.color.palette.bg.error.light.default}"
         },
@@ -842,7 +842,7 @@
           "$type": "color",
           "$value": "{color.color.palette.fg.warning.main}"
         },
-        "--check-bg-warning-wait": {
+        "--check-bg-wait-warning": {
           "$type": "color",
           "$value": "{color.color.palette.bg.warning.light.default}"
         },
@@ -850,7 +850,7 @@
           "$type": "color",
           "$value": "{color.color.palette.fg.info.main}"
         },
-        "--check-bg-info-wait": {
+        "--check-bg-wait-info": {
           "$type": "color",
           "$value": "{color.color.palette.bg.info.light.default}"
         },
@@ -858,7 +858,7 @@
           "$type": "color",
           "$value": "{color.color.palette.fg.success.main}"
         },
-        "--check-bg-success-wait": {
+        "--check-bg-wait-success": {
           "$type": "color",
           "$value": "{color.color.palette.bg.success.light.default}"
         },
