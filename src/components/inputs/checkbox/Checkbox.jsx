@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-
 import PropTypes from 'prop-types';
+import useRipple from '@/hooks/useRipple';
 import { CheckIcon, IndeterminateIcon } from '@/components/icon/Icon';
 
 export const Checkbox = ({ 
@@ -33,6 +33,18 @@ export const Checkbox = ({
     onChange && onChange(e.target.checked, e.target.value);
   };
 
+  // 체크박스 선택시 물결
+  const rippleOption = {
+    centered: true
+    , color : variant == 'contained' ? 'white' : color
+  }
+  
+  const { 
+    handleFocus
+    , handleBlur
+    , rippleContainer 
+  } = useRipple(rippleOption);
+
   return (
     <label className={`checkbox-label checkbox-size-${size} ${variant}-color-${error ? 'error' : color} ${disabled ? 'disabled' : ' '}`}>
         <div className={`checkbox-wrapper`}> 
@@ -45,12 +57,16 @@ export const Checkbox = ({
               disabled = {disabled}
               value={value}
               name={name}
-            /> 
+              onFocus={handleFocus}
+              onBlur={handleBlur}
+            />
             {(isChecked || checked || `${variant}` === 'check') && !indeterminate && <CheckIcon></CheckIcon>}
             {isChecked && indeterminate && <IndeterminateIcon></IndeterminateIcon>}
           </div>
+          {!disabled && rippleContainer}
         </div>
           {label && <span className="checkbox-text">{label}</span>}
+          
     </label>
   );
 };
