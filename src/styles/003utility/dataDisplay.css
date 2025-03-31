@@ -77,6 +77,7 @@
         &:hover {
             background-color: var(--listItem-hovered);
         }
+        cursor: pointer;
     }
 
     .listItem:not(.listItem-disabled)[aria-selected="true"] {
