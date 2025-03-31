@@ -2,27 +2,33 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 export const TextField = ({
-  label,
-  labelLeft,
-  dense = false,
-  disabled = false,
-  error = false,
-  required = false,
-  placeholder,
-  helperText,
-  startIcon, 
-  endIcon, 
+  name
+  , type
+  , label
+  , labelLeft = false
+  , dense = false
+  , disabled = false
+  , error = false
+  , required = false
+  , placeholder
+  , helperText
+  , onChange
+  , readonly = false
+  , startIcon
+  , endIcon
+  , ...props
 }) => {
   const [value, setValue] = useState('');
 
   const handleChange = (e) => {
-    setValue(e.target.value);
-    console.log(e.target.value);
+    const newValue = e.target.value;
+    setValue(newValue);
+    onChange && onChange(newValue);
+    console.log(newValue);
   };
 
   const classProp = [
     dense && 'dense',
-    // disabled && 'disabled',
     error && 'error',
     value && 'hasValue'
   ]
@@ -30,32 +36,37 @@ export const TextField = ({
     .join(' ');
 
   return (
+
     <div className={`textfield-wrapper ${classProp}`}>
       {labelLeft && (
         <div className='labelleft-base'>
-          {required && <span className="required-marker">*</span>}{labelLeft}
+          {required && <span className="required-marker">*</span>}{label}
         </div>
       )}
-      <div className='right-side'>
-        <div className='label-base'>
-          {label}{required && <span className="required-marker">*</span>}
-        </div>
+      <div>
+        {!labelLeft && (
+          <div className='label-base'>
+            {label}{required && <span className="required-marker">*</span>}
+          </div>
+        )}
         <div className='textfield-base'>
           {startIcon &&
-            <span className="input-icon">#</span>
+            <span className="input-icon">{startIcon}</span>
           }
           <input
-            type="text"
-            name="test"
+            type={type}
+            name={name}
             disabled={disabled}
             error={error}
             placeholder={placeholder}
             value={value}
             onChange={handleChange}
+            readonly={readonly}
+            {...props}
           />
-            {endIcon &&
-              <span className="input-icon">#</span>
-            }
+          {endIcon &&
+            <span className="input-icon">{endIcon}</span>
+          }
         </div>
         {helperText && <div className="helper-text">{helperText}</div>}
       </div>
@@ -64,25 +75,31 @@ export const TextField = ({
 }
 
 TextField.propTypes = {
+  name: PropTypes.string,
+  type: PropTypes.oneOf(['text', 'password']),
   label: PropTypes.string,
-  labelLeft: PropTypes.string,
+  labelLeft: PropTypes.bool,
   dense: PropTypes.bool,
   disabled: PropTypes.bool,
   error: PropTypes.bool,
   required: PropTypes.bool,
   placeholder: PropTypes.string,
   helperText: PropTypes.string,
+  onChange: PropTypes.func,
+  readOnly: PropTypes.bool,
   startIcon: PropTypes.element,
   endIcon: PropTypes.element,
 };
 
 TextField.defaultProps = {
+  type: 'text',
   label: 'label',
-  labelLeft: 'labelLeft',
+  labelLeft: false,
   dense: false,
   disabled: false,
   error: false,
   required: false,
-  placeholder: 'PlaceHoler',
-  helperText: 'HelperText'
+  placeholder: 'Placeholder',
+  helperText: 'HelperText',
+  readonly: false,
 };
