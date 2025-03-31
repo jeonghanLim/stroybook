@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Checkbox } from './Checkbox';
+import { disabled } from '@/stories/inputs/textField/TextField.stories';
 
 export const CheckGroup = ({ 
   size = 'md'
@@ -8,6 +9,7 @@ export const CheckGroup = ({
   , title
   , label
   , name
+  , disabled = false
   , helperText
   , errorText
   , checkboxOptions
@@ -50,7 +52,7 @@ export const CheckGroup = ({
   const indeterChecked = selectCheckboxList.length > 0 && selectCheckboxList.length < 6;
 
   return (
-    <div className={`checkGroup-wrapper checkGroup-size-${size}`}>
+    <div className={`checkGroup-wrapper checkGroup-size-${size} ${disabled ? 'disabled' : ''}`}>
       <p className={`checkGroup-title ${errorText ? 'error' : ''}`}>{title}</p>
       <div className={'checkGroup-allChecked'}>
         <Checkbox 
@@ -60,6 +62,7 @@ export const CheckGroup = ({
           size={size} 
           color={color} 
           name={name}
+          disabled={disabled}
           error={errorText ? true : false} 
           onChange={(e) => handleallChecked(e)}
         ></Checkbox>
@@ -74,6 +77,7 @@ export const CheckGroup = ({
               value={item.value} 
               color={color} 
               name={name}
+              disabled={disabled}
               error={errorText ? true : false} 
               onChange={handlesingleChecked}
             ></Checkbox>
@@ -87,24 +91,26 @@ export const CheckGroup = ({
 
 
 CheckGroup.propTypes = {
-  size: PropTypes.oneOf(['md', 'lg']),
-  color : PropTypes.oneOf(['brand', 'neutral']),
-  title : PropTypes.string,
-  label : PropTypes.string,
-  helperText : PropTypes.string,
-  errorText : PropTypes.string,
-  checkboxOptions: PropTypes.arrayOf(
+  size: PropTypes.oneOf(['md', 'lg'])
+  , color : PropTypes.oneOf(['brand', 'neutral'])
+  , title : PropTypes.string
+  , label : PropTypes.string
+  , disabled : PropTypes.bool
+  , helperText : PropTypes.string
+  , errorText : PropTypes.string
+  , checkboxOptions: PropTypes.arrayOf(
     PropTypes.shape({
-      label: PropTypes.string.isRequired,
-      value: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired
+      , value: PropTypes.string.isRequired
     })
-  ),
-  onChange: PropTypes.func,
+  )
+  , onChange: PropTypes.func,
 };
 
 CheckGroup.defaultProps = {
-  size: 'md',
-  color: 'brand',
+  size: 'md'
+  , color: 'brand'
+  , disabled: false
 };
 
 /*

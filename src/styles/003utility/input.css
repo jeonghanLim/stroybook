@@ -139,6 +139,7 @@
     }
     .disabled {
         pointer-events: none;
+        color : var(--checkBox-fg-disable);
     }
     .checkbox-wrapper { 
         width: var(--checkBox-touch-width); 
@@ -150,7 +151,7 @@
         
         & .checkbox {
             border-radius: var(--checkBox-base-radius);
-            border : 1px solid;
+            border : 2px solid;
             border-color : var(--checkBox-stroke-wait);
             display: flex;
             align-items: center;
@@ -173,18 +174,6 @@
         appearance: none;      
         @apply absolute; 
     }
-    /* .checkbox-color-error {
-        & .checkbox {
-            border : 1px solid;
-        }
-    } */
-    /* .check-color-error {
-        & .check {
-            & .icon-box{
-                color: var(--checkBox-bg-wait-error);
-            }
-        }
-    } */
 }
 
 @utility checkbox-size-* {
@@ -216,7 +205,6 @@
     }
 
     & .checkbox{
-        border : 1px solid;
         border-color : --value(--checkBox-stroke-*);
         &:has(input:checked){
             background-color : --value(--checkBox-bg-*);
@@ -248,7 +236,7 @@
     }
     & .check{
         & .icon-box{
-            color: red;
+            color: --value(--check-bg-wait-*);
         }
         &:has(input:checked){
             & .icon-box{
@@ -271,6 +259,10 @@
 /* ===================== */
 
 @layer components {
+    .disabled .checkGroup-title,  .disabled .checkGroup-helptext{
+        pointer-events: none;
+        color : var(--checkBox-fg-disable);
+    }
     .checkGroup-wrapper {
         display: flex;
         align-items: flex-start;
@@ -284,9 +276,8 @@
         color: var(--checkGroup-fg-title);
     }
 
-    
-    .checkGroup-allChecked {
-        font-weight: var(--checkLabel-label-weigh);
+    .checkGroup-allChecked .checkbox-text{
+        font-weight: var(--checkLabel-label-weight)
     }
     
     .checkGroup-checked {
@@ -302,8 +293,9 @@
         font-size: var(--checkGroup-helper-size);
     }
     .error {
-        color: var(--checkGroup-fg-error);
+        color: var(--checkGroup-fg-error); 
     }
+   
 }
 
 @utility checkGroup-size-* {
@@ -326,11 +318,6 @@
     /* & .checkGroup-item {
         gap : --value(---checkLabel-gap-*);
     } */
-}
-
-@utility text-color-* {
-    /* color : --value(--checkGroup-fg-*); */
-    color : red;
 }
 /* ===================== */
 /* CHECK GROUP END       */
