@@ -57,7 +57,7 @@ export const Checkbox = ({
 
 Checkbox.propTypes = {
   size: PropTypes.oneOf(['md', 'lg']),
-  color : PropTypes.oneOf(['brand', 'neutral']),
+  color : PropTypes.oneOf(['brand', 'neutral', 'error', 'warning', 'info', 'success']),
   variant : PropTypes.oneOf(['check', 'checkbox']),
   disabled : PropTypes.bool,
   checked : PropTypes.bool,
@@ -85,7 +85,13 @@ checkbox-size-lg
 checkbox-color-brand
 checkbox-color-neutral
 checkbox-color-error
-check-color-error
+checkbox-color-warning
+checkbox-color-info
+checkbox-color-success
 check-color-brand
 check-color-neutral
+check-color-error
+check-color-warning
+check-color-info
+check-color-success
 */ 

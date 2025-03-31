@@ -157,27 +157,26 @@
                 color: var(--check-fg-wait);
             }
         }
-        & .icon-box{
+        /* & .icon-box{
             color: var(--check-fg-wait);
-        }
+        } */
     }
     .inputClass {
         appearance: none;      
         @apply absolute; 
     }
-    .checkbox-color-error {
+    /* .checkbox-color-error {
         & .checkbox {
             border : 1px solid;
-            border-color : var(--checkBox-stroke-error);
         }
-    }
-    .check-color-error {
+    } */
+    /* .check-color-error {
         & .check {
             & .icon-box{
                 color: var(--checkBox-bg-wait-error);
             }
         }
-    }
+    } */
 }
 
 @utility checkbox-size-* {
@@ -199,10 +198,18 @@
 @utility checkbox-color-* {
 
     &:hover .checkbox-wrapper, & .checkbox-wrapper:hover {
-        background-color : --value(--checkBox-overlay-*);
+        background-color : --value(--checkBox-bg-*-hover);
+    }
+    & .checkbox-wrapper:has(input:focus-visible) {
+        background-color : --value(--checkBox-bg-*-focus);
+    }
+    & .checkbox-wrapper:has(input:active) {
+        background-color : --value(--checkBox-bg-*-active);
     }
 
     & .checkbox{
+        border : 1px solid;
+        border-color : --value(--checkBox-stroke-*);
         &:has(input:checked){
             background-color : --value(--checkBox-bg-*);
             border : 0;
@@ -223,10 +230,18 @@
 @utility check-color-* {
 
     &:hover .checkbox-wrapper, & .checkbox-wrapper:hover {
-        background-color : --value(--checkBox-overlay-*);
+        background-color : --value(--checkBox-bg-*-hover);
     }
-
+    & .checkbox-wrapper:has(input:focus-visible) {
+        background-color : --value(--checkBox-bg-*-focus);
+    }
+    & .checkbox-wrapper:has(input:active) {
+        background-color : --value(--checkBox-bg-*-active);
+    }
     & .check{
+        & .icon-box{
+            color: red;
+        }
         &:has(input:checked){
             & .icon-box{
                 color: --value(--check-fg-*);
