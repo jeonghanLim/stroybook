@@ -13,6 +13,7 @@ export const TextField = ({
   , placeholder
   , helperText
   , onChange
+  , readonly = false
   , startIcon
   , endIcon
   , ...props
@@ -60,6 +61,7 @@ export const TextField = ({
             placeholder={placeholder}
             value={value}
             onChange={handleChange}
+            readonly={readonly}
             {...props}
           />
           {endIcon &&
@@ -84,6 +86,7 @@ TextField.propTypes = {
   placeholder: PropTypes.string,
   helperText: PropTypes.string,
   onChange: PropTypes.func,
+  readOnly: PropTypes.bool,
   startIcon: PropTypes.element,
   endIcon: PropTypes.element,
 };
@@ -97,5 +100,6 @@ TextField.defaultProps = {
   error: false,
   required: false,
   placeholder: 'Placeholder',
-  helperText: 'HelperText'
+  helperText: 'HelperText',
+  readonly: false,
 };
