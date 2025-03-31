@@ -3,7 +3,7 @@ import { DateField } from '@/components/date/DateField';
 
 export default {
   title: 'Example/DateField',
-  component: Checkbox,
+  component: DateField,
   parameters: {
     layout: 'centered',
   },
@@ -13,9 +13,7 @@ export default {
     label: { control: 'text' },
   },
   args: {
-    checked: false,
-    label: 'Check me!',
-    onChange: fn(),
+
   },
 };
 
@@ -28,12 +26,5 @@ export const Default = {
     // disabled : true, 
     checked : true,
     // indeterminate : true
-  },
-};
-
-export const Checked = {
-  args: {
-    checked: true,
-    label: 'I am checked!',
   },
 };
