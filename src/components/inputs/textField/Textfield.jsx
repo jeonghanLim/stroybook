@@ -35,7 +35,7 @@ export const TextField = ({
 
   return (
 
-    <div className={`textfield-wrapper ${classProp}`}>
+    <div className={`textfield-wrapper ${classProp}`} style={{width: '100%'}}>
       {labelLeft && (
         <div className='labelleft-base'>
           {required && <span className="required-marker">*</span>}{label}
