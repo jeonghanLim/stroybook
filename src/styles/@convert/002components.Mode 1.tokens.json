@@ -150,17 +150,9 @@
           "$type": "color",
           "$value": "{color.color.palette.bg.neutral.dark.pressed}"
         },
-        "--btn-contained-bg-brand_2": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.brand.dark.default}"
-        },
         "--btn-contained-bg-error": {
           "$type": "color",
           "$value": "{color.color.palette.bg.error.dark.default}"
-        },
-        "--btn-contained-fg-brand_2": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.brand.contrast}"
         },
         "--btn-contained-fg-error": {
           "$type": "color",
@@ -170,14 +162,6 @@
           "$type": "color",
           "$value": "{color.color.palette.bg.error.dark.pressed}"
         },
-        "--btn-contained-bg-brand-hover_2": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.brand.dark.pressed}"
-        },
-        "--btn-contained-bg-brand-focus_2": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.brand.dark.pressed}"
-        },
         "--btn-contained-bg-error-focus": {
           "$type": "color",
           "$value": "{color.color.palette.bg.error.dark.pressed}"
@@ -186,37 +170,21 @@
           "$type": "color",
           "$value": "{color.color.palette.bg.error.dark.pressed}"
         },
-        "--btn-contained-bg-brand-active_2": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.brand.dark.pressed}"
-        },
         "--btn-contained-bg-warning": {
           "$type": "color",
           "$value": "{color.color.palette.bg.warning.dark.default}"
-        },
-        "--btn-contained-bg-neutral_2": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.neutral.dark.default}"
-        },
-        "--btn-contained-fg-warning": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.warning.contrast}"
         },
         "--btn-contained-fg-neutral_2": {
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.contrast}"
         },
-        "--btn-contained-bg-neutral-hover_2": {
+        "--btn-contained-fg-warning": {
           "$type": "color",
-          "$value": "{color.color.palette.bg.neutral.dark.pressed}"
+          "$value": "{color.color.palette.fg.warning.contrast}"
         },
         "--btn-contained-bg-warning-hover": {
           "$type": "color",
           "$value": "{color.color.palette.bg.warning.dark.pressed}"
-        },
-        "--btn-contained-bg-neutral-focus_2": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.neutral.dark.pressed}"
         },
         "--btn-contained-bg-warning-focus": {
           "$type": "color",
@@ -225,10 +193,6 @@
         "--btn-contained-bg-warning-active": {
           "$type": "color",
           "$value": "{color.color.palette.bg.warning.dark.pressed}"
-        },
-        "--btn-contained-bg-neutral-active_2": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.neutral.dark.pressed}"
         },
         "--btn-contained-bg-info": {
           "$type": "color",
@@ -658,89 +622,245 @@
         }
       },
       "colors": {
-        "--checkBox-bg-wait": {
+        "--checkBox-fg-brand": {
           "$type": "color",
-          "$value": "{color.color.palette.bg.overlay.white.light}"
-        },
-        "--checkBox-stroke-wait": {
-          "$type": "color",
-          "$value": "{color.color.palette.stroke.neutral.light}"
-        },
-        "--checkBox-bg-wait-error": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.error.light.default}"
-        },
-        "--checkBox-bg-brand": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.brand.dark.default}"
-        },
-        "--checkBox-bg-neutral": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.neutral.dark.default}"
-        },
-        "--checkBox-bg-error": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.error.dark.default}"
-        },
-        "--checkBox-stroke-error": {
-          "$type": "color",
-          "$value": "{color.color.palette.stroke.error.main}"
+          "$value": "{color.color.palette.fg.brand.main}"
         },
         "--checkBox-fg-brand-contrast": {
           "$type": "color",
           "$value": "{color.color.palette.fg.brand.contrast}"
         },
-        "--checkBox-fg-brand": {
+        "--checkBox-stroke-brand": {
           "$type": "color",
-          "$value": "{color.color.palette.fg.brand.main}"
+          "$value": "{color.color.palette.stroke.brand.dark}"
         },
-        "--checkBox-fg-neutral-contrast": {
+        "--checkBox-bg-brand": {
           "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.contrast}"
+          "$value": "{color.color.palette.bg.brand.dark.default}"
+        },
+        "--checkBox-bg-brand-wait": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.white.light}"
+        },
+        "--checkBox-bg-brand-hover": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.brand.light}"
+        },
+        "--checkBox-bg-brand-focus": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.brand.light}"
+        },
+        "--checkBox-bg-brand-active": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.brand.light}"
         },
         "--checkBox-fg-neutral": {
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.main}"
         },
-        "--checkBox-fg-error-contrast": {
+        "--checkBox-fg-neutral-contrast": {
           "$type": "color",
-          "$value": "{color.color.palette.fg.error.contrast}"
+          "$value": "{color.color.palette.fg.neutral.contrast}"
+        },
+        "--checkBox-stroke-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.neutral.dark}"
+        },
+        "--checkBox-bg-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.neutral.dark.default}"
+        },
+        "--checkBox-bg-neutral-wait": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.white.light}"
+        },
+        "--checkBox-bg-neutral-hover": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.neutral.light}"
+        },
+        "--checkBox-bg-neutral-focus": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.neutral.light}"
+        },
+        "--checkBox-bg-neutral-active": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.neutral.light}"
         },
         "--checkBox-fg-error": {
           "$type": "color",
           "$value": "{color.color.palette.fg.error.main}"
         },
-        "--check-bg-wait": {
+        "--checkBox-fg-error-contrast": {
           "$type": "color",
-          "$value": "{color.color.palette.bg.neutral.light.default}"
+          "$value": "{color.color.palette.fg.error.contrast}"
         },
-        "--check-bg-wait-error": {
+        "--checkBox-stroke-error": {
           "$type": "color",
-          "$value": "{color.color.palette.bg.error.light.default}"
+          "$value": "{color.color.palette.stroke.error.main}"
+        },
+        "--checkBox-bg-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.error.dark.default}"
+        },
+        "--checkBox-bg-error-wait": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.white.light}"
+        },
+        "--checkBox-bg-error-hover": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.error.light}"
+        },
+        "--checkBox-bg-error-focus": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.error.light}"
+        },
+        "--checkBox-bg-error-active": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.error.light}"
+        },
+        "--checkBox-fg-warning": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.warning.main}"
+        },
+        "--checkBox-fg-warning-contrast": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.warning.contrast}"
+        },
+        "--checkBox-stroke-warning": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.warning.main}"
+        },
+        "--checkBox-bg-warning": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.warning.dark.default}"
+        },
+        "--checkBox-bg-warning-wait": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.white.light}"
+        },
+        "--checkBox-bg-warning-hover": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.warning.light}"
+        },
+        "--checkBox-bg-warning-focus": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.warning.light}"
+        },
+        "--checkBox-bg-warning-active": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.warning.light}"
+        },
+        "--checkBox-fg-info": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.info.main}"
+        },
+        "--checkBox-fg-info-contrast": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.info.contrast}"
+        },
+        "--checkBox-stroke-info": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.info.main}"
+        },
+        "--checkBox-bg-info": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.info.dark.default}"
+        },
+        "--checkBox-bg-info-wait": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.white.light}"
+        },
+        "--checkBox-bg-info-hover": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.info.light}"
+        },
+        "--checkBox-bg-info-focus": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.info.light}"
+        },
+        "--checkBox-bg-error-info": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.info.light}"
+        },
+        "--checkBox-fg-success": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.success.main}"
+        },
+        "--checkBox-fg-success-contrast": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.success.contrast}"
+        },
+        "--checkBox-stroke-success": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.success.main}"
+        },
+        "--checkBox-bg-success": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.success.dark.default}"
+        },
+        "--checkBox-bg-success-wait": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.white.light}"
+        },
+        "--checkBox-bg-success-hover": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.success.light}"
+        },
+        "--checkBox-bg-success-focus": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.success.light}"
+        },
+        "--checkBox-bg-success-active": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.success.light}"
         },
         "--check-fg-brand": {
           "$type": "color",
           "$value": "{color.color.palette.fg.brand.main}"
         },
+        "--check-bg-wait-brand": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.brand.light.default}"
+        },
         "--check-fg-neutral": {
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.main}"
         },
+        "--check-bg-wait-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.neutral.light.default}"
+        },
         "--check-fg-error": {
           "$type": "color",
-          "$value": "{color.color.palette.bg.error.dark.default}"
+          "$value": "{color.color.palette.fg.error.main}"
         },
-        "--checkBox-overlay-brand": {
+        "--check-bg-error-wait": {
           "$type": "color",
-          "$value": "{color.color.palette.bg.overlay.brand.light}"
+          "$value": "{color.color.palette.bg.error.light.default}"
         },
-        "--checkBox-overlay-neutral": {
+        "--check-fg-warning": {
           "$type": "color",
-          "$value": "{color.color.palette.bg.overlay.neutral.light}"
+          "$value": "{color.color.palette.fg.warning.main}"
         },
-        "--checkBox-overlay-error": {
+        "--check-bg-warning-wait": {
           "$type": "color",
-          "$value": "{color.color.palette.bg.overlay.error.light}"
+          "$value": "{color.color.palette.bg.warning.light.default}"
+        },
+        "--check-fg-info": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.info.main}"
+        },
+        "--check-bg-info-wait": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.info.light.default}"
+        },
+        "--check-fg-success": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.success.main}"
+        },
+        "--check-bg-success-wait": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.success.light.default}"
         },
         "--checkBox-bg-disable": {
           "$type": "color",
@@ -1441,67 +1561,67 @@
       }
     },
     "interaction": {
-      "--overlay-brand": {
+      "--overlay-brand-light": {
         "$type": "color",
         "$value": "{color.color.palette.bg.overlay.brand.light}"
       },
-      "--overlay-brand-dark": {
+      "--overlay-brand": {
         "$type": "color",
         "$value": "{color.color.palette.bg.overlay.brand.dark}"
       },
-      "--overlay-neutral": {
+      "--overlay-neutral-light": {
         "$type": "color",
         "$value": "{color.color.palette.bg.overlay.neutral.light}"
       },
-      "--overlay-neutral-dark": {
+      "--overlay-neutral": {
         "$type": "color",
         "$value": "{color.color.palette.bg.overlay.neutral.dark}"
       },
-      "--overlay-white": {
+      "--overlay-white-light": {
         "$type": "color",
         "$value": "{color.color.palette.bg.overlay.white.light}"
       },
-      "--overlay-white-dark": {
+      "--overlay-white": {
         "$type": "color",
         "$value": "{color.color.palette.bg.overlay.white.dark}"
       },
-      "--overlay-black": {
+      "--overlay-black-light": {
         "$type": "color",
         "$value": "{color.color.palette.bg.overlay.black.light}"
       },
-      "--overlay-black-dark": {
+      "--overlay-black": {
         "$type": "color",
         "$value": "{color.color.palette.bg.overlay.black.dark}"
       },
-      "--overlay-error": {
+      "--overlay-error-light": {
         "$type": "color",
         "$value": "{color.color.palette.bg.overlay.error.light}"
       },
-      "--overlay-error-dark": {
+      "--overlay-error": {
         "$type": "color",
         "$value": "{color.color.palette.bg.overlay.error.dark}"
       },
-      "--overlay-warning": {
+      "--overlay-warning-light": {
         "$type": "color",
         "$value": "{color.color.palette.bg.overlay.warning.light}"
       },
-      "--overlay-warning-dark": {
+      "--overlay-warning": {
         "$type": "color",
         "$value": "{color.color.palette.bg.overlay.warning.dark}"
       },
-      "--overlay-info": {
+      "--overlay-info-light": {
         "$type": "color",
         "$value": "{color.color.palette.bg.overlay.info.light}"
       },
-      "--overlay-info-dark": {
+      "--overlay-info": {
         "$type": "color",
         "$value": "{color.color.palette.bg.overlay.info.dark}"
       },
-      "--overlay-success": {
+      "--overlay-success-light": {
         "$type": "color",
         "$value": "{color.color.palette.bg.overlay.success.light}"
       },
-      "--overlay-success-dark": {
+      "--overlay-success": {
         "$type": "color",
         "$value": "{color.color.palette.bg.overlay.success.dark}"
       }
