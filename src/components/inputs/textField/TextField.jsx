@@ -7,7 +7,7 @@ export const TextField = ({
   , label
   , labelLeft = false
   , dense = false
-  , disabled  = false
+  , disabled = false
   , error = false
   , required = false
   , placeholder
@@ -74,7 +74,7 @@ export const TextField = ({
 
 TextField.propTypes = {
   name: PropTypes.string,
-  type: PropTypes.string,
+  type: PropTypes.oneOf(['text', 'password']),
   label: PropTypes.string,
   labelLeft: PropTypes.bool,
   dense: PropTypes.bool,

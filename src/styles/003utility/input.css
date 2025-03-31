@@ -197,6 +197,10 @@
         width: fit-content;
         height: fit-content;
 
+        & > div {
+            width: 100%;
+        } 
+
         &:has(.textfield-base input:disabled) {
             .textfield-base {
                 background-color: var(--textField-bg-disabled);
