@@ -1,5 +1,6 @@
 import { fn } from '@storybook/test';
 import { Menu } from '@/components/navigation/menu/Menu';
+import { StarIcon } from '@/components/icon/Icon';
 
 export default {
   title: 'Example/Menu',
@@ -10,8 +11,10 @@ export default {
   tags: ['autodocs'],
 };
 
-export const Primary = {
+export const Default = {
   args:{
+    startIcon: <StarIcon />,
+    endIcon: <StarIcon />
   },
 };
 
