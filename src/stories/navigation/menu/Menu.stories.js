@@ -1,9 +1,9 @@
 import { fn } from '@storybook/test';
-import { Button } from '@/components/inputs/button/Button';
+import { Menu } from '@/components/navigation/menu/Menu';
 
 export default {
-  title: 'Example/Button',
-  component: Button,
+  title: 'Example/Menu',
+  component: Menu,
   parameters: {
     layout: 'centered',
   },
