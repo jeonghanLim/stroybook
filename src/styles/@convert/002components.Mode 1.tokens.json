@@ -24,7 +24,7 @@
         },
         "--btn-padding-lg-x": {
           "$type": "dimension",
-          "$value": "{size.spacing.20}"
+          "$value": "{size.spacing.16}"
         },
         "--btn-icon-sm": {
           "$type": "dimension",
@@ -1190,23 +1190,23 @@
           "$type": "dimension",
           "$value": "{size.spacing.168}"
         },
-        "--textField-labelLeft-y": {
-          "$type": "dimension",
-          "$value": "{size.spacing.4}"
-        },
         "--textField-labelLeft-gap": {
           "$type": "dimension",
           "$value": "{size.spacing.2}"
         },
-        "--textField-labelLeft-xRight": {
-          "$type": "dimension",
-          "$value": "{size.spacing.8}"
-        },
-        "--textField-labelTop-x": {
+        "--textField-labelLeft-padding-xRight": {
           "$type": "dimension",
           "$value": "{size.spacing.4}"
         },
-        "--textField-labelTop-yBottom": {
+        "--textField-labelLeft-padding-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.2}"
+        },
+        "--textField-labelTop-padding-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.4}"
+        },
+        "--textField-labelTop-padding-yBottom": {
           "$type": "dimension",
           "$value": "{size.spacing.4}"
         },
@@ -1214,11 +1214,11 @@
           "$type": "dimension",
           "$value": "{size.spacing.2}"
         },
-        "--textField-helperText-x": {
+        "--textField-helperText-padding-x": {
           "$type": "dimension",
           "$value": "{size.spacing.4}"
         },
-        "--textField-helperText-yTop": {
+        "--textField-helperText-padding-yTop": {
           "$type": "dimension",
           "$value": "{size.spacing.4}"
         },
@@ -1230,7 +1230,7 @@
           "$type": "dimension",
           "$value": "{size.spacing.40}"
         },
-        "--textField-input-x": {
+        "--textField-input-padding-x": {
           "$type": "dimension",
           "$value": "{size.spacing.12}"
         },
@@ -1238,13 +1238,13 @@
           "$type": "dimension",
           "$value": "{size.radius.004}"
         },
-        "--textField-input-border1": {
+        "--textField-input-border-thin": {
           "$type": "dimension",
           "$value": "{size.border.001}"
         },
-        "--textField-input-border3": {
+        "--textField-input-border-bold": {
           "$type": "dimension",
-          "$value": "{size.border.003}"
+          "$value": "{size.border.002}"
         },
         "--textField-contents-gap": {
           "$type": "dimension",
@@ -1262,27 +1262,27 @@
       "font": {
         "--textField-size-label": {
           "$type": "dimension",
-          "$value": "{font.text.13}"
+          "$value": "{font.text.14}"
         },
         "--textField-size-label-dense": {
           "$type": "dimension",
-          "$value": "{font.text.11}"
+          "$value": "{font.text.12}"
         },
         "--textField-size-placeholder": {
           "$type": "dimension",
-          "$value": "{font.text.16}"
+          "$value": "{font.text.17}"
         },
         "--textField-size-placeholder-dense": {
           "$type": "dimension",
-          "$value": "{font.text.14}"
+          "$value": "{font.text.15}"
         },
         "--textField-size-hasValue": {
           "$type": "dimension",
-          "$value": "{font.text.16}"
+          "$value": "{font.text.17}"
         },
         "--textField-size-hasValue-dense": {
           "$type": "dimension",
-          "$value": "{font.text.14}"
+          "$value": "{font.text.15}"
         },
         "--textField-size-helperText": {
           "$type": "dimension",
@@ -1303,6 +1303,10 @@
         "--textField-weight-hasValue": {
           "$type": "dimension",
           "$value": "{font.font.weight.medium}"
+        },
+        "--textField-weight-helperText": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.regular}"
         }
       },
       "colors": {
