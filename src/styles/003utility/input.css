@@ -177,6 +177,7 @@
 
         & .input-icon {
             width: var(--textField-input-icon);
+            height: var(--textField-input-icon);
             color: var(--textField-fg-placeholder);
         }
     }
