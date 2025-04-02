@@ -6,7 +6,7 @@
 
 @theme {
 
-    /* 32. SCROLLBAR */
+    /* 36. SCROLLBAR */
     /* ==================== */
 
     --scrollbar-fg-arrow: var(--color-palette-fg-neutral-soft);
@@ -16,7 +16,7 @@
     --scrollbar-bg-disabled: var(--color-palette-bg-disabled-main);
     --scrollbar-stroke-disabled: var(--color-palette-stroke-disabled-main);
 
-    /* 33. INTERACTION */
+    /* 37. INTERACTION */
     /* ==================== */
 
     --overlay-brand-light: var(--color-palette-bg-overlay-brand-light);

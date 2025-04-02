@@ -375,6 +375,7 @@
     --textArea-input-radius: var(--radius-004);
     --textArea-input-border-thin: var(--border-001);
     --textArea-input-border-bold: var(--border-002);
+    --textArea-minHeight: calc(var(--spacing) * 144);
     --textArea-labelTop-padding: calc(var(--spacing) * 0) calc(var(--spacing) * 4) calc(var(--spacing) * 4) calc(var(--spacing) * 4);
     --textArea-labelLeft-padding: calc(var(--spacing) * 2) calc(var(--spacing) * 4) calc(var(--spacing) * 2) calc(var(--spacing) * 4);
     --textArea-bottomRow-padding: calc(var(--spacing) * 4) calc(var(--spacing) * 4) calc(var(--spacing) * 4) calc(var(--spacing) * 4);
