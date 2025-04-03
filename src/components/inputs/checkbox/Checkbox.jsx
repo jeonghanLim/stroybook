@@ -21,9 +21,12 @@ export const Checkbox = ({
 
   // 체크 시 상태값
   const [isChecked, setIsChecked] = useState(checked);
-
+  console.log("isChecked 값 : ", isChecked)
+  console.log("checked 값 : ", checked)
+  
   useEffect(()=>{
-    setIsChecked(checked);
+    console.log("useEffect : ", checked)
+    setIsChecked(checked); 
   },[checked])
 
   // 체크박스 선택 시 
@@ -60,7 +63,7 @@ export const Checkbox = ({
               onFocus={handleFocus}
               onBlur={handleBlur}
             />
-            {(isChecked || checked || `${variant}` === 'check') && !indeterminate && <CheckIcon></CheckIcon>}
+            {(isChecked || checked && `${variant}` === 'check') && !indeterminate && <CheckIcon></CheckIcon>}
             {isChecked && indeterminate && <IndeterminateIcon></IndeterminateIcon>}
           </div>
           {!disabled && rippleContainer}

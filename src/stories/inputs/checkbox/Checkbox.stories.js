@@ -26,7 +26,7 @@ export const Default = {
     // variant : 'checkbox',
     // variant : 'check',
     // disabled : true, 
-    checked : true,
+    checked : true, 
     // indeterminate : true
   },
 };
