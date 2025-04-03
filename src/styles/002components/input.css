@@ -26,7 +26,7 @@
     --btn-maskIcon-width-lg: calc(var(--spacing) * 16);
     --btn-padding-sm: calc(var(--spacing) * 4) calc(var(--spacing) * 12) calc(var(--spacing) * 4) calc(var(--spacing) * 12);
     --btn-padding-md: calc(var(--spacing) * 8) calc(var(--spacing) * 12) calc(var(--spacing) * 8) calc(var(--spacing) * 12);
-    --btn-padding-lg: calc(var(--spacing) * 12) calc(var(--spacing) * 20) calc(var(--spacing) * 12) calc(var(--spacing) * 20);
+    --btn-padding-lg: calc(var(--spacing) * 12) calc(var(--spacing) * 16) calc(var(--spacing) * 12) calc(var(--spacing) * 16);
     /* font */
     --btn-font-size-sm: var(--text-13);
     --btn-font-size-md: var(--text-16);
@@ -51,8 +51,8 @@
     --btn-contained-bg-error-focus: var(--color-palette-bg-error-dark-pressed);
     --btn-contained-bg-error-active: var(--color-palette-bg-error-dark-pressed);
     --btn-contained-bg-warning: var(--color-palette-bg-warning-dark-default);
-    --btn-contained-fg-warning: var(--color-palette-fg-warning-contrast);
     --btn-contained-fg-neutral_2: var(--color-palette-fg-neutral-contrast);
+    --btn-contained-fg-warning: var(--color-palette-fg-warning-contrast);
     --btn-contained-bg-warning-hover: var(--color-palette-bg-warning-dark-pressed);
     --btn-contained-bg-warning-focus: var(--color-palette-bg-warning-dark-pressed);
     --btn-contained-bg-warning-active: var(--color-palette-bg-warning-dark-pressed);
@@ -324,41 +324,87 @@
     --textField-input-height: calc(var(--spacing) * 48);
     --textField-input-height-dense: calc(var(--spacing) * 40);
     --textField-input-radius: var(--radius-004);
-    --textField-input-border1: var(--border-001);
-    --textField-input-border3: var(--border-003);
+    --textField-input-border-thin: var(--border-001);
+    --textField-input-border-bold: var(--border-002);
     --textField-contents-gap: calc(var(--spacing) * 8);
     --textField-input-icon: var(--icon-20);
     --textField-input-icon-dense: var(--icon-18);
-    --textField-labelLeft: calc(var(--spacing) * 4) calc(var(--spacing) * 8) calc(var(--spacing) * 4) calc(var(--spacing) * 8);
-    --textField-labelTop: calc(var(--spacing) * 0) calc(var(--spacing) * 4) calc(var(--spacing) * 4) calc(var(--spacing) * 4);
-    --textField-helperText: calc(var(--spacing) * 4) calc(var(--spacing) * 4) calc(var(--spacing) * 4) calc(var(--spacing) * 4);
-    --textField-input: calc(var(--spacing) * 0) calc(var(--spacing) * 12) calc(var(--spacing) * 0) calc(var(--spacing) * 12);
+    --textField-labelLeft-padding: calc(var(--spacing) * 2) calc(var(--spacing) * 4) calc(var(--spacing) * 2) calc(var(--spacing) * 4);
+    --textField-labelTop-padding: calc(var(--spacing) * 0) calc(var(--spacing) * 4) calc(var(--spacing) * 4) calc(var(--spacing) * 4);
+    --textField-helperText-padding: calc(var(--spacing) * 4) calc(var(--spacing) * 4) calc(var(--spacing) * 4) calc(var(--spacing) * 4);
+    --textField-input-padding: calc(var(--spacing) * 0) calc(var(--spacing) * 12) calc(var(--spacing) * 0) calc(var(--spacing) * 12);
     /* font */
-    --textField-size-label: var(--text-13);
-    --textField-size-label-dense: var(--text-11);
-    --textField-size-placeholder: var(--text-16);
-    --textField-size-placeholder-dense: var(--text-14);
-    --textField-size-hasValue: var(--text-16);
-    --textField-size-hasValue-dense: var(--text-14);
+    --textField-size-label: var(--text-14);
+    --textField-size-label-dense: var(--text-12);
+    --textField-size-placeholder: var(--text-17);
+    --textField-size-placeholder-dense: var(--text-15);
+    --textField-size-hasValue: var(--text-17);
+    --textField-size-hasValue-dense: var(--text-15);
     --textField-size-helperText: var(--text-13);
     --textField-size-helperText-dense: var(--text-11);
     --textField-weight-label: var(--font-weight-semiBold);
     --textField-weight-placeholder: var(--font-weight-medium);
     --textField-weight-hasValue: var(--font-weight-medium);
+    --textField-weight-helperText: var(--font-weight-regular);
     /* colors */
-    --textField-input-bg: var(--color-palette-bg-layer-default);
-    --textField-input-icon-fg: var(--color-palette-fg-neutral-light);
-    --textField-input-stroke-enabled: var(--color-palette-stroke-neutral-main);
-    --textField-input-stroke-hovered: var(--color-palette-stroke-neutral-main);
-    --textField-input-stroke-focused: var(--color-palette-stroke-brand-dark);
-    --textField-input-stroke-error: var(--color-palette-stroke-error-dark);
     --textField-fg-label: var(--color-palette-fg-neutral-main);
     --textField-fg-label-required: var(--color-palette-fg-error-main);
     --textField-fg-placeholder: var(--color-palette-fg-neutral-mute);
     --textField-fg-hasValue: var(--color-palette-fg-neutral-black);
-    --textField-fg-helperText: var(--color-palette-fg-neutral-light);
     --textField-fg-error: var(--color-palette-fg-error-main);
-    --textField-bg-disabled: var(--color-palette-bg-disabled-main);
-    --textField-stroke-disabled: var(--color-palette-stroke-disabled-main);
     --textField-fg-disabled: var(--color-palette-fg-disabled-main);
+    --textField-input-icon-fg: var(--color-palette-fg-neutral-light);
+    --textField-fg-helperText: var(--color-palette-fg-neutral-light);
+    --textField-input-bg: var(--color-palette-bg-layer-default);
+    --textField-bg-disabled: var(--color-palette-bg-disabled-main);
+    --textField-input-stroke-enabled: var(--color-palette-stroke-neutral-main);
+    --textField-input-stroke-hovered: var(--color-palette-stroke-neutral-dark);
+    --textField-input-stroke-focused: var(--color-palette-stroke-brand-dark);
+    --textField-input-stroke-error: var(--color-palette-stroke-error-dark);
+    --textField-stroke-disabled: var(--color-palette-stroke-disabled-main);
+
+    /* 17. TEXTAREA */
+    /* ==================== */
+
+    /* size */
+    --textArea-labelTop-gap: calc(var(--spacing) * 2);
+    --textArea-labelLeft-width: calc(var(--spacing) * 168);
+    --textArea-labelLeft-gap: calc(var(--spacing) * 2);
+    --textArea-bottomRow-gap: calc(var(--spacing) * 8);
+    --textArea-input-gap: calc(var(--spacing) * 4);
+    --textArea-input-radius: var(--radius-004);
+    --textArea-input-border-thin: var(--border-001);
+    --textArea-input-border-bold: var(--border-002);
+    --textArea-minHeight: calc(var(--spacing) * 144);
+    --textArea-labelTop-padding: calc(var(--spacing) * 0) calc(var(--spacing) * 4) calc(var(--spacing) * 4) calc(var(--spacing) * 4);
+    --textArea-labelLeft-padding: calc(var(--spacing) * 2) calc(var(--spacing) * 4) calc(var(--spacing) * 2) calc(var(--spacing) * 4);
+    --textArea-bottomRow-padding: calc(var(--spacing) * 4) calc(var(--spacing) * 4) calc(var(--spacing) * 4) calc(var(--spacing) * 4);
+    --textArea-input-padding: calc(var(--spacing) * 12) calc(var(--spacing) * 12) calc(var(--spacing) * 12) calc(var(--spacing) * 12);
+    /* font */
+    --textArea-size-label: var(--text-14);
+    --textArea-size-placeholder: var(--text-17);
+    --textArea-size-hasValue: var(--text-17);
+    --textArea-size-helperText: var(--text-13);
+    --textArea-size-characterLimit: var(--text-13);
+    --textArea-weight-label: var(--font-weight-semiBold);
+    --textArea-weight-placeholder: var(--font-weight-medium);
+    --textArea-weight-hasValue: var(--font-weight-medium);
+    --textArea-weight-helperText: var(--font-weight-regular);
+    --textArea-weight-characterLimit: var(--font-weight-medium);
+    /* colors */
+    --textArea-fg-label: var(--color-palette-fg-neutral-main);
+    --textArea-fg-label-required: var(--color-palette-fg-error-main);
+    --textArea-fg-placeholder: var(--color-palette-fg-neutral-mute);
+    --textArea-fg-hasValue: var(--color-palette-fg-neutral-black);
+    --textArea-fg-helperText: var(--color-palette-fg-neutral-light);
+    --textArea-fg-characterLimit: var(--color-palette-fg-neutral-soft);
+    --textArea-fg-error: var(--color-palette-fg-error-main);
+    --textArea-fg-disabled: var(--color-palette-fg-disabled-main);
+    --textArea-input-stroke-enabled: var(--color-palette-stroke-neutral-main);
+    --textArea-input-stroke-hovered: var(--color-palette-stroke-neutral-dark);
+    --textArea-input-stroke-focused: var(--color-palette-stroke-brand-dark);
+    --textArea-input-stroke-error: var(--color-palette-stroke-error-dark);
+    --textArea-stroke-disabled: var(--color-palette-stroke-disabled-main);
+    --textArea-input-bg: var(--color-palette-bg-layer-default);
+    --textArea-bg-disabled: var(--color-palette-bg-disabled-main);
 }
