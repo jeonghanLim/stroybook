@@ -6,6 +6,7 @@ export default {
   title: 'Example/Button',
   component: Button,
   tags: ['autodocs'],
+  args: { onClick: fn() },
 };
 
 export const normal = {

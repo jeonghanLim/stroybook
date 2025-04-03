@@ -10,7 +10,7 @@ export default {
 };
 
 export const star = {
-  render: (args)=><StarIcon {...args}/>,
+  render: (args)=><div className='w-24 h-24'><StarIcon {...args}/></div>,
   args: {
     size: 24,
     className: 'fill-material-blue-700',
@@ -18,7 +18,7 @@ export const star = {
 };
 
 export const information = {
-  render: (args)=><InformationLineIcon {...args}/>,
+  render: (args)=><div style={{width:'24px' , height:'24px'}}><InformationLineIcon {...args}/></div>,
   args: {
     size: 24,
   },
@@ -26,11 +26,11 @@ export const information = {
 
 export const angle = {
   render: (args)=>
-  <div style={{display:'flex'}}>
-    <AngleLeftIcon {...args}/>
-    <AngleRightIcon {...args}/>
-    <AngleUpIcon {...args}/>
-    <AngleDownIcon {...args}/>
+  <div className='flex items-center justify-center'>
+    <div style={{width:'24px' , height:'24px'}}><AngleLeftIcon {...args}/></div>
+    <div style={{width:'24px' , height:'24px'}}><AngleRightIcon {...args}/></div>
+    <div style={{width:'24px' , height:'24px'}}><AngleUpIcon {...args}/></div>
+    <div style={{width:'24px' , height:'24px'}}><AngleDownIcon {...args}/></div>
   </div>
   ,
   args: {
