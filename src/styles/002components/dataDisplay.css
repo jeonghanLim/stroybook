@@ -6,7 +6,7 @@
 
 @theme {
 
-    /* 21. LIST */
+    /* 29. LIST */
     /* ==================== */
 
     /* size */
@@ -36,7 +36,7 @@
     --listItem-bg-disabled: var(--color-palette-bg-disabled-main);
     --listItem-storke-disabled: var(--color-palette-stroke-disabled-main);
 
-    /* 25. DIVIDER */
+    /* 33. DIVIDER */
     /* ==================== */
 
     /* size */
@@ -64,7 +64,7 @@
     /* color */
     --divider-bg: var(--color-palette-bg-overlay-black-light);
 
-    /* 28. TABLE */
+    /* 36. TABLE */
     /* ==================== */
 
     /* font */
@@ -72,6 +72,16 @@
     --textCell-size-dense: var(--text-15);
     --textCell-weight: var(--font-weight-regular);
     --textCell-weight-title: var(--font-weight-semiBold);
+    /* color */
+    --textCell-fg: var(--color-palette-fg-neutral-main);
+    --textCell-fg-title: var(--color-palette-fg-neutral-soft);
+    --cell-fg-icon: var(--color-palette-fg-neutral-mute);
+    --row-bg: var(--color-palette-bg-overlay-white-light);
+    --row-bg-selected: var(--color-palette-bg-overlay-brand-light);
+    --row-bg-hover: var(--color-palette-bg-overlay-neutral-soft);
+    --rowHead-bg: var(--color-palette-bg-overlay-white-light);
+    --rowHead-bg-brand: var(--color-palette-bg-layer-floating);
+    --rowHead-bg-neutral: var(--color-palette-bg-layer-fill);
     /* size */
     --cell-gap: calc(var(--spacing) * 2);
     --cell-gap-dense: calc(var(--spacing) * 0);
@@ -83,14 +93,4 @@
     --cell-padding-checkBox-dense: calc(var(--spacing) * 8) calc(var(--spacing) * 8) calc(var(--spacing) * 8) calc(var(--spacing) * 8);
     --cell-padding: calc(var(--spacing) * 20) calc(var(--spacing) * 20) calc(var(--spacing) * 20) calc(var(--spacing) * 20);
     --cell-padding-dense: calc(var(--spacing) * 8) calc(var(--spacing) * 8) calc(var(--spacing) * 8) calc(var(--spacing) * 8);
-    /* color */
-    --textCell-fg: var(--color-palette-fg-neutral-main);
-    --textCell-fg-title: var(--color-palette-fg-neutral-soft);
-    --cell-fg-icon: var(--color-palette-fg-neutral-mute);
-    --row-bg: var(--color-palette-bg-overlay-white-light);
-    --row-bg-selected: var(--color-palette-bg-overlay-brand-light);
-    --row-bg-hover: var(--color-palette-bg-overlay-neutral-medium);
-    --rowHead-bg: var(--color-palette-bg-overlay-white-light);
-    --rowHead-bg-brand: var(--color-palette-bg-layer-floating);
-    --rowHead-bg-neutral: var(--color-palette-bg-layer-fill);
 }

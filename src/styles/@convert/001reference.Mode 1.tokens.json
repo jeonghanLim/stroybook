@@ -52,33 +52,33 @@
             "$value": "#f4f9fd"
           },
           "alpha": {
-            "002": {
+            "2": {
               "$type": "color",
               "$value": "#003d8805"
             },
-            "004": {
+            "4": {
               "$type": "color",
               "$value": "#003d880a"
             },
-            "008": {
+            "8": {
               "$type": "color",
               "$value": "#003d8814"
             },
-            "016": {
+            "16": {
               "$type": "color",
               "$value": "#003d8829"
             },
-            "024": {
+            "24": {
               "$type": "color",
               "$value": "#003d883d"
             },
-            "032": {
+            "32": {
               "$type": "color",
               "$value": "#003d8852"
             },
-            "048": {
+            "56": {
               "$type": "color",
-              "$value": "#003d887a"
+              "$value": "#003d888f"
             }
           }
         },
@@ -132,33 +132,33 @@
             "$value": "#f7f9fb"
           },
           "alpha": {
-            "002": {
+            "2": {
               "$type": "color",
               "$value": "#43505f05"
             },
-            "004": {
+            "4": {
               "$type": "color",
               "$value": "#43505f0a"
             },
-            "008": {
+            "8": {
               "$type": "color",
               "$value": "#43505f14"
             },
-            "016": {
+            "16": {
               "$type": "color",
               "$value": "#43505f29"
             },
-            "024": {
+            "24": {
               "$type": "color",
               "$value": "#43505f3d"
             },
-            "032": {
+            "32": {
               "$type": "color",
               "$value": "#43505f52"
             },
-            "048": {
+            "56": {
               "$type": "color",
-              "$value": "#43505f7a"
+              "$value": "#43505f8f"
             }
           }
         },
@@ -168,33 +168,33 @@
             "$value": "#000000"
           },
           "alpha": {
-            "002": {
+            "2": {
               "$type": "color",
               "$value": "#00000005"
             },
-            "004": {
+            "4": {
               "$type": "color",
               "$value": "#0000000a"
             },
-            "008": {
+            "8": {
               "$type": "color",
               "$value": "#00000014"
             },
-            "016": {
+            "16": {
               "$type": "color",
               "$value": "#00000029"
             },
-            "024": {
+            "24": {
               "$type": "color",
               "$value": "#0000003d"
             },
-            "032": {
+            "32": {
               "$type": "color",
               "$value": "#00000052"
             },
-            "048": {
+            "56": {
               "$type": "color",
-              "$value": "#0000007a"
+              "$value": "#0000008f"
             }
           }
         },
@@ -204,33 +204,33 @@
             "$value": "#ffffff"
           },
           "alpha": {
-            "002": {
+            "2": {
               "$type": "color",
               "$value": "#ffffff05"
             },
-            "004": {
+            "4": {
               "$type": "color",
               "$value": "#ffffff0a"
             },
-            "008": {
+            "8": {
               "$type": "color",
               "$value": "#ffffff14"
             },
-            "016": {
+            "16": {
               "$type": "color",
               "$value": "#ffffff29"
             },
-            "024": {
+            "24": {
               "$type": "color",
               "$value": "#ffffff3d"
             },
-            "032": {
+            "32": {
               "$type": "color",
               "$value": "#ffffff52"
             },
-            "048": {
+            "56": {
               "$type": "color",
-              "$value": "#ffffff7a"
+              "$value": "#ffffff8f"
             }
           }
         },
@@ -289,33 +289,33 @@
             "$description": "surface"
           },
           "alpha": {
-            "002": {
+            "2": {
               "$type": "color",
               "$value": "#cd1e1e05"
             },
-            "004": {
+            "4": {
               "$type": "color",
               "$value": "#cd1e1e0a"
             },
-            "008": {
+            "8": {
               "$type": "color",
               "$value": "#cd1e1e14"
             },
-            "016": {
+            "16": {
               "$type": "color",
               "$value": "#cd1e1e29"
             },
-            "024": {
+            "24": {
               "$type": "color",
               "$value": "#cd1e1e3d"
             },
-            "032": {
+            "32": {
               "$type": "color",
               "$value": "#cd1e1e52"
             },
-            "048": {
+            "56": {
               "$type": "color",
-              "$value": "#cd1e1e7a"
+              "$value": "#cd1e1e8f"
             }
           }
         },
@@ -374,33 +374,33 @@
             "$description": "surface"
           },
           "alpha": {
-            "002": {
+            "2": {
               "$type": "color",
               "$value": "#ffa23305"
             },
-            "004": {
+            "4": {
               "$type": "color",
               "$value": "#ffa2330a"
             },
-            "008": {
+            "8": {
               "$type": "color",
               "$value": "#ffa23314"
             },
-            "016": {
+            "16": {
               "$type": "color",
               "$value": "#ffa23329"
             },
-            "024": {
+            "24": {
               "$type": "color",
               "$value": "#ffa2333d"
             },
-            "032": {
+            "32": {
               "$type": "color",
               "$value": "#ffa23352"
             },
-            "048": {
+            "56": {
               "$type": "color",
-              "$value": "#ffa2337a"
+              "$value": "#ffa2338f"
             }
           }
         },
@@ -459,33 +459,33 @@
             "$description": "surface"
           },
           "alpha": {
-            "002": {
+            "2": {
               "$type": "color",
               "$value": "#27964205"
             },
-            "004": {
+            "4": {
               "$type": "color",
               "$value": "#2796420a"
             },
-            "008": {
+            "8": {
               "$type": "color",
               "$value": "#27964214"
             },
-            "016": {
+            "16": {
               "$type": "color",
               "$value": "#27964229"
             },
-            "024": {
+            "24": {
               "$type": "color",
               "$value": "#2796423d"
             },
-            "032": {
+            "32": {
               "$type": "color",
               "$value": "#27964252"
             },
-            "048": {
+            "56": {
               "$type": "color",
-              "$value": "#2796427a"
+              "$value": "#2796428f"
             }
           }
         },
@@ -544,33 +544,33 @@
             "$description": "surface"
           },
           "alpha": {
-            "002": {
+            "2": {
               "$type": "color",
               "$value": "#007bff05"
             },
-            "004": {
+            "4": {
               "$type": "color",
               "$value": "#007bff0a"
             },
-            "008": {
+            "8": {
               "$type": "color",
               "$value": "#007bff14"
             },
-            "016": {
+            "16": {
               "$type": "color",
               "$value": "#007bff29"
             },
-            "024": {
+            "24": {
               "$type": "color",
               "$value": "#007bff3d"
             },
-            "032": {
+            "32": {
               "$type": "color",
               "$value": "#007bff52"
             },
-            "048": {
+            "56": {
               "$type": "color",
-              "$value": "#007bff7a"
+              "$value": "#007bff8f"
             }
           }
         },
@@ -716,7 +716,7 @@
           "disabled": {
             "main": {
               "$type": "color",
-              "$value": "{color.color.material.black.alpha.008}"
+              "$value": "{color.color.material.black.alpha.8}"
             }
           },
           "layer": {
@@ -743,115 +743,147 @@
           },
           "overlay": {
             "brand": {
-              "dark": {
+              "deep": {
                 "$type": "color",
-                "$value": "{color.color.material.classicBlue.alpha.032}"
+                "$value": "{color.color.material.classicBlue.alpha.56}"
               },
-              "medium": {
+              "base": {
                 "$type": "color",
-                "$value": "{color.color.material.classicBlue.alpha.016}"
+                "$value": "{color.color.material.classicBlue.alpha.32}"
+              },
+              "soft": {
+                "$type": "color",
+                "$value": "{color.color.material.classicBlue.alpha.16}"
               },
               "light": {
                 "$type": "color",
-                "$value": "{color.color.material.classicBlue.alpha.008}"
+                "$value": "{color.color.material.classicBlue.alpha.8}"
               }
             },
             "neutral": {
-              "dark": {
+              "deep": {
                 "$type": "color",
-                "$value": "{color.color.material.classicblueGray.alpha.032}"
+                "$value": "{color.color.material.classicblueGray.alpha.56}"
               },
-              "medium": {
+              "base": {
                 "$type": "color",
-                "$value": "{color.color.material.classicblueGray.alpha.016}"
+                "$value": "{color.color.material.classicblueGray.alpha.32}"
+              },
+              "soft": {
+                "$type": "color",
+                "$value": "{color.color.material.classicblueGray.alpha.16}"
               },
               "light": {
                 "$type": "color",
-                "$value": "{color.color.material.classicblueGray.alpha.008}"
+                "$value": "{color.color.material.classicblueGray.alpha.8}"
               }
             },
             "white": {
-              "dark": {
+              "deep": {
                 "$type": "color",
-                "$value": "{color.color.material.white.alpha.032}"
+                "$value": "{color.color.material.white.alpha.56}"
               },
-              "medium": {
+              "base": {
                 "$type": "color",
-                "$value": "{color.color.material.white.alpha.016}"
+                "$value": "{color.color.material.white.alpha.32}"
+              },
+              "soft": {
+                "$type": "color",
+                "$value": "{color.color.material.white.alpha.16}"
               },
               "light": {
                 "$type": "color",
-                "$value": "{color.color.material.white.alpha.008}"
+                "$value": "{color.color.material.white.alpha.8}"
               }
             },
             "black": {
-              "dark": {
+              "deep": {
                 "$type": "color",
-                "$value": "{color.color.material.black.alpha.032}"
+                "$value": "{color.color.material.black.alpha.56}"
               },
-              "medium": {
+              "base": {
                 "$type": "color",
-                "$value": "{color.color.material.black.alpha.016}"
+                "$value": "{color.color.material.black.alpha.32}"
+              },
+              "soft": {
+                "$type": "color",
+                "$value": "{color.color.material.black.alpha.16}"
               },
               "light": {
                 "$type": "color",
-                "$value": "{color.color.material.black.alpha.008}"
+                "$value": "{color.color.material.black.alpha.8}"
               }
             },
             "error": {
-              "dark": {
+              "deep": {
                 "$type": "color",
-                "$value": "{color.color.material.red.alpha.032}"
+                "$value": "{color.color.material.red.alpha.56}"
               },
-              "medium": {
+              "base": {
                 "$type": "color",
-                "$value": "{color.color.material.red.alpha.016}"
+                "$value": "{color.color.material.red.alpha.32}"
+              },
+              "soft": {
+                "$type": "color",
+                "$value": "{color.color.material.red.alpha.16}"
               },
               "light": {
                 "$type": "color",
-                "$value": "{color.color.material.red.alpha.008}"
+                "$value": "{color.color.material.red.alpha.8}"
               }
             },
             "warning": {
-              "dark": {
+              "deep": {
                 "$type": "color",
-                "$value": "{color.color.material.yellow.alpha.032}"
+                "$value": "{color.color.material.yellow.alpha.56}"
               },
-              "medium": {
+              "base": {
                 "$type": "color",
-                "$value": "{color.color.material.yellow.alpha.016}"
+                "$value": "{color.color.material.yellow.alpha.32}"
+              },
+              "soft": {
+                "$type": "color",
+                "$value": "{color.color.material.yellow.alpha.16}"
               },
               "light": {
                 "$type": "color",
-                "$value": "{color.color.material.yellow.alpha.008}"
+                "$value": "{color.color.material.yellow.alpha.8}"
               }
             },
             "info": {
-              "dark": {
+              "deep": {
                 "$type": "color",
-                "$value": "{color.color.material.blue.alpha.032}"
+                "$value": "{color.color.material.blue.alpha.56}"
               },
-              "medium": {
+              "base": {
                 "$type": "color",
-                "$value": "{color.color.material.blue.alpha.016}"
+                "$value": "{color.color.material.blue.alpha.32}"
+              },
+              "soft": {
+                "$type": "color",
+                "$value": "{color.color.material.blue.alpha.16}"
               },
               "light": {
                 "$type": "color",
-                "$value": "{color.color.material.blue.alpha.008}"
+                "$value": "{color.color.material.blue.alpha.8}"
               }
             },
             "success": {
-              "dark": {
+              "deep": {
                 "$type": "color",
-                "$value": "{color.color.material.green.alpha.032}"
+                "$value": "{color.color.material.green.alpha.56}"
               },
-              "medium": {
+              "base": {
                 "$type": "color",
-                "$value": "{color.color.material.green.alpha.016}"
+                "$value": "{color.color.material.green.alpha.32}"
+              },
+              "soft": {
+                "$type": "color",
+                "$value": "{color.color.material.green.alpha.16}"
               },
               "light": {
                 "$type": "color",
-                "$value": "{color.color.material.green.alpha.008}"
+                "$value": "{color.color.material.green.alpha.8}"
               }
             }
           }
@@ -972,7 +1004,7 @@
           "disabled": {
             "main": {
               "$type": "color",
-              "$value": "{color.color.material.black.alpha.024}"
+              "$value": "{color.color.material.black.alpha.24}"
             }
           },
           "placeholder": {
@@ -1070,7 +1102,7 @@
           "disabled": {
             "main": {
               "$type": "color",
-              "$value": "{color.color.material.black.alpha.008}"
+              "$value": "{color.color.material.black.alpha.8}"
             }
           }
         },
@@ -1464,6 +1496,38 @@
       "214": {
         "$type": "dimension",
         "$value": "214px"
+      },
+      "240": {
+        "$type": "dimension",
+        "$value": "240px"
+      },
+      "320": {
+        "$type": "dimension",
+        "$value": "320px"
+      },
+      "400": {
+        "$type": "dimension",
+        "$value": "400px"
+      },
+      "480": {
+        "$type": "dimension",
+        "$value": "480px"
+      },
+      "640": {
+        "$type": "dimension",
+        "$value": "640px"
+      },
+      "800": {
+        "$type": "dimension",
+        "$value": "800px"
+      },
+      "1080": {
+        "$type": "dimension",
+        "$value": "1080px"
+      },
+      "1280": {
+        "$type": "dimension",
+        "$value": "1280px"
       }
     }
   }
