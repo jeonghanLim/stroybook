@@ -367,6 +367,7 @@
     /* ==================== */
 
     /* size */
+    --textArea-minHeight: calc(var(--spacing) * 144);
     --textArea-labelTop-gap: calc(var(--spacing) * 2);
     --textArea-labelLeft-width: calc(var(--spacing) * 168);
     --textArea-labelLeft-gap: calc(var(--spacing) * 2);
