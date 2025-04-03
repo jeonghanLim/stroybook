@@ -747,6 +747,10 @@
                 "$type": "color",
                 "$value": "{color.color.material.classicBlue.alpha.032}"
               },
+              "medium": {
+                "$type": "color",
+                "$value": "{color.color.material.classicBlue.alpha.016}"
+              },
               "light": {
                 "$type": "color",
                 "$value": "{color.color.material.classicBlue.alpha.008}"
@@ -756,6 +760,10 @@
               "dark": {
                 "$type": "color",
                 "$value": "{color.color.material.classicblueGray.alpha.032}"
+              },
+              "medium": {
+                "$type": "color",
+                "$value": "{color.color.material.classicblueGray.alpha.016}"
               },
               "light": {
                 "$type": "color",
@@ -767,6 +775,10 @@
                 "$type": "color",
                 "$value": "{color.color.material.white.alpha.032}"
               },
+              "medium": {
+                "$type": "color",
+                "$value": "{color.color.material.white.alpha.016}"
+              },
               "light": {
                 "$type": "color",
                 "$value": "{color.color.material.white.alpha.008}"
@@ -776,6 +788,10 @@
               "dark": {
                 "$type": "color",
                 "$value": "{color.color.material.black.alpha.032}"
+              },
+              "medium": {
+                "$type": "color",
+                "$value": "{color.color.material.black.alpha.016}"
               },
               "light": {
                 "$type": "color",
@@ -787,6 +803,10 @@
                 "$type": "color",
                 "$value": "{color.color.material.red.alpha.032}"
               },
+              "medium": {
+                "$type": "color",
+                "$value": "{color.color.material.red.alpha.016}"
+              },
               "light": {
                 "$type": "color",
                 "$value": "{color.color.material.red.alpha.008}"
@@ -796,6 +816,10 @@
               "dark": {
                 "$type": "color",
                 "$value": "{color.color.material.yellow.alpha.032}"
+              },
+              "medium": {
+                "$type": "color",
+                "$value": "{color.color.material.yellow.alpha.016}"
               },
               "light": {
                 "$type": "color",
@@ -807,6 +831,10 @@
                 "$type": "color",
                 "$value": "{color.color.material.blue.alpha.032}"
               },
+              "medium": {
+                "$type": "color",
+                "$value": "{color.color.material.blue.alpha.016}"
+              },
               "light": {
                 "$type": "color",
                 "$value": "{color.color.material.blue.alpha.008}"
@@ -816,6 +844,10 @@
               "dark": {
                 "$type": "color",
                 "$value": "{color.color.material.green.alpha.032}"
+              },
+              "medium": {
+                "$type": "color",
+                "$value": "{color.color.material.green.alpha.016}"
               },
               "light": {
                 "$type": "color",
@@ -1126,6 +1158,10 @@
       "16": {
         "$type": "dimension",
         "$value": "16px"
+      },
+      "17": {
+        "$type": "dimension",
+        "$value": "17px"
       },
       "18": {
         "$type": "dimension",

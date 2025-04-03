@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+"use client";
+
+import React from 'react';
 import PropTypes from 'prop-types';
 
 export const TextField = ({
   name
+  , value 
   , type
   , label
   , labelLeft = false
@@ -13,16 +16,14 @@ export const TextField = ({
   , placeholder
   , helperText
   , onChange
-  , readonly = false
+  , readOnly = false
   , startIcon
   , endIcon
   , ...props
 }) => {
-  const [value, setValue] = useState('');
 
   const handleChange = (e) => {
     const newValue = e.target.value;
-    setValue(newValue);
     onChange && onChange(newValue);
     console.log(newValue);
   };
@@ -57,11 +58,10 @@ export const TextField = ({
             type={type}
             name={name}
             disabled={disabled}
-            error={error}
             placeholder={placeholder}
             value={value}
             onChange={handleChange}
-            readonly={readonly}
+            readOnly={readOnly}
             {...props}
           />
           {endIcon &&
@@ -76,6 +76,7 @@ export const TextField = ({
 
 TextField.propTypes = {
   name: PropTypes.string,
+  value: PropTypes.string,
   type: PropTypes.oneOf(['text', 'password']),
   label: PropTypes.string,
   labelLeft: PropTypes.bool,
@@ -92,6 +93,7 @@ TextField.propTypes = {
 };
 
 TextField.defaultProps = {
+  value: '',
   type: 'text',
   label: 'label',
   labelLeft: false,
@@ -101,5 +103,5 @@ TextField.defaultProps = {
   required: false,
   placeholder: 'Placeholder',
   helperText: 'HelperText',
-  readonly: false,
+  readOnly: false,
 };

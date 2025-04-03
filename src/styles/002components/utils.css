@@ -6,16 +6,17 @@
 
 @theme {
 
-    /* 28. CSSBASELINE */
+    /* 36. SCROLLBAR */
     /* ==================== */
 
-    /* scrollbar */
-    --scrollbar-fg-arrow-disabled: var(--color-palette-fg-disabled-main);
     --scrollbar-fg-arrow: var(--color-palette-fg-neutral-soft);
     --scrollbar-fg-square: var(--color-palette-fg-neutral-mute);
     --scrollbar-bg: var(--color-palette-bg-layer-fill);
+    --scrollbar-fg-disabled: var(--color-palette-fg-disabled-main);
+    --scrollbar-bg-disabled: var(--color-palette-bg-disabled-main);
+    --scrollbar-stroke-disabled: var(--color-palette-stroke-disabled-main);
 
-    /* 30. INTERACTION */
+    /* 37. INTERACTION */
     /* ==================== */
 
     --overlay-brand-light: var(--color-palette-bg-overlay-brand-light);

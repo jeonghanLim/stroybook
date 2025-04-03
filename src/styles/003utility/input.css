@@ -9,18 +9,44 @@
 /* ===================== */
 /* BTN                   */
 /* ===================== */
+@layer components {
+    /* 2. Button */
+    .btn { 
+        border-radius: var(--btn-radius);
+        @apply    
+        relative 
+        cursor-pointer 
+        whitespace-nowrap 
+    }
+    .btn, .btn-base, .btn-mask-box { 
+        @apply 
+        flex 
+        items-center 
+        justify-center 
+        
+    }
+    .btn:focus { @apply outline-0 }
+    .btn, .btn-base { @apply  w-fit }
+    .btn.disabled { 
+        color: var(--btn-fg-disabled);
+        @apply cursor-default 
+    }
 
-@utility btn-size-* {
-    padding: --value(--btn-padding-*);
-    font-size: --value(--font-size-*);
-    font-weight: --value(--font-weight-*);
+}
 
-    & .btn-base {
+@utility btn-size-* { 
+    padding : --value(--btn-padding-*);
+    font-size : --value(--btn-font-size-*);
+    font-weight : --value(--btn-font-weight-*);
+    & .btn-base{
         height: --value(--btn-base-height-*);
         gap: --value(--btn-base-gap-*);
-
-        & .btn-mask-box {
-            width: --value(--btn-mask-box-w-*);
+        & .btn-mask-box{
+            width: --value(--btn-maskIcon-width-*);
+            & .icon-box{
+                width: --value(--btn-icon-*);
+                height: --value(--btn-icon-*);
+            }
         }
     }
 }
@@ -45,16 +71,15 @@
     }
 
     &.disabled {
-        background-color: --value(--btn-contained-bg-*-disabled);
-        color: --value(--btn-contained-fg-*-disabled);
+        background-color: var(--btn-fg-disabled);
     }
 }
 
-@utility btn-outlined-color-* {
-    background-color: --value(--btn-outlined-bg-*);
-    color: --value(--btn-outlined-fg-*);
-    border: 1px solid;
-    border-color: --value(--btn-outlined-stroke-*);
+@utility btn-outlined-color-* { 
+    background-color : --value(--btn-outlined-bg-*);
+    color : --value(--btn-outlined-fg-*);
+    border : var(--btn-border);
+    border-color : --value(--btn-outlined-stroke-*);
 
     &:hover {
         background-color: --value(--btn-outlined-bg-*-hover);
@@ -69,8 +94,7 @@
     }
 
     &.disabled {
-        color: --value(--btn-outlined-fg-*-disabled);
-        border-color: --value(--btn-outlined-stroke-*-disabled);
+        border-color: var(--btn-storke-disabled);
         background-color: transparent !important;
     }
 }
@@ -91,7 +115,6 @@
     }
 
     &.disabled {
-        color: --value(--btn-text-fg-*-disabled);
         background-color: transparent !important;
     }
 }
@@ -130,19 +153,19 @@
         box-sizing: border-box;
         height: var(--textField-input-height);
         border-radius: var(--textField-input-radius);
-        outline: var(--textField-input-border1) solid;
+        outline: var(--textField-input-border-thin) solid;
         outline-color: var(--textField-input-stroke-enabled);
         background-color: var(--textField-input-bg);
-        padding: var(--textField-input);
+        padding: var(--textField-input-padding);
         gap: var(--textField-contents-gap);
 
         &:hover {
-            outline: var(--textField-input-border3) solid;
+            outline: var(--textField-input-border-bold) solid;
             outline-color: var(--textField-input-stroke-hovered);
         }
 
         &:focus-within {
-            outline: var(--textField-input-border3) solid;
+            outline: var(--textField-input-border-bold) solid;
             outline-color: var(--textField-input-stroke-focused);
         }
 
@@ -154,6 +177,7 @@
 
         & .input-icon {
             width: var(--textField-input-icon);
+            height: var(--textField-input-icon);
             color: var(--textField-fg-placeholder);
         }
     }
@@ -163,7 +187,7 @@
         font-weight: var(--textField-weight-label);
         display: flex;
         gap: var(--textField-labelTop-gap);
-        padding: var(--textField-labelTop);
+        padding: var(--textField-labelTop-padding);
         color: var(--textField-fg-label);
 
         .required-marker {
@@ -177,7 +201,7 @@
         width: var(--textField-labelLeft-width);
         display: flex;
         gap: var(--textField-labelLeft-gap);
-        padding: var(--textField-labelLeft);
+        padding: var(--textField-labelLeft-padding);
         color: var(--textField-fg-label);
 
         .required-marker {
@@ -189,7 +213,7 @@
         font-size: var(--textField-size-helperText);
         font-weight: var(--textField-weight-placeholder);
         color: var(--textField-fg-helperText);
-        padding: var(--textField-helperText);
+        padding: var(--textField-helperText-padding);
     }
 
     .textfield-wrapper {
@@ -202,6 +226,7 @@
         } 
 
         &:has(.textfield-base input:disabled) {
+            cursor: not-allowed; 
             .textfield-base {
                 background-color: var(--textField-bg-disabled);
                 outline-color: var(--textField-stroke-disabled);
@@ -231,7 +256,7 @@
 
         &.error {
             .textfield-base {
-                outline: var(--textField-input-border3) solid;
+                outline: var(--textField-input-border-bold) solid;
                 outline-color: var(--textField-input-stroke-error);
             }
 

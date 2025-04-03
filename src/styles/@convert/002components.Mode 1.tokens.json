@@ -24,7 +24,7 @@
         },
         "--btn-padding-lg-x": {
           "$type": "dimension",
-          "$value": "{size.spacing.20}"
+          "$value": "{size.spacing.16}"
         },
         "--btn-icon-sm": {
           "$type": "dimension",
@@ -524,7 +524,7 @@
         },
         "--checkBox-base-border": {
           "$type": "dimension",
-          "$value": "{size.border.001}"
+          "$value": "{size.border.002}"
         },
         "--checkBox-base-radius": {
           "$type": "dimension",
@@ -545,6 +545,14 @@
         "--checkBox-base-height-lg": {
           "$type": "dimension",
           "$value": "{size.spacing.24}"
+        },
+        "--checkBox-icon-lg": {
+          "$type": "dimension",
+          "$value": "{size.icon.24}"
+        },
+        "--checkBox-icon-md": {
+          "$type": "dimension",
+          "$value": "{size.icon.20}"
         },
         "--checkLabel-gap-lg": {
           "$type": "dimension",
@@ -577,14 +585,6 @@
         "--checkGroup-group-md-xLeft": {
           "$type": "dimension",
           "$value": "{size.spacing.20}"
-        },
-        "--checkBox-icon-lg": {
-          "$type": "dimension",
-          "$value": "{size.icon.24}"
-        },
-        "--checkBox-icon-md": {
-          "$type": "dimension",
-          "$value": "{size.icon.20}"
         }
       },
       "font": {
@@ -778,7 +778,7 @@
           "$type": "color",
           "$value": "{color.color.palette.bg.overlay.info.light}"
         },
-        "--checkBox-bg-error-info": {
+        "--checkBox-bg-info-active": {
           "$type": "color",
           "$value": "{color.color.palette.bg.overlay.info.light}"
         },
@@ -834,7 +834,7 @@
           "$type": "color",
           "$value": "{color.color.palette.fg.error.main}"
         },
-        "--check-bg-error-wait": {
+        "--check-bg-wait-error": {
           "$type": "color",
           "$value": "{color.color.palette.bg.error.light.default}"
         },
@@ -842,7 +842,7 @@
           "$type": "color",
           "$value": "{color.color.palette.fg.warning.main}"
         },
-        "--check-bg-warning-wait": {
+        "--check-bg-wait-warning": {
           "$type": "color",
           "$value": "{color.color.palette.bg.warning.light.default}"
         },
@@ -850,7 +850,7 @@
           "$type": "color",
           "$value": "{color.color.palette.fg.info.main}"
         },
-        "--check-bg-info-wait": {
+        "--check-bg-wait-info": {
           "$type": "color",
           "$value": "{color.color.palette.bg.info.light.default}"
         },
@@ -858,7 +858,7 @@
           "$type": "color",
           "$value": "{color.color.palette.fg.success.main}"
         },
-        "--check-bg-success-wait": {
+        "--check-bg-wait-success": {
           "$type": "color",
           "$value": "{color.color.palette.bg.success.light.default}"
         },
@@ -949,6 +949,22 @@
         "--radioGroup-gap-md": {
           "$type": "dimension",
           "$value": "{size.spacing.12}"
+        },
+        "--radioGroup-group-verticalGap-lg": {
+          "$type": "dimension",
+          "$value": "{size.spacing.20}"
+        },
+        "--radioGroup-group-verticalGap-md": {
+          "$type": "dimension",
+          "$value": "{size.spacing.12}"
+        },
+        "--radioGroup-group-horizontalGap-lg": {
+          "$type": "dimension",
+          "$value": "{size.spacing.32}"
+        },
+        "--radioGroup-group-horizontalGap-md": {
+          "$type": "dimension",
+          "$value": "{size.spacing.20}"
         }
       },
       "font": {
@@ -1006,29 +1022,149 @@
           "$type": "color",
           "$value": "{color.color.palette.stroke.disabled.main}"
         },
-        "--radio-base-stroke": {
+        "--radio-stroke-brand": {
           "$type": "color",
-          "$value": "{color.color.palette.stroke.neutral.light}"
+          "$value": "{color.color.palette.stroke.brand.dark}"
         },
-        "--radio-base-bg": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.overlay.white.light}"
-        },
-        "--radio-base-fg-brand": {
+        "--radio-fg-brand": {
           "$type": "color",
           "$value": "{color.color.palette.fg.brand.main}"
         },
-        "--radio-base-fg-neutral": {
+        "--radio-bg-brand": {
           "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.main}"
+          "$value": "{color.color.palette.bg.overlay.white.light}"
         },
-        "--radio-layer-brand": {
+        "--radio-bg-brand-hover": {
           "$type": "color",
           "$value": "{color.color.palette.bg.overlay.brand.light}"
         },
-        "--radio-layer-neutral": {
+        "--radio-bg-brand-focus": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.brand.light}"
+        },
+        "--radio-bg-brand-active": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.brand.light}"
+        },
+        "--radio-stroke-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.neutral.main}"
+        },
+        "--radio-fg-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.main}"
+        },
+        "--radio-bg-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.white.light}"
+        },
+        "--radio-bg-neutral-hover": {
           "$type": "color",
           "$value": "{color.color.palette.bg.overlay.neutral.light}"
+        },
+        "--radio-bg-neutral-focus": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.neutral.light}"
+        },
+        "--radio-bg-neutral-active": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.neutral.light}"
+        },
+        "--radio-stroke-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.error.main}"
+        },
+        "--radio-fg-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.error.main}"
+        },
+        "--radio-bg-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.white.light}"
+        },
+        "--radio-bg-error-hover": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.error.light}"
+        },
+        "--radio-bg-error-focus": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.error.light}"
+        },
+        "--radio-bg-error-active": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.error.light}"
+        },
+        "--radio-stroke-warning": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.warning.main}"
+        },
+        "--radio-fg-warning": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.warning.main}"
+        },
+        "--radio-bg-warning": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.white.light}"
+        },
+        "--radio-bg-warning-hover": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.warning.light}"
+        },
+        "--radio-bg-warning-focus": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.warning.light}"
+        },
+        "--radio-bg-warning-active": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.warning.light}"
+        },
+        "--radio-stroke-info": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.info.main}"
+        },
+        "--radio-fg-info": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.info.main}"
+        },
+        "--radio-bg-info": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.white.light}"
+        },
+        "--radio-bg-info-hover": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.info.light}"
+        },
+        "--radio-bg-info-focus": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.info.light}"
+        },
+        "--radio-bg-info-active": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.info.light}"
+        },
+        "--radio-stroke-success": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.success.main}"
+        },
+        "--radio-fg-success": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.success.main}"
+        },
+        "--radio-bg-success": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.white.light}"
+        },
+        "--radio-bg-success-hover": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.success.light}"
+        },
+        "--radio-bg-success-focus": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.success.light}"
+        },
+        "--radio-bg-success-active": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.success.light}"
         },
         "--radioLabel-fg": {
           "$type": "color",
@@ -1054,23 +1190,23 @@
           "$type": "dimension",
           "$value": "{size.spacing.168}"
         },
-        "--textField-labelLeft-y": {
-          "$type": "dimension",
-          "$value": "{size.spacing.4}"
-        },
         "--textField-labelLeft-gap": {
           "$type": "dimension",
           "$value": "{size.spacing.2}"
         },
-        "--textField-labelLeft-xRight": {
-          "$type": "dimension",
-          "$value": "{size.spacing.8}"
-        },
-        "--textField-labelTop-x": {
+        "--textField-labelLeft-padding-xRight": {
           "$type": "dimension",
           "$value": "{size.spacing.4}"
         },
-        "--textField-labelTop-yBottom": {
+        "--textField-labelLeft-padding-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.2}"
+        },
+        "--textField-labelTop-padding-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.4}"
+        },
+        "--textField-labelTop-padding-yBottom": {
           "$type": "dimension",
           "$value": "{size.spacing.4}"
         },
@@ -1078,11 +1214,11 @@
           "$type": "dimension",
           "$value": "{size.spacing.2}"
         },
-        "--textField-helperText-x": {
+        "--textField-helperText-padding-x": {
           "$type": "dimension",
           "$value": "{size.spacing.4}"
         },
-        "--textField-helperText-yTop": {
+        "--textField-helperText-padding-yTop": {
           "$type": "dimension",
           "$value": "{size.spacing.4}"
         },
@@ -1094,7 +1230,7 @@
           "$type": "dimension",
           "$value": "{size.spacing.40}"
         },
-        "--textField-input-x": {
+        "--textField-input-padding-x": {
           "$type": "dimension",
           "$value": "{size.spacing.12}"
         },
@@ -1102,13 +1238,13 @@
           "$type": "dimension",
           "$value": "{size.radius.004}"
         },
-        "--textField-input-border1": {
+        "--textField-input-border-thin": {
           "$type": "dimension",
           "$value": "{size.border.001}"
         },
-        "--textField-input-border3": {
+        "--textField-input-border-bold": {
           "$type": "dimension",
-          "$value": "{size.border.003}"
+          "$value": "{size.border.002}"
         },
         "--textField-contents-gap": {
           "$type": "dimension",
@@ -1126,27 +1262,27 @@
       "font": {
         "--textField-size-label": {
           "$type": "dimension",
-          "$value": "{font.text.13}"
+          "$value": "{font.text.14}"
         },
         "--textField-size-label-dense": {
           "$type": "dimension",
-          "$value": "{font.text.11}"
+          "$value": "{font.text.12}"
         },
         "--textField-size-placeholder": {
           "$type": "dimension",
-          "$value": "{font.text.16}"
+          "$value": "{font.text.17}"
         },
         "--textField-size-placeholder-dense": {
           "$type": "dimension",
-          "$value": "{font.text.14}"
+          "$value": "{font.text.15}"
         },
         "--textField-size-hasValue": {
           "$type": "dimension",
-          "$value": "{font.text.16}"
+          "$value": "{font.text.17}"
         },
         "--textField-size-hasValue-dense": {
           "$type": "dimension",
-          "$value": "{font.text.14}"
+          "$value": "{font.text.15}"
         },
         "--textField-size-helperText": {
           "$type": "dimension",
@@ -1167,33 +1303,13 @@
         "--textField-weight-hasValue": {
           "$type": "dimension",
           "$value": "{font.font.weight.medium}"
+        },
+        "--textField-weight-helperText": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.regular}"
         }
       },
       "colors": {
-        "--textField-input-bg": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.layer.default}"
-        },
-        "--textField-input-icon-fg": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.light}"
-        },
-        "--textField-input-stroke-enabled": {
-          "$type": "color",
-          "$value": "{color.color.palette.stroke.neutral.main}"
-        },
-        "--textField-input-stroke-hovered": {
-          "$type": "color",
-          "$value": "{color.color.palette.stroke.neutral.main}"
-        },
-        "--textField-input-stroke-focused": {
-          "$type": "color",
-          "$value": "{color.color.palette.stroke.brand.dark}"
-        },
-        "--textField-input-stroke-error": {
-          "$type": "color",
-          "$value": "{color.color.palette.stroke.error.dark}"
-        },
         "--textField-fg-label": {
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.main}"
@@ -1210,25 +1326,225 @@
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.black}"
         },
+        "--textField-fg-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.error.main}"
+        },
+        "--textField-fg-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.disabled.main}"
+        },
+        "--textField-input-icon-fg": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.light}"
+        },
         "--textField-fg-helperText": {
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.light}"
         },
-        "--textField-fg-error": {
+        "--textField-input-bg": {
           "$type": "color",
-          "$value": "{color.color.palette.fg.error.main}"
+          "$value": "{color.color.palette.bg.layer.default}"
         },
         "--textField-bg-disabled": {
           "$type": "color",
           "$value": "{color.color.palette.bg.disabled.main}"
         },
+        "--textField-input-stroke-enabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.neutral.main}"
+        },
+        "--textField-input-stroke-hovered": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.neutral.dark}"
+        },
+        "--textField-input-stroke-focused": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.brand.dark}"
+        },
+        "--textField-input-stroke-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.error.dark}"
+        },
         "--textField-stroke-disabled": {
           "$type": "color",
           "$value": "{color.color.palette.stroke.disabled.main}"
+        }
+      }
+    },
+    "textArea": {
+      "size": {
+        "--textArea-labelTop-padding-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.4}"
         },
-        "--textField-fg-disabled": {
+        "--textArea-labelTop-padding-yBottom": {
+          "$type": "dimension",
+          "$value": "{size.spacing.4}"
+        },
+        "--textArea-labelTop-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.2}"
+        },
+        "--textArea-labelLeft-width": {
+          "$type": "dimension",
+          "$value": "{size.spacing.168}"
+        },
+        "--textArea-labelLeft-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.2}"
+        },
+        "--textArea-labelLeft-padding-xRight": {
+          "$type": "dimension",
+          "$value": "{size.spacing.4}"
+        },
+        "--textArea-labelLeft-padding-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.2}"
+        },
+        "--textArea-bottomRow-padding-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.4}"
+        },
+        "--textArea-bottomRow-padding-yTop": {
+          "$type": "dimension",
+          "$value": "{size.spacing.4}"
+        },
+        "--textArea-bottomRow-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
+        },
+        "--textArea-input-padding-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.12}"
+        },
+        "--textArea-input-padding-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.12}"
+        },
+        "--textArea-input-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.4}"
+        },
+        "--textArea-input-radius": {
+          "$type": "dimension",
+          "$value": "{size.radius.004}"
+        },
+        "--textArea-input-border-thin": {
+          "$type": "dimension",
+          "$value": "{size.border.001}"
+        },
+        "--textArea-input-border-bold": {
+          "$type": "dimension",
+          "$value": "{size.border.002}"
+        },
+        "--textArea-minHeight": {
+          "$type": "dimension",
+          "$value": "{size.spacing.144}"
+        }
+      },
+      "font": {
+        "--textArea-size-label": {
+          "$type": "dimension",
+          "$value": "{font.text.14}"
+        },
+        "--textArea-size-placeholder": {
+          "$type": "dimension",
+          "$value": "{font.text.17}"
+        },
+        "--textArea-size-hasValue": {
+          "$type": "dimension",
+          "$value": "{font.text.17}"
+        },
+        "--textArea-size-helperText": {
+          "$type": "dimension",
+          "$value": "{font.text.13}"
+        },
+        "--textArea-size-characterLimit": {
+          "$type": "dimension",
+          "$value": "{font.text.13}"
+        },
+        "--textArea-weight-label": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.semiBold}"
+        },
+        "--textArea-weight-placeholder": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.medium}"
+        },
+        "--textArea-weight-hasValue": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.medium}"
+        },
+        "--textArea-weight-helperText": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.regular}"
+        },
+        "--textArea-weight-characterLimit": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.medium}"
+        }
+      },
+      "colors": {
+        "--textArea-fg-label": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.main}"
+        },
+        "--textArea-fg-label-required": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.error.main}"
+        },
+        "--textArea-fg-placeholder": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.mute}"
+        },
+        "--textArea-fg-hasValue": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.black}"
+        },
+        "--textArea-fg-helperText": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.light}"
+        },
+        "--textArea-fg-characterLimit": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.soft}"
+        },
+        "--textArea-fg-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.error.main}"
+        },
+        "--textArea-fg-disabled": {
           "$type": "color",
           "$value": "{color.color.palette.fg.disabled.main}"
+        },
+        "--textArea-input-stroke-enabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.neutral.main}"
+        },
+        "--textArea-input-stroke-hovered": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.neutral.dark}"
+        },
+        "--textArea-input-stroke-focused": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.brand.dark}"
+        },
+        "--textArea-input-stroke-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.error.dark}"
+        },
+        "--textArea-stroke-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.disabled.main}"
+        },
+        "--textArea-input-bg": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.layer.default}"
+        },
+        "--textArea-bg-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.disabled.main}"
         }
       }
     }
@@ -1435,6 +1751,122 @@
           "$value": "{color.color.palette.bg.overlay.black.light}"
         }
       }
+    },
+    "table": {
+      "font": {
+        "--textCell-size": {
+          "$type": "dimension",
+          "$value": "{font.text.17}"
+        },
+        "--textCell-size-dense": {
+          "$type": "dimension",
+          "$value": "{font.text.15}"
+        },
+        "--textCell-weight": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.regular}"
+        },
+        "--textCell-weight-title": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.semiBold}"
+        }
+      },
+      "size": {
+        "--cell-padding-checkBox-xRight": {
+          "$type": "dimension",
+          "$value": "{size.spacing.20}"
+        },
+        "--cell-padding-checkBox-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.20}"
+        },
+        "--cell-padding-checkBox-dense-xRight": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
+        },
+        "--cell-padding-checkBox-dense-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
+        },
+        "--cell-padding-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.20}"
+        },
+        "--cell-padding-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.20}"
+        },
+        "--cell-padding-dense-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
+        },
+        "--cell-padding-dense-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
+        },
+        "--cell-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.2}"
+        },
+        "--cell-gap-dense": {
+          "$type": "dimension",
+          "$value": "{size.spacing.0}"
+        },
+        "--cell-base-size": {
+          "$type": "dimension",
+          "$value": "{size.spacing.24}"
+        },
+        "--cell-base-size-dense": {
+          "$type": "dimension",
+          "$value": "{size.spacing.20}"
+        },
+        "--cell-maskedIcon-size": {
+          "$type": "dimension",
+          "$value": "{size.spacing.24}"
+        },
+        "--cell-maskedIcon-size-dense": {
+          "$type": "dimension",
+          "$value": "{size.spacing.20}"
+        }
+      },
+      "color": {
+        "--textCell-fg": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.main}"
+        },
+        "--textCell-fg-title": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.soft}"
+        },
+        "--cell-fg-icon": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.mute}"
+        },
+        "--row-bg": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.white.light}"
+        },
+        "--row-bg-selected": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.brand.light}"
+        },
+        "--row-bg-hover": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.neutral.medium}"
+        },
+        "--rowHead-bg": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.white.light}"
+        },
+        "--rowHead-bg-brand": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.layer.floating}"
+        },
+        "--rowHead-bg-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.layer.fill}"
+        }
+      }
     }
   },
   "navigation": {
@@ -1540,24 +1972,30 @@
     }
   },
   "utils": {
-    "cssBaseline": {
-      "scrollbar": {
-        "--scrollbar-fg-arrow-disabled": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.disabled.main}"
-        },
-        "--scrollbar-fg-arrow": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.soft}"
-        },
-        "--scrollbar-fg-square": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.mute}"
-        },
-        "--scrollbar-bg": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.layer.fill}"
-        }
+    "scrollbar": {
+      "--scrollbar-fg-arrow": {
+        "$type": "color",
+        "$value": "{color.color.palette.fg.neutral.soft}"
+      },
+      "--scrollbar-fg-square": {
+        "$type": "color",
+        "$value": "{color.color.palette.fg.neutral.mute}"
+      },
+      "--scrollbar-bg": {
+        "$type": "color",
+        "$value": "{color.color.palette.bg.layer.fill}"
+      },
+      "--scrollbar-fg-disabled": {
+        "$type": "color",
+        "$value": "{color.color.palette.fg.disabled.main}"
+      },
+      "--scrollbar-bg-disabled": {
+        "$type": "color",
+        "$value": "{color.color.palette.bg.disabled.main}"
+      },
+      "--scrollbar-stroke-disabled": {
+        "$type": "color",
+        "$value": "{color.color.palette.stroke.disabled.main}"
       }
     },
     "interaction": {
