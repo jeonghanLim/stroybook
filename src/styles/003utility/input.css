@@ -153,19 +153,19 @@
         box-sizing: border-box;
         height: var(--textField-input-height);
         border-radius: var(--textField-input-radius);
-        outline: var(--textField-input-border1) solid;
+        outline: var(--textField-input-border-thin) solid;
         outline-color: var(--textField-input-stroke-enabled);
         background-color: var(--textField-input-bg);
-        padding: var(--textField-input);
+        padding: var(--textField-input-padding);
         gap: var(--textField-contents-gap);
 
         &:hover {
-            outline: var(--textField-input-border3) solid;
+            outline: var(--textField-input-border-bold) solid;
             outline-color: var(--textField-input-stroke-hovered);
         }
 
         &:focus-within {
-            outline: var(--textField-input-border3) solid;
+            outline: var(--textField-input-border-bold) solid;
             outline-color: var(--textField-input-stroke-focused);
         }
 
@@ -187,7 +187,7 @@
         font-weight: var(--textField-weight-label);
         display: flex;
         gap: var(--textField-labelTop-gap);
-        padding: var(--textField-labelTop);
+        padding: var(--textField-labelTop-padding);
         color: var(--textField-fg-label);
 
         .required-marker {
@@ -201,7 +201,7 @@
         width: var(--textField-labelLeft-width);
         display: flex;
         gap: var(--textField-labelLeft-gap);
-        padding: var(--textField-labelLeft);
+        padding: var(--textField-labelLeft-padding);
         color: var(--textField-fg-label);
 
         .required-marker {
@@ -213,7 +213,7 @@
         font-size: var(--textField-size-helperText);
         font-weight: var(--textField-weight-placeholder);
         color: var(--textField-fg-helperText);
-        padding: var(--textField-helperText);
+        padding: var(--textField-helperText-padding);
     }
 
     .textfield-wrapper {
@@ -256,7 +256,7 @@
 
         &.error {
             .textfield-base {
-                outline: var(--textField-input-border3) solid;
+                outline: var(--textField-input-border-bold) solid;
                 outline-color: var(--textField-input-stroke-error);
             }
 
