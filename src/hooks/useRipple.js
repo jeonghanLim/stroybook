@@ -42,11 +42,11 @@ function useRipple({ centered = false, color = 'white' } = {}) {
     if (activeRippleKey.current) {
       releaseRipple(activeRippleKey.current);
       activeRippleKey.current = null;
+      setFocus(null);
     }
   };
 
   const handleFocus = (e) => {
-    console.log(e);
     const element = e.currentTarget;
     const rect = element.getBoundingClientRect();
     const size = Math.max(rect.width, rect.height);
@@ -105,7 +105,6 @@ const Ripple = ({ x, y, size, released, color, className }) => {
   let cn = 'ripple ';
   if (expand) cn += className ? className : 'ripple-animation-start';
   if (released) cn += ' ripple-animation-end';
-  
   cn += ` ripple-color-${color}`;
 
   return (

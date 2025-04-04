@@ -6,7 +6,7 @@
 
 @theme {
 
-    /* 17. LIST */
+    /* 21. LIST */
     /* ==================== */
 
     /* size */
@@ -36,7 +36,7 @@
     --listItem-bg-disabled: var(--color-palette-bg-disabled-main);
     --listItem-storke-disabled: var(--color-palette-stroke-disabled-main);
 
-    /* 21. DIVIDER */
+    /* 25. DIVIDER */
     /* ==================== */
 
     /* size */
