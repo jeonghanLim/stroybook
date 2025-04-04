@@ -11,7 +11,15 @@ export const Radio = ({
     , checked
 }) => {
 
-    const radioColorClassName = color === 'brand' ? 'radio-color-brand' : 'radio-color-neutral';
+    const radioColorClassName = {
+        brand: 'radio-color-brand',
+        neutral: 'radio-color-neutral',
+        error: 'radio-color-error',
+        warning: 'radio-color-warning',
+        info: 'radio-color-info',
+        success: 'radio-color-success'
+    }[color] || 'radio-color-brand';
+    
     const handleChange = (e) => {
         if(onChange && typeof(onChange)==='function') {
             onChange(e);

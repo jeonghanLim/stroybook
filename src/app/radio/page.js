@@ -1,6 +1,5 @@
 'use client';
 import  { RadioGroup }  from "@/components/inputs/radio/RadioGroup";
-import { Radio } from "@/components/inputs/radio/Radio";
 export default function page() {
     const options = [
         {
@@ -23,12 +22,11 @@ export default function page() {
             name={"color"}
             flex={"column"}
             options={options}
-            color={'brand'}
+            color={'error'}
             size={'lg'}
             disabled={false}
             helperText={'빨강이나 파랑 중 어떤 것이 마음에 드시나요?'}
-            errorText={''}>
-                <Radio name={'color'} label={'초록'} value={'green'} disabled={false} color={'brand'}/>
+            errorText={'error'}>
         </RadioGroup>
     );
 }

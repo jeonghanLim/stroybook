@@ -153,11 +153,14 @@
     /* radio group gap 조정을 위함*/
     .radio-group {
         display: flex;
+        flex-direction: column;
     }
     .radio-flex-column {
+        display: flex;
         flex-direction: column;
     }
     .radio-flex-row {
+        display: flex;
         flex-direction: row;
     }
     /* radio section gap 조정을 위함*/
@@ -187,31 +190,36 @@
         border-radius: var(--radio-base-radius);
         border-width: var(--radio-base-border);
         border-style: solid;
-        border-color: var(--radio-base-stroke);
-        background-color: var(--radio-base-bg);
+        /* border-color: var(--radio-base-stroke); */
+        /* background-color: var(--radio-base-bg); */
         &:has(input:disabled) {
             background-color: var(--radio-bg-disable);
+            border-color: var(--radio-fg-disable);
         }
-        
     }
-    .radio-helper {
+    .radio-label {
+        color: var(--radioLabel-fg);
+    }
+    .radio-sub-text {
         font-size: var(--radioGroup-size-helper);
         font-weight: var(--radioGroup-weight-helper);
         color: var(--radioGroup-fg-helper);
     }
-
-    .radio-error {
-        font-size: var(--radioGroup-size-helper);
-        font-weight: var(--radioGroup-weight-helper);
-        color: var(--radioGroup-fg-error);
+    .radio-disable {
+        color: var(--radio-fg-disable);
     }
 }
 
 @utility radio-size-* {
-    flex-direction: column;
     gap: --value(--radioGroup-gap-*);
     .radio-group{
         gap: --value(--radioGroup-gap-*);
+    }
+    .radio-flex-column{
+        gap: --value(--radioGroup-group-verticalGap-*);
+    }
+    .radio-flex-row{
+        gap: --value(--radioGroup-group-horizontalGap-*);
     }
     .input-class{
         width: --value(--radio-base-width-*);
@@ -243,19 +251,32 @@
         background-color: transparent;
     }
     &:has(div.radio-base:hover) {
-        background-color: --value(--radio-layer-*);
+        background-color: --value(--radio-bg-*-hover);
+    }
+    &:has(div.radio-base:focus) {
+        background-color: --value(--radio-bg-*-focus);
+    }
+    &:has(div.radio-base:active) {
+        background-color: --value(--radio-bg-*-active);
     }
     .radio-base {
-        &:has(input:disabled:checked) {
+        &:has(input:disabled) {
             border-color: var(--radio-fg-disable);
         }
-        &:has(input:checked) {
-            border-color: --value(--radio-base-fg-*);
-        }
+        border-color: --value(--radio-fg-*);
+    }
 
+}
+
+@utility radio-* {
+    .radio-title {
+        color: --value(--radio-fg-*);
     }
     .radio-label {
-        color: --value(--radioLabel-fg);
+        color: --value(--radio-fg-*);
+    }
+    .radio-sub-text {
+        color: --value(--radio-fg-*);
     }
 }
 
