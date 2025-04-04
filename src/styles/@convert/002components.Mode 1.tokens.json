@@ -174,13 +174,13 @@
           "$type": "color",
           "$value": "{color.color.palette.bg.warning.dark.default}"
         },
-        "--btn-contained-fg-neutral_2": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.contrast}"
-        },
         "--btn-contained-fg-warning": {
           "$type": "color",
           "$value": "{color.color.palette.fg.warning.contrast}"
+        },
+        "--btn-contained-fg-neutral_2": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.contrast}"
         },
         "--btn-contained-bg-warning-hover": {
           "$type": "color",
@@ -1586,6 +1586,14 @@
           "$type": "color",
           "$value": "{color.color.palette.fg.error.main}"
         },
+        "--popupHeader-bg": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.neutral.light}"
+        },
+        "--popupHeader-bg-deleted": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.error.light}"
+        },
         "--featuredIcon-bg-1stLayer-brand": {
           "$type": "color",
           "$value": "{color.color.palette.bg.overlay.brand.light}"
@@ -1761,11 +1769,11 @@
       }
     },
     "snackbar": {
-      "Color_3": {
+      "--empty": {
         "$type": "color",
         "$value": "#ffffff"
       },
-      "Number_3": {
+      "--empty_1": {
         "$type": "dimension",
         "$value": "0px"
       }
@@ -1993,44 +2001,6 @@
           "$value": "{font.font.weight.semiBold}"
         }
       },
-      "color": {
-        "--textCell-fg": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.main}"
-        },
-        "--textCell-fg-title": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.soft}"
-        },
-        "--cell-fg-icon": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.mute}"
-        },
-        "--row-bg": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.overlay.white.light}"
-        },
-        "--row-bg-selected": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.overlay.brand.light}"
-        },
-        "--row-bg-hover": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.overlay.neutral.soft}"
-        },
-        "--rowHead-bg": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.overlay.white.light}"
-        },
-        "--rowHead-bg-brand": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.layer.floating}"
-        },
-        "--rowHead-bg-neutral": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.layer.fill}"
-        }
-      },
       "size": {
         "--cell-padding-checkBox-xRight": {
           "$type": "dimension",
@@ -2087,6 +2057,44 @@
         "--cell-maskedIcon-size-dense": {
           "$type": "dimension",
           "$value": "{size.spacing.20}"
+        }
+      },
+      "color": {
+        "--textCell-fg": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.main}"
+        },
+        "--textCell-fg-title": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.soft}"
+        },
+        "--cell-fg-icon": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.mute}"
+        },
+        "--row-bg": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.white.light}"
+        },
+        "--row-bg-selected": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.brand.light}"
+        },
+        "--row-bg-hover": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.neutral.soft}"
+        },
+        "--rowHead-bg": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.white.light}"
+        },
+        "--rowHead-bg-brand": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.layer.floating}"
+        },
+        "--rowHead-bg-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.layer.fill}"
         }
       }
     }
@@ -2190,6 +2198,108 @@
           "$type": "color",
           "$value": "{color.color.palette.stroke.disabled.main}"
         }
+      }
+    }
+  },
+  "data_and_time_Picker": {
+    "date": {
+      "--empty12": {
+        "$type": "color",
+        "$value": "#ffffff"
+      }
+    },
+    "time": {
+      "size": {
+        "--timeNumber-radius": {
+          "$type": "dimension",
+          "$value": "{size.radius.004}"
+        },
+        "--timePicker-radius": {
+          "$type": "dimension",
+          "$value": "{size.radius.004}"
+        },
+        "--timePicker-padding-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.16}"
+        },
+        "--timePicker-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.1}"
+        },
+        "--timePicker-scroll-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.4}"
+        },
+        "--timePicker-scroll-padding-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.2}"
+        },
+        "--timeBar-padding-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.16}"
+        },
+        "--timeBar-base-padding-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.4}"
+        },
+        "--timeBar-base-radius": {
+          "$type": "dimension",
+          "$value": "{size.spacing.4}"
+        }
+      },
+      "font": {
+        "--timeNumber-size-title": {
+          "$type": "dimension",
+          "$value": "{font.text.15}"
+        },
+        "--timeNumber-size-body": {
+          "$type": "dimension",
+          "$value": "{font.text.17}"
+        },
+        "--timeNumber-size-bodySelected": {
+          "$type": "dimension",
+          "$value": "{font.text.17}"
+        },
+        "--timeNumber-weight-title": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.medium}"
+        },
+        "--timeNumber-weight-body": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.medium}"
+        },
+        "--timeNumber-weight-bodySelected": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.bold}"
+        }
+      },
+      "color": {
+        "--timeNumber-bg": {
+          "$type": "color",
+          "$value": "{color.color.palette.non.non}"
+        },
+        "--timeNumber-bg-hovered": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.black.light}"
+        },
+        "--timePicker-fg-verticalBlur-gradient-0-0": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.layer.default}"
+        },
+        "--timePicker-fg-verticalBlur-gradient-0-50": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.layer.default}"
+        },
+        "--timePicker-fg-verticalBlur-gradient-0-100": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.layer.default}"
+        }
+      }
+    },
+    "dateTime": {
+      "--empty1234": {
+        "$type": "dimension",
+        "$value": "0px"
       }
     }
   },

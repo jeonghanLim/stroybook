@@ -51,8 +51,8 @@
     --btn-contained-bg-error-focus: var(--color-palette-bg-error-dark-pressed);
     --btn-contained-bg-error-active: var(--color-palette-bg-error-dark-pressed);
     --btn-contained-bg-warning: var(--color-palette-bg-warning-dark-default);
-    --btn-contained-fg-neutral_2: var(--color-palette-fg-neutral-contrast);
     --btn-contained-fg-warning: var(--color-palette-fg-warning-contrast);
+    --btn-contained-fg-neutral_2: var(--color-palette-fg-neutral-contrast);
     --btn-contained-bg-warning-hover: var(--color-palette-bg-warning-dark-pressed);
     --btn-contained-bg-warning-focus: var(--color-palette-bg-warning-dark-pressed);
     --btn-contained-bg-warning-active: var(--color-palette-bg-warning-dark-pressed);
@@ -367,7 +367,6 @@
     /* ==================== */
 
     /* size */
-    --textArea-minHeight: calc(var(--spacing) * 144);
     --textArea-labelTop-gap: calc(var(--spacing) * 2);
     --textArea-labelLeft-width: calc(var(--spacing) * 168);
     --textArea-labelLeft-gap: calc(var(--spacing) * 2);
