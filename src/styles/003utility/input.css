@@ -10,40 +10,45 @@
 /* BTN                   */
 /* ===================== */
 @layer components {
+
     /* 2. Button */
-    .btn { 
+    .btn {
         border-radius: var(--btn-radius);
-        @apply    
-        relative 
-        cursor-pointer 
-        whitespace-nowrap 
+        @apply relative cursor-pointer whitespace-nowrap
     }
-    .btn, .btn-base, .btn-mask-box { 
-        @apply 
-        flex 
-        items-center 
-        justify-center 
-        
+
+    .btn, .btn-base, .btn-mask-box {
+        @apply flex items-center justify-center
     }
-    .btn:focus { @apply outline-0 }
-    .btn, .btn-base { @apply  w-fit }
-    .btn.disabled { 
+
+    .btn:focus {
+        @apply outline-0
+    }
+
+    .btn, .btn-base {
+        @apply w-fit
+    }
+
+    .btn.disabled {
         color: var(--btn-fg-disabled);
-        @apply cursor-default 
+        @apply cursor-default
     }
 
 }
 
-@utility btn-size-* { 
-    padding : --value(--btn-padding-*);
-    font-size : --value(--btn-font-size-*);
-    font-weight : --value(--btn-font-weight-*);
-    & .btn-base{
+@utility btn-size-* {
+    padding: --value(--btn-padding-*);
+    font-size: --value(--btn-font-size-*);
+    font-weight: --value(--btn-font-weight-*);
+
+    & .btn-base {
         height: --value(--btn-base-height-*);
         gap: --value(--btn-base-gap-*);
-        & .btn-mask-box{
+
+        & .btn-mask-box {
             width: --value(--btn-maskIcon-width-*);
-            & .icon-box{
+
+            & .icon-box {
                 width: --value(--btn-icon-*);
                 height: --value(--btn-icon-*);
             }
@@ -75,11 +80,11 @@
     }
 }
 
-@utility btn-outlined-color-* { 
-    background-color : --value(--btn-outlined-bg-*);
-    color : --value(--btn-outlined-fg-*);
-    border : var(--btn-border);
-    border-color : --value(--btn-outlined-stroke-*);
+@utility btn-outlined-color-* {
+    background-color: --value(--btn-outlined-bg-*);
+    color: --value(--btn-outlined-fg-*);
+    border: var(--btn-border);
+    border-color: --value(--btn-outlined-stroke-*);
 
     &:hover {
         background-color: --value(--btn-outlined-bg-*-hover);
@@ -173,6 +178,7 @@
             outline: none;
             color: var(--textField-fg-placeholder);
             font-size: var(--textField-size-placeholder);
+            white-space: nowrap;
         }
 
         & .input-icon {
@@ -217,16 +223,17 @@
     }
 
     .textfield-wrapper {
-        display: flex; 
+        display: flex;
         width: fit-content;
         height: fit-content;
 
-        & > div {
+        &>div {
             width: 100%;
-        } 
+        }
 
         &:has(.textfield-base input:disabled) {
-            cursor: not-allowed; 
+            cursor: not-allowed;
+
             .textfield-base {
                 background-color: var(--textField-bg-disabled);
                 outline-color: var(--textField-stroke-disabled);
@@ -236,8 +243,8 @@
                     color: var(--textField-fg-disabled);
                 }
 
-                & .input-icon{
-                    color: var(--textField-fg-disabled) ;
+                & .input-icon {
+                    color: var(--textField-fg-disabled);
                 }
             }
 
@@ -279,6 +286,7 @@
                     color: var(--textField-fg-hasValue);
                     font-size: var(--textField-size-hasValue);
                 }
+
                 & .input-icon {
                     color: var(--textField-input-icon-fg);
                 }
@@ -311,7 +319,7 @@
             .labelleft-base {
                 font-size: var(--textField-size-label-dense);
             }
-            
+
             .required-marker {
                 font-size: var(--textField-size-label-dense);
             }
@@ -319,7 +327,17 @@
             .helper-text {
                 font-size: var(--textField-size-helperText-dense);
             }
+        }
 
+        &.readOnly {
+            .textfield-base {
+                & input {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    width: 100%;
+                    min-width: 0;
+                }
+            }
         }
     }
 }
