@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const css = require('styled-jsx/css');
 
 // JSON 파일 경로
 const jsonFilePath = './002components.Mode 1.tokens.json';
@@ -13,6 +14,7 @@ function convertJsonToCss(json, depth = 1) {
     let cssContent = '';
     const paddingValues = {};
     const directionalValues = {};
+    const gradientValues = {};
     
     for (const key in json) {
         if (typeof json[key] === 'object' && !json[key]['$value']) {
@@ -69,6 +71,23 @@ function convertJsonToCss(json, depth = 1) {
                 }
                 continue;
             }
+
+            if (key.includes('-gradient-')){
+                const parts = key.split('-gradient-');
+                const baseKey = parts[0]; // '--timePicker-fg-verticalBlur'
+                const gradientInfo = parts[1]?.split('-'); // ['0', '50']
+              
+                if (gradientInfo && gradientInfo.length >= 2) {
+                  const deg = gradientInfo[0];
+                  const stop = gradientInfo[1];
+              
+                  if (!gradientValues[baseKey]) gradientValues[baseKey] = {};
+              
+                  gradientValues[baseKey]['deg'] = deg;
+                  gradientValues[baseKey][stop] = cssValue;
+                }
+                continue;
+            }
             
             // 'non' 감지 시 주석 추가
             let comment = cssValue.includes('non') ? ' /* 감지용 */' : '';
@@ -83,6 +102,15 @@ function convertJsonToCss(json, depth = 1) {
         
         // 최종 CSS 출력
         cssContent += `    ${key}: ${yTop} ${xRight} ${yBottom} ${xLeft};\n`;
+    }
+
+    for (const key in gradientValues) {
+        cssContent += `    ${key}: linear-gradient(${gradientValues[key]['deg']}deg `;
+        for(const gradientKey in gradientValues[key]) {
+            if (gradientKey === 'deg') continue; // 'deg'는 제외
+            cssContent += `,${gradientValues[key][gradientKey]} ${gradientKey}%`;
+        }
+        cssContent += `);\n`;
     }
     
     return cssContent;

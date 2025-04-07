@@ -6,7 +6,7 @@
 
 @theme {
 
-    /* 21. LIST */
+    /* 29. LIST */
     /* ==================== */
 
     /* size */
@@ -36,7 +36,7 @@
     --listItem-bg-disabled: var(--color-palette-bg-disabled-main);
     --listItem-storke-disabled: var(--color-palette-stroke-disabled-main);
 
-    /* 25. DIVIDER */
+    /* 33. DIVIDER */
     /* ==================== */
 
     /* size */
@@ -64,7 +64,7 @@
     /* color */
     --divider-bg: var(--color-palette-bg-overlay-black-light);
 
-    /* 28. TABLE */
+    /* 36. TABLE */
     /* ==================== */
 
     /* font */
@@ -89,7 +89,7 @@
     --cell-fg-icon: var(--color-palette-fg-neutral-mute);
     --row-bg: var(--color-palette-bg-overlay-white-light);
     --row-bg-selected: var(--color-palette-bg-overlay-brand-light);
-    --row-bg-hover: var(--color-palette-bg-overlay-neutral-medium);
+    --row-bg-hover: var(--color-palette-bg-overlay-neutral-soft);
     --rowHead-bg: var(--color-palette-bg-overlay-white-light);
     --rowHead-bg-brand: var(--color-palette-bg-layer-floating);
     --rowHead-bg-neutral: var(--color-palette-bg-layer-fill);
