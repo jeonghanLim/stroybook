@@ -1,0 +1,106 @@
+@import "tailwindcss";
+@import "../001reference/font.css";
+@import "../001reference/fontType.css";
+@import "../001reference/size.css";
+@import "../001reference/color.css";
+@import "../002components/input.css";
+
+/* ===================== */
+/* TIMEPICKER            */
+/* ===================== */
+@layer components{
+    .time-wrapper {
+        height : 168px;
+        width : 442px;
+        min-width: 440px;
+        overflow: hidden;
+        padding-right: 16px;
+        padding-left: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid red;
+        position: relative;
+
+        & .time-bar{
+            height: 34px;
+            width: 442px;
+            border-radius: 4px;
+            background-color: #F7F9FB;
+            display: flex;
+            justify-content: center; 
+        } 
+
+        &::after{
+            pointer-events: none;
+            content: "";
+            width: 100%;
+            position: absolute;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+        }
+    }
+
+    .time-controller{
+        width: 136px;
+        height: 168px;
+        position: relative;
+        top: 0;
+        justify-content: center;
+        align-items: center;
+
+        & .time-list-box{
+            transition: top 0.3s ease;
+            width: 129px;
+            position: relative;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            align-items: center;
+        }
+
+        & .time-box{
+            height: 34px;
+            width: 100%;
+            display: flex;
+
+            & .time-box-right{
+                width: 50%;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+            }
+            & .time-box-left{
+                width: 50%;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+
+                &.single-time:not(.current){
+                    cursor: pointer;
+                    color: gray;
+                }
+            }
+        }
+    }
+
+
+    
+    
+    
+
+}
+
+/* ===================== */
+/* TIMEPICKER END        */
+/* ===================== */
+
+
+/* ===================== */
+/* TIMEPICKER            */
+/* ===================== */
+
+/* ===================== */
+/* TIMEPICKER END        */
+/* ===================== */
