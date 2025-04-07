@@ -348,11 +348,122 @@
 /* TEXT FIELD END        */
 /* ===================== */
 
-
 /* ===================== */
 /* SELECT                */
 /* ===================== */
 
 /* ===================== */
 /* SELECT END            */
+/* ===================== */
+
+/* ===================== */
+/* TEXT AREA             */
+/* ===================== */
+
+@layer components {
+    .textarea-warpper{
+        width: 100%;
+        & .textarea-label{
+            padding: var(--textArea-labelTop-padding);
+            font-size: var(--textArea-size-label);
+            font-weight: var(--textArea-weight-label);
+        }
+        & .textarea-base{
+            width: 100%;
+            & textarea{
+                width: 100%;
+                min-height: var(--textArea-minHeight);
+                padding: var(--textArea-input-padding);
+    
+                outline-style: solid;
+                outline-width: var(--textArea-input-border-thin);
+                border-radius: var(--textArea-input-radius);
+                outline-color: var(--textArea-input-stroke-enabled);
+    
+                font-size: var(--textArea-size-hasValue);
+                font-weight: var(--textArea-weight-hasValue);
+                color: var(--textArea-fg-hasValue);
+                background-color: var(--textArea-input-bg);
+    
+                &::placeholder{
+                    font-size: var(--textArea-size-placeholder);
+                    font-weight: var(--textArea-weight-placeholder);
+                    color: var(--textArea-fg-placeholder);
+                }
+    
+                &:hover, &:focus, &.error{
+                    outline-width: var(--textArea-input-border-bold);
+                }
+                &:hover{ outline-color: var(--textArea-input-stroke-hovered); }
+                &:focus{ outline-color: var(--textArea-input-stroke-focused); }
+            }
+            & .textarea-footer{
+                display: flex;
+                gap: var(--textArea-bottomRow-gap);
+                padding: var(--textArea-bottomRow-padding);
+                & .textarea-helper{
+                    flex: 1;
+                    font-size: var(--textArea-size-helperText);
+                    font-weight: var(--textArea-weight-helperText);
+                    color: var(--textArea-fg-helperText);
+
+                    overflow: hidden;
+                    display: -webkit-box; 
+                    -webkit-box-orient: vertical; 
+                    -webkit-line-clamp: 1;
+                }
+                & .textarea-length{
+                    font-size: var(--textArea-size-characterLimit);
+                    font-weight: var(--textArea-weight-characterLimit);
+                    color: var(--textArea-fg-characterLimit);
+                }
+            }
+        }
+        &.error, &.error *{
+            color: var(--textArea-fg-error) !important;
+            outline-color: var(--textArea-input-stroke-error) !important;
+            outline-width: var(--textArea-input-border-bold) !important;
+        }
+        &.disabled, &.disabled *, &.disabled *::after, &.disabled *::before{
+            color: var(--textArea-fg-disabled) !important;
+            outline-color: var(--textArea-input-stroke-disabled) !important;
+            outline-width: var(--textArea-input-border-thin) !important;
+            & textarea{
+                background-color: var(--textArea-bg-disabled) !important;
+            }
+        }
+    }
+
+    .textarea-warpper:not(.left-label){
+        & .textarea-label.required::after{
+            margin-left: var(--textArea-labelTop-gap);
+            content: '*';
+            color: var(--textArea-fg-label-required);
+        }
+    }
+
+    .textarea-warpper.left-label{        
+        display: flex;
+        & .textarea-label{
+            padding: var(--textArea-labelLeft-padding);
+            width: var(--textArea-labelLeft-width);
+            &.required::before{
+                margin-right: var(--textArea-labelLeft-gap);
+                content: '*';
+                color: var(--textArea-fg-label-required);
+            }
+        }
+        & .textarea-base{
+            flex: 1;
+        }
+    }
+
+}
+
+/* @utility textarea-* {
+
+} */
+
+/* ===================== */
+/* TEXT AREA END         */
 /* ===================== */
