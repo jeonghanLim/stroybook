@@ -4,7 +4,7 @@ import { Button } from '@/components/inputs/button/Button';
 
 export const Popup = ({
   header
-  , icon 
+  , icon
   , title
   , content
   , cancelClick
@@ -14,6 +14,7 @@ export const Popup = ({
   , hasCancelBtn = false
   , open = false
   , setOpen
+  , size = 'sm'
   , ...props
 }) => {
 
@@ -30,39 +31,43 @@ export const Popup = ({
   if (!open) return null;
 
   return (
-    <div className='popup-wrapper'>
-      <div className='popup-header-wrapper'>
-        <div className='popup-header-base'>
-          <div className='popup-header-label'>
-            {header}
+    <div className='popup-container'>
+      <div className={`popup-wrapper popup-size-${size}`}>
+        <div className='popup-header-wrapper'>
+          <div className='popup-header-base'>
+            <div className='popup-header-label'>  
+              {header}
+            </div>
           </div>
         </div>
-      </div>
-      <div className='popup-body-wrapper'>
-        <div className='popup-body-base'>
-          <span className='popup-icon'>{icon}</span>
-          <div className='popup-body'>
-            <p className='popup-title'>{title}</p>
-            <p className='popup-content'>{content}</p>
+        <div className='popup-body-wrapper'>
+          <div className='popup-body-base'>
+            {icon &&
+              <span className='popup-icon'>{icon}</span>
+            }
+            <div className='popup-body'>
+              <p className='popup-title'>{title}</p>
+              <p className='popup-content'>{content}</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div className='popup-footer'>
-        <div className='popup-divider'>
+        <div className='popup-footer'>
+          <div className='popup-divider'>
             {/* {divider} */}
+          </div>
+          <div className='popup-button'>
+            {hasCancelBtn && (
+              <Button
+                label={cancelBtnText}
+                onClick={handleCancelClick}
+              />
+            )}
+            <Button
+              label={okBtnText}
+              onClick={handleOkClick}
+            />
+          </div>
         </div>
-      <div className='popup-button'>
-        {hasCancelBtn && (
-          <Button
-            label={cancelBtnText}
-            onClick={handleCancelClick}
-          />
-        )}
-        <Button
-          label={okBtnText}
-          onClick={handleOkClick}
-        />
-      </div>
       </div>
     </div>
   );
@@ -80,6 +85,7 @@ Popup.propTypes = {
   hasCancelBtn: PropTypes.bool,
   open: PropTypes.bool,
   setOpen: PropTypes.func,
+  size: PropTypes.oneOf(['sm', 'md', 'lg']),
 };
 
 Popup.defaultProps = {
@@ -90,4 +96,12 @@ Popup.defaultProps = {
   okBtnText: '확인',
   hasCancelBtn: false,
   open: false,
+  size: 'sm',
 };
+
+/**
+ * popup-size-sm
+ * popup-size-md
+ * popup-size-lg
+ * 
+ */

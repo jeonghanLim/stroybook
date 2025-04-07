@@ -12,12 +12,14 @@
 /* ===================== */
 
 @layer components {
+    .popup-container {
+        max-height: var(--popupBase-maxHeight-dynamicArea);
+    }
+
     .popup-wrapper {
         height: 334px;
-        max-height: var(--popupBase-maxHeight-dynamicArea);
-        width: var(--popup-width-sm);
         border-radius: var(--popupBase-radius);
-        /* overflow-y: auto; */
+        overflow-y: auto;
     }
 
     .popup-header {
@@ -33,6 +35,9 @@
 
 }
 
+@utility popup-size-* {
+    width: --value(--popup-width-*);
+}
 
 
 /* ===================== */

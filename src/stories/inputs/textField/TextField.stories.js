@@ -18,35 +18,35 @@ export default {
 };
 
 export const Enabled = {
-  args:{
-    label:'textField',
-        startIcon: <StarIcon/>,
-        endIcon: <StarIcon/>
+  args: {
+    label: 'textField',
+    startIcon: <StarIcon />,
+    endIcon: <StarIcon />
   },
 };
 
 export const hovered = {
-  args:{
-    label:'textField',
+  args: {
+    label: 'textField',
   },
 };
 
 export const focused = {
-  args:{
-    label:'textField',
+  args: {
+    label: 'textField',
   },
 };
 
 export const disabled = {
-  args:{
-    label:'textField',
+  args: {
+    label: 'textField',
     disabled: true,
   },
 };
 
 export const error = {
-  args:{
-    label:'textField',
+  args: {
+    label: 'textField',
     error: true,
   },
 };
