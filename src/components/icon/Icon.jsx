@@ -70,3 +70,10 @@ export const AngleDownIcon = ({ size, className }) => {
         </Icon>
     )
 };
+export const CloseIcon = ({ size, className }) => {
+    return (
+        <Icon size={size} className={className}>
+            <path d="M19.1421 6.41421L17.7279 5L12.0711 10.6569L6.41421 5L5 6.41421L10.6569 12.0711L5 17.7279L6.41421 19.1421L12.0711 13.4853L17.7279 19.1421L19.1421 17.7279L13.4853 12.0711L19.1421 6.41421Z" />
+        </Icon>
+    )
+};
