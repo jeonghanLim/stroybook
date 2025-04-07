@@ -1,8 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-
 import PropTypes from 'prop-types';
-import { A } from 'storybook/internal/components';
-
 
 export const TimePicker = ({ 
   hour = 0
@@ -23,7 +20,7 @@ export const TimePicker = ({
   const handleTime = (type, timeValue) => {
     const newTime = {...time, [type] : timeValue}
     setTime(newTime)
-    onChange && onChange(time);
+    onChange && onChange(newTime);
   }
 console.log(time)
   return (
