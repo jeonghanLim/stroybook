@@ -1,5 +1,6 @@
 import { fn } from '@storybook/test';
 import { Popup } from '@/components/popup/Popup';
+import { StarIcon } from '@/components/icon/Icon';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 export default {
@@ -18,8 +19,9 @@ export default {
 
 export const defaultPopup = {
   args:{
+    header: 'header',
     title:'title',
-    contents: 'contents',
-    cancelBtnText: 'cancel'
+    content: 'content',
+    icon: <StarIcon/>,
   }, 
 };

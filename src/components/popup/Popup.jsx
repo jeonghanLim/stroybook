@@ -4,8 +4,9 @@ import { Button } from '@/components/inputs/button/Button';
 
 export const Popup = ({
   header
+  , icon 
   , title
-  , contents
+  , content
   , cancelClick
   , cancelBtnText
   , okClick
@@ -29,31 +30,39 @@ export const Popup = ({
   if (!open) return null;
 
   return (
-    <div className="border rounded-lg p-6 shadow-md bg-white w-full max-w-md mx-auto">
-      <div>
-        {header}
+    <div className='popup-wrapper'>
+      <div className='popup-header-wrapper'>
+        <div className='popup-header-base'>
+          <div className='popup-header-label'>
+            {header}
+          </div>
+        </div>
       </div>
-      <h2 className="text-lg font-medium mb-3">{title}</h2>
-      <p className="text-gray-800 mb-5">{contents}</p>
-      <div className="flex justify-center gap-3 mt-4"> 
+      <div className='popup-body-wrapper'>
+        <div className='popup-body-base'>
+          <span className='popup-icon'>{icon}</span>
+          <div className='popup-body'>
+            <p className='popup-title'>{title}</p>
+            <p className='popup-content'>{content}</p>
+          </div>
+        </div>
+      </div>
+      <div className='popup-footer'>
+        <div className='popup-divider'>
+            {/* {divider} */}
+        </div>
+      <div className='popup-button'>
         {hasCancelBtn && (
           <Button
-            label='취소'
-            variant='outlined'
-            size='md'
+            label={cancelBtnText}
             onClick={handleCancelClick}
-          >
-            {cancelBtnText}
-          </Button>
+          />
         )}
         <Button
-          label='확인'
-          variant='outlined'
-          size='md'
+          label={okBtnText}
           onClick={handleOkClick}
-        >
-          {okBtnText}
-        </Button>
+        />
+      </div>
       </div>
     </div>
   );
@@ -61,8 +70,9 @@ export const Popup = ({
 
 Popup.propTypes = {
   header: PropTypes.string,
+  icon: PropTypes.element,
   title: PropTypes.string,
-  contents: PropTypes.string,
+  content: PropTypes.string,
   cancelClick: PropTypes.func,
   cancelBtnText: PropTypes.string,
   okClick: PropTypes.func,
@@ -75,9 +85,9 @@ Popup.propTypes = {
 Popup.defaultProps = {
   header: 'header',
   title: 'title',
-  contents: 'contents',
-  cancelBtnText: 'cancel',
-  okBtnText: 'OK',
+  content: 'content',
+  cancelBtnText: '취소',
+  okBtnText: '확인',
   hasCancelBtn: false,
   open: false,
 };
