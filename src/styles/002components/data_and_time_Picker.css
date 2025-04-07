@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@import "../001reference/color.css";
+@import "../001reference/font.css";
+@import "../001reference/size.css";
+@import "../001reference/fontType.css";
+
+@theme {
+
+    /* 44. DATE */
+    /* ==================== */
+
+    --empty12: var(--);
+
+    /* 45. TIME */
+    /* ==================== */
+
+    /* size */
+    --timeNumber-radius: var(--radius-004);
+    --timePicker-radius: var(--radius-004);
+    --timePicker-gap: calc(var(--spacing) * 1);
+    --timePicker-scroll-gap: calc(var(--spacing) * 4);
+    --timeBar-base-radius: calc(var(--spacing) * 4);
+    --timePicker-padding: calc(var(--spacing) * 0) calc(var(--spacing) * 16) calc(var(--spacing) * 0) calc(var(--spacing) * 16);
+    --timePicker-scroll-padding: calc(var(--spacing) * 2) calc(var(--spacing) * 0) calc(var(--spacing) * 2) calc(var(--spacing) * 0);
+    --timeBar-padding: calc(var(--spacing) * 0) calc(var(--spacing) * 16) calc(var(--spacing) * 0) calc(var(--spacing) * 16);
+    --timeBar-base-padding: calc(var(--spacing) * 4) calc(var(--spacing) * 0) calc(var(--spacing) * 4) calc(var(--spacing) * 0);
+    /* font */
+    --timeNumber-size-title: var(--text-15);
+    --timeNumber-size-body: var(--text-17);
+    --timeNumber-size-bodySelected: var(--text-17);
+    --timeNumber-weight-title: var(--font-weight-medium);
+    --timeNumber-weight-body: var(--font-weight-medium);
+    --timeNumber-weight-bodySelected: var(--font-weight-bold);
+    /* color */
+    --timeNumber-bg: var(--color-palette-non-non); /* 감지용 */
+    --timeNumber-bg-hovered: var(--color-palette-bg-overlay-black-light);
+    --timePicker-fg-verticalBlur: linear-gradient(0deg ,var(--color-palette-bg-layer-default) 0%,var(--color-palette-bg-layer-default) 50%,var(--color-palette-bg-layer-default) 100%);
+
+    /* 49. DATETIME */
+    /* ==================== */
+
+    --empty1234: var(--);
+}

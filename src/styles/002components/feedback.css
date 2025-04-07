@@ -25,6 +25,8 @@
     --popupHeader-bg: var(--color-palette-bg-overlay-neutral-light);
     --popupHeader-bg-deleted: var(--color-palette-bg-overlay-error-light);
     --popupHeader-fg-deleted: var(--color-palette-fg-error-main);
+    --popupHeader-bg: var(--color-palette-bg-overlay-neutral-light);
+    --popupHeader-bg-deleted: var(--color-palette-bg-overlay-error-light);
     --featuredIcon-bg-1stLayer-brand: var(--color-palette-bg-overlay-brand-light);
     --featuredIcon-bg-2stLayer-brand: var(--color-palette-bg-overlay-brand-light);
     --featuredIcon-bg-1stLayer-neutral: var(--color-palette-bg-overlay-neutral-light);
@@ -67,4 +69,7 @@
 
     /* 28. SNACKBAR */
     /* ==================== */
+
+    --empty: var(--);
+    --empty_1: var(--);
 }

@@ -1,11 +1,11 @@
 "use client";
 
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 
 export const TextField = ({
   name
-  , value 
+  , value
   , type
   , label
   , labelLeft = false
@@ -22,16 +22,26 @@ export const TextField = ({
   , ...props
 }) => {
 
+  const [internalValue, setInternalValue] = React.useState(value || '');
+
   const handleChange = (e) => {
     const newValue = e.target.value;
+
+    if (!value) {
+      setInternalValue(newValue);
+    }
+    
     onChange && onChange(newValue);
-    console.log(newValue);
   };
+
+  const currentValue = value ? value : internalValue;
 
   const classProp = [
     dense && 'dense',
     error && 'error',
-    value && 'hasValue'
+    value && 'hasValue',
+    currentValue && 'hasValue',
+    readOnly && 'readOnly',
   ]
     .filter(Boolean)
     .join(' ');
@@ -59,7 +69,7 @@ export const TextField = ({
             name={name}
             disabled={disabled}
             placeholder={placeholder}
-            value={value}
+            value={currentValue}
             onChange={handleChange}
             readOnly={readOnly}
             {...props}
