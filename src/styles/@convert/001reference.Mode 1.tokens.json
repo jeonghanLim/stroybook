@@ -1401,6 +1401,10 @@
         "$type": "dimension",
         "$value": "32px"
       },
+      "36": {
+        "$type": "dimension",
+        "$value": "36px"
+      },
       "40": {
         "$type": "dimension",
         "$value": "40px"

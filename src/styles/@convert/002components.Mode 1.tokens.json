@@ -2203,9 +2203,115 @@
   },
   "data_and_time_Picker": {
     "date": {
-      "--empty12": {
-        "$type": "color",
-        "$value": "#ffffff"
+      "font": {
+        "--calendarElements-size": {
+          "$type": "dimension",
+          "$value": "{font.text.14}"
+        },
+        "--calendarElements-weight": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.regular}"
+        }
+      },
+      "size": {
+        "--calendarElements-minSize": {
+          "$type": "dimension",
+          "$value": "{size.spacing.36}"
+        },
+        "--calendarElements-radius": {
+          "$type": "dimension",
+          "$value": "{size.radius.fill}"
+        },
+        "--calendar-body-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.2}"
+        },
+        "--calendar-week-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.2}"
+        },
+        "--calendar-month-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.2}"
+        },
+        "--calendar-year-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.2}"
+        },
+        "--calendar-box-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.4}"
+        },
+        "--calendar-footer-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.4}"
+        },
+        "--calendar-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.4}"
+        },
+        "--calendar-content-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.4}"
+        },
+        "--calendar-base-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
+        },
+        "--calendar-padding-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.16}"
+        },
+        "--calendar-padding-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.16}"
+        },
+        "--calendar-radius": {
+          "$type": "dimension",
+          "$value": "{size.spacing.4}"
+        },
+        "--daterangePicker-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
+        }
+      },
+      "color": {
+        "--calendarElements-fg": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.dark}"
+        },
+        "--calendarElements-fg-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.disabled.main}"
+        },
+        "--calendarElements-fg-selected": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.brand.contrast}"
+        },
+        "--calendarElements-fg-empty": {
+          "$type": "color",
+          "$value": "{color.color.palette.non.non}"
+        },
+        "--calendarElements-bg": {
+          "$type": "color",
+          "$value": "{color.color.palette.non.non}"
+        },
+        "--calendarElements-bg-hovered": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.brand.light}"
+        },
+        "--calendarElements-bg-selected": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.brand.dark.default}"
+        },
+        "--calendarElements-bg-pressed": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.neutral.light.pressed}"
+        },
+        "--calendarElements-stroke": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.neutral.main}"
+        }
       }
     },
     "time": {
@@ -2214,23 +2320,23 @@
           "$type": "dimension",
           "$value": "{size.radius.004}"
         },
-        "--timePicker-radius": {
+        "--time-radius": {
           "$type": "dimension",
           "$value": "{size.radius.004}"
         },
-        "--timePicker-padding-x": {
+        "--time-padding-x": {
           "$type": "dimension",
           "$value": "{size.spacing.16}"
         },
-        "--timePicker-gap": {
+        "--time-gap": {
           "$type": "dimension",
           "$value": "{size.spacing.1}"
         },
-        "--timePicker-scroll-gap": {
+        "--time-scroll-gap": {
           "$type": "dimension",
           "$value": "{size.spacing.4}"
         },
-        "--timePicker-scroll-padding-y": {
+        "--time-scroll-padding-y": {
           "$type": "dimension",
           "$value": "{size.spacing.2}"
         },
@@ -2245,6 +2351,10 @@
         "--timeBar-base-radius": {
           "$type": "dimension",
           "$value": "{size.spacing.4}"
+        },
+        "--timerangePicker-base-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
         }
       },
       "font": {
@@ -2282,15 +2392,15 @@
           "$type": "color",
           "$value": "{color.color.palette.bg.overlay.black.light}"
         },
-        "--timePicker-fg-verticalBlur-gradient-0-0": {
+        "--time-fg-verticalBlur-gradient-0-0": {
           "$type": "color",
           "$value": "{color.color.palette.bg.layer.default}"
         },
-        "--timePicker-fg-verticalBlur-gradient-0-50": {
+        "--time-fg-verticalBlur-gradient-0-50": {
           "$type": "color",
           "$value": "{color.color.palette.bg.layer.default}"
         },
-        "--timePicker-fg-verticalBlur-gradient-0-100": {
+        "--time-fg-verticalBlur-gradient-0-100": {
           "$type": "color",
           "$value": "{color.color.palette.bg.layer.default}"
         }
