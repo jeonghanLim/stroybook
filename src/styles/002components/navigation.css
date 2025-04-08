@@ -33,4 +33,26 @@
     --menuItem-fg-disabled: var(--color-palette-fg-disabled-main);
     --menuItem-bg-disabled: var(--color-palette-bg-disabled-main);
     --menuItem-stroke-disabled: var(--color-palette-stroke-disabled-main);
+
+    /* 44. PAGINATION */
+    /* ==================== */
+
+    /* size */
+    paginationItem-size-medium: calc(var(--spacing) * 32);
+    paginationItem-size-small: calc(var(--spacing) * 24);
+    paginationItem-circle: var(--radius-fill);
+    paginationItem-rounded: var(--radius-004);
+    /* font */
+    --paginationItme-size-medium: var(--text-14);
+    --paginationItme-size-small: var(--text-13);
+    --paginationItme-weight-medium: var(--font-weight-regular);
+    --paginationItme-weight-small: var(--font-weight-regular);
+    /* colors */
+    --paginationItme-hoverd-neutral: var(--color-palette-bg-overlay-neutral-light);
+    --paginationItme-selected-neutral: var(--color-palette-bg-overlay-neutral-soft);
+    --paginationItme-hoverd-brand: var(--color-palette-bg-overlay-brand-light);
+    --paginationItme-selected-brand: var(--color-palette-bg-overlay-brand-soft);
+    --paginationItme-bg-disabled: var(--color-palette-bg-disabled-main);
+    --paginationItme-fg-disabled: var(--color-palette-bg-disabled-main);
+    --paginationItme-stroke-disabled: var(--color-palette-stroke-disabled-main);
 }
