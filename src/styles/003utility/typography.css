@@ -58,10 +58,4 @@
     /* 1-9) Helper */
     .helper-001 { @apply font-pretendard font-regular text-16 leading-175 }
 
-    /* 2. Button */
-    .btn { @apply rounded-004 cursor-pointer whitespace-nowrap }
-    .btn, .btn-base { @apply flex items-center justify-center w-fit }
-    .btn-mask-box { @apply flex items-center justify-center }
-    .btn.disabled { @apply cursor-default }
-
 }
