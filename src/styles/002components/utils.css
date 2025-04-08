@@ -6,12 +6,33 @@
 
 @theme {
 
-    /* 31. CSSBASELINE */
+    /* 56. SCROLLBAR */
     /* ==================== */
 
-    /* scrollbar */
-    --scrollbar-arrow-disabled: var(--color-palette-fg-disabled-main);
-    --scrollbar-arrow: var(--color-palette-fg-neutral-soft);
-    --scrollbar-square: var(--color-palette-fg-neutral-mute);
+    --scrollbar-fg-arrow: var(--color-palette-fg-neutral-soft);
+    --scrollbar-fg-square: var(--color-palette-fg-neutral-mute);
     --scrollbar-bg: var(--color-palette-bg-layer-fill);
+    --scrollbar-fg-disabled: var(--color-palette-fg-disabled-main);
+    --scrollbar-bg-disabled: var(--color-palette-bg-disabled-main);
+    --scrollbar-stroke-disabled: var(--color-palette-stroke-disabled-main);
+
+    /* 57. INTERACTION */
+    /* ==================== */
+
+    --overlay-brand-light: var(--color-palette-bg-overlay-brand-light);
+    --overlay-brand: var(--color-palette-bg-overlay-brand-base);
+    --overlay-neutral-light: var(--color-palette-bg-overlay-neutral-light);
+    --overlay-neutral: var(--color-palette-bg-overlay-neutral-base);
+    --overlay-white-light: var(--color-palette-bg-overlay-white-light);
+    --overlay-white: var(--color-palette-bg-overlay-white-base);
+    --overlay-black-light: var(--color-palette-bg-overlay-black-light);
+    --overlay-black: var(--color-palette-bg-overlay-black-base);
+    --overlay-error-light: var(--color-palette-bg-overlay-error-light);
+    --overlay-error: var(--color-palette-bg-overlay-error-base);
+    --overlay-warning-light: var(--color-palette-bg-overlay-warning-light);
+    --overlay-warning: var(--color-palette-bg-overlay-warning-base);
+    --overlay-info-light: var(--color-palette-bg-overlay-info-light);
+    --overlay-info: var(--color-palette-bg-overlay-info-base);
+    --overlay-success-light: var(--color-palette-bg-overlay-success-light);
+    --overlay-success: var(--color-palette-bg-overlay-success-base);
 }

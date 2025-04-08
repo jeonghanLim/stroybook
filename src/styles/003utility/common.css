@@ -8,7 +8,11 @@
 @layer components {
 
   /* Icon */
-  .icon-box { @apply absolute}
+  .icon-box { 
+    width: inherit;
+    height: inherit;
+    @apply absolute
+  }
   
   /* ripple */
   .ripple-container {
