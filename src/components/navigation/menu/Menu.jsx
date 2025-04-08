@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Divider } from '@/components/dataDisplay/Divider';
+import { Divider } from '@/components/dataDisplay/divider/Divider';
 
 export const Menu = ({ 
   dense = false // 컴포넌트 간격 조정
