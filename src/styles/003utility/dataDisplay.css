@@ -1,4 +1,9 @@
-
+@import "tailwindcss";
+@import "../001reference/font.css";
+@import "../001reference/fontType.css";
+@import "../001reference/size.css";
+@import "../001reference/color.css";
+@import "../002components/dataDisplay.css";
 
 /* ===================== */
 /* BADGE                 */
@@ -22,6 +27,39 @@
 /* DIVIDER               */
 /* ===================== */
 
+@layer components {
+    .divider {
+        border: var(--divider-border) solid;
+        border-color: var(--divider-bg);
+    }
+    
+    .divider-horizontal {
+        width: auto;
+    }
+    
+    li.divider-horizontal {
+        height: 1px;
+        background-color: var(--divider-bg);
+        list-style: none;
+    }
+    
+    .divider-vertical {
+        width: 1px;
+        height: 100%;
+        border-left: var(--divider-border) solid;
+        border-color: var(--divider-bg);
+        align-self: stretch;
+    }
+}
+
+@utility divider-horizontal-* { 
+    margin : --value(--divider-horizontal-*);
+}
+
+@utility divider-vertical-* { 
+    margin : --value(--divider-vertical-*);
+}
+
 /* ===================== */
 /* DIVIDER END           */
 /* ===================== */
@@ -30,6 +68,107 @@
 /* ===================== */
 /* LIST                  */
 /* ===================== */
+
+@layer components {
+    .listItem {
+        width: fit-content;
+        height: auto;
+        background-color: var(--color-material-white-alpha-008);
+        &:hover {
+            background-color: var(--listItem-hovered);
+        }
+        cursor: pointer;
+    }
+
+    .listItem:not(.listItem-disabled)[aria-selected="true"] {
+        background-color: var(--listItem-selected);
+    }
+
+    .listItem-container {
+        width: auto;
+        height: auto;
+        padding: var(--listItem-container);
+    }
+
+    .listItem-base {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .listItem-base:has(.listItem-icon) {
+        gap: var(--listItem-base-gap);
+    }
+
+    .listItem-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .listItem-base-text {
+        font-size: var(--listItem-size-label);
+        line-height: var(--leading-150);
+        font-weight: var(--listItem-weight-label);
+        font-family: var(--font-pretendard);
+        color: var(--listItem-font-label);
+    }
+    
+    .listItem-secondary-text {
+        font-size: var(--listItem-size-secondary);
+        line-height: var(--leading-150);
+        font-weight: var(--listItem-weight-secondary);
+        font-family: var(--font-pretendard);
+        color: var(--listItem-font-secondary);
+    }
+
+    .listItem-icon {
+        width: var(--listItem-icon);
+        height: var(--listItem-icon);
+    }
+
+    .listItem-gutter {
+        & .listItem-container {
+            padding: var(--listItem-container-gutter);
+        }
+        & .listItem-base:has(.listItem-icon) {
+            gap: var(--listItem-base-gap-dense);
+        }
+    }
+
+    .listItem-gutter.listItem-dense {
+        & .listItem-container {
+            padding: var(--listItem-container-gutter-dense);
+        }
+    }
+
+    .listItem-dense {
+        & .listItem-icon {
+            width: var(--listItem-icon-dense);
+            height: var(--listItem-icon-dense);
+        }
+        & .listItem-base-text {
+            font-size: var(--listItem-size-label-dense);
+        }
+        & .listItem-secondary-text {
+            font-size: var(--listItem-size-secondary-dense);
+        }
+    }
+
+    .listItem-disabled { 
+        cursor: default;
+        &:hover {
+            background-color: transparent;
+        }
+        & .listItem-secondary-text {
+            color: var(--listItem-fg-disabled);
+        }
+        & .listItem-icon svg {
+            fill: var(--listItem-bg-disabled) !important;
+        }
+    }
+}
     
 /* ===================== */
 /* LIST END              */
