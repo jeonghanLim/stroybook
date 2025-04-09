@@ -174,13 +174,13 @@
           "$type": "color",
           "$value": "{color.color.palette.bg.warning.dark.default}"
         },
-        "--btn-contained-fg-neutral_2": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.contrast}"
-        },
         "--btn-contained-fg-warning": {
           "$type": "color",
           "$value": "{color.color.palette.fg.warning.contrast}"
+        },
+        "--btn-contained-fg-neutral_2": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.contrast}"
         },
         "--btn-contained-bg-warning-hover": {
           "$type": "color",
@@ -2202,21 +2202,25 @@
     },
     "pagination": {
       "size": {
-        "paginationItem-size-medium": {
+        "--paginationItem-size-medium": {
           "$type": "dimension",
           "$value": "{size.spacing.32}"
         },
-        "paginationItem-size-small": {
+        "--paginationItem-size-small": {
           "$type": "dimension",
           "$value": "{size.spacing.24}"
         },
-        "paginationItem-circle": {
+        "--paginationItem-circle": {
           "$type": "dimension",
           "$value": "{size.radius.fill}"
         },
-        "paginationItem-rounded": {
+        "--paginationItem-rounded": {
           "$type": "dimension",
           "$value": "{size.radius.004}"
+        },
+        "--pagination-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
         }
       },
       "font": {
@@ -2238,6 +2242,10 @@
         }
       },
       "colors": {
+        "--paginationItme-fg": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.dark}"
+        },
         "--paginationItme-hoverd-neutral": {
           "$type": "color",
           "$value": "{color.color.palette.bg.overlay.neutral.light}"
@@ -2474,7 +2482,7 @@
         },
         "--time-fg-verticalBlur-gradient-0-50": {
           "$type": "color",
-          "$value": "{color.color.palette.bg.layer.default}"
+          "$value": "{color.color.palette.non.non}"
         },
         "--time-fg-verticalBlur-gradient-0-100": {
           "$type": "color",
@@ -2519,18 +2527,6 @@
         "--datetime-padding-y": {
           "$type": "dimension",
           "$value": "{size.spacing.16}"
-        }
-      },
-      "font": {
-        "--empty1234": {
-          "$type": "dimension",
-          "$value": "0px"
-        }
-      },
-      "color": {
-        "Color": {
-          "$type": "color",
-          "$value": "#ffffff"
         }
       }
     }
