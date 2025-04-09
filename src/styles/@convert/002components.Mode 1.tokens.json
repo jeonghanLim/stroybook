@@ -174,13 +174,13 @@
           "$type": "color",
           "$value": "{color.color.palette.bg.warning.dark.default}"
         },
-        "--btn-contained-fg-neutral_2": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.contrast}"
-        },
         "--btn-contained-fg-warning": {
           "$type": "color",
           "$value": "{color.color.palette.fg.warning.contrast}"
+        },
+        "--btn-contained-fg-neutral_2": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.contrast}"
         },
         "--btn-contained-bg-warning-hover": {
           "$type": "color",
@@ -2136,9 +2136,209 @@
         }
       },
       "color": {
-        "--listItem-fg-label": {
+        "--chip-containd-fg-label-neutral": {
           "$type": "color",
-          "$value": "{color.color.palette.fg.neutral.main}"
+          "$value": "{color.color.palette.fg.neutral.dark}"
+        },
+        "--chip-containd-fg-icon-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.light}"
+        },
+        "--chip-containd-bg-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.neutral.light.default}"
+        },
+        "--chip-containd-bg-neutral-hovered": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.neutral.light.pressed}"
+        },
+        "--chip-containd-bg-neutral-focused": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.neutral.light.pressed}"
+        },
+        "--chip-outlined-fg-label-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.dark}"
+        },
+        "--chip-outlined-fg-icon-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.light}"
+        },
+        "--chip-outlined-bg-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.white.soft}"
+        },
+        "--chip-outlined-bg-neutral-hovered": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.neutral.light}"
+        },
+        "--chip-outlined-bg-neutral-focused": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.neutral.light}"
+        },
+        "--chip-outlined-stroke-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.neutral.light}"
+        },
+        "--chip-selected-fg-label-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.contrast}"
+        },
+        "--chip-selected-fg-icon-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.white.deep}"
+        },
+        "--chip-selected-bg-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.neutral.dark.default}"
+        },
+        "--chip-selected-bg-neutral-hovered": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.neutral.dark.pressed}"
+        },
+        "--chip-selected-bg-neutral-focused": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.neutral.dark.pressed}"
+        },
+        "--chip-containd-fg-label-brand": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.brand.main}"
+        },
+        "--chip-containd-fg-icon-brand": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.brand.main}"
+        },
+        "--chip-containd-bg-brand": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.brand.light.default}"
+        },
+        "--chip-containd-bg-brand-hovered": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.brand.light.pressed}"
+        },
+        "--chip-containd-bg-brand-focused": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.brand.light.pressed}"
+        },
+        "--chip-outlined-fg-label-brand": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.brand.main}"
+        },
+        "--chip-outlined-fg-icon-brand": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.brand.main}"
+        },
+        "--chip-outlined-bg-brand": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.white.soft}"
+        },
+        "--chip-outlined-bg-brand-hovered": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.brand.light}"
+        },
+        "--chip-outlined-bg-brand-focused": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.brand.light}"
+        },
+        "--chip-outlined-stroke-brand": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.brand.dark}"
+        },
+        "--chip-selected-fg-label-brand": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.brand.contrast}"
+        },
+        "--chip-selected-fg-icon-brand": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.white.deep}"
+        },
+        "--chip-selected-bg-brand": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.brand.dark.default}"
+        },
+        "--chip-selected-bg-brand-hovered": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.brand.dark.pressed}"
+        },
+        "--chip-selected-bg-brand-focused": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.brand.dark.pressed}"
+        },
+        "--chip-containd-fg-label-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.error.main}"
+        },
+        "--chip-containd-fg-icon-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.error.dark}"
+        },
+        "--chip-containd-bg-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.error.light.default}"
+        },
+        "--chip-containd-bg-error-hovered": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.error.light.pressed}"
+        },
+        "--chip-containd-bg-error-focused": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.error.light.pressed}"
+        },
+        "--chip-outlined-fg-label-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.error.main}"
+        },
+        "--chip-outlined-fg-icon-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.error.dark}"
+        },
+        "--chip-outlined-bg-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.white.soft}"
+        },
+        "--chip-outlined-bg-error-hovered": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.error.light}"
+        },
+        "--chip-outlined-bg-error-focused": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.error.light}"
+        },
+        "--chip-outlined-stroke-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.error.light}"
+        },
+        "--chip-selected-fg-label-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.error.contrast}"
+        },
+        "--chip-selected-fg-icon-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.white.deep}"
+        },
+        "--chip-selected-bg-error": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.error.dark.default}"
+        },
+        "--chip-selected-bg-error-hovered": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.error.dark.pressed}"
+        },
+        "--chip-selected-bg-error-focused": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.error.dark.pressed}"
+        },
+        "--chip-fg-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.disabled.main}"
+        },
+        "--chip-bg-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.disabled.main}"
+        },
+        "--chip-stroke-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.disabled.main}"
         }
       }
     }
