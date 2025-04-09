@@ -1,96 +1,131 @@
 @import "tailwindcss";
 @import "../001reference/font.css";
+@import "../001reference/effect.css";
 @import "../001reference/fontType.css";
 @import "../001reference/size.css";
 @import "../001reference/color.css";
-@import "../002components/input.css";
+@import "../002components/data_and_time_Picker.css";
 
 /* ===================== */
 /* TIMEPICKER            */
 /* ===================== */
 @layer components{
     .time-wrapper {
-        height : 168px;
-        width : 442px;
-        min-width: 440px;
+        height: 168px;
         overflow: hidden;
-        padding-right: 16px;
-        padding-left: 16px;
+        padding : var(--time-padding);
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid red;
+        border-radius: var(--time-radius);
+        gap: var(--time-gap);
         position: relative;
+        box-shadow: var(--shadow-064);
 
         & .time-bar{
-            height: 34px;
-            width: 442px;
-            border-radius: 4px;
-            background-color: #F7F9FB;
-            display: flex;
-            justify-content: center; 
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            height: fit-content;
+            /* border-radius: 4px; */
+            padding: var(--timeBar-padding);
+            /* padding : var(--timeBar-padding); */
+
+            & .time-bar-base{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--color-palette-bg-layer-fill);
+                padding: var(--timeBar-base-padding);
+
+                & div{
+                    width: 50%;
+                }
+                & .time-bar-box {
+                    display: flex;
+                    flex: 1;
+                }
+            }
         } 
 
         &::after{
             pointer-events: none;
             content: "";
             width: 100%;
-            position: absolute;
+            position: absolute; 
             height: 100%;
             background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
         }
-    }
 
-    .time-controller{
-        width: 136px;
-        height: 168px;
-        position: relative;
-        top: 0;
-        justify-content: center;
-        align-items: center;
-
-        & .time-list-box{
-            transition: top 0.3s ease;
-            width: 129px;
+        .time-controller{
+            width: 100%; 
             position: relative;
             top: 0;
             display: flex;
-            flex-direction: column;
-            gap: 4px;
+            justify-content: center;
             align-items: center;
-        }
-
-        & .time-box{
-            height: 34px;
-            width: 100%;
-            display: flex;
-
-            & .time-box-right{
-                width: 50%;
+            /* padding-left: 4px; */
+            padding-right: 4px;
+            /* padding: var(--timeBar-padding); */
+    
+            & .time-list-box{
+                transition: top 0.3s ease;
+                width: 100%;
                 display: flex;
-                justify-content: start;
+                justify-content: center;
                 align-items: center;
+                flex-direction: column;
+                gap: var(--time-scroll-gap);
+                padding: var(--time-scroll-padding);
+                /* flex: 1; */
+
+            }
+        }
+        
+        & .time-box {
+            width: 100%;
+            top: 0;
+
+            & div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50%;
+                /* height: 100%; */
+                line-height: 175%;
+                font-size: var(--timeNumber-size-bodySelected);
+            }
+            & .time-box-right{
+                justify-content: start;
             }
             & .time-box-left{
-                width: 50%;
-                display: flex;
                 justify-content: end;
-                align-items: center;
 
                 &.single-time:not(.current){
                     cursor: pointer;
                     color: gray;
                 }
             }
+            &:hover{
+                background-color: var(--timeNumber-bg-hovered);
+            }
+            & .single-time.current{
+                background-color: red;
+                font-weight: var(--timeNumber-weight-bodySelected);
+                font-size: var(--timeNumber-size-bodySelected);
+                color: var(--color-palette-fg-neutral-soft);
+                top: 50%;
+            }
         }
+
+        
     }
-
-
-    
-    
-    
-
 }
+
+/* @utility time-wrapper-size-* {
+    height: ---value();
+} */
 
 /* ===================== */
 /* TIMEPICKER END        */

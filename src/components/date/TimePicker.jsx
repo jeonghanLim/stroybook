@@ -6,14 +6,11 @@ export const TimePicker = ({
   , minute = 0
   , second = 0
   , step = 1 
+  , size = 'md'
   , title = true
   , onChange
   , ...dateTimeProps 
 }) => {  
-
-  // const [timePickHour, setTimePickHour] = useState();
-  // const [timePickMinute, setTimePickMinute] = useState();
-  // const [timePickSecond, setTimePickSecond] = useState();
 
   const [time, setTime] = useState({hour, minute, second});
 
@@ -24,17 +21,33 @@ export const TimePicker = ({
   }
 console.log(time)
   return (
-    <div className="time-wrapper"> 
-      <div className="time-bar">
-          <TimeController type="hour" count={24} value={hour} text={title && ': hh'} step={1} onChange={handleTime}></TimeController>
-          <TimeController type="minute" count={60} value={minute} text={title && ': mm'} step={step && step > 0 ? step : 1} onChange={handleTime}></TimeController>
-          <TimeController type="second" count={60} value={second} text={title && ': ss'} step={step && step > 0 ? step : 1} onChange={handleTime}></TimeController>
+    <div className='w-320'>
+      <div className={`time-wrapper time-wrapper-${size ? size : ''}`}> 
+        <div className="time-bar">
+          <div className='time-bar-base'>
+            <div className='time-bar-box'>
+              <div className="time-box-left"></div>
+              <div className='time-bar-box-right'>{title ? ' : hh' : ''}</div>
+            </div>
+            <div className='time-bar-box'>
+              <div className="time-box-left"></div>
+              <div className='time-bar-box-right'>{title ? ' : mm' : ''}</div>
+            </div>
+            <div className='time-bar-box'>
+              <div className="time-box-left"></div>
+              <div className='time-bar-box-right'>{title ? ' : ss' : ''}</div>
+            </div>
+          </div>
+        </div>
+        <TimeController type="hour" count={24} value={hour} text={title && ': hh'} step={1} onChange={handleTime}></TimeController>
+        <TimeController type="minute" count={60} value={minute} text={title && ': mm'} step={step && step > 0 ? step : 1} onChange={handleTime}></TimeController>
+        <TimeController type="second" count={60} value={second} text={title && ': ss'} step={step && step > 0 ? step : 1} onChange={handleTime}></TimeController>
       </div>
     </div>
   );
 };
 
-const TimeController = ({type, count, value = 0, text, step, onChange}) => {
+const TimeController = ({type, count, value = 0, step, onChange}) => {
 
   // time Array
   const _count = Array.from({ length: Math.ceil(count / step) }, (_, i) => String(i * step).padStart(2, '0'));
@@ -42,12 +55,14 @@ const TimeController = ({type, count, value = 0, text, step, onChange}) => {
   const timeRef = useRef(null);
   // time 상태값
   const [_value, setValue] = useState(step ? value/step : value);
-
+  
   useEffect(()=>{
     const setRefPostion = (ref, index, type) => {
       const currentObj = ref.children[index];
       if(!currentObj) return;
-      ref.style.top = '-' + currentObj.offsetTop + 'px';
+      console.log(currentObj.offsetTop)
+      ref.style.top = '-' + currentObj.offsetTop + 'px';  //처음이 -17px이어야함
+      console.log(ref.style.top)
       onChange && onChange(type, currentObj.innerText);
     }
     if(timeRef.current) setRefPostion(timeRef.current, _value, type);    
@@ -69,27 +84,23 @@ const TimeController = ({type, count, value = 0, text, step, onChange}) => {
   }
 
   return (
-    <div className="time-controller" onWheel={handleScroll}>
-      <div className='time-box absolute'>
-        <div className="time-box-left"></div>
-        <div className='time-box-right'>{text}</div>
+      <div className="time-controller " onWheel={handleScroll} >
+        <div className='time-list-box absolute' ref={timeRef}>
+          {_count.map((t, index) => 
+            <div key={index} className='time-box'>
+              <div 
+                className={`single-time time-box-left  ${(Number(t) === _value || index === _value) && 'current'}`} 
+                key={index} 
+                data-index={index} 
+                onClick={handleClick}
+              >
+                {t}
+              </div> 
+              <div className='time-box-right'></div>
+            </div>
+          )}
+        </div>
       </div>
-      <div className='time-list-box' ref={timeRef}>
-        {_count.map((t, index) => 
-          <div key={index} className='time-box'>
-            <div 
-              className={`single-time time-box-left ${(Number(t) === _value || index === _value) && 'current'}`} 
-              key={index} 
-              data-index={index} 
-              onClick={handleClick}
-            >
-              {t}
-            </div> 
-            <div className='time-box-right'></div>
-          </div>
-        )}
-      </div>
-    </div>
   )
 }
 
@@ -111,5 +122,6 @@ TimePicker.defaultProps = {
 };
 
 /*
-
+time-wrapper-size-md
+time-wrapper-size-sm
 */ 
