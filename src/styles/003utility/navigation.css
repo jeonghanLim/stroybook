@@ -3,7 +3,7 @@
 @import "../001reference/fontType.css";
 @import "../001reference/size.css";
 @import "../001reference/color.css";
-@import "../002system/navigation.css";
+@import "../002components/navigation.css";
 
 /* ===================== */
 /* MENU                  */
@@ -17,7 +17,43 @@
         padding: var(--menuList);
         border-radius: var(--menu-radius);
         box-shadow: var(--shadow-064);
-        background-color: var(--menu-color-background);
+        background-color: var(--menu-color-bg);
+    }
+    .menuList[aria-selected="true"] .menuItem { background-color: var(--menuItem-bg-selected); }
+
+    .menuItem {
+        width: fit-content;
+        height: fit-content;
+        background-color: var(--menuItem-bg);
+
+        &:hover { background-color: var(--menuItem-bg-hovered); }
+    }
+
+    .menuItem-container {
+        width: fit-content;
+        height: fit-content;
+        padding: var(--menuItem-container);
+    }
+
+    .menuItem-base:has(.menuItem-icon) {
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        gap: var(--menuItem-base-gap);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menuItem-icon {
+        width: var(--menuItem-icon);
+        height: var(--menuItem-icon);
+    }
+
+    .menuItem-label {
+        font-size: var(--menuItem-size);
+        font-weight: var(--menuItem-weight);
+        font-family: var(--font-pretendard);
+        color: var(--menuItem-fg); /* 색상 적용이 안 됨 - 확인 필요 */
     }
 
 }
