@@ -61,11 +61,19 @@ export const Menu = ({
           <div className="menuItem-container">
             <div className="menuItem-base">
               { startIcon && 
-                <span className="menuItem-icon">{startIcon}</span>
+                <div className="menuItem-mask-box">
+                  <div className="icon-box">
+                    {startIcon}
+                  </div>
+                </div>
               }
               <p className="menuItem-label">{label}</p>
               { endIcon && 
-                <span className="menuItem-icon">{endIcon}</span>
+                <div className="menuItem-mask-box">
+                  <div className="icon-box">
+                    {endIcon}
+                  </div>
+                </div>
               }
             </div>
           </div>

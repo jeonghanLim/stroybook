@@ -36,6 +36,7 @@
   .icon-box { 
     width: inherit;
     height: inherit;
+    @apply absolute
   }
   
   /* ripple */
