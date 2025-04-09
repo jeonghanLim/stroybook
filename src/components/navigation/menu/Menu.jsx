@@ -36,13 +36,11 @@ export const Menu = ({
       ].filter(Boolean).join(' ')}
       {...props}
       style={{
-        ...(maxHeight && {
-          maxHeight: typeof maxHeight === 'number' ? `${maxHeight}px` : ''
-        })
+        ...(maxHeight && 
+          { maxHeight: typeof maxHeight === 'number' ? `${maxHeight}px` : '' })
       }}
     >
-      {items.map(({ 
-        label
+      {items.map(({ label
         , value
         , startIcon
         , endIcon 
@@ -62,24 +60,18 @@ export const Menu = ({
             <div className="menuItem-base">
               { startIcon && 
                 <div className="menuItem-mask-box">
-                  <div className="icon-box">
-                    {startIcon}
-                  </div>
+                  <div className="icon-box">{startIcon}</div>
                 </div>
               }
               <p className="menuItem-label">{label}</p>
               { endIcon && 
                 <div className="menuItem-mask-box">
-                  <div className="icon-box">
-                    {endIcon}
-                  </div>
+                  <div className="icon-box">{endIcon}</div>
                 </div>
               }
             </div>
           </div>
-          { menuItemDivider &&
-            <Divider />
-          }
+          { menuItemDivider && <Divider /> }
         </div>
       ))}
     </div>
