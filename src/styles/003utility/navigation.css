@@ -48,6 +48,7 @@
     }
 
     .menuItem-mask-box {
+        position: relative;
         width: var(--menuItem-icon);
         height: var(--menuItem-icon);
     }
