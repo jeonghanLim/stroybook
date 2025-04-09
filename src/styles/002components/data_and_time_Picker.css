@@ -6,7 +6,7 @@
 
 @theme {
 
-    /* 48. DATE */
+    /* 52. DATE */
     /* ==================== */
 
     /* font */
@@ -38,22 +38,20 @@
     --calendarElements-bg-pressed: var(--color-palette-bg-neutral-light-pressed);
     --calendarElements-stroke: var(--color-palette-stroke-neutral-main);
 
-    /* 52. TIME */
+    /* 56. TIME */
     /* ==================== */
 
     /* size */
     --timeNumber-radius: var(--radius-004);
-    --time-radius: var(--radius-004);
-    --time-gap: calc(var(--spacing) * 1);
+    --timeNumber-gap: calc(var(--spacing) * 2);
     --time-height-small: calc(var(--spacing) * 120);
     --time-height-medium: calc(var(--spacing) * 168);
-    --time-scroll-gap: calc(var(--spacing) * 4);
-    --timeBar-base-radius: calc(var(--spacing) * 4);
+    --time-radius: var(--radius-004);
+    --time-base-radius: calc(var(--spacing) * 4);
+    --time-controller-gap: calc(var(--spacing) * 4);
     --timerangePicker-gap: calc(var(--spacing) * 8);
     --time-padding: calc(var(--spacing) * 0) calc(var(--spacing) * 16) calc(var(--spacing) * 0) calc(var(--spacing) * 16);
-    --time-scroll-padding: calc(var(--spacing) * 2) calc(var(--spacing) * 0) calc(var(--spacing) * 2) calc(var(--spacing) * 0);
-    --timeBar-padding: calc(var(--spacing) * 0) calc(var(--spacing) * 16) calc(var(--spacing) * 0) calc(var(--spacing) * 16);
-    --timeBar-base-padding: calc(var(--spacing) * 4) calc(var(--spacing) * 0) calc(var(--spacing) * 4) calc(var(--spacing) * 0);
+    --time-controller-padding: calc(var(--spacing) * 2) calc(var(--spacing) * 2) calc(var(--spacing) * 2) calc(var(--spacing) * 2);
     /* font */
     --timeNumber-size-title: var(--text-15);
     --timeNumber-size-body: var(--text-17);
@@ -69,7 +67,7 @@
     --timeNumber-fg-selected: var(--color-palette-fg-neutral-soft);
     --time-fg-verticalBlur: linear-gradient(0deg ,var(--color-palette-bg-layer-default) 0%,var(--color-palette-non-non) 50%,var(--color-palette-bg-layer-default) 100%);
 
-    /* 56. DATETIME */
+    /* 60. DATETIME */
     /* ==================== */
 
     /* size */

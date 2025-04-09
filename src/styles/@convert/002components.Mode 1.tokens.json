@@ -174,13 +174,13 @@
           "$type": "color",
           "$value": "{color.color.palette.bg.warning.dark.default}"
         },
-        "--btn-contained-fg-warning": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.warning.contrast}"
-        },
         "--btn-contained-fg-neutral_2": {
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.contrast}"
+        },
+        "--btn-contained-fg-warning": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.warning.contrast}"
         },
         "--btn-contained-bg-warning-hover": {
           "$type": "color",
@@ -2097,6 +2097,50 @@
           "$value": "{color.color.palette.bg.layer.fill}"
         }
       }
+    },
+    "chip": {
+      "size": {
+        "--chip-label-padding-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.4}"
+        },
+        "--chip-padding-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
+        },
+        "--chip-padding-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.4}"
+        },
+        "--chip-contents-height": {
+          "$type": "dimension",
+          "$value": "{size.spacing.24}"
+        },
+        "--chip-icon-height": {
+          "$type": "dimension",
+          "$value": "{size.spacing.20}"
+        },
+        "--chip-radius": {
+          "$type": "dimension",
+          "$value": "{size.radius.fill}"
+        }
+      },
+      "font": {
+        "--chip-size-label": {
+          "$type": "dimension",
+          "$value": "{font.text.15}"
+        },
+        "--chip-weight-label": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.medium}"
+        }
+      },
+      "color": {
+        "--listItem-fg-label": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.main}"
+        }
+      }
     }
   },
   "navigation": {
@@ -2189,14 +2233,6 @@
         "--menuItem-fg-disabled": {
           "$type": "color",
           "$value": "{color.color.palette.fg.disabled.main}"
-        },
-        "--menuItem-bg-disabled": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.disabled.main}"
-        },
-        "--menuItem-stroke-disabled": {
-          "$type": "color",
-          "$value": "{color.color.palette.stroke.disabled.main}"
         }
       }
     },
@@ -2396,17 +2432,9 @@
           "$type": "dimension",
           "$value": "{size.radius.004}"
         },
-        "--time-radius": {
+        "--timeNumber-gap": {
           "$type": "dimension",
-          "$value": "{size.radius.004}"
-        },
-        "--time-padding-x": {
-          "$type": "dimension",
-          "$value": "{size.spacing.16}"
-        },
-        "--time-gap": {
-          "$type": "dimension",
-          "$value": "{size.spacing.1}"
+          "$value": "{size.spacing.2}"
         },
         "--time-height-small": {
           "$type": "dimension",
@@ -2416,25 +2444,29 @@
           "$type": "dimension",
           "$value": "{size.spacing.168}"
         },
-        "--time-scroll-gap": {
+        "--time-radius": {
           "$type": "dimension",
-          "$value": "{size.spacing.4}"
+          "$value": "{size.radius.004}"
         },
-        "--time-scroll-padding-y": {
-          "$type": "dimension",
-          "$value": "{size.spacing.2}"
-        },
-        "--timeBar-padding-x": {
+        "--time-padding-x": {
           "$type": "dimension",
           "$value": "{size.spacing.16}"
         },
-        "--timeBar-base-padding-y": {
+        "--time-base-radius": {
           "$type": "dimension",
           "$value": "{size.spacing.4}"
         },
-        "--timeBar-base-radius": {
+        "--time-controller-gap": {
           "$type": "dimension",
           "$value": "{size.spacing.4}"
+        },
+        "--time-controller-padding-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.2}"
+        },
+        "--time-controller-padding-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.2}"
         },
         "--timerangePicker-gap": {
           "$type": "dimension",
