@@ -5,18 +5,16 @@
 @import "../001reference/color.css";
 @import "../002components/utils.css";
 
+
+
 @layer components {
 
   /* Icon */
-<<<<<<< HEAD:src/styles/003components/common.css
-  .icon-box { @apply absolute}
-=======
   .icon-box { 
     width: inherit;
     height: inherit;
     @apply absolute
   }
->>>>>>> c63d6d7261c4765862bfc067142ebcbe1f2d32a2:src/styles/003utility/common.css
   
   /* ripple */
   .ripple-container {
