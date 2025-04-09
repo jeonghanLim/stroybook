@@ -576,7 +576,7 @@
         },
         "non": {
           "$type": "color",
-          "$value": "#00000000"
+          "$value": "#ffffff00"
         }
       },
       "palette": {

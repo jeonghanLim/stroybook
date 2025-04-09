@@ -2097,6 +2097,50 @@
           "$value": "{color.color.palette.bg.layer.fill}"
         }
       }
+    },
+    "chip": {
+      "size": {
+        "--chip-label-padding-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.4}"
+        },
+        "--chip-padding-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
+        },
+        "--chip-padding-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.4}"
+        },
+        "--chip-contents-height": {
+          "$type": "dimension",
+          "$value": "{size.spacing.24}"
+        },
+        "--chip-icon-height": {
+          "$type": "dimension",
+          "$value": "{size.spacing.20}"
+        },
+        "--chip-radius": {
+          "$type": "dimension",
+          "$value": "{size.radius.fill}"
+        }
+      },
+      "font": {
+        "--chip-size-label": {
+          "$type": "dimension",
+          "$value": "{font.text.15}"
+        },
+        "--chip-weight-label": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.medium}"
+        }
+      },
+      "color": {
+        "--listItem-fg-label": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.main}"
+        }
+      }
     }
   },
   "navigation": {
@@ -2170,13 +2214,13 @@
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.main}"
         },
-        "--menu-color-bg": {
+        "--menu-bg": {
           "$type": "color",
           "$value": "{color.color.palette.bg.layer.default}"
         },
         "--menuItem-bg": {
           "$type": "color",
-          "$value": "{color.color.palette.bg.overlay.white.light}"
+          "$value": "{color.color.palette.non.non}"
         },
         "--menuItem-bg-hovered": {
           "$type": "color",
@@ -2189,34 +2233,30 @@
         "--menuItem-fg-disabled": {
           "$type": "color",
           "$value": "{color.color.palette.fg.disabled.main}"
-        },
-        "--menuItem-bg-disabled": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.disabled.main}"
-        },
-        "--menuItem-stroke-disabled": {
-          "$type": "color",
-          "$value": "{color.color.palette.stroke.disabled.main}"
         }
       }
     },
     "pagination": {
       "size": {
-        "paginationItem-size-medium": {
+        "--paginationItem-size-medium": {
           "$type": "dimension",
           "$value": "{size.spacing.32}"
         },
-        "paginationItem-size-small": {
+        "--paginationItem-size-small": {
           "$type": "dimension",
           "$value": "{size.spacing.24}"
         },
-        "paginationItem-circle": {
+        "--paginationItem-circle": {
           "$type": "dimension",
           "$value": "{size.radius.fill}"
         },
-        "paginationItem-rounded": {
+        "--paginationItem-rounded": {
           "$type": "dimension",
           "$value": "{size.radius.004}"
+        },
+        "--pagination-gap": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
         }
       },
       "font": {
@@ -2238,6 +2278,10 @@
         }
       },
       "colors": {
+        "--paginationItme-fg": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.dark}"
+        },
         "--paginationItme-hoverd-neutral": {
           "$type": "color",
           "$value": "{color.color.palette.bg.overlay.neutral.light}"
@@ -2388,17 +2432,9 @@
           "$type": "dimension",
           "$value": "{size.radius.004}"
         },
-        "--time-radius": {
+        "--timeNumber-gap": {
           "$type": "dimension",
-          "$value": "{size.radius.004}"
-        },
-        "--time-padding-x": {
-          "$type": "dimension",
-          "$value": "{size.spacing.16}"
-        },
-        "--time-gap": {
-          "$type": "dimension",
-          "$value": "{size.spacing.1}"
+          "$value": "{size.spacing.2}"
         },
         "--time-height-small": {
           "$type": "dimension",
@@ -2408,25 +2444,29 @@
           "$type": "dimension",
           "$value": "{size.spacing.168}"
         },
-        "--time-scroll-gap": {
+        "--time-radius": {
           "$type": "dimension",
-          "$value": "{size.spacing.4}"
+          "$value": "{size.radius.004}"
         },
-        "--time-scroll-padding-y": {
-          "$type": "dimension",
-          "$value": "{size.spacing.2}"
-        },
-        "--timeBar-padding-x": {
+        "--time-padding-x": {
           "$type": "dimension",
           "$value": "{size.spacing.16}"
         },
-        "--timeBar-base-padding-y": {
+        "--time-base-radius": {
           "$type": "dimension",
           "$value": "{size.spacing.4}"
         },
-        "--timeBar-base-radius": {
+        "--time-controller-gap": {
           "$type": "dimension",
           "$value": "{size.spacing.4}"
+        },
+        "--time-controller-padding-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.2}"
+        },
+        "--time-controller-padding-y": {
+          "$type": "dimension",
+          "$value": "{size.spacing.2}"
         },
         "--timerangePicker-gap": {
           "$type": "dimension",
@@ -2474,7 +2514,7 @@
         },
         "--time-fg-verticalBlur-gradient-0-50": {
           "$type": "color",
-          "$value": "{color.color.palette.bg.layer.default}"
+          "$value": "{color.color.palette.non.non}"
         },
         "--time-fg-verticalBlur-gradient-0-100": {
           "$type": "color",
@@ -2519,18 +2559,6 @@
         "--datetime-padding-y": {
           "$type": "dimension",
           "$value": "{size.spacing.16}"
-        }
-      },
-      "font": {
-        "--empty1234": {
-          "$type": "dimension",
-          "$value": "0px"
-        }
-      },
-      "color": {
-        "Color": {
-          "$type": "color",
-          "$value": "#ffffff"
         }
       }
     }

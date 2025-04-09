@@ -93,4 +93,19 @@
     --rowHead-bg: var(--color-palette-bg-overlay-white-light);
     --rowHead-bg-brand: var(--color-palette-bg-layer-floating);
     --rowHead-bg-neutral: var(--color-palette-bg-layer-fill);
+
+    /* 40. CHIP */
+    /* ==================== */
+
+    /* size */
+    --chip-contents-height: calc(var(--spacing) * 24);
+    --chip-icon-height: calc(var(--spacing) * 20);
+    --chip-radius: var(--radius-fill);
+    --chip-label-padding: calc(var(--spacing) * 0) calc(var(--spacing) * 4) calc(var(--spacing) * 0) calc(var(--spacing) * 4);
+    --chip-padding: calc(var(--spacing) * 4) calc(var(--spacing) * 8) calc(var(--spacing) * 4) calc(var(--spacing) * 8);
+    /* font */
+    --chip-size-label: var(--text-15);
+    --chip-weight-label: var(--font-weight-medium);
+    /* color */
+    --listItem-fg-label: var(--color-palette-fg-neutral-main);
 }
