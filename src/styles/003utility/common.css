@@ -5,7 +5,31 @@
 @import "../001reference/color.css";
 @import "../002components/utils.css";
 
+/* scrollbar */
+*::-webkit-scrollbar { 
+  width: 17px;
+  background-color: var(--scrollbar-bg); 
+  box-sizing: border-box;
+}
 
+*::-webkit-scrollbar-button { 
+    background-repeat: no-repeat;
+    background-position: center;        
+}
+
+*::-webkit-scrollbar-button:decrement {
+    background-image: url("data:image/svg+xml,%3Csvg width='7' height='7' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 5L3.5 1L7 5H0Z' fill='black' fill-opacity='0.24'/%3E%3C/svg%3E");
+}
+
+*::-webkit-scrollbar-button:increment {
+    background-image: url("data:image/svg+xml,%3Csvg width='7' height='7' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 2H0L3.5 6L7 2Z' fill='%238E9BAA'/%3E%3C/svg%3E%0A");
+}
+
+*::-webkit-scrollbar-thumb { 
+    border-left: 2px solid var(--scrollbar-bg);
+    border-right: 2px solid var(--scrollbar-bg);
+    background-color: var(--scrollbar-fg-square); 
+}
 
 @layer components {
 
