@@ -17,15 +17,18 @@
         padding: var(--menuList);
         border-radius: var(--menu-radius);
         box-shadow: var(--shadow-064);
-        background-color: var(--menu-color-bg);
+        background-color: var(--menu-bg);
     }
-    .menuList[aria-selected="true"] .menuItem { background-color: var(--menuItem-bg-selected); }
+
+    .menuList[aria-selected="true"] .menuItem { 
+        background-color: var(--menuItem-bg-selected); 
+    }
 
     .menuItem {
         width: fit-content;
         height: fit-content;
         background-color: var(--menuItem-bg);
-
+        cursor: pointer;
         &:hover { background-color: var(--menuItem-bg-hovered); }
     }
 
@@ -53,7 +56,13 @@
         font-size: var(--menuItem-size);
         font-weight: var(--menuItem-weight);
         font-family: var(--font-pretendard);
-        color: var(--menuItem-fg); /* 색상 적용이 안 됨 - 확인 필요 */
+        color: var(--menuItem-fg); 
+    }
+
+    .menuList-dense {
+        & .menuItem-container {
+            padding: var(--menuItem-container-dense);
+        }
     }
 
 }
