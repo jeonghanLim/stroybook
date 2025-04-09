@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import "../001reference/font.css";
+@import "../001reference/fontType.css";
+@import "../001reference/size.css";
+@import "../001reference/color.css";
+@import "../002system/navigation.css";
+
+/* ===================== */
+/* MENU                  */
+/* ===================== */
+
+@layer components {
+
+    .menuList {
+        width: fit-content;
+        height: fit-content;
+        padding: var(--menuList);
+        border-radius: var(--menu-radius);
+        box-shadow: var(--shadow-064);
+        background-color: var(--menu-color-background);
+    }
+
+}
+    
+/* ===================== */
+/* MENU END              */
+/* ===================== */
+
+

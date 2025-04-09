@@ -75,13 +75,13 @@
         height: auto;
         background-color: var(--color-material-white-alpha-008);
         &:hover {
-            background-color: var(--listItem-hovered);
+            background-color: var(--listItem-bg-hovered);
         }
         cursor: pointer;
     }
 
     .listItem:not(.listItem-disabled)[aria-selected="true"] {
-        background-color: var(--listItem-selected);
+        background-color: var(--listItem-bg-selected);
     }
 
     .listItem-container {
@@ -112,7 +112,7 @@
         line-height: var(--leading-150);
         font-weight: var(--listItem-weight-label);
         font-family: var(--font-pretendard);
-        color: var(--listItem-font-label);
+        color: var(--listItem-fg-label);
     }
     
     .listItem-secondary-text {
@@ -120,7 +120,7 @@
         line-height: var(--leading-150);
         font-weight: var(--listItem-weight-secondary);
         font-family: var(--font-pretendard);
-        color: var(--listItem-font-secondary);
+        color: var(--listItem-fg-secondary);
     }
 
     .listItem-icon {
@@ -161,11 +161,14 @@
         &:hover {
             background-color: transparent;
         }
-        & .listItem-secondary-text {
+        & .listItem-base-text, .listItem-secondary-text {
             color: var(--listItem-fg-disabled);
         }
         & .listItem-icon svg {
             fill: var(--listItem-bg-disabled) !important;
+        }
+        & .divider {
+            border-color: var(--listItem-storke-disabled);
         }
     }
 }
