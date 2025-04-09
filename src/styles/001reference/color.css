@@ -137,7 +137,7 @@
     --color-material-blue-alpha-24 : #007bff3d;
     --color-material-blue-alpha-32 : #007bff52;
     --color-material-blue-alpha-56 : #007bff8f;
-    --color-material-non : #00000000;
+    --color-material-non : #ffffff00;
     --color-palette-bg-brand-dark-default : var(--color-material-classicBlue-900);
     --color-palette-bg-brand-dark-pressed : var(--color-material-classicBlue-950);
     --color-palette-bg-brand-light-default : var(--color-material-classicBlue-050);
