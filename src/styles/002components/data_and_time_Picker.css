@@ -67,7 +67,7 @@
     --timeNumber-fg-enable: var(--color-palette-fg-neutral-mute);
     --timeNumber-fg-enable-title: var(--color-palette-fg-neutral-dark);
     --timeNumber-fg-selected: var(--color-palette-fg-neutral-soft);
-    --time-fg-verticalBlur: linear-gradient(0deg ,var(--color-palette-bg-layer-default) 0%,var(--color-palette-bg-layer-default) 50%,var(--color-palette-bg-layer-default) 100%);
+    --time-fg-verticalBlur: linear-gradient(0deg ,var(--color-palette-bg-layer-default) 0%,var(--color-palette-non-non) 50%,var(--color-palette-bg-layer-default) 100%);
 
     /* 56. DATETIME */
     /* ==================== */
@@ -78,8 +78,4 @@
     --datetime-base-gap: calc(var(--spacing) * 8);
     --datetime-gap: calc(var(--spacing) * 16);
     --datetime-padding: calc(var(--spacing) * 16) calc(var(--spacing) * 16) calc(var(--spacing) * 16) calc(var(--spacing) * 16);
-    /* font */
-    --empty1234: var(--);
-    /* color */
-    Color: var(--);
 }
