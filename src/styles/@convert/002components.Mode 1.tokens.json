@@ -2199,6 +2199,74 @@
           "$value": "{color.color.palette.stroke.disabled.main}"
         }
       }
+    },
+    "pagination": {
+      "size": {
+        "paginationItem-size-medium": {
+          "$type": "dimension",
+          "$value": "{size.spacing.32}"
+        },
+        "paginationItem-size-small": {
+          "$type": "dimension",
+          "$value": "{size.spacing.24}"
+        },
+        "paginationItem-circle": {
+          "$type": "dimension",
+          "$value": "{size.radius.fill}"
+        },
+        "paginationItem-rounded": {
+          "$type": "dimension",
+          "$value": "{size.radius.004}"
+        }
+      },
+      "font": {
+        "--paginationItme-size-medium": {
+          "$type": "dimension",
+          "$value": "{font.text.14}"
+        },
+        "--paginationItme-size-small": {
+          "$type": "dimension",
+          "$value": "{font.text.13}"
+        },
+        "--paginationItme-weight-medium": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.regular}"
+        },
+        "--paginationItme-weight-small": {
+          "$type": "dimension",
+          "$value": "{font.font.weight.regular}"
+        }
+      },
+      "colors": {
+        "--paginationItme-hoverd-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.neutral.light}"
+        },
+        "--paginationItme-selected-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.neutral.soft}"
+        },
+        "--paginationItme-hoverd-brand": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.brand.light}"
+        },
+        "--paginationItme-selected-brand": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.brand.soft}"
+        },
+        "--paginationItme-bg-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.disabled.main}"
+        },
+        "--paginationItme-fg-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.disabled.main}"
+        },
+        "--paginationItme-stroke-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.disabled.main}"
+        }
+      }
     }
   },
   "data_and_time_Picker": {
