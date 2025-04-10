@@ -72,6 +72,16 @@
     --textCell-size-dense: var(--text-15);
     --textCell-weight: var(--font-weight-regular);
     --textCell-weight-title: var(--font-weight-semiBold);
+    /* color */
+    --textCell-fg: var(--color-palette-fg-neutral-main);
+    --textCell-fg-title: var(--color-palette-fg-neutral-soft);
+    --cell-fg-icon: var(--color-palette-fg-neutral-mute);
+    --row-bg: var(--color-palette-bg-overlay-white-light);
+    --row-bg-selected: var(--color-palette-bg-overlay-brand-light);
+    --row-bg-hover: var(--color-palette-bg-overlay-neutral-soft);
+    --rowHead-bg: var(--color-palette-bg-overlay-white-light);
+    --rowHead-bg-brand: var(--color-palette-bg-layer-floating);
+    --rowHead-bg-neutral: var(--color-palette-bg-layer-fill);
     /* size */
     --cell-gap: calc(var(--spacing) * 2);
     --cell-gap-dense: calc(var(--spacing) * 0);
@@ -83,16 +93,6 @@
     --cell-padding-checkBox-dense: calc(var(--spacing) * 8) calc(var(--spacing) * 8) calc(var(--spacing) * 8) calc(var(--spacing) * 8);
     --cell-padding: calc(var(--spacing) * 20) calc(var(--spacing) * 20) calc(var(--spacing) * 20) calc(var(--spacing) * 20);
     --cell-padding-dense: calc(var(--spacing) * 8) calc(var(--spacing) * 8) calc(var(--spacing) * 8) calc(var(--spacing) * 8);
-    /* color */
-    --textCell-fg: var(--color-palette-fg-neutral-main);
-    --textCell-fg-title: var(--color-palette-fg-neutral-soft);
-    --cell-fg-icon: var(--color-palette-fg-neutral-mute);
-    --row-bg: var(--color-palette-bg-overlay-white-light);
-    --row-bg-selected: var(--color-palette-bg-overlay-brand-light);
-    --row-bg-hover: var(--color-palette-bg-overlay-neutral-soft);
-    --rowHead-bg: var(--color-palette-bg-overlay-white-light);
-    --rowHead-bg-brand: var(--color-palette-bg-layer-floating);
-    --rowHead-bg-neutral: var(--color-palette-bg-layer-fill);
 
     /* 40. CHIP */
     /* ==================== */
@@ -155,6 +155,54 @@
     --chip-selected-bg-error: var(--color-palette-bg-error-dark-default);
     --chip-selected-bg-error-hovered: var(--color-palette-bg-error-dark-pressed);
     --chip-selected-bg-error-focused: var(--color-palette-bg-error-dark-pressed);
+    --chip-containd-fg-label-warning: var(--color-palette-fg-warning-main);
+    --chip-containd-fg-icon-warning: var(--color-palette-fg-warning-dark);
+    --chip-containd-bg-warning: var(--color-palette-bg-warning-light-default);
+    --chip-containd-bg-warning-hovered: var(--color-palette-bg-warning-light-pressed);
+    --chip-containd-bg-warning-focused: var(--color-palette-bg-warning-light-pressed);
+    --chip-outlined-fg-label-warning: var(--color-palette-fg-warning-main);
+    --chip-outlined-fg-icon-warning: var(--color-palette-fg-warning-dark);
+    --chip-outlined-bg-warning: var(--color-palette-bg-overlay-white-soft);
+    --chip-outlined-bg-warning-hovered: var(--color-palette-bg-overlay-warning-light);
+    --chip-outlined-bg-warning-focused: var(--color-palette-bg-overlay-warning-light);
+    --chip-outlined-stroke-warning: var(--color-palette-stroke-warning-light);
+    --chip-selected-fg-label-warning: var(--color-palette-fg-warning-contrast);
+    --chip-selected-fg-icon-warning: var(--color-palette-bg-overlay-white-deep);
+    --chip-selected-bg-warning: var(--color-palette-bg-warning-dark-default);
+    --chip-selected-bg-warning-hovered: var(--color-palette-bg-warning-dark-pressed);
+    --chip-selected-bg-warning-focused: var(--color-palette-bg-warning-dark-pressed);
+    --chip-containd-fg-label-info: var(--color-palette-fg-info-main);
+    --chip-containd-fg-icon-info: var(--color-palette-fg-info-dark);
+    --chip-containd-bg-info: var(--color-palette-bg-info-light-default);
+    --chip-containd-bg-info-hovered: var(--color-palette-bg-info-light-pressed);
+    --chip-containd-bg-info-focused: var(--color-palette-bg-info-light-pressed);
+    --chip-outlined-fg-label-info: var(--color-palette-fg-info-main);
+    --chip-outlined-fg-icon-info: var(--color-palette-fg-info-dark);
+    --chip-outlined-bg-info: var(--color-palette-bg-overlay-white-soft);
+    --chip-outlined-bg-info-hovered: var(--color-palette-bg-overlay-info-light);
+    --chip-outlined-bg-info-focused: var(--color-palette-bg-overlay-info-light);
+    --chip-outlined-stroke-info: var(--color-palette-stroke-info-light);
+    --chip-selected-fg-label-info: var(--color-palette-fg-info-contrast);
+    --chip-selected-fg-icon-info: var(--color-palette-bg-overlay-white-deep);
+    --chip-selected-bg-info: var(--color-palette-bg-info-dark-default);
+    --chip-selected-bg-info-hovered: var(--color-palette-bg-info-dark-pressed);
+    --chip-selected-bg-info-focused: var(--color-palette-bg-info-dark-pressed);
+    --chip-containd-fg-label-success: var(--color-palette-fg-success-main);
+    --chip-containd-fg-icon-success: var(--color-palette-fg-success-dark);
+    --chip-containd-bg-success: var(--color-palette-bg-success-light-default);
+    --chip-containd-bg-success-hovered: var(--color-palette-bg-success-light-pressed);
+    --chip-containd-bg-success-focused: var(--color-palette-bg-success-light-pressed);
+    --chip-outlined-fg-label-success: var(--color-palette-fg-success-main);
+    --chip-outlined-fg-icon-success: var(--color-palette-fg-success-dark);
+    --chip-outlined-bg-success: var(--color-palette-bg-overlay-white-soft);
+    --chip-outlined-bg-success-hovered: var(--color-palette-bg-overlay-success-light);
+    --chip-outlined-bg-success-focused: var(--color-palette-bg-overlay-success-light);
+    --chip-outlined-stroke-success: var(--color-palette-stroke-success-light);
+    --chip-selected-fg-label-success: var(--color-palette-fg-success-contrast);
+    --chip-selected-fg-icon-success: var(--color-palette-bg-overlay-white-deep);
+    --chip-selected-bg-success: var(--color-palette-bg-success-dark-default);
+    --chip-selected-bg-success-hovered: var(--color-palette-bg-success-dark-pressed);
+    --chip-selected-bg-success-focused: var(--color-palette-bg-success-dark-pressed);
     --chip-fg-disabled: var(--color-palette-fg-disabled-main);
     --chip-bg-disabled: var(--color-palette-bg-disabled-main);
     --chip-stroke-disabled: var(--color-palette-stroke-disabled-main);
