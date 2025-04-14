@@ -6,7 +6,7 @@
 
 @theme {
 
-    /* 21. BACKDROP */
+    /* 25. BACKDROP */
     /* ==================== */
 
     /* size */
@@ -17,7 +17,7 @@
     --backdrop-soft: var(--color-palette-bg-overlay-black-soft);
     --backdrop-light: var(--color-palette-bg-overlay-black-light);
 
-    /* 24. POPUP */
+    /* 28. POPUP */
     /* ==================== */
 
     /* color */
@@ -65,7 +65,7 @@
     --popupContents-padding: calc(var(--spacing) * 24) calc(var(--spacing) * 24) calc(var(--spacing) * 24) calc(var(--spacing) * 24);
     --popupFooter-padding: calc(var(--spacing) * 24) calc(var(--spacing) * 24) calc(var(--spacing) * 24) calc(var(--spacing) * 24);
 
-    /* 28. SNACKBAR */
+    /* 32. SNACKBAR */
     /* ==================== */
 
     --empty: var(--);

@@ -174,13 +174,13 @@
           "$type": "color",
           "$value": "{color.color.palette.bg.warning.dark.default}"
         },
-        "--btn-contained-fg-warning": {
-          "$type": "color",
-          "$value": "{color.color.palette.fg.warning.contrast}"
-        },
         "--btn-contained-fg-neutral_2": {
           "$type": "color",
           "$value": "{color.color.palette.fg.neutral.contrast}"
+        },
+        "--btn-contained-fg-warning": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.warning.contrast}"
         },
         "--btn-contained-bg-warning-hover": {
           "$type": "color",
@@ -1547,6 +1547,98 @@
           "$value": "{color.color.palette.bg.disabled.main}"
         }
       }
+    },
+    "switch": {
+      "size": {
+        "--switch-body-height": {
+          "$type": "dimension",
+          "$value": "{size.spacing.32}"
+        },
+        "--switch-body-width": {
+          "$type": "dimension",
+          "$value": "{size.spacing.56}"
+        },
+        "--switch-handle-radius": {
+          "$type": "dimension",
+          "$value": "{size.radius.fill}"
+        },
+        "--switch-handle-size": {
+          "$type": "dimension",
+          "$value": "{size.spacing.16}"
+        },
+        "--switch-handle-checked-size": {
+          "$type": "dimension",
+          "$value": "{size.spacing.24}"
+        },
+        "--switch-icon-size": {
+          "$type": "dimension",
+          "$value": "{size.spacing.16}"
+        },
+        "--switch-icon-checked-size": {
+          "$type": "dimension",
+          "$value": "{size.spacing.24}"
+        },
+        "--switch-body-padding-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.8}"
+        },
+        "--switch-body-checked-padding-x": {
+          "$type": "dimension",
+          "$value": "{size.spacing.4}"
+        }
+      },
+      "font": {
+        "--switch-label": {
+          "$type": "dimension",
+          "$value": "{font.text.14}"
+        }
+      },
+      "colors": {
+        "--switch-bg-brand": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.neutral.soft}"
+        },
+        "--switch-bg-checked-brand": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.brand.dark.default}"
+        },
+        "--switch-fg-brand": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.brand.main}"
+        },
+        "--switch-fg-checked-brand": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.brand.contrast}"
+        },
+        "--switch-bg-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.overlay.neutral.soft}"
+        },
+        "--switch-bg-checked-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.neutral.dark.default}"
+        },
+        "--switch-fg-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.main}"
+        },
+        "--switch-fg-checked-neutral": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.neutral.contrast}"
+        },
+        "--switch-fg-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.fg.disabled.main}"
+        },
+        "--switch-bg-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.bg.disabled.main}"
+        },
+        "--switch-stroke-disabled": {
+          "$type": "color",
+          "$value": "{color.color.palette.stroke.disabled.main}"
+        }
+      }
     }
   },
   "feedback": {
@@ -2026,15 +2118,11 @@
           "$type": "color",
           "$value": "{color.color.palette.bg.overlay.neutral.soft}"
         },
-        "--rowHead-bg": {
-          "$type": "color",
-          "$value": "{color.color.palette.bg.overlay.white.light}"
-        },
-        "--rowHead-bg-brand": {
+        "--table-head-bg-brand": {
           "$type": "color",
           "$value": "{color.color.palette.bg.layer.floating}"
         },
-        "--rowHead-bg-neutral": {
+        "--table-head-bg-neutral": {
           "$type": "color",
           "$value": "{color.color.palette.bg.layer.fill}"
         }

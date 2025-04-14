@@ -6,7 +6,7 @@
 
 @theme {
 
-    /* 52. DATE */
+    /* 56. DATE */
     /* ==================== */
 
     /* font */
@@ -38,7 +38,7 @@
     --calendarElements-bg-pressed: var(--color-palette-bg-neutral-light-pressed);
     --calendarElements-stroke: var(--color-palette-stroke-neutral-main);
 
-    /* 56. TIME */
+    /* 60. TIME */
     /* ==================== */
 
     /* size */
@@ -67,7 +67,7 @@
     --timeNumber-fg-selected: var(--color-palette-fg-neutral-soft);
     --time-fg-verticalBlur: linear-gradient(0deg ,var(--color-palette-bg-layer-default) 0%,var(--color-palette-non-non) 50%,var(--color-palette-bg-layer-default) 100%);
 
-    /* 60. DATETIME */
+    /* 64. DATETIME */
     /* ==================== */
 
     /* size */

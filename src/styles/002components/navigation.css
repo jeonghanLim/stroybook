@@ -6,7 +6,7 @@
 
 @theme {
 
-    /* 44. MENU */
+    /* 48. MENU */
     /* ==================== */
 
     /* size */
@@ -32,7 +32,7 @@
     --menuItem-bg-selected: var(--color-palette-bg-overlay-brand-light);
     --menuItem-fg-disabled: var(--color-palette-fg-disabled-main);
 
-    /* 48. PAGINATION */
+    /* 52. PAGINATION */
     /* ==================== */
 
     /* size */
